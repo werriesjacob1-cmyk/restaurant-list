@@ -692,7 +692,8 @@ def detail_audit():
     for j, txt in out:
         pay = j.get("pay") or find_pay(txt) or "pay not found"
         flags = "; ".join(flags_from_text(txt)) or "no flags"
-        print(f"DETAIL|{j['company']}|{j['title']}|{j['location'][:40]}|{pay}|{flags}|textlen={len(txt)}|{j.get('url','')}")
+        posted = age_label(j["posted"]) if j.get("posted") else "posted date not available"
+        print(f"DETAIL|{j['company']}|{j['title']}|{j['location'][:40]}|{pay}|{posted}|{flags}|textlen={len(txt)}|{j.get('url','')}")
         if 0 < len(txt) < 15000:
             print(f"DETAILTXT|{j['company']}|{j['title']}|" + re.sub(r"\s+", " ", txt)[:3500])
     print(f"DETAIL-TOTAL boards={len(boards)} jobs={len(out)}")
