@@ -103,6 +103,30 @@
   [
    "SpotOn",
    "spoton"
+  ],
+  [
+   "Focus Staff",
+   "focus"
+  ],
+  [
+   "Uniti Med",
+   "uniti"
+  ],
+  [
+   "Lyric",
+   "lyric"
+  ],
+  [
+   "Ramp",
+   "ramp"
+  ],
+  [
+   "Weave",
+   "weave"
+  ],
+  [
+   "Change Healthcare",
+   "change"
   ]
  ],
  "greenhouse": [
@@ -329,6 +353,46 @@
   [
    "Zenoti",
    "zenoti"
+  ],
+  [
+   "Concentric Healthcare Staffing",
+   "concentric"
+  ],
+  [
+   "AMN Healthcare Allied",
+   "amn"
+  ],
+  [
+   "CASA INC",
+   "casa"
+  ],
+  [
+   "FOX Rehabilitation",
+   "fox"
+  ],
+  [
+   "Coast Medical Service",
+   "coast"
+  ],
+  [
+   "Bethesda Health",
+   "bethesda"
+  ],
+  [
+   "Cornerstone onDemand",
+   "cornerstone"
+  ],
+  [
+   "Help Scout",
+   "help"
+  ],
+  [
+   "Lotlinx",
+   "lotlinx"
+  ],
+  [
+   "Lyft",
+   "lyft"
   ]
  ],
  "lever": [
@@ -367,6 +431,18 @@
   [
    "WalkMe",
    "walkme"
+  ],
+  [
+   "Healthcare Systems and Technologies",
+   "healthcare"
+  ],
+  [
+   "AO Garcia Agency",
+   "aogarciaagency"
+  ],
+  [
+   "EnableComp",
+   "enablecomp"
   ]
  ]
 }
