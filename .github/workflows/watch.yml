@@ -21,6 +21,10 @@ on:
         description: "5. DEEP QUALIFY: read every full customer-success AND sales posting and score it against my rules (no alerts)"
         type: boolean
         default: false
+      chain:
+        description: "6. KEEP RUNNING: poll, then re-trigger itself (backup for GitHub's schedule)"
+        type: boolean
+        default: false
       audit:
         description: "4. COVERAGE CHECK: what the repo matches and skips (no alerts)"
         type: boolean
@@ -30,10 +34,11 @@ concurrency:
   cancel-in-progress: false
 permissions:
   contents: write
+  actions: write
 jobs:
   watch:
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    timeout-minutes: 40
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -77,3 +82,11 @@ jobs:
           git config user.email "board-watch@users.noreply.github.com"
           for f in state.json auto_roster.json filtered_log.jsonl; do if [ -f "$f" ]; then git add "$f"; fi; done
           git diff --cached --quiet || (git commit -qm "state" && git pull --rebase -q && git push -q)
+      - name: Chain next run
+        if: ${{ always() && github.event.inputs.chain == 'true' }}
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          H=$(date -u +%H); D=$(date -u +%u)
+          if [ "$D" -le 5 ] && { [ "$H" -ge 11 ] || [ "$H" -le 1 ]; }; then sleep 240; else sleep 1380; fi
+          gh api repos/${{ github.repository }}/actions/workflows/watch.yml/dispatches -f ref=main -F 'inputs[chain]=true'
