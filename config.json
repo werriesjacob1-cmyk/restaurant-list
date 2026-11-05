@@ -920,5 +920,24 @@
   "client engagement",
   "growth",
   "data partnerships"
+ ],
+ "detail_all_companies": [
+  "Collectors",
+  "Cardinal",
+  "Circle",
+  "Jackson",
+  "FIXD",
+  "Whitestone",
+  "Philips"
+ ],
+ "detail_workday_queries": [
+  "account manager",
+  "customer success",
+  "partner",
+  "sales",
+  "client",
+  "inside sales",
+  "coordinator",
+  "associate"
  ]
 }

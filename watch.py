@@ -653,7 +653,10 @@ def detail_audit():
     """Read the full posting for chosen companies (config detail_companies) and print facts. No alerts, no state."""
     auto = load_json(AUTO_PATH, {})
     targets = [x.lower() for x in CFG.get("detail_companies", [])]
-    boards = [(k, e) for k, e in board_list(auto) if any(t in e[0].lower() for t in targets)]
+    allco = [x.lower() for x in CFG.get("detail_all_companies", [])]
+    if CFG.get("detail_workday_queries"):
+        CFG["workday_queries"] = CFG["detail_workday_queries"]
+    boards = [(k, e) for k, e in board_list(auto) if any(t in e[0].lower() for t in targets + allco)]
     def one(t):
         kind, e = t
         try:
@@ -670,7 +673,10 @@ def detail_audit():
         for j in jobs:
             ok, soft, why = title_decision(j["title"])
             extra = any(x in j["title"].lower() for x in CFG.get("detail_extra_titles", []))
-            if not (ok or extra) or not loc_ok(j["location"]):
+            everything = any(a in j["company"].lower() for a in allco)
+            if not (ok or extra or everything):
+                continue
+            if not everything and not loc_ok(j["location"]):
                 continue
             key = (j["title"].strip().lower(), j["location"].strip().lower())
             if key in seen:
