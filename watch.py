@@ -90,6 +90,8 @@ def age_label(ts, now=None):
 def title_decision(title):
     """returns (ok, soft_flag_or_None, reason)"""
     tl = " " + (title or "").lower() + " "
+    for _p in CFG.get("dealer_ok_title", []):
+        tl = tl.replace(_p, " " + _p.replace("dealer", "dlr") + " ")
     for x in CFG.get("exclude_title_hard", []):
         if x in tl:
             return False, None, f"excluded:{x.strip()}"
@@ -991,6 +993,8 @@ def qualify():
             ok, soft, why = title_decision(j["title"])
             if not ok and "--sales" in sys.argv:
                 tl2 = " " + j["title"].lower() + " "
+                for _p in CFG.get("dealer_ok_title", []):
+                    tl2 = tl2.replace(_p, " " + _p.replace("dealer", "dlr") + " ")
                 hard = any(x in tl2 for x in CFG.get("exclude_title_hard", [])) or any(x in tl2 for x in CFG.get("sales_exclude", []))
                 ok = (not hard) and any(x in tl2 for x in CFG.get("sales_title", []))
             if not ok or not loc_ok(j["location"]):
