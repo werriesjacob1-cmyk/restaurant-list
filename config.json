@@ -1035,312 +1035,1469 @@
  ],
  "probe": [
   {
-   "company": "Handshake",
+   "company": "Mindbody | JW-413",
    "match": [
-    "data partner",
-    "partnership"
+    "account executive"
    ],
    "tries": [
     [
      "greenhouse",
-     "joinhandshake"
-    ],
-    [
-     "greenhouse",
-     "handshake"
-    ]
-   ]
-  },
-  {
-   "company": "Synquery",
-   "match": [
-    "general manager",
-    "growth"
-   ],
-   "tries": [
-    [
-     "ashby",
-     "synquery"
+     "mindbody"
     ],
     [
      "lever",
-     "synquery"
-    ],
-    [
-     "greenhouse",
-     "synquery"
-    ],
-    [
-     "rippling",
-     "synquery"
-    ]
-   ]
-  },
-  {
-   "company": "GroundTruth",
-   "match": [
-    "customer success"
-   ],
-   "tries": [
-    [
-     "greenhouse",
-     "groundtruth"
-    ],
-    [
-     "greenhouse",
-     "groundtruthinc"
-    ],
-    [
-     "lever",
-     "groundtruth"
+     "mindbody"
     ],
     [
      "ashby",
-     "groundtruth"
+     "mindbody"
     ]
    ]
   },
   {
-   "company": "CentralSquare",
+   "company": "Proof | JW-328",
    "match": [
     "account manager"
    ],
    "tries": [
     [
      "greenhouse",
-     "centralsquare"
+     "proof"
     ],
     [
      "lever",
-     "centralsquare"
+     "proof"
     ],
     [
-     "workable",
-     "centralsquare"
-    ],
-    [
-     "workday",
-     "centralsquare",
-     "wd1",
-     "CentralSquare"
-    ],
-    [
-     "workday",
-     "centralsquaretech",
-     "wd1",
-     "CentralSquare"
+     "ashby",
+     "proof"
     ]
    ]
   },
   {
-   "company": "United Rentals",
+   "company": "Cardinal Health | JW-133",
+   "match": [
+    "lab products sales rep"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "cardinalhealth"
+    ],
+    [
+     "lever",
+     "cardinalhealth"
+    ],
+    [
+     "ashby",
+     "cardinalhealth"
+    ],
+    [
+     "greenhouse",
+     "cardinal-health"
+    ],
+    [
+     "lever",
+     "cardinal-health"
+    ]
+   ]
+  },
+  {
+   "company": "Grainger | JW-186",
+   "match": [
+    "account manager"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "grainger"
+    ],
+    [
+     "lever",
+     "grainger"
+    ],
+    [
+     "ashby",
+     "grainger"
+    ]
+   ]
+  },
+  {
+   "company": "Lumber wholesaler | JW-134",
    "match": [
     "inside sales"
    ],
    "tries": [
     [
-     "workday",
-     "ur",
-     "wd5",
-     "UR"
+     "greenhouse",
+     "lumberwholesaler"
     ],
     [
-     "workday",
-     "unitedrentals",
-     "wd5",
-     "UR"
+     "lever",
+     "lumberwholesaler"
     ],
+    [
+     "ashby",
+     "lumberwholesaler"
+    ],
+    [
+     "greenhouse",
+     "lumber-wholesaler"
+    ],
+    [
+     "lever",
+     "lumber-wholesaler"
+    ]
+   ]
+  },
+  {
+   "company": "Jackson Financial | JW-127",
+   "match": [
+    "sales qa analyst"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "jacksonfinancial"
+    ],
+    [
+     "lever",
+     "jacksonfinancial"
+    ],
+    [
+     "ashby",
+     "jacksonfinancial"
+    ],
+    [
+     "greenhouse",
+     "jackson-financial"
+    ],
+    [
+     "lever",
+     "jackson-financial"
+    ]
+   ]
+  },
+  {
+   "company": "United Rentals | JW-309",
+   "match": [
+    "inside sales"
+   ],
+   "tries": [
     [
      "greenhouse",
      "unitedrentals"
-    ]
-   ]
-  },
-  {
-   "company": "Grainger",
-   "match": [
-    "account manager"
-   ],
-   "tries": [
-    [
-     "workday",
-     "grainger",
-     "wd5",
-     "Grainger"
-    ],
-    [
-     "workday",
-     "grainger",
-     "wd5",
-     "Grainger_Careers"
-    ],
-    [
-     "workday",
-     "grainger",
-     "wd1",
-     "Grainger"
-    ]
-   ]
-  },
-  {
-   "company": "PHIL",
-   "match": [
-    "client engagement"
-   ],
-   "tries": [
-    [
-     "ashby",
-     "phil"
     ],
     [
      "lever",
-     "phil"
+     "unitedrentals"
+    ],
+    [
+     "ashby",
+     "unitedrentals"
     ],
     [
      "greenhouse",
-     "phil"
+     "united-rentals"
     ],
     [
-     "rippling",
-     "phil"
-    ],
-    [
-     "workable",
-     "phil"
+     "lever",
+     "united-rentals"
     ]
    ]
   },
   {
-   "company": "Constellation Dealer Group",
+   "company": "Ecotrak | JW-320",
    "match": [
     "customer success"
    ],
    "tries": [
     [
-     "lever",
-     "targetcrm"
+     "greenhouse",
+     "ecotrak"
     ],
     [
-     "greenhouse",
-     "targetcrm"
+     "lever",
+     "ecotrak"
     ],
     [
      "ashby",
-     "targetcrm"
-    ],
-    [
-     "lever",
-     "constellationdealergroup"
-    ],
-    [
-     "greenhouse",
-     "constellationdealergroup"
+     "ecotrak"
     ]
    ]
   },
   {
-   "company": "RevolutionParts",
-   "match": [
-    "customer success"
-   ],
-   "tries": [
-    [
-     "lever",
-     "revolutionparts"
-    ],
-    [
-     "greenhouse",
-     "revolutionparts"
-    ],
-    [
-     "ashby",
-     "revolutionparts"
-    ],
-    [
-     "workable",
-     "revolutionparts"
-    ]
-   ]
-  },
-  {
-   "company": "Proof",
+   "company": "Clearwave | JW-334",
    "match": [
     "account manager"
    ],
    "tries": [
     [
      "greenhouse",
-     "proof"
-    ],
-    [
-     "ashby",
-     "proof"
+     "clearwave"
     ],
     [
      "lever",
-     "proof"
+     "clearwave"
+    ],
+    [
+     "ashby",
+     "clearwave"
     ]
    ]
   },
   {
-   "company": "Amazon Freight",
+   "company": "Brynson | JW-377*",
+   "match": [
+    "client success"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "brynson"
+    ],
+    [
+     "lever",
+     "brynson"
+    ],
+    [
+     "ashby",
+     "brynson"
+    ]
+   ]
+  },
+  {
+   "company": "Compass | JW-378*",
    "match": [
     "customer success"
    ],
    "tries": [
     [
-     "amazon",
-     "Enterprise Customer Success Manager freight",
-     "Nashville"
+     "greenhouse",
+     "compass"
+    ],
+    [
+     "lever",
+     "compass"
+    ],
+    [
+     "ashby",
+     "compass"
     ]
    ]
   },
   {
-   "company": "Skylight",
+   "company": "Handshake | JW-379*",
    "match": [
-    "retail sales"
+    "manager, data partnership"
    ],
    "tries": [
     [
-     "workable",
+     "greenhouse",
+     "handshake"
+    ],
+    [
+     "lever",
+     "handshake"
+    ],
+    [
+     "ashby",
+     "handshake"
+    ]
+   ]
+  },
+  {
+   "company": "Skylight | JW-385*",
+   "match": [
+    "national retail sales coo"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "skylight"
+    ],
+    [
+     "lever",
+     "skylight"
+    ],
+    [
+     "ashby",
      "skylight"
     ]
    ]
   },
   {
-   "company": "Ramsey Solutions",
+   "company": "Ramsey Solutions | JW-386*",
    "match": [
     "partner success"
    ],
    "tries": [
     [
      "greenhouse",
-     "ramsey"
+     "ramseysolutions"
     ],
     [
      "lever",
-     "ramsey"
+     "ramseysolutions"
     ],
     [
-     "workable",
-     "ramsey"
+     "ashby",
+     "ramseysolutions"
+    ],
+    [
+     "greenhouse",
+     "ramsey-solutions"
+    ],
+    [
+     "lever",
+     "ramsey-solutions"
     ]
    ]
   },
   {
-   "company": "Remote.com",
+   "company": "Remote | JW-387*",
    "match": [
-    "associate account",
-    "enablement"
+    "account manager"
    ],
    "tries": [
     [
      "greenhouse",
-     "remotecom"
+     "remote"
+    ],
+    [
+     "lever",
+     "remote"
     ],
     [
      "ashby",
      "remote"
+    ]
+   ]
+  },
+  {
+   "company": "Constellation Dealer Group | JW-388*",
+   "match": [
+    "customer success"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "constellationdealer"
+    ],
+    [
+     "lever",
+     "constellationdealer"
+    ],
+    [
+     "ashby",
+     "constellationdealer"
+    ],
+    [
+     "greenhouse",
+     "constellation-dealer"
+    ],
+    [
+     "lever",
+     "constellation-dealer"
+    ]
+   ]
+  },
+  {
+   "company": "beehiiv | JW-193",
+   "match": [
+    "customer success"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "beehiiv"
+    ],
+    [
+     "lever",
+     "beehiiv"
+    ],
+    [
+     "ashby",
+     "beehiiv"
+    ]
+   ]
+  },
+  {
+   "company": "Bluesight | JW-392",
+   "match": [
+    "customer success"
+   ],
+   "tries": [
+    [
+     "lever",
+     "bluesight"
+    ]
+   ]
+  },
+  {
+   "company": "Sprout Social | JW-399",
+   "match": [
+    "account executive"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "sproutsocial"
+    ],
+    [
+     "lever",
+     "sproutsocial"
+    ],
+    [
+     "ashby",
+     "sproutsocial"
+    ],
+    [
+     "greenhouse",
+     "sprout-social"
+    ],
+    [
+     "lever",
+     "sprout-social"
+    ]
+   ]
+  },
+  {
+   "company": "Headway | JW-400",
+   "match": [
+    "account executive"
+   ],
+   "tries": [
+    [
+     "ashby",
+     "headway"
+    ]
+   ]
+  },
+  {
+   "company": "Customer.io | JW-409",
+   "match": [
+    "account executive"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "customerio"
+    ]
+   ]
+  },
+  {
+   "company": "beehiiv | JW-412",
+   "match": [
+    "account executive"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "beehiiv"
+    ],
+    [
+     "lever",
+     "beehiiv"
+    ],
+    [
+     "ashby",
+     "beehiiv"
+    ]
+   ]
+  },
+  {
+   "company": "Versapay | JW-420",
+   "match": [
+    "revenue operations"
+   ],
+   "tries": [
+    [
+     "lever",
+     "versapay"
+    ]
+   ]
+  },
+  {
+   "company": "SailPoint | JW-421",
+   "match": [
+    "customer success"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "sailpoint"
+    ],
+    [
+     "lever",
+     "sailpoint"
+    ],
+    [
+     "ashby",
+     "sailpoint"
+    ]
+   ]
+  },
+  {
+   "company": "Matador Solutions | JW-422",
+   "match": [
+    "customer success"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "matadorsolutions"
+    ],
+    [
+     "lever",
+     "matadorsolutions"
+    ],
+    [
+     "ashby",
+     "matadorsolutions"
+    ],
+    [
+     "greenhouse",
+     "matador-solutions"
+    ],
+    [
+     "lever",
+     "matador-solutions"
+    ]
+   ]
+  },
+  {
+   "company": "Learning Care Group | JW-423",
+   "match": [
+    "business development"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "learningcare"
+    ],
+    [
+     "lever",
+     "learningcare"
+    ],
+    [
+     "ashby",
+     "learningcare"
+    ],
+    [
+     "greenhouse",
+     "learning-care"
+    ],
+    [
+     "lever",
+     "learning-care"
+    ]
+   ]
+  },
+  {
+   "company": "StackAdapt | JW-424",
+   "match": [
+    "account executive"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "stackadapt"
+    ],
+    [
+     "lever",
+     "stackadapt"
+    ],
+    [
+     "ashby",
+     "stackadapt"
+    ]
+   ]
+  },
+  {
+   "company": "Airwallex | JW-425",
+   "match": [
+    "sales development"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "airwallex"
+    ],
+    [
+     "lever",
+     "airwallex"
+    ],
+    [
+     "ashby",
+     "airwallex"
+    ]
+   ]
+  },
+  {
+   "company": "Boulevard | JW-426",
+   "match": [
+    "sales development"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "boulevard"
+    ],
+    [
+     "lever",
+     "boulevard"
+    ],
+    [
+     "ashby",
+     "boulevard"
+    ]
+   ]
+  },
+  {
+   "company": "Deepgram | JW-427",
+   "match": [
+    "sales development"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "deepgram"
+    ],
+    [
+     "lever",
+     "deepgram"
+    ],
+    [
+     "ashby",
+     "deepgram"
+    ]
+   ]
+  },
+  {
+   "company": "Huntress | JW-428",
+   "match": [
+    "sales development"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "huntress"
+    ],
+    [
+     "lever",
+     "huntress"
+    ],
+    [
+     "ashby",
+     "huntress"
+    ]
+   ]
+  },
+  {
+   "company": "Tekion | JW-429",
+   "match": [
+    "inside sales",
+    "account development"
+   ],
+   "tries": [
+    [
+     "ashby",
+     "tekion"
+    ]
+   ]
+  },
+  {
+   "company": "Virta Health | JW-430",
+   "match": [
+    "sdr, health plans/systems"
+   ],
+   "tries": [
+    [
+     "ashby",
+     "virtahealth"
+    ]
+   ]
+  },
+  {
+   "company": "BILL | JW-431",
+   "match": [
+    "business development"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "bill"
+    ],
+    [
+     "lever",
+     "bill"
+    ],
+    [
+     "ashby",
+     "bill"
+    ]
+   ]
+  },
+  {
+   "company": "Remote | JW-207",
+   "match": [
+    "sales enablement manager"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "remote"
+    ],
+    [
+     "lever",
+     "remote"
+    ],
+    [
+     "ashby",
+     "remote"
+    ]
+   ]
+  },
+  {
+   "company": "Wisdom | JW-248",
+   "match": [
+    "account executive"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "wisdom"
+    ],
+    [
+     "lever",
+     "wisdom"
+    ],
+    [
+     "ashby",
+     "wisdom"
+    ]
+   ]
+  },
+  {
+   "company": "Boulevard | JW-175",
+   "match": [
+    "revenue enablement manage"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "boulevard"
+    ],
+    [
+     "lever",
+     "boulevard"
+    ],
+    [
+     "ashby",
+     "boulevard"
+    ]
+   ]
+  },
+  {
+   "company": "Silvur | JW-141",
+   "match": [
+    "client success"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "silvur"
+    ],
+    [
+     "lever",
+     "silvur"
+    ],
+    [
+     "ashby",
+     "silvur"
+    ]
+   ]
+  },
+  {
+   "company": "ServiceTitan | JW-142",
+   "match": [
+    "csm"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "servicetitan"
+    ],
+    [
+     "lever",
+     "servicetitan"
+    ],
+    [
+     "ashby",
+     "servicetitan"
+    ]
+   ]
+  },
+  {
+   "company": "Odeko | JW-126",
+   "match": [
+    "territory sales associate"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "odeko"
+    ],
+    [
+     "lever",
+     "odeko"
+    ],
+    [
+     "ashby",
+     "odeko"
+    ]
+   ]
+  },
+  {
+   "company": "Semicolon Talent | JW-166",
+   "match": [
+    "client success"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "semicolontalent"
+    ],
+    [
+     "lever",
+     "semicolontalent"
+    ],
+    [
+     "ashby",
+     "semicolontalent"
+    ],
+    [
+     "greenhouse",
+     "semicolon-talent"
+    ],
+    [
+     "lever",
+     "semicolon-talent"
+    ]
+   ]
+  },
+  {
+   "company": "WithMe | JW-180",
+   "match": [
+    "client success"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "withme"
+    ],
+    [
+     "lever",
+     "withme"
+    ],
+    [
+     "ashby",
+     "withme"
+    ]
+   ]
+  },
+  {
+   "company": "CentralSquare Technologies | JW-256",
+   "match": [
+    "account manager"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "centralsquare"
+    ],
+    [
+     "lever",
+     "centralsquare"
+    ],
+    [
+     "ashby",
+     "centralsquare"
+    ]
+   ]
+  },
+  {
+   "company": "Sift | JW-261",
+   "match": [
+    "customer success"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "sift"
+    ],
+    [
+     "lever",
+     "sift"
+    ],
+    [
+     "ashby",
+     "sift"
+    ]
+   ]
+  },
+  {
+   "company": "Benepass | JW-283",
+   "match": [
+    "partner success"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "benepass"
+    ],
+    [
+     "lever",
+     "benepass"
+    ],
+    [
+     "ashby",
+     "benepass"
+    ]
+   ]
+  },
+  {
+   "company": "Polimorphic | JW-287",
+   "match": [
+    "account manager"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "polimorphic"
+    ],
+    [
+     "lever",
+     "polimorphic"
+    ],
+    [
+     "ashby",
+     "polimorphic"
+    ]
+   ]
+  },
+  {
+   "company": "Toptal | JW-288",
+   "match": [
+    "account manager"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "toptal"
+    ],
+    [
+     "lever",
+     "toptal"
+    ],
+    [
+     "ashby",
+     "toptal"
+    ]
+   ]
+  },
+  {
+   "company": "Storesight | JW-289",
+   "match": [
+    "customer success"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "storesight"
+    ],
+    [
+     "lever",
+     "storesight"
+    ],
+    [
+     "ashby",
+     "storesight"
+    ]
+   ]
+  },
+  {
+   "company": "Yuno | JW-290",
+   "match": [
+    "account manager"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "yuno"
+    ],
+    [
+     "lever",
+     "yuno"
+    ],
+    [
+     "ashby",
+     "yuno"
+    ]
+   ]
+  },
+  {
+   "company": "Switchboard | JW-298",
+   "match": [
+    "customer success",
+    "client success"
+   ],
+   "tries": [
+    [
+     "ashby",
+     "switchboard"
+    ]
+   ]
+  },
+  {
+   "company": "Zippy | JW-299",
+   "match": [
+    "account manager",
+    "inside sales"
+   ],
+   "tries": [
+    [
+     "ashby",
+     "zippymh"
+    ]
+   ]
+  },
+  {
+   "company": "PeopleGrove | JW-300",
+   "match": [
+    "client success"
+   ],
+   "tries": [
+    [
+     "lever",
+     "peoplegrove"
+    ]
+   ]
+  },
+  {
+   "company": "TrueML | JW-301",
+   "match": [
+    "client success"
+   ],
+   "tries": [
+    [
+     "lever",
+     "trueml"
+    ]
+   ]
+  },
+  {
+   "company": "Ethena | JW-302",
+   "match": [
+    "account manager"
+   ],
+   "tries": [
+    [
+     "lever",
+     "ethena"
+    ]
+   ]
+  },
+  {
+   "company": "Automatiq | JW-303",
+   "match": [
+    "account manager"
+   ],
+   "tries": [
+    [
+     "lever",
+     "automatiq"
+    ]
+   ]
+  },
+  {
+   "company": "ZIRO | JW-304",
+   "match": [
+    "channel partner manager"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "ziro"
+    ],
+    [
+     "lever",
+     "ziro"
+    ],
+    [
+     "ashby",
+     "ziro"
+    ]
+   ]
+  },
+  {
+   "company": "Just Appraised | JW-305",
+   "match": [
+    "customer success"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "justappraised"
+    ],
+    [
+     "lever",
+     "justappraised"
+    ],
+    [
+     "ashby",
+     "justappraised"
+    ],
+    [
+     "greenhouse",
+     "just-appraised"
+    ],
+    [
+     "lever",
+     "just-appraised"
+    ]
+   ]
+  },
+  {
+   "company": "White Cap | JW-311",
+   "match": [
+    "account manager"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "whitecap"
+    ],
+    [
+     "lever",
+     "whitecap"
+    ],
+    [
+     "ashby",
+     "whitecap"
+    ],
+    [
+     "greenhouse",
+     "white-cap"
+    ],
+    [
+     "lever",
+     "white-cap"
+    ]
+   ]
+  },
+  {
+   "company": "Tive | JW-324",
+   "match": [
+    "account manager"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "tive"
+    ],
+    [
+     "lever",
+     "tive"
+    ],
+    [
+     "ashby",
+     "tive"
+    ]
+   ]
+  },
+  {
+   "company": "Rocket Clicks | JW-325",
+   "match": [
+    "account manager"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "rocketclicks"
+    ],
+    [
+     "lever",
+     "rocketclicks"
+    ],
+    [
+     "ashby",
+     "rocketclicks"
+    ],
+    [
+     "greenhouse",
+     "rocket-clicks"
+    ],
+    [
+     "lever",
+     "rocket-clicks"
+    ]
+   ]
+  },
+  {
+   "company": "Pie Insurance | JW-326",
+   "match": [
+    "account manager"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "pieinsurance"
+    ],
+    [
+     "lever",
+     "pieinsurance"
+    ],
+    [
+     "ashby",
+     "pieinsurance"
+    ],
+    [
+     "greenhouse",
+     "pie-insurance"
+    ],
+    [
+     "lever",
+     "pie-insurance"
+    ]
+   ]
+  },
+  {
+   "company": "ALTOUR | JW-327",
+   "match": [
+    "account management"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "altour"
+    ],
+    [
+     "lever",
+     "altour"
+    ],
+    [
+     "ashby",
+     "altour"
+    ]
+   ]
+  },
+  {
+   "company": "Ellevation Education | JW-348",
+   "match": [
+    "partner success"
+   ],
+   "tries": [
+    [
+     "lever",
+     "ellevationeducation"
+    ]
+   ]
+  },
+  {
+   "company": "Slide | JW-351",
+   "match": [
+    "account manager"
+   ],
+   "tries": [
+    [
+     "ashby",
+     "Slide"
+    ]
+   ]
+  },
+  {
+   "company": "Hospitable | JW-352",
+   "match": [
+    "customer success"
+   ],
+   "tries": [
+    [
+     "workable",
+     "hospitable"
+    ]
+   ]
+  },
+  {
+   "company": "CorVel | JW-353",
+   "match": [
+    "account manager"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "corvel"
+    ],
+    [
+     "lever",
+     "corvel"
+    ],
+    [
+     "ashby",
+     "corvel"
+    ]
+   ]
+  },
+  {
+   "company": "Leadership Connect | JW-354",
+   "match": [
+    "renewal"
+   ],
+   "tries": [
+    [
+     "lever",
+     "leadershipconnect"
+    ]
+   ]
+  },
+  {
+   "company": "BlackCloak | JW-355",
+   "match": [
+    "account manager"
+   ],
+   "tries": [
+    [
+     "lever",
+     "BlackCloak"
+    ]
+   ]
+  },
+  {
+   "company": "OuterSignal | JW-356",
+   "match": [
+    "customer success"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "outersignal"
+    ],
+    [
+     "lever",
+     "outersignal"
+    ],
+    [
+     "ashby",
+     "outersignal"
+    ]
+   ]
+  },
+  {
+   "company": "Zippy | JW-366",
+   "match": [
+    "account manager"
+   ],
+   "tries": [
+    [
+     "ashby",
+     "zippymh"
+    ]
+   ]
+  },
+  {
+   "company": "Flex | JW-368",
+   "match": [
+    "account executive"
+   ],
+   "tries": [
+    [
+     "lever",
+     "Flex"
+    ]
+   ]
+  },
+  {
+   "company": "Pilot.com | JW-369*",
+   "match": [
+    "customer success"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "pilotcom"
+    ],
+    [
+     "lever",
+     "pilotcom"
+    ],
+    [
+     "ashby",
+     "pilotcom"
+    ],
+    [
+     "greenhouse",
+     "pilot-com"
+    ],
+    [
+     "lever",
+     "pilot-com"
+    ]
+   ]
+  },
+  {
+   "company": "AXS | JW-370*",
+   "match": [
+    "account manager"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "axs"
+    ],
+    [
+     "lever",
+     "axs"
+    ],
+    [
+     "ashby",
+     "axs"
+    ]
+   ]
+  },
+  {
+   "company": "WorkWave | JW-371*",
+   "match": [
+    "customer success"
+   ],
+   "tries": [
+    [
+     "lever",
+     "workwave"
+    ]
+   ]
+  },
+  {
+   "company": "Fluent | JW-397*",
+   "match": [
+    "account manager"
+   ],
+   "tries": [
+    [
+     "workable",
+     "fluent"
+    ]
+   ]
+  },
+  {
+   "company": "VergeSense | JW-398*",
+   "match": [
+    "account executive"
+   ],
+   "tries": [
+    [
+     "lever",
+     "vergesense"
     ]
    ]
   }
@@ -1717,5 +2874,317 @@
   "dealer experience",
   "dealer services",
   "dealer support manager"
+ ],
+ "probe_old": [
+  {
+   "company": "Handshake",
+   "match": [
+    "data partner",
+    "partnership"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "joinhandshake"
+    ],
+    [
+     "greenhouse",
+     "handshake"
+    ]
+   ]
+  },
+  {
+   "company": "Synquery",
+   "match": [
+    "general manager",
+    "growth"
+   ],
+   "tries": [
+    [
+     "ashby",
+     "synquery"
+    ],
+    [
+     "lever",
+     "synquery"
+    ],
+    [
+     "greenhouse",
+     "synquery"
+    ],
+    [
+     "rippling",
+     "synquery"
+    ]
+   ]
+  },
+  {
+   "company": "GroundTruth",
+   "match": [
+    "customer success"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "groundtruth"
+    ],
+    [
+     "greenhouse",
+     "groundtruthinc"
+    ],
+    [
+     "lever",
+     "groundtruth"
+    ],
+    [
+     "ashby",
+     "groundtruth"
+    ]
+   ]
+  },
+  {
+   "company": "CentralSquare",
+   "match": [
+    "account manager"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "centralsquare"
+    ],
+    [
+     "lever",
+     "centralsquare"
+    ],
+    [
+     "workable",
+     "centralsquare"
+    ],
+    [
+     "workday",
+     "centralsquare",
+     "wd1",
+     "CentralSquare"
+    ],
+    [
+     "workday",
+     "centralsquaretech",
+     "wd1",
+     "CentralSquare"
+    ]
+   ]
+  },
+  {
+   "company": "United Rentals",
+   "match": [
+    "inside sales"
+   ],
+   "tries": [
+    [
+     "workday",
+     "ur",
+     "wd5",
+     "UR"
+    ],
+    [
+     "workday",
+     "unitedrentals",
+     "wd5",
+     "UR"
+    ],
+    [
+     "greenhouse",
+     "unitedrentals"
+    ]
+   ]
+  },
+  {
+   "company": "Grainger",
+   "match": [
+    "account manager"
+   ],
+   "tries": [
+    [
+     "workday",
+     "grainger",
+     "wd5",
+     "Grainger"
+    ],
+    [
+     "workday",
+     "grainger",
+     "wd5",
+     "Grainger_Careers"
+    ],
+    [
+     "workday",
+     "grainger",
+     "wd1",
+     "Grainger"
+    ]
+   ]
+  },
+  {
+   "company": "PHIL",
+   "match": [
+    "client engagement"
+   ],
+   "tries": [
+    [
+     "ashby",
+     "phil"
+    ],
+    [
+     "lever",
+     "phil"
+    ],
+    [
+     "greenhouse",
+     "phil"
+    ],
+    [
+     "rippling",
+     "phil"
+    ],
+    [
+     "workable",
+     "phil"
+    ]
+   ]
+  },
+  {
+   "company": "Constellation Dealer Group",
+   "match": [
+    "customer success"
+   ],
+   "tries": [
+    [
+     "lever",
+     "targetcrm"
+    ],
+    [
+     "greenhouse",
+     "targetcrm"
+    ],
+    [
+     "ashby",
+     "targetcrm"
+    ],
+    [
+     "lever",
+     "constellationdealergroup"
+    ],
+    [
+     "greenhouse",
+     "constellationdealergroup"
+    ]
+   ]
+  },
+  {
+   "company": "RevolutionParts",
+   "match": [
+    "customer success"
+   ],
+   "tries": [
+    [
+     "lever",
+     "revolutionparts"
+    ],
+    [
+     "greenhouse",
+     "revolutionparts"
+    ],
+    [
+     "ashby",
+     "revolutionparts"
+    ],
+    [
+     "workable",
+     "revolutionparts"
+    ]
+   ]
+  },
+  {
+   "company": "Proof",
+   "match": [
+    "account manager"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "proof"
+    ],
+    [
+     "ashby",
+     "proof"
+    ],
+    [
+     "lever",
+     "proof"
+    ]
+   ]
+  },
+  {
+   "company": "Amazon Freight",
+   "match": [
+    "customer success"
+   ],
+   "tries": [
+    [
+     "amazon",
+     "Enterprise Customer Success Manager freight",
+     "Nashville"
+    ]
+   ]
+  },
+  {
+   "company": "Skylight",
+   "match": [
+    "retail sales"
+   ],
+   "tries": [
+    [
+     "workable",
+     "skylight"
+    ]
+   ]
+  },
+  {
+   "company": "Ramsey Solutions",
+   "match": [
+    "partner success"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "ramsey"
+    ],
+    [
+     "lever",
+     "ramsey"
+    ],
+    [
+     "workable",
+     "ramsey"
+    ]
+   ]
+  },
+  {
+   "company": "Remote.com",
+   "match": [
+    "associate account",
+    "enablement"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "remotecom"
+    ],
+    [
+     "ashby",
+     "remote"
+    ]
+   ]
+  }
  ]
 }
