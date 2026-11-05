@@ -807,9 +807,9 @@ def qualify_job(j, txt, skip):
     m = re.search(r"(\d{1,2})\s?%[^.]{0,40}travel|travel[^.]{0,40}?(\d{1,2})\s?%", t, re.I)
     if m:
         pct = int(m.group(1) or m.group(2))
-        if pct > 25:
+        if pct > 40:
             return f"REJ:travel {pct}%", []
-        if pct >= 15:
+        if pct >= 25:
             soft.append(f"travel {pct}%")
     if re.search(r"bachelor'?s?[^.]{0,30}(required|needed)|requires? a bachelor|degree is required", t, re.I) and not re.search(r"or equivalent|equivalent (?:work )?experience", t, re.I):
         return "REJ:degree required", []
