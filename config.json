@@ -630,6 +630,7 @@
   "21b480da0f89",
   "222f930b8752",
   "2505ad8617be",
+  "27159539fb46",
   "2868ca774194",
   "2a4f9141b30c",
   "2a5e1ea1dcfe",
@@ -640,6 +641,7 @@
   "3297cd6339ef",
   "337b8d2c1e13",
   "34b7a4cccd05",
+  "40c57bb53c07",
   "469be0d71cac",
   "46f60d7b1920",
   "4afbf987bce1",
@@ -665,11 +667,13 @@
   "810500fcb568",
   "82fb5676971c",
   "8a469dfde3e2",
+  "934a426989f7",
   "9c3879fc8c41",
   "9c848c95d41e",
   "9dadc9da467b",
   "a1bb216b2bbb",
   "a1f7f0fab9e5",
+  "a60ec1cf58f4",
   "a89821a6490f",
   "a8a5343533ba",
   "ad6002c24071",
@@ -1265,12 +1269,7 @@
    ]
   }
  ],
- "qualify_show": [
-  "Airtable",
-  "Toast",
-  "Expensify",
-  "Affirm"
- ],
+ "qualify_show": [],
  "sales_title": [
   "inside sales",
   "sales representative",
