@@ -764,6 +764,8 @@ def qualify_job(j, txt, skip):
     yrs = years_required(txt)
     if yrs >= 6:
         return f"REJ:asks {yrs}+ yrs", []
+    if re.search(r"(lead|manage|coach|develop|supervise)\w*,? (and (coach|develop|manage) )?(a |the |our )?(team|group) of \d+|direct reports|(experience|track record) (of )?(leading|managing) (and coaching )?(a )?(team|sellers|reps|people)|front[- ]line (sales )?(leader|leadership|manager)|run weekly 1:1s|people manager", txt or "", re.I):
+        return "REJ:people-management role", []
     flags, soft = [], []
     if yrs:
         flags.append(f"asks {yrs}+ yrs")
