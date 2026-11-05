@@ -769,6 +769,18 @@ def qualify_job(j, txt, skip):
         flags.append(f"asks {yrs}+ yrs")
     pay = j.get("pay") or ""
     rng = find_pay(pay if isinstance(pay, str) else "") or find_pay(txt)
+    allpay = [find_pay(pay if isinstance(pay, str) else "")]
+    for m in PAY_RE.finditer(txt or ""):
+        lo2, hi2 = money(m.group(1), m.group(2)), money(m.group(3), m.group(4) or m.group(2))
+        if 30000 <= lo2 <= hi2 <= 400000:
+            allpay.append((lo2, hi2))
+    for m in OTE_RE.finditer(txt or ""):
+        v = float(m.group(1).replace(",", ""))
+        if 30000 <= v <= 400000:
+            allpay.append((v, v))
+    allpay = [x for x in allpay if x]
+    if allpay:
+        rng = (min(x[0] for x in allpay), max(x[1] for x in allpay))
     if rng:
         lo, hi = rng
         if hi < CFG.get("income_floor", 75000):
