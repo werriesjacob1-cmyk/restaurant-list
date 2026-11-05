@@ -248,6 +248,10 @@ def fetch_workday(name, tenant, wd, site):
                 break
     return jobs
 
+def _workable_text(slug, sc):
+    d = get(f"https://apply.workable.com/api/v2/accounts/{slug}/jobs/{sc}")
+    return strip_html(" ".join(str(d.get(k) or "") for k in ("description", "requirements", "benefits")))
+
 def fetch_workable(name, slug):
     try:
         d = get(f"https://apply.workable.com/api/v3/accounts/{slug}/jobs",
@@ -255,7 +259,8 @@ def fetch_workable(name, slug):
         res = d.get("results", [])
         return [_job(id=j["shortcode"], company=name, title=j.get("title", ""),
             location=((j.get("location") or {}).get("city", "") or "") + (" (Remote)" if j.get("remote") else ""),
-            url=f"https://apply.workable.com/{slug}/j/{j['shortcode']}/", posted=parse_ts(j.get("published"))) for j in res]
+            url=f"https://apply.workable.com/{slug}/j/{j['shortcode']}/", posted=parse_ts(j.get("published")),
+            detail=(lambda sl=slug, sc=j["shortcode"]: _workable_text(sl, sc))) for j in res]
     except Exception:
         d = get(f"https://apply.workable.com/api/v1/widget/accounts/{slug}?details=true")
         return [_job(id=j.get("shortcode") or j.get("id"), company=name, title=j.get("title", ""),
@@ -717,7 +722,7 @@ def years_required(text):
     best = 0
     for sent in re.split(r"(?<=[.!?\n])\s+|\u2022|\n|;", text or ""):
         sl = sent.lower()
-        if "experience" not in sl and "background" not in sl and "years in" not in sl:
+        if "year" not in sl:
             continue
         if re.search(r"prefer|ideal|bonus|nice to have|a plus|asset|hope you have|desired", sl):
             continue
