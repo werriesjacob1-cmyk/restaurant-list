@@ -759,10 +759,10 @@ def qualify_job(j, txt, skip):
             return "REJ:onboarding/enablement/support title", []
     if re.search(r"\b(sr\.?|senior|principal|lead|head|director|vp|manager ii|manager iii|enterprise)\b", tl):
         yr = years_required(txt)
-        if yr >= 5:
+        if yr >= 6:
             return f"REJ:senior ({yr}+ yrs)", []
     yrs = years_required(txt)
-    if yrs >= 5:
+    if yrs >= 6:
         return f"REJ:asks {yrs}+ yrs", []
     flags, soft = [], []
     if yrs:
@@ -785,7 +785,7 @@ def qualify_job(j, txt, skip):
         lo, hi = rng
         if hi < CFG.get("income_floor", 75000):
             return f"REJ:total pay ${int(hi/1000)}K under $75K", []
-        flags.append(f"${int(lo/1000)}-{int(hi/1000)}K")
+        flags.append(f"${int(lo/1000)}-{int(hi/1000)}K" + (" (meets $7K take-home goal)" if hi >= 108000 else ""))
         if re.search(r"\bOTE\b|on[- ]target earnings|commission|variable", txt, re.I):
             soft.append("includes commission/OTE")
     nopay = rng is None
@@ -812,7 +812,7 @@ def qualify_job(j, txt, skip):
         if pct >= 25:
             soft.append(f"travel {pct}%")
     if re.search(r"bachelor'?s?[^.]{0,30}(required|needed)|requires? a bachelor|degree is required", t, re.I) and not re.search(r"or equivalent|equivalent (?:work )?experience", t, re.I):
-        return "REJ:degree required", []
+        soft.append("DEGREE required (check wording)")
     if re.search(r"\bdealer(ship)?s?\b", t, re.I) and re.search(r"(sales consultant|dealership employee|work(?:ing)? at a dealership)", t, re.I):
         return "REJ:dealership job", []
     req_sents = " ".join(s for s in re.split(r"(?<=[.!?\n])\s+|\n", t) if re.search(r"\d\s*\+?\s*years|required|must have|requirements", s, re.I) and not re.search(r"prefer|ideal", s, re.I))
@@ -827,7 +827,7 @@ def qualify_job(j, txt, skip):
         soft.append("posting over 120 days old")
     if nopay:
         return "NOPAY", flags + soft
-    hard_soft = [x for x in soft if x.startswith(("specialty", "WEEKEND", "BASE SALARY", "cut-throat") + (() if sales_mode else ("outbound",)))]
+    hard_soft = [x for x in soft if x.startswith(("specialty", "WEEKEND", "BASE SALARY", "cut-throat", "DEGREE") + (() if sales_mode else ("outbound",)))]
     return ("NEAR" if hard_soft else "PASS"), flags + soft
 
 

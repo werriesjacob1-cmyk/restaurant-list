@@ -1271,7 +1271,6 @@
   "sales associate",
   "client executive",
   "sales consultant",
-  "sales manager",
   "territory"
  ],
  "sales_exclude": [
@@ -1293,7 +1292,14 @@
   "door",
   "canvass",
   "sales engineer",
-  "solutions engineer"
+  "solutions engineer",
+  "sales manager",
+  "team lead",
+  "supervisor",
+  "regional manager",
+  "manager, sales",
+  "roofing",
+  "hvac"
  ],
  "widen_queries": [
   "customer success manager",
