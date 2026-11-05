@@ -6,19 +6,19 @@ on:
   workflow_dispatch:
     inputs:
       selftest:
-        description: "Send a test notification only"
+        description: "1. TEST ALERT: send one test notification to my phone"
         type: boolean
         default: false
       detail:
-        description: "Read full postings for companies in detail_companies (no alerts, no state)"
+        description: "2. READ FULL POSTINGS: pay, travel, schedule for my watch list (no alerts)"
         type: boolean
         default: false
       probe:
-        description: "Try candidate boards for unread companies (no alerts, no state)"
+        description: "3. FIND BOARDS: look up job boards for companies the repo cannot read (no alerts)"
         type: boolean
         default: false
       audit:
-        description: "Coverage audit only (no alerts, no state)"
+        description: "4. COVERAGE CHECK: what the repo matches and skips (no alerts)"
         type: boolean
         default: false
 concurrency:
