@@ -1,5 +1,5 @@
 {
- "pay_floor": 60000,
+ "pay_floor": 55000,
  "greenhouse": [
   [
    "Built Technologies",
@@ -819,7 +819,11 @@
   "customer success associate",
   "onboarding associate",
   "customer onboarding specialist",
-  "inside sales"
+  "inside sales",
+  "sales development",
+  "business development rep",
+  "sdr",
+  "bdr"
  ],
  "exclude_title_hard": [
   "engineer",
@@ -839,10 +843,6 @@
   "accountant",
   "marketing",
   "product manager",
-  "sales development",
-  "business development rep",
-  "sdr",
-  "bdr",
   "legal",
   "counsel",
   "controller",
@@ -860,7 +860,14 @@
   "tax ",
   "audit",
   "dealership",
-  "dealer "
+  "dealer ",
+  "sales development manager",
+  "bdr manager",
+  "sdr manager",
+  "sales development lead",
+  "sdr lead",
+  "bdr lead",
+  "head of sales development"
  ],
  "soft_title": [
   "senior",
@@ -1350,7 +1357,12 @@
   "sales associate",
   "client executive",
   "sales consultant",
-  "territory"
+  "territory",
+  "sales development representative",
+  "business development representative",
+  "sdr",
+  "bdr",
+  "sales development rep"
  ],
  "sales_exclude": [
   "outside sales",
@@ -1427,7 +1439,11 @@
   "smb account executive",
   "onboarding specialist",
   "implementation specialist",
-  "associate account manager"
+  "associate account manager",
+  "sales development representative",
+  "SDR",
+  "BDR",
+  "inbound sales development representative"
  ],
  "widen_companies": [
   "CarGurus",
