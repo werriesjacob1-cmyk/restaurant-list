@@ -708,7 +708,17 @@
   "inside account",
   "account executive",
   "partner manager",
-  "account director"
+  "account director",
+  "implementation specialist",
+  "implementation manager",
+  "implementation consultant",
+  "implementation coordinator",
+  "onboarding specialist",
+  "onboarding manager",
+  "onboarding coordinator",
+  "customer onboarding",
+  "client partner",
+  "customer engagement"
  ],
  "exclude_title_hard": [
   "engineer",
@@ -747,7 +757,9 @@
   "chief",
   "payments",
   "tax ",
-  "audit"
+  "audit",
+  "dealership",
+  "dealer "
  ],
  "soft_title": [
   "senior",
@@ -828,5 +840,24 @@
   "client success manager",
   "account coordinator",
   "associate customer success"
+ ],
+ "local_location": [
+  "nashville",
+  "tennessee",
+  ", tn",
+  "franklin, tn",
+  "brentwood",
+  "hendersonville",
+  "goodlettsville",
+  "mt. juliet",
+  "mount juliet",
+  "gallatin",
+  "madison, tn",
+  "smyrna",
+  "murfreesboro",
+  "lebanon, tn",
+  "antioch",
+  "hermitage",
+  "donelson"
  ]
 }

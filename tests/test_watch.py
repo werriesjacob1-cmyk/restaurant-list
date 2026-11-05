@@ -120,5 +120,12 @@ class T(unittest.TestCase):
         watch.run(now=t13)
         self.assertTrue(any(p["title"] == "Daily check-in" for p in self.net.sent))
 
+class LocationRules(unittest.TestCase):
+    def test_location_rules(self):
+        for ok in ["Nashville","Remote","Remote, US","United States (Remote)","United States","Remote - TN","Franklin, TN (Hybrid Position)","Americas Remote"]:
+            self.assertTrue(watch.loc_ok(ok), ok)
+        for bad in ["Austin, Texas, United States","Lincoln, NE, United States","Remote - TX","Remote-USA-IL","California (Remote)","Atlanta (Remote)","Toronto, Canada (Remote)","London, United Kingdom"]:
+            self.assertFalse(watch.loc_ok(bad), bad)
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)

@@ -100,16 +100,40 @@ def title_decision(title):
             return True, x.strip(), ""
     return True, None, ""
 
+STATE_NAMES = ("alabama alaska arizona arkansas california colorado connecticut delaware florida georgia hawaii idaho "
+               "illinois indiana iowa kansas kentucky louisiana maine maryland massachusetts michigan minnesota mississippi "
+               "missouri montana nebraska nevada new hampshire new jersey new mexico new york north carolina north dakota ohio "
+               "oklahoma oregon pennsylvania rhode island south carolina south dakota texas utah vermont virginia washington "
+               "wisconsin wyoming").split()
+STATE_NAME_RE = re.compile(r"\b(alabama|alaska|arizona|arkansas|california|colorado|connecticut|delaware|florida|georgia|hawaii|idaho|"
+    r"illinois|indiana|iowa|kansas|kentucky|louisiana|maine|maryland|massachusetts|michigan|minnesota|mississippi|missouri|montana|"
+    r"nebraska|nevada|new hampshire|new jersey|new mexico|new york|north carolina|north dakota|ohio|oklahoma|oregon|pennsylvania|"
+    r"rhode island|south carolina|south dakota|texas|utah|vermont|virginia|virgina|washington|wisconsin|wyoming)\b")
+STATE_ABBR_RE = re.compile(r"(?<![A-Za-z])(AL|AK|AZ|AR|CA|CO|CT|DE|FL|GA|HI|ID|IL|IN|IA|KS|KY|LA|ME|MD|MA|MI|MN|MS|MO|MT|NE|NV|NH|NJ|NM|NY|NC|ND|OH|OK|PA|RI|SC|SD|TX|UT|VT|VA|WA|WV|WI|WY|DC)(?![A-Za-z])")
+GENERIC = set("us usa united states of america north americas anywhere within time zone eastern central mountain pacific only based "
+              "worker work position open the or and from home wfh virtual".split())
+
 def loc_ok(loc):
-    ll = (loc or "").lower()
+    """Pass: blank, Nashville-area, nationwide US remote. Reject: on-site posts in other cities,
+    remote posts tied to another state/city, and foreign locations."""
+    raw = loc or ""
+    ll = raw.lower()
     if not ll.strip():
         return True
-    inc = CFG.get("include_location", [])
-    if not any(x in ll for x in inc):
+    if any(x in ll for x in CFG.get("local_location", [])) or re.search(r"(?<![a-z])tn(?![a-z])", ll):
+        return True
+    if any(re.search(r"\b" + re.escape(c) + r"\b", ll) for c in CFG.get("foreign", [])) and not re.search(r"united states|\busa\b|\bu\.s\.", ll):
         return False
-    us = re.search(r"united states|usa|\bus\b|u\.s\.|nashville|tennessee|, tn\b|north america", ll)
-    foreign = any(re.search(r"\b" + re.escape(c) + r"\b", ll) for c in CFG.get("foreign", []))
-    return bool(us) or not foreign
+    if STATE_NAME_RE.search(ll) or STATE_ABBR_RE.search(raw):
+        return False
+    if re.search(r"united states|\busa\b|\bu\.s\.|\bus\b", ll):
+        for c in CFG.get("foreign", []):
+            ll = re.sub(r"\b" + re.escape(c) + r"\b", " ", ll)
+    rest = re.sub(r"remote|[^a-z ]", " ", ll)
+    toks = [t for t in rest.split() if t]
+    if toks and not all(t in GENERIC for t in toks):
+        return False
+    return bool(re.search(r"remote|anywhere|work from home|wfh|virtual|united states|\busa\b|\bus\b|u\.s\.|north america|americas", ll))
 
 def money(tok, k):
     n = float(tok.replace(",", ""))
