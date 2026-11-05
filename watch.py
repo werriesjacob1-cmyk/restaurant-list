@@ -749,6 +749,52 @@ def years_required(text):
         best = max(best, lo)
     return best
 
+
+SENIOR_TITLE_RE = re.compile(r"\b(sr\.?|senior|principal|strategic|major|enterprise|lead|head|staff|director|global)\b", re.I)
+EXEC_RE = re.compile(r"executive business review|\bebrs?\b|c-level|multi-stakeholder|without (?:manager )?(?:oversight|involvement|support)|minimal (?:manager )?oversight|strategic account plan|negotiat\w+ (?:large|complex)|complex (?:mid-market|enterprise|accounts)|\$\d+[mk]\+? (?:book|portfolio|pipeline)|\bnrr\b|\barr targets?", re.I)
+
+def years_hi(text):
+    """Largest upper bound of any 'N-M years' range in requirement-looking text."""
+    best = 0
+    for m in re.finditer(r"(\d{1,2})\s*\+?\s*(?:to|-|\u2013|\u2014)\s*(\d{1,2})\s*\+?\s*years?", text or "", re.I):
+        near = (text[max(0, m.start() - 90):m.start()] + text[m.end():m.end() + 70]).lower()
+        if re.search(r"prefer|ideal|bonus|nice to have|a plus|desired", near):
+            continue
+        best = max(best, int(m.group(2)))
+    return best
+
+def fit_score(title, txt, lo_yrs, soft, loc=""):
+    """How realistic is this role for Jacob (5 yrs car sales, no degree, no SaaS/Salesforce/CS title)?
+    Returns (score, label, reasons). Lower is better. Label: REALISTIC, STRETCH, LONGSHOT."""
+    sc, why = 0, []
+    t = txt or ""
+    if lo_yrs >= 4:
+        sc += 2; why.append(f"{lo_yrs}+ yrs")
+    elif lo_yrs == 3:
+        sc += 1; why.append("3+ yrs")
+    hi = years_hi(t)
+    if hi >= 7:
+        sc += 2; why.append(f"range up to {hi} yrs")
+    if SENIOR_TITLE_RE.search(title or ""):
+        sc += 2; why.append("senior title")
+    for key, pts, name in (("DEGREE", 1, "degree wording"), ("SaaS asked", 1, "SaaS asked"), ("CRM tool named", 1, "Salesforce/CRM named"),
+                           ("specialty", 1, "industry specialty"), ("WEEKEND", 1, "weekend"), ("cut-throat", 1, "cut-throat")):
+        if any(x.startswith(key) for x in soft):
+            sc += pts; why.append(name)
+    ex = len(EXEC_RE.findall(t))
+    if ex:
+        sc += min(2, ex); why.append("exec-level duties")
+    if re.search(r"\b(associate|junior|jr\.?|entry|level i|specialist|representative)\b|\bI$", title or "", re.I):
+        sc -= 1; why.append("junior title")
+    if re.search(r"\b(1\+? years?|0-2 years|1-2 years|no experience (?:required|necessary)|entry[- ]level)\b", t, re.I):
+        sc -= 1; why.append("1 yr asked")
+    if re.search(r"or equivalent|equivalent (?:work )?experience", t, re.I):
+        sc -= 1; why.append("equivalent exp OK")
+    if re.search(r"nashville", loc or "", re.I):
+        sc -= 1; why.append("Nashville")
+    label = "REALISTIC" if sc <= 1 else ("STRETCH" if sc <= 3 else "LONGSHOT")
+    return sc, label, why
+
 def qualify_job(j, txt, skip):
     """Return (verdict, flags). Verdicts: PASS, NEAR, NOPAY, REJ:<reason>."""
     tl = " " + j["title"].lower() + " "
@@ -828,8 +874,11 @@ def qualify_job(j, txt, skip):
     if j.get("posted") and (time.time() - j["posted"]) / 86400 > 120:
         soft.append("posting over 120 days old")
     if nopay:
-        return "NOPAY", flags + soft
+        sc, lab, why = fit_score(j["title"], txt, yrs, soft, j.get("location", ""))
+        return "NOPAY", [f"FIT:{lab}({sc}: {', '.join(why) or 'clean'})"] + flags + soft
     hard_soft = [x for x in soft if x.startswith(("specialty", "WEEKEND", "BASE SALARY", "cut-throat", "DEGREE") + (() if sales_mode else ("outbound",)))]
+    sc, lab, why = fit_score(j["title"], txt, yrs, soft, j.get("location", ""))
+    flags = [f"FIT:{lab}({sc}: {', '.join(why) or 'clean'})"] + flags
     return ("NEAR" if hard_soft else "PASS"), flags + soft
 
 
@@ -979,10 +1028,13 @@ def qualify():
             continue
         buckets[v].append((j, txt, fl))
     for v in ("PASS", "NEAR", "NOPAY"):
-        for j, txt, fl in sorted(buckets[v], key=lambda x: x[0]["company"].lower()):
+        def fitkey(x):
+            m = re.search(r"FIT:\w+\((-?\d+)", " ".join(x[2]))
+            return (int(m.group(1)) if m else 9, x[0]["company"].lower())
+        for j, txt, fl in sorted(buckets[v], key=fitkey):
             posted = age_label(j["posted"]) if j.get("posted") else "posted date n/a"
             print(f"QUAL|{v}|{j['company']}|{j['title']}|{j['location'][:40]}|{posted}|{'; '.join(fl) or 'no flags'}|{j.get('url','')}")
-            if any(x.lower() in j["company"].lower() for x in CFG.get("qualify_show", [])):
+            if any(x.lower() in j["company"].lower() for x in CFG.get("qualify_show", [])) or (v in ("PASS", "NEAR") and any(f.startswith("FIT:REALISTIC") for f in fl)):
                 print(f"QUALFULL|{j['company']}|{j['title']}|" + re.sub(r"\s+", " ", txt)[:9000])
             if v == "PASS":
                 print(f"QUALTXT|{j['company']}|{j['title']}|" + re.sub(r"\s+", " ", txt)[:1800])
