@@ -127,6 +127,10 @@
   [
    "Change Healthcare",
    "change"
+  ],
+  [
+   "CASA INC",
+   "casa"
   ]
  ],
  "greenhouse": [
@@ -393,6 +397,10 @@
   [
    "Lyft",
    "lyft"
+  ],
+  [
+   "Solutions by Sanford",
+   "solutions"
   ]
  ],
  "lever": [
@@ -443,6 +451,14 @@
   [
    "EnableComp",
    "enablecomp"
+  ],
+  [
+   "Gopuff",
+   "gopuff"
+  ],
+  [
+   "Life Care Center of South Las Vegas",
+   "life"
   ]
  ]
 }
