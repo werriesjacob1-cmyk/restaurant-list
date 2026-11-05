@@ -143,8 +143,19 @@ def money(tok, k):
 
 PAY_RE = re.compile(r"\$\s?(\d{1,3}(?:,\d{3})+|\d{2,3})\s?([kK])?\s*(?:-|–|—|to)\s*\$?\s?(\d{1,3}(?:,\d{3})+|\d{2,3})\s?([kK])?")
 
+OTE_RE = re.compile(r"(?:OTE|on[- ]target earnings|total (?:target )?(?:compensation|earnings))[^$]{0,60}\$\s?(\d{2,3}(?:,\d{3})+)", re.I)
+
 def find_pay(text):
     for m in PAY_RE.finditer(text or ""):
+        lo, hi = money(m.group(1), m.group(2)), money(m.group(3), m.group(4) or m.group(2))
+        if 30000 <= lo <= hi <= 400000:
+            return lo, hi
+    m = OTE_RE.search(text or "")
+    if m:
+        v = float(m.group(1).replace(",", ""))
+        if 30000 <= v <= 400000:
+            return v, v
+    for m in []:
         lo, hi = money(m.group(1), m.group(2)), money(m.group(3), m.group(4) or m.group(2))
         if 30000 <= lo <= hi <= 400000:
             return lo, hi
@@ -760,11 +771,11 @@ def qualify_job(j, txt, skip):
     rng = find_pay(pay if isinstance(pay, str) else "") or find_pay(txt)
     if rng:
         lo, hi = rng
-        if lo < CFG.get("pay_floor", 60000):
-            return f"REJ:base ${int(lo/1000)}K under floor", []
+        if hi < CFG.get("income_floor", 75000):
+            return f"REJ:total pay ${int(hi/1000)}K under $75K", []
         flags.append(f"${int(lo/1000)}-{int(hi/1000)}K")
-        if re.search(r"\bOTE\b|on[- ]target earnings|commission|variable", txt, re.I) and hi >= 130000:
-            soft.append("OTE?-confirm base")
+        if re.search(r"\bOTE\b|on[- ]target earnings|commission|variable", txt, re.I):
+            soft.append("includes commission/OTE")
     nopay = rng is None
     t = txt or ""
     if re.search(r"cold[- ]call|prospecting|hunter|new logo|outbound", t, re.I):
