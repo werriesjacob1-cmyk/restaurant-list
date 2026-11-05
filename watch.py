@@ -718,20 +718,24 @@ SPECIALTY_RE = re.compile(r"\b(healthcare|health care|hospital|pharmac\w*|insura
     r"payments|mortgage|credit union|ITAD|supply chain|life sciences|biotech|government|higher ed|K-12)\b", re.I)
 
 def years_required(text):
-    """Largest 'N+ years' stated as a requirement (skips preferred/nice-to-have and company-history sentences)."""
+    """Largest 'N+ years' stated as a requirement. Looks at the words right around each match,
+    skipping preferred/nice-to-have lines and company-history mentions."""
     best = 0
-    for sent in re.split(r"(?<=[.!?\n])\s+|\u2022|\n|;", text or ""):
-        sl = sent.lower()
-        if "year" not in sl:
+    t = text or ""
+    for m in re.finditer(r"(\d{1,2})\s*\+?\s*(?:(?:to|-|\u2013|\u2014)\s*(\d{1,2})\s*\+?\s*)?years?", t, re.I):
+        lo = int(m.group(1))
+        if not 0 < lo <= 15:
             continue
-        if re.search(r"prefer|ideal|bonus|nice to have|a plus|asset|hope you have|desired", sl):
+        before = t[max(0, m.start() - 90):m.start()].lower()
+        after = t[m.end():m.end() + 70].lower()
+        near = before + " " + after
+        if re.search(r"prefer|ideal|bonus|nice to have|a plus|asset|hope you have|desired", near):
             continue
-        if re.search(r"we have|we.ve|over \d+ years|for \d+ years|founded|since \d{4}|more than \d+ years of (?:history|growth)", sl):
+        if re.search(r"we have|we.ve|founded|since \d{4}|history|in business|ago|for over|over $", before + " " + after[:25]):
             continue
-        for m in re.finditer(r"(\d{1,2})\s*\+?\s*(?:(?:to|-|\u2013|\u2014)\s*(\d{1,2})\s*\+?\s*)?years?", sl):
-            lo = int(m.group(1))
-            if 0 < lo <= 15:
-                best = max(best, lo)
+        if re.search(r"\byears?\b[^.]{0,15}(ago|old)", after[:30]):
+            continue
+        best = max(best, lo)
     return best
 
 def qualify_job(j, txt, skip):
