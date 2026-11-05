@@ -866,7 +866,8 @@ def widen_boards(auto):
         if comp and comp != "?" and not (sm and sm < CFG.get("pay_floor", 60000)):
             comps[comp] = 1
     skip = set(CFG.get("skip_hashes", []))
-    names = [c for c in comps if chash(c) not in skip]
+    names = [c for c in list(comps) + CFG.get("widen_companies", []) if chash(c) not in skip]
+    names = list(dict.fromkeys(names))
     print(f"WIDEN: {len(jobs)} listings, {len(names)} companies to try")
     def slugs(name):
         base = re.sub(r"\b(inc|llc|ltd|corp|corporation|company|co|the|group|holdings|technologies|technology)\b\.?", " ", name.lower())
@@ -899,7 +900,7 @@ def widen_boards(auto):
         return name, hits
     found = []
     with ThreadPoolExecutor(max_workers=16) as ex:
-        for name, hits in ex.map(try_company, names[:700]):
+        for name, hits in ex.map(try_company, names[:900]):
             for kind, sl in hits[:1]:
                 known.add((kind, sl.lower()))
                 if add_auto_roster(auto, kind, sl, name):
