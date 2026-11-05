@@ -594,6 +594,36 @@ def run(now=None, dry=False):
         print("  board error:", e)
     return {"alerts": sent, "errors": errors, "queue": alerts_queue, "state": state}
 
+def audit():
+    """One-time coverage check: list every open job with the filter's verdict. No alerts, no state."""
+    auto = load_json(AUTO_PATH, {})
+    skip = set(CFG.get("skip_hashes", []))
+    boards = board_list(auto)
+    def one(t):
+        kind, e = t
+        try:
+            return kind, e, ADAPTERS[kind][0](e[0], *e[1:]), None
+        except Exception as ex:
+            return kind, e, [], str(ex)[:100]
+    with ThreadPoolExecutor(max_workers=10) as ex:
+        res = list(ex.map(one, [(k, e) for k, e in boards]))
+    tot = passed = 0
+    for kind, e, jobs, err in res:
+        if err:
+            print(f"AUDIT-ERR {e[0]} ({kind}): {err}"); continue
+        for j in jobs:
+            tot += 1
+            if chash(j["company"]) in skip:
+                v = "SKIPCO"
+            else:
+                ok, soft, why = title_decision(j["title"])
+                if not ok: v = "NO:" + why
+                elif not loc_ok(j["location"]): v = "NO:location"
+                else: v = "PASS" + ("(soft)" if soft else ""); passed += 1
+            print(f"AUDIT|{v}|{j['company']}|{j['title']}|{(j['location'] or '')[:40]}")
+    print(f"AUDIT-TOTAL boards={len(boards)} jobs={tot} pass={passed}")
+    return 0
+
 def selftest():
     n = Notifier()
     ok = n.push("TEST: watcher connected", "If you see this, alerts reach your phone.\nSoftware Test Role\nRemote, US\nPay: $70,000-$80,000", "https://example.com", 4)
@@ -601,6 +631,8 @@ def selftest():
     return 0 if ok or not (n.topic or n.tg_token) else 1
 
 if __name__ == "__main__":
+    if "--audit" in sys.argv:
+        sys.exit(audit())
     if "--selftest" in sys.argv:
         sys.exit(selftest())
     run(dry="--dry" in sys.argv)
