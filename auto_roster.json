@@ -187,6 +187,50 @@
   [
    "Maven Companies",
    "maven"
+  ],
+  [
+   "Stellar Services, Inc.",
+   "stellar"
+  ],
+  [
+   "Sunrise Systems, Inc.",
+   "sunrise"
+  ],
+  [
+   "Vanta",
+   "vanta"
+  ],
+  [
+   "Drata",
+   "drata"
+  ],
+  [
+   "Iterable",
+   "iterable"
+  ],
+  [
+   "Snyk",
+   "snyk"
+  ],
+  [
+   "Zapier",
+   "zapier"
+  ],
+  [
+   "Rev.com",
+   "rev"
+  ],
+  [
+   "Close",
+   "close"
+  ],
+  [
+   "Buffer",
+   "buffer"
+  ],
+  [
+   "SurveyMonkey",
+   "surveymonkey"
   ]
  ],
  "greenhouse": [
@@ -529,6 +573,54 @@
   [
    "IRIS Software, Inc.",
    "iris"
+  ],
+  [
+   "ZoomInfo",
+   "zoominfo"
+  ],
+  [
+   "Lattice",
+   "lattice"
+  ],
+  [
+   "Braze",
+   "braze"
+  ],
+  [
+   "Datadog",
+   "datadog"
+  ],
+  [
+   "Cloudflare",
+   "cloudflare"
+  ],
+  [
+   "Lightspeed Systems",
+   "lightspeedsystems"
+  ],
+  [
+   "Later",
+   "later"
+  ],
+  [
+   "Qualtrics",
+   "qualtrics"
+  ],
+  [
+   "Sendbird",
+   "sendbird"
+  ],
+  [
+   "Bandwidth",
+   "bandwidth"
+  ],
+  [
+   "Vonage",
+   "vonage"
+  ],
+  [
+   "Nextiva",
+   "nextiva"
   ]
  ],
  "lever": [
