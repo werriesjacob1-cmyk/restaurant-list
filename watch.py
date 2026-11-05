@@ -290,7 +290,8 @@ def fetch_bamboohr(name, slug):
         if j.get("isRemote") or j.get("locationType") == "1":
             ls += " (Remote)"
         out.append(_job(id=str(j["id"]), company=name, title=j.get("jobOpeningName", ""), location=ls,
-            url=f"https://{slug}.bamboohr.com/careers/{j['id']}"))
+            url=f"https://{slug}.bamboohr.com/careers/{j['id']}",
+            detail=(lambda sl=slug, i=j["id"]: strip_html(((get(f"https://{sl}.bamboohr.com/careers/{i}/detail").get("result") or {}).get("jobOpening") or {}).get("description", "")))))
     return out
 
 ADAPTERS = {
@@ -648,6 +649,53 @@ def audit():
     print(f"AUDIT-TOTAL boards={len(boards)} jobs={tot} pass={passed}")
     return 0
 
+def detail_audit():
+    """Read the full posting for chosen companies (config detail_companies) and print facts. No alerts, no state."""
+    auto = load_json(AUTO_PATH, {})
+    targets = [x.lower() for x in CFG.get("detail_companies", [])]
+    boards = [(k, e) for k, e in board_list(auto) if any(t in e[0].lower() for t in targets)]
+    def one(t):
+        kind, e = t
+        try:
+            return kind, e, ADAPTERS[kind][0](e[0], *e[1:]), None
+        except Exception as ex:
+            return kind, e, [], str(ex)[:100]
+    with ThreadPoolExecutor(max_workers=8) as ex:
+        res = list(ex.map(one, boards))
+    work = []
+    for kind, e, jobs, err in res:
+        if err:
+            print(f"DETAIL-ERR {e[0]} ({kind}): {err}"); continue
+        seen = set()
+        for j in jobs:
+            ok, soft, why = title_decision(j["title"])
+            if not ok or not loc_ok(j["location"]):
+                continue
+            key = (j["title"].strip().lower(), j["location"].strip().lower())
+            if key in seen:
+                continue
+            seen.add(key); work.append(j)
+    def fill(j):
+        txt = j.get("desc")
+        if not txt and j.get("detail"):
+            try: txt = j["detail"]()
+            except Exception as ex: txt = None
+        if not txt and j.get("url"):
+            try:
+                raw = http(j["url"])
+                txt = strip_html(raw.decode("utf-8", "ignore") if isinstance(raw, bytes) else str(raw))
+            except Exception:
+                txt = None
+        return j, (txt or "")
+    with ThreadPoolExecutor(max_workers=8) as ex:
+        out = list(ex.map(fill, work))
+    for j, txt in out:
+        pay = j.get("pay") or find_pay(txt) or "pay not found"
+        flags = "; ".join(flags_from_text(txt)) or "no flags"
+        print(f"DETAIL|{j['company']}|{j['title']}|{j['location'][:40]}|{pay}|{flags}|textlen={len(txt)}|{j.get('url','')}")
+    print(f"DETAIL-TOTAL boards={len(boards)} jobs={len(out)}")
+    return 0
+
 def selftest():
     n = Notifier()
     ok = n.push("TEST: watcher connected", "If you see this, alerts reach your phone.\nSoftware Test Role\nRemote, US\nPay: $70,000-$80,000", "https://example.com", 4)
@@ -655,6 +703,8 @@ def selftest():
     return 0 if ok or not (n.topic or n.tg_token) else 1
 
 if __name__ == "__main__":
+    if "--detail" in sys.argv:
+        sys.exit(detail_audit())
     if "--audit" in sys.argv:
         sys.exit(audit())
     if "--selftest" in sys.argv:

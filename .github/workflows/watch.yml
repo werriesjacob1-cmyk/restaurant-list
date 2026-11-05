@@ -9,6 +9,10 @@ on:
         description: "Send a test notification only"
         type: boolean
         default: false
+      detail:
+        description: "Read full postings for companies in detail_companies (no alerts, no state)"
+        type: boolean
+        default: false
       audit:
         description: "Coverage audit only (no alerts, no state)"
         type: boolean
@@ -35,7 +39,7 @@ jobs:
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: python watch.py --selftest
       - name: Poll boards and alert
-        if: ${{ github.event.inputs.selftest != 'true' && github.event.inputs.audit != 'true' }}
+        if: ${{ github.event.inputs.selftest != 'true' && github.event.inputs.audit != 'true' && github.event.inputs.detail != 'true' }}
         env:
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
@@ -43,11 +47,14 @@ jobs:
           ADZUNA_APP_ID: ${{ secrets.ADZUNA_APP_ID }}
           ADZUNA_APP_KEY: ${{ secrets.ADZUNA_APP_KEY }}
         run: python watch.py
+      - name: Detail audit
+        if: ${{ github.event.inputs.detail == 'true' }}
+        run: python watch.py --detail
       - name: Audit
         if: ${{ github.event.inputs.audit == 'true' }}
         run: python watch.py --audit
       - name: Save state
-        if: ${{ github.event.inputs.selftest != 'true' && github.event.inputs.audit != 'true' }}
+        if: ${{ github.event.inputs.selftest != 'true' && github.event.inputs.audit != 'true' && github.event.inputs.detail != 'true' }}
         run: |
           git config user.name "board-watch"
           git config user.email "board-watch@users.noreply.github.com"
