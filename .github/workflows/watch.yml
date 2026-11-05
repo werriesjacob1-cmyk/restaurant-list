@@ -17,6 +17,10 @@ on:
         description: "3. FIND BOARDS: look up job boards for companies the repo cannot read (no alerts)"
         type: boolean
         default: false
+      qualify:
+        description: "5. DEEP QUALIFY: read every full posting and score it against my Tier 1 rule (no alerts)"
+        type: boolean
+        default: false
       audit:
         description: "4. COVERAGE CHECK: what the repo matches and skips (no alerts)"
         type: boolean
@@ -29,7 +33,7 @@ permissions:
 jobs:
   watch:
     runs-on: ubuntu-latest
-    timeout-minutes: 9
+    timeout-minutes: 25
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -43,7 +47,7 @@ jobs:
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: python watch.py --selftest
       - name: Poll boards and alert
-        if: ${{ github.event.inputs.selftest != 'true' && github.event.inputs.audit != 'true' && github.event.inputs.detail != 'true' && github.event.inputs.probe != 'true' }}
+        if: ${{ github.event.inputs.selftest != 'true' && github.event.inputs.audit != 'true' && github.event.inputs.detail != 'true' && github.event.inputs.probe != 'true' && github.event.inputs.qualify != 'true' }}
         env:
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
@@ -57,11 +61,14 @@ jobs:
       - name: Probe
         if: ${{ github.event.inputs.probe == 'true' }}
         run: python watch.py --probe
+      - name: Deep qualify
+        if: ${{ github.event.inputs.qualify == 'true' }}
+        run: python watch.py --qualify
       - name: Audit
         if: ${{ github.event.inputs.audit == 'true' }}
         run: python watch.py --audit
       - name: Save state
-        if: ${{ github.event.inputs.selftest != 'true' && github.event.inputs.audit != 'true' && github.event.inputs.detail != 'true' && github.event.inputs.probe != 'true' }}
+        if: ${{ github.event.inputs.selftest != 'true' && github.event.inputs.audit != 'true' && github.event.inputs.detail != 'true' && github.event.inputs.probe != 'true' && github.event.inputs.qualify != 'true' }}
         run: |
           git config user.name "board-watch"
           git config user.email "board-watch@users.noreply.github.com"

@@ -706,6 +706,154 @@ def detail_audit():
     print(f"DETAIL-TOTAL boards={len(boards)} jobs={len(out)}")
     return 0
 
+
+# ---------------------------------------------------------------- deep qualifier
+SPECIALTY_RE = re.compile(r"\b(healthcare|health care|hospital|pharmac\w*|insurance|insurtech|banking|fintech|cyber\s?security|legal|law firm|"
+    r"accounting|tax|construction|real estate|manufacturing|logistics|energy|utilities|telecom|networking|devops|API|data science|"
+    r"payments|mortgage|credit union|ITAD|supply chain|life sciences|biotech|government|higher ed|K-12)\b", re.I)
+
+def years_required(text):
+    """Largest 'N+ years' stated as a requirement (skips preferred/nice-to-have and company-history sentences)."""
+    best = 0
+    for sent in re.split(r"(?<=[.!?\n])\s+|\u2022|\n|;", text or ""):
+        sl = sent.lower()
+        if "experience" not in sl and "background" not in sl and "years in" not in sl:
+            continue
+        if re.search(r"prefer|ideal|bonus|nice to have|a plus|asset|hope you have|desired", sl):
+            continue
+        if re.search(r"we have|we.ve|over \d+ years|for \d+ years|founded|since \d{4}|more than \d+ years of (?:history|growth)", sl):
+            continue
+        for m in re.finditer(r"(\d{1,2})\s*\+?\s*(?:(?:to|-|\u2013|\u2014)\s*(\d{1,2})\s*\+?\s*)?years?", sl):
+            lo = int(m.group(1))
+            if 0 < lo <= 15:
+                best = max(best, lo)
+    return best
+
+def qualify_job(j, txt, skip):
+    """Return (verdict, flags). Verdicts: PASS, NEAR, NOPAY, REJ:<reason>."""
+    tl = " " + j["title"].lower() + " "
+    if chash(j["company"]) in skip:
+        return "REJ:company applied/skipped", []
+    for x in ("implementation", "onboarding", "training", "enablement", "support specialist", "technical support", "coordinator", "intern"):
+        if x in tl:
+            return "REJ:onboarding/enablement/support title", []
+    if re.search(r"\b(sr\.?|senior|principal|lead|head|director|vp|manager ii|manager iii|enterprise)\b", tl):
+        yr = years_required(txt)
+        if yr >= 5:
+            return f"REJ:senior ({yr}+ yrs)", []
+    yrs = years_required(txt)
+    if yrs >= 5:
+        return f"REJ:asks {yrs}+ yrs", []
+    flags, soft = [], []
+    if yrs:
+        flags.append(f"asks {yrs}+ yrs")
+    pay = j.get("pay") or ""
+    rng = find_pay(pay if isinstance(pay, str) else "") or find_pay(txt)
+    if rng:
+        lo, hi = rng
+        if lo < CFG.get("pay_floor", 60000):
+            return f"REJ:base ${int(lo/1000)}K under floor", []
+        flags.append(f"${int(lo/1000)}-{int(hi/1000)}K")
+        if re.search(r"\bOTE\b|on[- ]target earnings|commission|variable", txt, re.I) and hi >= 130000:
+            soft.append("OTE?-confirm base")
+    nopay = rng is None
+    t = txt or ""
+    if re.search(r"cold[- ]call|prospecting|hunter|new logo|outbound", t, re.I):
+        soft.append("outbound/prospecting language")
+    if re.search(r"(?<!no )(?<!not )(?<!without )\b(saturdays?|sundays?|weekends?)\b", t, re.I):
+        soft.append("WEEKEND mention")
+    m = re.search(r"(\d{1,2})\s?%[^.]{0,40}travel|travel[^.]{0,40}?(\d{1,2})\s?%", t, re.I)
+    if m:
+        pct = int(m.group(1) or m.group(2))
+        if pct > 25:
+            return f"REJ:travel {pct}%", []
+        if pct >= 15:
+            soft.append(f"travel {pct}%")
+    if re.search(r"bachelor'?s?[^.]{0,30}(required|needed)|requires? a bachelor|degree is required", t, re.I) and not re.search(r"or equivalent|equivalent (?:work )?experience", t, re.I):
+        return "REJ:degree required", []
+    if re.search(r"\bdealer(ship)?s?\b", t, re.I) and re.search(r"(sales consultant|dealership employee|work(?:ing)? at a dealership)", t, re.I):
+        return "REJ:dealership job", []
+    req_sents = " ".join(s for s in re.split(r"(?<=[.!?\n])\s+|\n", t) if re.search(r"\d\s*\+?\s*years|required|must have|requirements", s, re.I) and not re.search(r"prefer|ideal", s, re.I))
+    spec = sorted({x.lower() for x in SPECIALTY_RE.findall(req_sents)})
+    if spec:
+        soft.append("specialty in requirements: " + ",".join(spec[:3]))
+    if re.search(r"\bsaas\b", req_sents, re.I):
+        soft.append("SaaS asked")
+    if re.search(r"salesforce|hubspot|gainsight|totango", req_sents, re.I):
+        soft.append("CRM tool named")
+    if j.get("posted") and (time.time() - j["posted"]) / 86400 > 120:
+        soft.append("posting over 120 days old")
+    if nopay:
+        return "NOPAY", flags + soft
+    hard_soft = [x for x in soft if x.startswith(("specialty", "WEEKEND", "outbound"))]
+    return ("NEAR" if hard_soft else "PASS"), flags + soft
+
+def qualify():
+    """Deep search: every board, every title match, full posting read, scored against the Tier 1 rule. No alerts, no state."""
+    auto = load_json(AUTO_PATH, {})
+    skip = set(CFG.get("skip_hashes", []))
+    if CFG.get("detail_workday_queries"):
+        CFG["workday_queries"] = CFG["detail_workday_queries"]
+    boards = board_list(auto)
+    def one(t):
+        kind, e = t
+        try:
+            return kind, e, ADAPTERS[kind][0](e[0], *e[1:]), None
+        except Exception as ex:
+            return kind, e, [], str(ex)[:100]
+    with ThreadPoolExecutor(max_workers=10) as ex:
+        res = list(ex.map(one, boards))
+    work, seen, errs, total = [], set(), 0, 0
+    for kind, e, jobs, err in res:
+        if err:
+            errs += 1; print(f"QUAL-ERR {e[0]} ({kind}): {err}"); continue
+        for j in jobs:
+            total += 1
+            ok, soft, why = title_decision(j["title"])
+            if not ok or not loc_ok(j["location"]):
+                continue
+            key = (j["company"].lower(), j["title"].strip().lower(), j["location"].strip().lower())
+            if key in seen:
+                continue
+            seen.add(key); work.append(j)
+    print(f"QUAL-SCOPE boards={len(boards)} board_errors={errs} jobs_seen={total} title_and_location_matches={len(work)}")
+    def fill(j):
+        txt = j.get("desc")
+        if not txt and j.get("detail"):
+            try: txt = j["detail"]()
+            except Exception: txt = None
+        if not txt and j.get("url"):
+            try:
+                raw = http(j["url"])
+                txt = strip_html(raw.decode("utf-8", "ignore") if isinstance(raw, bytes) else str(raw))
+            except Exception:
+                txt = None
+        return j, (txt or "")
+    with ThreadPoolExecutor(max_workers=10) as ex:
+        out = list(ex.map(fill, work))
+    buckets = {"PASS": [], "NEAR": [], "NOPAY": []}
+    rej = {}
+    unread = 0
+    for j, txt in out:
+        if len(txt) < 200:
+            unread += 1
+            print(f"QUAL-UNREAD|{j['company']}|{j['title']}|{j.get('url','')}")
+            continue
+        v, fl = qualify_job(j, txt, skip)
+        if v.startswith("REJ:"):
+            rej[v[4:]] = rej.get(v[4:], 0) + 1
+            continue
+        buckets[v].append((j, txt, fl))
+    for v in ("PASS", "NEAR", "NOPAY"):
+        for j, txt, fl in sorted(buckets[v], key=lambda x: x[0]["company"].lower()):
+            posted = age_label(j["posted"]) if j.get("posted") else "posted date n/a"
+            print(f"QUAL|{v}|{j['company']}|{j['title']}|{j['location'][:40]}|{posted}|{'; '.join(fl) or 'no flags'}|{j.get('url','')}")
+            if v == "PASS":
+                print(f"QUALTXT|{j['company']}|{j['title']}|" + re.sub(r"\s+", " ", txt)[:1800])
+    print("QUAL-REJECTED " + json.dumps(rej, sort_keys=True))
+    print(f"QUAL-TOTAL pass={len(buckets['PASS'])} near={len(buckets['NEAR'])} nopay={len(buckets['NOPAY'])} unread={unread} rejected={sum(rej.values())}")
+    return 0
+
 def fetch_amazon(name, query, loc="Nashville"):
     d = get("https://www.amazon.jobs/en/search.json?result_limit=50&base_query=" + urllib.parse.quote(query) + "&loc_query=" + urllib.parse.quote(loc))
     return [_job(id=str(j.get("id_icims") or j.get("id")), company=name, title=j.get("title", ""),
@@ -746,6 +894,8 @@ def selftest():
 if __name__ == "__main__":
     if "--probe" in sys.argv:
         sys.exit(probe())
+    if "--qualify" in sys.argv:
+        sys.exit(qualify())
     if "--detail" in sys.argv:
         sys.exit(detail_audit())
     if "--audit" in sys.argv:
