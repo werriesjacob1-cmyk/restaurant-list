@@ -354,6 +354,10 @@
   [
    "Polimorphic",
    "polimorphic"
+  ],
+  [
+   "Dandy",
+   "dandy"
   ]
  ],
  "lever": [
@@ -460,6 +464,10 @@
   [
    "Bluesight",
    "bluesight"
+  ],
+  [
+   "BlueCat",
+   "bluecatnetworks"
   ]
  ],
  "workday": [
@@ -869,22 +877,48 @@
   "donelson"
  ],
  "detail_companies": [
+  "AbsenceSoft",
+  "Alt",
   "BILL",
-  "Zayo",
-  "beehiiv",
+  "BlueCat",
+  "Built Tech",
+  "Cardinal",
+  "Circle",
+  "Collectors",
   "Compass",
-  "Protective",
+  "Coterie",
+  "Dandy",
+  "Ecotrak",
+  "FIXD",
   "Firstup",
-  "Wellthy",
-  "ZipLiens",
+  "Inspira",
+  "Jackson",
+  "Mangomint",
   "Matador",
   "Medicom",
-  "AbsenceSoft",
-  "Mangomint",
-  "Built Tech",
-  "Alt",
-  "Snappy",
+  "PetDesk",
+  "Philips",
   "Polimorphic",
-  "Inspira"
+  "Protective",
+  "Snappy",
+  "Submittable",
+  "Trustwell",
+  "Wellthy",
+  "Whitestone",
+  "Xplor",
+  "Zayo",
+  "ZipLiens",
+  "beehiiv"
+ ],
+ "detail_extra_titles": [
+  "partner development",
+  "sales desk",
+  "lab products",
+  "sales qa",
+  "inside sales",
+  "territory",
+  "client engagement",
+  "growth",
+  "data partnerships"
  ]
 }

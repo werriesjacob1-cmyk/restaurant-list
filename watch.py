@@ -669,7 +669,8 @@ def detail_audit():
         seen = set()
         for j in jobs:
             ok, soft, why = title_decision(j["title"])
-            if not ok or not loc_ok(j["location"]):
+            extra = any(x in j["title"].lower() for x in CFG.get("detail_extra_titles", []))
+            if not (ok or extra) or not loc_ok(j["location"]):
                 continue
             key = (j["title"].strip().lower(), j["location"].strip().lower())
             if key in seen:
