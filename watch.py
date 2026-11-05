@@ -706,6 +706,37 @@ def detail_audit():
     print(f"DETAIL-TOTAL boards={len(boards)} jobs={len(out)}")
     return 0
 
+def fetch_amazon(name, query, loc="Nashville"):
+    d = get("https://www.amazon.jobs/en/search.json?result_limit=50&base_query=" + urllib.parse.quote(query) + "&loc_query=" + urllib.parse.quote(loc))
+    return [_job(id=str(j.get("id_icims") or j.get("id")), company=name, title=j.get("title", ""),
+        location=j.get("normalized_location", "") or j.get("location", ""),
+        url="https://www.amazon.jobs" + j.get("job_path", ""), posted=parse_ts(j.get("posted_date"))) for j in d.get("jobs", [])]
+
+def probe():
+    """Try candidate boards for companies we could not read; print what each returns."""
+    fetchers = {"greenhouse": fetch_greenhouse, "ashby": fetch_ashby, "lever": fetch_lever,
+                "workable": fetch_workable, "rippling": fetch_rippling, "smartrecruiters": fetch_smartrecruiters,
+                "bamboohr": fetch_bamboohr}
+    for p in CFG.get("probe", []):
+        kws = [k.lower() for k in p.get("match", [])]
+        for t in p["tries"]:
+            kind, args = t[0], t[1:]
+            try:
+                if kind == "workday":
+                    jobs = fetch_workday(p["company"], *args)
+                elif kind == "amazon":
+                    jobs = fetch_amazon(p["company"], *args)
+                else:
+                    jobs = fetchers[kind](p["company"], *args)
+            except Exception as e:
+                print(f"PROBE|{p['company']}|{kind}:{'/'.join(args)}|ERR {str(e)[:60]}")
+                continue
+            hits = [j for j in jobs if not kws or any(k in j["title"].lower() for k in kws)]
+            print(f"PROBE|{p['company']}|{kind}:{'/'.join(args)}|OK total={len(jobs)} matches={len(hits)}")
+            for j in hits[:6]:
+                print(f"PROBEJOB|{p['company']}|{j['title']}|{j['location'][:40]}|{age_label(j['posted']) if j.get('posted') else 'no date'}|{j.get('url','')}")
+    return 0
+
 def selftest():
     n = Notifier()
     ok = n.push("TEST: watcher connected", "If you see this, alerts reach your phone.\nSoftware Test Role\nRemote, US\nPay: $70,000-$80,000", "https://example.com", 4)
@@ -713,6 +744,8 @@ def selftest():
     return 0 if ok or not (n.topic or n.tg_token) else 1
 
 if __name__ == "__main__":
+    if "--probe" in sys.argv:
+        sys.exit(probe())
     if "--detail" in sys.argv:
         sys.exit(detail_audit())
     if "--audit" in sys.argv:

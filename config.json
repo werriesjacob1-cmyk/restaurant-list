@@ -940,5 +940,317 @@
     "inside sales",
     "coordinator",
     "associate"
+  ],
+  "probe": [
+    {
+      "company": "Handshake",
+      "match": [
+        "data partner",
+        "partnership"
+      ],
+      "tries": [
+        [
+          "greenhouse",
+          "joinhandshake"
+        ],
+        [
+          "greenhouse",
+          "handshake"
+        ]
+      ]
+    },
+    {
+      "company": "Synquery",
+      "match": [
+        "general manager",
+        "growth"
+      ],
+      "tries": [
+        [
+          "ashby",
+          "synquery"
+        ],
+        [
+          "lever",
+          "synquery"
+        ],
+        [
+          "greenhouse",
+          "synquery"
+        ],
+        [
+          "rippling",
+          "synquery"
+        ]
+      ]
+    },
+    {
+      "company": "GroundTruth",
+      "match": [
+        "customer success"
+      ],
+      "tries": [
+        [
+          "greenhouse",
+          "groundtruth"
+        ],
+        [
+          "greenhouse",
+          "groundtruthinc"
+        ],
+        [
+          "lever",
+          "groundtruth"
+        ],
+        [
+          "ashby",
+          "groundtruth"
+        ]
+      ]
+    },
+    {
+      "company": "CentralSquare",
+      "match": [
+        "account manager"
+      ],
+      "tries": [
+        [
+          "greenhouse",
+          "centralsquare"
+        ],
+        [
+          "lever",
+          "centralsquare"
+        ],
+        [
+          "workable",
+          "centralsquare"
+        ],
+        [
+          "workday",
+          "centralsquare",
+          "wd1",
+          "CentralSquare"
+        ],
+        [
+          "workday",
+          "centralsquaretech",
+          "wd1",
+          "CentralSquare"
+        ]
+      ]
+    },
+    {
+      "company": "United Rentals",
+      "match": [
+        "inside sales"
+      ],
+      "tries": [
+        [
+          "workday",
+          "ur",
+          "wd5",
+          "UR"
+        ],
+        [
+          "workday",
+          "unitedrentals",
+          "wd5",
+          "UR"
+        ],
+        [
+          "greenhouse",
+          "unitedrentals"
+        ]
+      ]
+    },
+    {
+      "company": "Grainger",
+      "match": [
+        "account manager"
+      ],
+      "tries": [
+        [
+          "workday",
+          "grainger",
+          "wd5",
+          "Grainger"
+        ],
+        [
+          "workday",
+          "grainger",
+          "wd5",
+          "Grainger_Careers"
+        ],
+        [
+          "workday",
+          "grainger",
+          "wd1",
+          "Grainger"
+        ]
+      ]
+    },
+    {
+      "company": "PHIL",
+      "match": [
+        "client engagement"
+      ],
+      "tries": [
+        [
+          "ashby",
+          "phil"
+        ],
+        [
+          "lever",
+          "phil"
+        ],
+        [
+          "greenhouse",
+          "phil"
+        ],
+        [
+          "rippling",
+          "phil"
+        ],
+        [
+          "workable",
+          "phil"
+        ]
+      ]
+    },
+    {
+      "company": "Constellation Dealer Group",
+      "match": [
+        "customer success"
+      ],
+      "tries": [
+        [
+          "lever",
+          "targetcrm"
+        ],
+        [
+          "greenhouse",
+          "targetcrm"
+        ],
+        [
+          "ashby",
+          "targetcrm"
+        ],
+        [
+          "lever",
+          "constellationdealergroup"
+        ],
+        [
+          "greenhouse",
+          "constellationdealergroup"
+        ]
+      ]
+    },
+    {
+      "company": "RevolutionParts",
+      "match": [
+        "customer success"
+      ],
+      "tries": [
+        [
+          "lever",
+          "revolutionparts"
+        ],
+        [
+          "greenhouse",
+          "revolutionparts"
+        ],
+        [
+          "ashby",
+          "revolutionparts"
+        ],
+        [
+          "workable",
+          "revolutionparts"
+        ]
+      ]
+    },
+    {
+      "company": "Proof",
+      "match": [
+        "account manager"
+      ],
+      "tries": [
+        [
+          "greenhouse",
+          "proof"
+        ],
+        [
+          "ashby",
+          "proof"
+        ],
+        [
+          "lever",
+          "proof"
+        ]
+      ]
+    },
+    {
+      "company": "Amazon Freight",
+      "match": [
+        "customer success"
+      ],
+      "tries": [
+        [
+          "amazon",
+          "Enterprise Customer Success Manager freight",
+          "Nashville"
+        ]
+      ]
+    },
+    {
+      "company": "Skylight",
+      "match": [
+        "retail sales"
+      ],
+      "tries": [
+        [
+          "workable",
+          "skylight"
+        ]
+      ]
+    },
+    {
+      "company": "Ramsey Solutions",
+      "match": [
+        "partner success"
+      ],
+      "tries": [
+        [
+          "greenhouse",
+          "ramsey"
+        ],
+        [
+          "lever",
+          "ramsey"
+        ],
+        [
+          "workable",
+          "ramsey"
+        ]
+      ]
+    },
+    {
+      "company": "Remote.com",
+      "match": [
+        "associate account",
+        "enablement"
+      ],
+      "tries": [
+        [
+          "greenhouse",
+          "remotecom"
+        ],
+        [
+          "ashby",
+          "remote"
+        ]
+      ]
+    }
   ]
 }

@@ -13,6 +13,10 @@ on:
         description: "Read full postings for companies in detail_companies (no alerts, no state)"
         type: boolean
         default: false
+      probe:
+        description: "Try candidate boards for unread companies (no alerts, no state)"
+        type: boolean
+        default: false
       audit:
         description: "Coverage audit only (no alerts, no state)"
         type: boolean
@@ -39,7 +43,7 @@ jobs:
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: python watch.py --selftest
       - name: Poll boards and alert
-        if: ${{ github.event.inputs.selftest != 'true' && github.event.inputs.audit != 'true' && github.event.inputs.detail != 'true' }}
+        if: ${{ github.event.inputs.selftest != 'true' && github.event.inputs.audit != 'true' && github.event.inputs.detail != 'true' && github.event.inputs.probe != 'true' }}
         env:
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
@@ -50,11 +54,14 @@ jobs:
       - name: Detail audit
         if: ${{ github.event.inputs.detail == 'true' }}
         run: python watch.py --detail
+      - name: Probe
+        if: ${{ github.event.inputs.probe == 'true' }}
+        run: python watch.py --probe
       - name: Audit
         if: ${{ github.event.inputs.audit == 'true' }}
         run: python watch.py --audit
       - name: Save state
-        if: ${{ github.event.inputs.selftest != 'true' && github.event.inputs.audit != 'true' && github.event.inputs.detail != 'true' }}
+        if: ${{ github.event.inputs.selftest != 'true' && github.event.inputs.audit != 'true' && github.event.inputs.detail != 'true' && github.event.inputs.probe != 'true' }}
         run: |
           git config user.name "board-watch"
           git config user.email "board-watch@users.noreply.github.com"
