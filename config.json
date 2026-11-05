@@ -807,7 +807,19 @@
   "named account",
   "key account",
   "account specialist",
-  "program manager, customer"
+  "program manager, customer",
+  "sales operations",
+  "revenue operations",
+  "revops",
+  "sales ops",
+  "sales enablement",
+  "smb account",
+  "sales analyst",
+  "renewals specialist",
+  "customer success associate",
+  "onboarding associate",
+  "customer onboarding specialist",
+  "inside sales"
  ],
  "exclude_title_hard": [
   "engineer",
@@ -1405,7 +1417,17 @@
   "client relations manager",
   "territory account manager",
   "customer solutions specialist",
-  "renewals specialist"
+  "renewals specialist",
+  "sales operations analyst",
+  "revenue operations analyst",
+  "revops specialist",
+  "sales operations specialist",
+  "sales enablement specialist",
+  "smb account manager",
+  "smb account executive",
+  "onboarding specialist",
+  "implementation specialist",
+  "associate account manager"
  ],
  "widen_companies": [
   "CarGurus",
