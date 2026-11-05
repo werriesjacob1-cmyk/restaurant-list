@@ -1,1256 +1,1270 @@
 {
-  "pay_floor": 60000,
-  "greenhouse": [
-    [
-      "Built Technologies",
-      "getbuilt"
-    ],
-    [
-      "GoGuardian",
-      "goguardian"
-    ],
-    [
-      "Boulevard",
-      "boulevard"
-    ],
-    [
-      "Presence",
-      "presencelearning"
-    ],
-    [
-      "NMI",
-      "nmi"
-    ],
-    [
-      "Underdog",
-      "underdog"
-    ],
-    [
-      "Steer",
-      "steercrm"
-    ],
-    [
-      "Fanatics Collectibles",
-      "fanaticscollectibles"
-    ],
-    [
-      "Fanatics Betting & Gaming",
-      "fanaticsfbg"
-    ],
-    [
-      "StockX",
-      "stockx"
-    ],
-    [
-      "Barstool",
-      "barstoolsports"
-    ],
-    [
-      "BILL",
-      "billcom"
-    ],
-    [
-      "WithMe",
-      "withmeinc"
-    ],
-    [
-      "Higher Logic",
-      "higherlogic"
-    ],
-    [
-      "Hometap",
-      "hometap"
-    ],
-    [
-      "Upwork",
-      "upwork"
-    ],
-    [
-      "Compass",
-      "urbancompass"
-    ],
-    [
-      "Checkr",
-      "checkr"
-    ],
-    [
-      "Digible",
-      "digible"
-    ],
-    [
-      "Donorbox",
-      "donorbox"
-    ],
-    [
-      "Gunter Group",
-      "guntergroup"
-    ],
-    [
-      "Hudl",
-      "hudl"
-    ],
-    [
-      "SeatGeek",
-      "seatgeek"
-    ],
-    [
-      "Pindrop",
-      "pindropsecurity"
-    ],
-    [
-      "Fleetio",
-      "fleetio"
-    ],
-    [
-      "SOCi",
-      "soci"
-    ],
-    [
-      "Metropolis",
-      "metropolis"
-    ],
-    [
-      "PrizePicks",
-      "prizepicks"
-    ],
-    [
-      "Arena Club",
-      "arenaclub"
-    ],
-    [
-      "Inspira Education",
-      "inspiraeducation"
-    ],
-    [
-      "The Farmer's Dog",
-      "thefarmersdog"
-    ],
-    [
-      "C.A. Fortune",
-      "cafortune"
-    ],
-    [
-      "Cleo",
-      "cleo"
-    ],
-    [
-      "FanDuel",
-      "fanduel"
-    ],
-    [
-      "Courtyard",
-      "courtyardinc"
-    ],
-    [
-      "Genius Sports",
-      "geniussports"
-    ],
-    [
-      "PENN Interactive",
-      "penninteractive"
-    ],
-    [
-      "Rush Street Interactive",
-      "rushstreetinteractive"
-    ],
-    [
-      "LeagueApps",
-      "leagueapps"
-    ],
-    [
-      "Mitsubishi Motors NA",
-      "mitsubishimotorsna"
-    ],
-    [
-      "CharterUP",
-      "charterup"
-    ],
-    [
-      "Everway",
-      "everway"
-    ],
-    [
-      "Elation Health",
-      "elationhealth"
-    ],
-    [
-      "Wellthy",
-      "wellthy"
-    ],
-    [
-      "Mercury",
-      "mercury"
-    ],
-    [
-      "Envoy Global",
-      "envoyglobalinc"
-    ],
-    [
-      "Bloomerang",
-      "bloomerang"
-    ],
-    [
-      "Compliancy Group",
-      "compliancygroupllc"
-    ],
-    [
-      "Litify",
-      "litify"
-    ],
-    [
-      "Conga",
-      "conga"
-    ],
-    [
-      "Mitratech",
-      "mitratech"
-    ],
-    [
-      "EnergyHub",
-      "energyhub"
-    ],
-    [
-      "Brave",
-      "brave"
-    ],
-    [
-      "Scopely",
-      "scopely"
-    ],
-    [
-      "Customer.io",
-      "customerio"
-    ],
-    [
-      "Submittable",
-      "submittable"
-    ],
-    [
-      "Documo",
-      "documocareers"
-    ],
-    [
-      "Allego",
-      "allego"
-    ],
-    [
-      "Reltio",
-      "reltio"
-    ],
-    [
-      "OpenSesame",
-      "opensesame"
-    ],
-    [
-      "Granum",
-      "granum"
-    ],
-    [
-      "Radicle Health",
-      "radiclehealth"
-    ],
-    [
-      "NetDocuments",
-      "netdocuments"
-    ]
+ "pay_floor": 60000,
+ "greenhouse": [
+  [
+   "Built Technologies",
+   "getbuilt"
   ],
-  "ashby": [
-    [
-      "VITL",
-      "vitl"
-    ],
-    [
-      "Buildout",
-      "buildout"
-    ],
-    [
-      "Second Nature",
-      "second-nature"
-    ],
-    [
-      "Ncontracts",
-      "ncontracts"
-    ],
-    [
-      "Inductive Automation",
-      "inductive-automation-llc"
-    ],
-    [
-      "Benepass",
-      "benepass"
-    ],
-    [
-      "Docker",
-      "docker"
-    ],
-    [
-      "Palmstreet",
-      "palmstreet"
-    ],
-    [
-      "Broccoli AI",
-      "broccoli"
-    ],
-    [
-      "Xero",
-      "xero"
-    ],
-    [
-      "Kalshi",
-      "kalshi"
-    ],
-    [
-      "Novig",
-      "novig"
-    ],
-    [
-      "Collective",
-      "collective"
-    ],
-    [
-      "Mangomint",
-      "mangomint"
-    ],
-    [
-      "Miter",
-      "miter"
-    ],
-    [
-      "Alt",
-      "alt"
-    ],
-    [
-      "Teamworks",
-      "teamworks"
-    ],
-    [
-      "GameChanger",
-      "gamechanger"
-    ],
-    [
-      "Virta Health",
-      "virtahealth"
-    ],
-    [
-      "Sleeper",
-      "sleeper"
-    ],
-    [
-      "Tread",
-      "tread"
-    ],
-    [
-      "Snappy",
-      "Snappy"
-    ],
-    [
-      "Instructure",
-      "instructure"
-    ],
-    [
-      "Aescape",
-      "aescape"
-    ],
-    [
-      "Polimorphic",
-      "polimorphic"
-    ],
-    [
-      "Dandy",
-      "dandy"
-    ]
+  [
+   "GoGuardian",
+   "goguardian"
   ],
-  "lever": [
-    [
-      "WorkWave",
-      "workwave"
-    ],
-    [
-      "PadSplit",
-      "padsplit"
-    ],
-    [
-      "Fetch Package",
-      "fetchpackage"
-    ],
-    [
-      "Kobie",
-      "kobie"
-    ],
-    [
-      "Protective Life",
-      "protective"
-    ],
-    [
-      "HighLevel",
-      "gohighlevel"
-    ],
-    [
-      "Colibri",
-      "colibrigroup"
-    ],
-    [
-      "Lendbuzz",
-      "lendbuzz"
-    ],
-    [
-      "TeamSnap",
-      "teamsnap"
-    ],
-    [
-      "Total Expert",
-      "totalexpert"
-    ],
-    [
-      "Lightedge",
-      "lightedge"
-    ],
-    [
-      "Fix Group",
-      "FixGroup"
-    ],
-    [
-      "Betr",
-      "betr"
-    ],
-    [
-      "Firstup",
-      "firstup"
-    ],
-    [
-      "Flex",
-      "Flex"
-    ],
-    [
-      "Versapay",
-      "versapay"
-    ],
-    [
-      "Foodsmart",
-      "foodsmart"
-    ],
-    [
-      "Treering",
-      "treering"
-    ],
-    [
-      "Toptal",
-      "toptal"
-    ],
-    [
-      "Yuno",
-      "yuno"
-    ],
-    [
-      "Supporting Cast",
-      "slate"
-    ],
-    [
-      "Panopto",
-      "panopto"
-    ],
-    [
-      "Onit",
-      "onit"
-    ],
-    [
-      "Mongoose (Lever)",
-      "hellomongoose"
-    ],
-    [
-      "PetDesk",
-      "petdesk"
-    ],
-    [
-      "Bluesight",
-      "bluesight"
-    ],
-    [
-      "BlueCat",
-      "bluecatnetworks"
-    ]
+  [
+   "Boulevard",
+   "boulevard"
   ],
-  "workday": [
-    [
-      "Circle",
-      "circle",
-      "wd1",
-      "Circle"
-    ],
-    [
-      "Collectors",
-      "collectorsuniverse",
-      "wd1",
-      "collectors"
-    ],
-    [
-      "Philips",
-      "philips",
-      "wd3",
-      "jobs-and-careers"
-    ],
-    [
-      "Cardinal Health",
-      "cardinalhealth",
-      "wd1",
-      "EXT"
-    ],
-    [
-      "Jackson Financial",
-      "jackson",
-      "wd1",
-      "Jackson_Careers"
-    ],
-    [
-      "Motorola Solutions",
-      "motorolasolutions",
-      "wd5",
-      "Careers"
-    ],
-    [
-      "Guardant Health",
-      "gh",
-      "wd1",
-      "gh"
-    ],
-    [
-      "Zayo",
-      "zayo",
-      "wd1",
-      "Zayo_Careers"
-    ]
+  [
+   "Presence",
+   "presencelearning"
   ],
-  "workable": [
-    [
-      "Ottimate",
-      "ottimate"
-    ],
-    [
-      "Matador Solutions",
-      "matador-solutions"
-    ],
-    [
-      "Silvur",
-      "silvur"
-    ],
-    [
-      "Whip Around",
-      "whiparound"
-    ],
-    [
-      "Fluent",
-      "fluent"
-    ],
-    [
-      "BDA",
-      "bda-inc"
-    ],
-    [
-      "Acumen",
-      "acumentechnology"
-    ],
-    [
-      "ZipLiens",
-      "zipliens"
-    ],
-    [
-      "FIXD",
-      "fixd"
-    ]
+  [
+   "NMI",
+   "nmi"
   ],
-  "smartrecruiters": [
-    [
-      "Xplor",
-      "Xplor"
-    ]
+  [
+   "Underdog",
+   "underdog"
   ],
-  "rippling": [
-    [
-      "Trustwell",
-      "trustwell-careers"
-    ],
-    [
-      "AbsenceSoft",
-      "absencesoft"
-    ],
-    [
-      "myKaarma",
-      "mykaarma"
-    ],
-    [
-      "The Guarantors",
-      "theguarantors-open-positions"
-    ],
-    [
-      "Storesight",
-      "storesight"
-    ],
-    [
-      "Coterie",
-      "coterie-careers"
-    ],
-    [
-      "Ecotrak",
-      "ecotrak-careers"
-    ],
-    [
-      "Anaconda",
-      "anaconda"
-    ],
-    [
-      "Medicom",
-      "medicom-careers"
-    ],
-    [
-      "Whitestone Branding",
-      "whitestone-branding-careers"
-    ]
+  [
+   "Steer",
+   "steercrm"
   ],
-  "bamboohr": [
-    [
-      "beehiiv",
-      "beehiiv"
-    ]
+  [
+   "Fanatics Collectibles",
+   "fanaticscollectibles"
   ],
-  "skip_hashes": [
-    "003ddfe197fe",
-    "00aa8942525b",
-    "02b15ef87562",
-    "04ad9fa1d7d7",
-    "0d10bc1801f2",
-    "13984a4e7e0e",
-    "157564302aa5",
-    "1867835f8bb4",
-    "1b1b79a2159b",
-    "1d74bcc049c4",
-    "1f7081b055d3",
-    "21b480da0f89",
-    "222f930b8752",
-    "2505ad8617be",
-    "2868ca774194",
-    "2a4f9141b30c",
-    "2a5e1ea1dcfe",
-    "2b63bd1a162b",
-    "31796f5f9480",
-    "3277b9ec8b4a",
-    "3297cd6339ef",
-    "337b8d2c1e13",
-    "469be0d71cac",
-    "46f60d7b1920",
-    "4afbf987bce1",
-    "4c29afa9c0fd",
-    "4e18123e0f06",
-    "5204892766f4",
-    "56297dbc3da6",
-    "56af6dd30c15",
-    "56ead909b0b4",
-    "57fce44d7c6d",
-    "5fb931380e50",
-    "605f4cf6e6c6",
-    "6354b71c99dc",
-    "651b2c67d536",
-    "65ddc6a37ae5",
-    "67e1258c4827",
-    "68323c1446f3",
-    "6c289b916b1d",
-    "74204e6c6abe",
-    "7494962107cb",
-    "7f902752c315",
-    "810500fcb568",
-    "82fb5676971c",
-    "8a469dfde3e2",
-    "9c3879fc8c41",
-    "9c848c95d41e",
-    "9dadc9da467b",
-    "a1bb216b2bbb",
-    "a89821a6490f",
-    "a8a5343533ba",
-    "ad6002c24071",
-    "aef4e73f4f63",
-    "b196810cabc7",
-    "b40a5d46c181",
-    "b45312c3f297",
-    "b4553fc6901c",
-    "b45f91c85b44",
-    "b46509796d00",
-    "b62f3b3b1b40",
-    "b8bd5657de6f",
-    "bd11be25fd5f",
-    "c110f1f954ff",
-    "c1cda2636282",
-    "c5c99d3c99c0",
-    "c5fa0d016227",
-    "c94b014420b1",
-    "cbdd10d72000",
-    "cd2c0f63ad37",
-    "cd6d2e2d79cb",
-    "cda9593e0f0c",
-    "d081f8aa347a",
-    "d548c5b83fa6",
-    "d7d2036a5b8d",
-    "d867c55b793d",
-    "d9fb92e3bbe6",
-    "dd4cb9cf52f0",
-    "deb889383959",
-    "ded04153d3bc",
-    "e64cf04a2021",
-    "e678686f9c70",
-    "e71c604e30b2",
-    "e90f02d2eca9",
-    "ec5e2e816226",
-    "f001fbda2311",
-    "f70d13e9c0fc",
-    "fc774f1cc2f8",
-    "fe1dfde08572",
-    "34b7a4cccd05"
+  [
+   "Fanatics Betting & Gaming",
+   "fanaticsfbg"
   ],
-  "include_title": [
-    "customer success",
-    "client success",
-    "account manager",
-    "account management",
-    "account coordinator",
-    "account associate",
-    "renewal",
-    "partner success",
-    "relationship manager",
-    "relationship specialist",
-    "client service",
-    "client services",
-    "customer experience",
-    "success specialist",
-    "success associate",
-    "customer advocate",
-    "account representative",
-    "inside account",
-    "account executive",
-    "partner manager",
-    "account director",
-    "implementation specialist",
-    "implementation manager",
-    "implementation consultant",
-    "implementation coordinator",
-    "onboarding specialist",
-    "onboarding manager",
-    "onboarding coordinator",
-    "customer onboarding",
-    "client partner",
-    "customer engagement"
+  [
+   "StockX",
+   "stockx"
   ],
-  "exclude_title_hard": [
-    "engineer",
-    "developer",
-    "designer",
-    "director",
-    "vp ",
-    "vice president",
-    "head of",
-    "principal",
-    "staff ",
-    "intern ",
-    "internship",
-    "data ",
-    "scientist",
-    "recruit",
-    "accountant",
-    "marketing",
-    "product manager",
-    "sales development",
-    "business development rep",
-    "sdr",
-    "bdr",
-    "legal",
-    "counsel",
-    "controller",
-    "payroll",
-    "security",
-    "devops",
-    "architect",
-    "technical account",
-    "support engineer",
-    "solutions engineer",
-    "implementation engineer",
-    "cfo",
-    "chief",
-    "payments",
-    "tax ",
-    "audit",
-    "dealership",
-    "dealer "
+  [
+   "Barstool",
+   "barstoolsports"
   ],
-  "soft_title": [
-    "senior",
-    "sr.",
-    "sr ",
-    "strategic",
-    "enterprise",
-    "lead ",
-    "manager, customer success operations",
-    "solutions"
+  [
+   "BILL",
+   "billcom"
   ],
-  "include_location": [
-    "remote",
-    "united states",
-    "usa",
-    "u.s.",
-    "us-",
-    "nashville",
-    "tennessee",
-    ", tn",
-    "anywhere",
-    "north america",
-    "americas",
-    "franklin",
-    "brentwood",
-    "hendersonville",
-    "goodlettsville",
-    "mt. juliet",
-    "mount juliet",
-    "gallatin",
-    "madison, tn"
+  [
+   "WithMe",
+   "withmeinc"
   ],
-  "foreign": [
-    "united kingdom",
-    "uk",
-    "canada",
-    "india",
-    "germany",
-    "france",
-    "australia",
-    "ireland",
-    "mexico",
-    "brazil",
-    "philippines",
-    "poland",
-    "spain",
-    "netherlands",
-    "singapore",
-    "japan",
-    "argentina",
-    "colombia",
-    "romania",
-    "bulgaria",
-    "emea",
-    "apac",
-    "latam",
-    "israel",
-    "portugal",
-    "italy",
-    "sweden",
-    "denmark",
-    "norway",
-    "finland",
-    "switzerland"
+  [
+   "Higher Logic",
+   "higherlogic"
   ],
-  "workday_queries": [
-    "customer success",
-    "account manager",
-    "renewal",
-    "account coordinator",
-    "client success",
-    "client service"
+  [
+   "Hometap",
+   "hometap"
   ],
-  "discover_queries": [
-    "customer success manager",
-    "account manager existing customers",
-    "renewals specialist",
-    "client success manager",
-    "account coordinator",
-    "associate customer success"
+  [
+   "Upwork",
+   "upwork"
   ],
-  "local_location": [
-    "nashville",
-    "tennessee",
-    ", tn",
-    "franklin, tn",
-    "brentwood",
-    "hendersonville",
-    "goodlettsville",
-    "mt. juliet",
-    "mount juliet",
-    "gallatin",
-    "madison, tn",
-    "smyrna",
-    "murfreesboro",
-    "lebanon, tn",
-    "antioch",
-    "hermitage",
-    "donelson"
+  [
+   "Compass",
+   "urbancompass"
   ],
-  "detail_companies": [
-    "AbsenceSoft",
-    "Alt",
-    "BILL",
-    "BlueCat",
-    "Built Tech",
-    "Cardinal",
-    "Circle",
-    "Collectors",
-    "Compass",
-    "Coterie",
-    "Dandy",
-    "Ecotrak",
-    "FIXD",
-    "Firstup",
-    "Inspira",
-    "Jackson",
-    "Mangomint",
-    "Matador",
-    "Medicom",
-    "PetDesk",
-    "Philips",
-    "Polimorphic",
-    "Protective",
-    "Snappy",
-    "Submittable",
-    "Trustwell",
-    "Wellthy",
-    "Whitestone",
-    "Xplor",
-    "Zayo",
-    "ZipLiens",
-    "beehiiv"
+  [
+   "Checkr",
+   "checkr"
   ],
-  "detail_extra_titles": [
-    "partner development",
-    "sales desk",
-    "lab products",
-    "sales qa",
-    "inside sales",
-    "territory",
-    "client engagement",
-    "growth",
-    "data partnerships"
+  [
+   "Digible",
+   "digible"
   ],
-  "detail_all_companies": [
-    "Collectors",
-    "Cardinal",
-    "Circle",
-    "Jackson",
-    "FIXD",
-    "Whitestone",
-    "Philips"
+  [
+   "Donorbox",
+   "donorbox"
   ],
-  "detail_workday_queries": [
-    "account manager",
-    "customer success",
-    "partner",
-    "sales",
-    "client",
-    "inside sales",
-    "coordinator",
-    "associate"
+  [
+   "Gunter Group",
+   "guntergroup"
   ],
-  "probe": [
-    {
-      "company": "Handshake",
-      "match": [
-        "data partner",
-        "partnership"
-      ],
-      "tries": [
-        [
-          "greenhouse",
-          "joinhandshake"
-        ],
-        [
-          "greenhouse",
-          "handshake"
-        ]
-      ]
-    },
-    {
-      "company": "Synquery",
-      "match": [
-        "general manager",
-        "growth"
-      ],
-      "tries": [
-        [
-          "ashby",
-          "synquery"
-        ],
-        [
-          "lever",
-          "synquery"
-        ],
-        [
-          "greenhouse",
-          "synquery"
-        ],
-        [
-          "rippling",
-          "synquery"
-        ]
-      ]
-    },
-    {
-      "company": "GroundTruth",
-      "match": [
-        "customer success"
-      ],
-      "tries": [
-        [
-          "greenhouse",
-          "groundtruth"
-        ],
-        [
-          "greenhouse",
-          "groundtruthinc"
-        ],
-        [
-          "lever",
-          "groundtruth"
-        ],
-        [
-          "ashby",
-          "groundtruth"
-        ]
-      ]
-    },
-    {
-      "company": "CentralSquare",
-      "match": [
-        "account manager"
-      ],
-      "tries": [
-        [
-          "greenhouse",
-          "centralsquare"
-        ],
-        [
-          "lever",
-          "centralsquare"
-        ],
-        [
-          "workable",
-          "centralsquare"
-        ],
-        [
-          "workday",
-          "centralsquare",
-          "wd1",
-          "CentralSquare"
-        ],
-        [
-          "workday",
-          "centralsquaretech",
-          "wd1",
-          "CentralSquare"
-        ]
-      ]
-    },
-    {
-      "company": "United Rentals",
-      "match": [
-        "inside sales"
-      ],
-      "tries": [
-        [
-          "workday",
-          "ur",
-          "wd5",
-          "UR"
-        ],
-        [
-          "workday",
-          "unitedrentals",
-          "wd5",
-          "UR"
-        ],
-        [
-          "greenhouse",
-          "unitedrentals"
-        ]
-      ]
-    },
-    {
-      "company": "Grainger",
-      "match": [
-        "account manager"
-      ],
-      "tries": [
-        [
-          "workday",
-          "grainger",
-          "wd5",
-          "Grainger"
-        ],
-        [
-          "workday",
-          "grainger",
-          "wd5",
-          "Grainger_Careers"
-        ],
-        [
-          "workday",
-          "grainger",
-          "wd1",
-          "Grainger"
-        ]
-      ]
-    },
-    {
-      "company": "PHIL",
-      "match": [
-        "client engagement"
-      ],
-      "tries": [
-        [
-          "ashby",
-          "phil"
-        ],
-        [
-          "lever",
-          "phil"
-        ],
-        [
-          "greenhouse",
-          "phil"
-        ],
-        [
-          "rippling",
-          "phil"
-        ],
-        [
-          "workable",
-          "phil"
-        ]
-      ]
-    },
-    {
-      "company": "Constellation Dealer Group",
-      "match": [
-        "customer success"
-      ],
-      "tries": [
-        [
-          "lever",
-          "targetcrm"
-        ],
-        [
-          "greenhouse",
-          "targetcrm"
-        ],
-        [
-          "ashby",
-          "targetcrm"
-        ],
-        [
-          "lever",
-          "constellationdealergroup"
-        ],
-        [
-          "greenhouse",
-          "constellationdealergroup"
-        ]
-      ]
-    },
-    {
-      "company": "RevolutionParts",
-      "match": [
-        "customer success"
-      ],
-      "tries": [
-        [
-          "lever",
-          "revolutionparts"
-        ],
-        [
-          "greenhouse",
-          "revolutionparts"
-        ],
-        [
-          "ashby",
-          "revolutionparts"
-        ],
-        [
-          "workable",
-          "revolutionparts"
-        ]
-      ]
-    },
-    {
-      "company": "Proof",
-      "match": [
-        "account manager"
-      ],
-      "tries": [
-        [
-          "greenhouse",
-          "proof"
-        ],
-        [
-          "ashby",
-          "proof"
-        ],
-        [
-          "lever",
-          "proof"
-        ]
-      ]
-    },
-    {
-      "company": "Amazon Freight",
-      "match": [
-        "customer success"
-      ],
-      "tries": [
-        [
-          "amazon",
-          "Enterprise Customer Success Manager freight",
-          "Nashville"
-        ]
-      ]
-    },
-    {
-      "company": "Skylight",
-      "match": [
-        "retail sales"
-      ],
-      "tries": [
-        [
-          "workable",
-          "skylight"
-        ]
-      ]
-    },
-    {
-      "company": "Ramsey Solutions",
-      "match": [
-        "partner success"
-      ],
-      "tries": [
-        [
-          "greenhouse",
-          "ramsey"
-        ],
-        [
-          "lever",
-          "ramsey"
-        ],
-        [
-          "workable",
-          "ramsey"
-        ]
-      ]
-    },
-    {
-      "company": "Remote.com",
-      "match": [
-        "associate account",
-        "enablement"
-      ],
-      "tries": [
-        [
-          "greenhouse",
-          "remotecom"
-        ],
-        [
-          "ashby",
-          "remote"
-        ]
-      ]
-    }
+  [
+   "Hudl",
+   "hudl"
+  ],
+  [
+   "SeatGeek",
+   "seatgeek"
+  ],
+  [
+   "Pindrop",
+   "pindropsecurity"
+  ],
+  [
+   "Fleetio",
+   "fleetio"
+  ],
+  [
+   "SOCi",
+   "soci"
+  ],
+  [
+   "Metropolis",
+   "metropolis"
+  ],
+  [
+   "PrizePicks",
+   "prizepicks"
+  ],
+  [
+   "Arena Club",
+   "arenaclub"
+  ],
+  [
+   "Inspira Education",
+   "inspiraeducation"
+  ],
+  [
+   "The Farmer's Dog",
+   "thefarmersdog"
+  ],
+  [
+   "C.A. Fortune",
+   "cafortune"
+  ],
+  [
+   "Cleo",
+   "cleo"
+  ],
+  [
+   "FanDuel",
+   "fanduel"
+  ],
+  [
+   "Courtyard",
+   "courtyardinc"
+  ],
+  [
+   "Genius Sports",
+   "geniussports"
+  ],
+  [
+   "PENN Interactive",
+   "penninteractive"
+  ],
+  [
+   "Rush Street Interactive",
+   "rushstreetinteractive"
+  ],
+  [
+   "LeagueApps",
+   "leagueapps"
+  ],
+  [
+   "Mitsubishi Motors NA",
+   "mitsubishimotorsna"
+  ],
+  [
+   "CharterUP",
+   "charterup"
+  ],
+  [
+   "Everway",
+   "everway"
+  ],
+  [
+   "Elation Health",
+   "elationhealth"
+  ],
+  [
+   "Wellthy",
+   "wellthy"
+  ],
+  [
+   "Mercury",
+   "mercury"
+  ],
+  [
+   "Envoy Global",
+   "envoyglobalinc"
+  ],
+  [
+   "Bloomerang",
+   "bloomerang"
+  ],
+  [
+   "Compliancy Group",
+   "compliancygroupllc"
+  ],
+  [
+   "Litify",
+   "litify"
+  ],
+  [
+   "Conga",
+   "conga"
+  ],
+  [
+   "Mitratech",
+   "mitratech"
+  ],
+  [
+   "EnergyHub",
+   "energyhub"
+  ],
+  [
+   "Brave",
+   "brave"
+  ],
+  [
+   "Scopely",
+   "scopely"
+  ],
+  [
+   "Customer.io",
+   "customerio"
+  ],
+  [
+   "Submittable",
+   "submittable"
+  ],
+  [
+   "Documo",
+   "documocareers"
+  ],
+  [
+   "Allego",
+   "allego"
+  ],
+  [
+   "Reltio",
+   "reltio"
+  ],
+  [
+   "OpenSesame",
+   "opensesame"
+  ],
+  [
+   "Granum",
+   "granum"
+  ],
+  [
+   "Radicle Health",
+   "radiclehealth"
+  ],
+  [
+   "NetDocuments",
+   "netdocuments"
   ]
+ ],
+ "ashby": [
+  [
+   "VITL",
+   "vitl"
+  ],
+  [
+   "Buildout",
+   "buildout"
+  ],
+  [
+   "Second Nature",
+   "second-nature"
+  ],
+  [
+   "Ncontracts",
+   "ncontracts"
+  ],
+  [
+   "Inductive Automation",
+   "inductive-automation-llc"
+  ],
+  [
+   "Benepass",
+   "benepass"
+  ],
+  [
+   "Docker",
+   "docker"
+  ],
+  [
+   "Palmstreet",
+   "palmstreet"
+  ],
+  [
+   "Broccoli AI",
+   "broccoli"
+  ],
+  [
+   "Xero",
+   "xero"
+  ],
+  [
+   "Kalshi",
+   "kalshi"
+  ],
+  [
+   "Novig",
+   "novig"
+  ],
+  [
+   "Collective",
+   "collective"
+  ],
+  [
+   "Mangomint",
+   "mangomint"
+  ],
+  [
+   "Miter",
+   "miter"
+  ],
+  [
+   "Alt",
+   "alt"
+  ],
+  [
+   "Teamworks",
+   "teamworks"
+  ],
+  [
+   "GameChanger",
+   "gamechanger"
+  ],
+  [
+   "Virta Health",
+   "virtahealth"
+  ],
+  [
+   "Sleeper",
+   "sleeper"
+  ],
+  [
+   "Tread",
+   "tread"
+  ],
+  [
+   "Snappy",
+   "Snappy"
+  ],
+  [
+   "Instructure",
+   "instructure"
+  ],
+  [
+   "Aescape",
+   "aescape"
+  ],
+  [
+   "Polimorphic",
+   "polimorphic"
+  ],
+  [
+   "Dandy",
+   "dandy"
+  ]
+ ],
+ "lever": [
+  [
+   "WorkWave",
+   "workwave"
+  ],
+  [
+   "PadSplit",
+   "padsplit"
+  ],
+  [
+   "Fetch Package",
+   "fetchpackage"
+  ],
+  [
+   "Kobie",
+   "kobie"
+  ],
+  [
+   "Protective Life",
+   "protective"
+  ],
+  [
+   "HighLevel",
+   "gohighlevel"
+  ],
+  [
+   "Colibri",
+   "colibrigroup"
+  ],
+  [
+   "Lendbuzz",
+   "lendbuzz"
+  ],
+  [
+   "TeamSnap",
+   "teamsnap"
+  ],
+  [
+   "Total Expert",
+   "totalexpert"
+  ],
+  [
+   "Lightedge",
+   "lightedge"
+  ],
+  [
+   "Fix Group",
+   "FixGroup"
+  ],
+  [
+   "Betr",
+   "betr"
+  ],
+  [
+   "Firstup",
+   "firstup"
+  ],
+  [
+   "Flex",
+   "Flex"
+  ],
+  [
+   "Versapay",
+   "versapay"
+  ],
+  [
+   "Foodsmart",
+   "foodsmart"
+  ],
+  [
+   "Treering",
+   "treering"
+  ],
+  [
+   "Toptal",
+   "toptal"
+  ],
+  [
+   "Yuno",
+   "yuno"
+  ],
+  [
+   "Supporting Cast",
+   "slate"
+  ],
+  [
+   "Panopto",
+   "panopto"
+  ],
+  [
+   "Onit",
+   "onit"
+  ],
+  [
+   "Mongoose (Lever)",
+   "hellomongoose"
+  ],
+  [
+   "PetDesk",
+   "petdesk"
+  ],
+  [
+   "Bluesight",
+   "bluesight"
+  ],
+  [
+   "BlueCat",
+   "bluecatnetworks"
+  ]
+ ],
+ "workday": [
+  [
+   "Circle",
+   "circle",
+   "wd1",
+   "Circle"
+  ],
+  [
+   "Collectors",
+   "collectorsuniverse",
+   "wd1",
+   "collectors"
+  ],
+  [
+   "Philips",
+   "philips",
+   "wd3",
+   "jobs-and-careers"
+  ],
+  [
+   "Cardinal Health",
+   "cardinalhealth",
+   "wd1",
+   "EXT"
+  ],
+  [
+   "Jackson Financial",
+   "jackson",
+   "wd1",
+   "Jackson_Careers"
+  ],
+  [
+   "Motorola Solutions",
+   "motorolasolutions",
+   "wd5",
+   "Careers"
+  ],
+  [
+   "Guardant Health",
+   "gh",
+   "wd1",
+   "gh"
+  ],
+  [
+   "Zayo",
+   "zayo",
+   "wd1",
+   "Zayo_Careers"
+  ]
+ ],
+ "workable": [
+  [
+   "Ottimate",
+   "ottimate"
+  ],
+  [
+   "Matador Solutions",
+   "matador-solutions"
+  ],
+  [
+   "Silvur",
+   "silvur"
+  ],
+  [
+   "Whip Around",
+   "whiparound"
+  ],
+  [
+   "Fluent",
+   "fluent"
+  ],
+  [
+   "BDA",
+   "bda-inc"
+  ],
+  [
+   "Acumen",
+   "acumentechnology"
+  ],
+  [
+   "ZipLiens",
+   "zipliens"
+  ],
+  [
+   "FIXD",
+   "fixd"
+  ]
+ ],
+ "smartrecruiters": [
+  [
+   "Xplor",
+   "Xplor"
+  ]
+ ],
+ "rippling": [
+  [
+   "Trustwell",
+   "trustwell-careers"
+  ],
+  [
+   "AbsenceSoft",
+   "absencesoft"
+  ],
+  [
+   "myKaarma",
+   "mykaarma"
+  ],
+  [
+   "The Guarantors",
+   "theguarantors-open-positions"
+  ],
+  [
+   "Storesight",
+   "storesight"
+  ],
+  [
+   "Coterie",
+   "coterie-careers"
+  ],
+  [
+   "Ecotrak",
+   "ecotrak-careers"
+  ],
+  [
+   "Anaconda",
+   "anaconda"
+  ],
+  [
+   "Medicom",
+   "medicom-careers"
+  ],
+  [
+   "Whitestone Branding",
+   "whitestone-branding-careers"
+  ]
+ ],
+ "bamboohr": [
+  [
+   "beehiiv",
+   "beehiiv"
+  ]
+ ],
+ "skip_hashes": [
+  "003ddfe197fe",
+  "00aa8942525b",
+  "02b15ef87562",
+  "04ad9fa1d7d7",
+  "0d10bc1801f2",
+  "13984a4e7e0e",
+  "157564302aa5",
+  "1867835f8bb4",
+  "1b1b79a2159b",
+  "1d74bcc049c4",
+  "1f7081b055d3",
+  "21b480da0f89",
+  "222f930b8752",
+  "2505ad8617be",
+  "2868ca774194",
+  "2a4f9141b30c",
+  "2a5e1ea1dcfe",
+  "2b63bd1a162b",
+  "31796f5f9480",
+  "3277b9ec8b4a",
+  "3297cd6339ef",
+  "337b8d2c1e13",
+  "469be0d71cac",
+  "46f60d7b1920",
+  "4afbf987bce1",
+  "4c29afa9c0fd",
+  "4e18123e0f06",
+  "5204892766f4",
+  "56297dbc3da6",
+  "56af6dd30c15",
+  "56ead909b0b4",
+  "57fce44d7c6d",
+  "5fb931380e50",
+  "605f4cf6e6c6",
+  "6354b71c99dc",
+  "651b2c67d536",
+  "65ddc6a37ae5",
+  "67e1258c4827",
+  "68323c1446f3",
+  "6c289b916b1d",
+  "74204e6c6abe",
+  "7494962107cb",
+  "7f902752c315",
+  "810500fcb568",
+  "82fb5676971c",
+  "8a469dfde3e2",
+  "9c3879fc8c41",
+  "9c848c95d41e",
+  "9dadc9da467b",
+  "a1bb216b2bbb",
+  "a89821a6490f",
+  "a8a5343533ba",
+  "ad6002c24071",
+  "aef4e73f4f63",
+  "b196810cabc7",
+  "b40a5d46c181",
+  "b45312c3f297",
+  "b4553fc6901c",
+  "b45f91c85b44",
+  "b46509796d00",
+  "b62f3b3b1b40",
+  "b8bd5657de6f",
+  "bd11be25fd5f",
+  "c110f1f954ff",
+  "c1cda2636282",
+  "c5c99d3c99c0",
+  "c5fa0d016227",
+  "c94b014420b1",
+  "cbdd10d72000",
+  "cd2c0f63ad37",
+  "cd6d2e2d79cb",
+  "cda9593e0f0c",
+  "d081f8aa347a",
+  "d548c5b83fa6",
+  "d7d2036a5b8d",
+  "d867c55b793d",
+  "d9fb92e3bbe6",
+  "dd4cb9cf52f0",
+  "deb889383959",
+  "ded04153d3bc",
+  "e64cf04a2021",
+  "e678686f9c70",
+  "e71c604e30b2",
+  "e90f02d2eca9",
+  "ec5e2e816226",
+  "f001fbda2311",
+  "f70d13e9c0fc",
+  "fc774f1cc2f8",
+  "fe1dfde08572",
+  "34b7a4cccd05"
+ ],
+ "include_title": [
+  "customer success",
+  "client success",
+  "account manager",
+  "account management",
+  "account coordinator",
+  "account associate",
+  "renewal",
+  "partner success",
+  "relationship manager",
+  "relationship specialist",
+  "client service",
+  "client services",
+  "customer experience",
+  "success specialist",
+  "success associate",
+  "customer advocate",
+  "account representative",
+  "inside account",
+  "account executive",
+  "partner manager",
+  "account director",
+  "implementation specialist",
+  "implementation manager",
+  "implementation consultant",
+  "implementation coordinator",
+  "onboarding specialist",
+  "onboarding manager",
+  "onboarding coordinator",
+  "customer onboarding",
+  "client partner",
+  "customer engagement"
+ ],
+ "exclude_title_hard": [
+  "engineer",
+  "developer",
+  "designer",
+  "director",
+  "vp ",
+  "vice president",
+  "head of",
+  "principal",
+  "staff ",
+  "intern ",
+  "internship",
+  "data ",
+  "scientist",
+  "recruit",
+  "accountant",
+  "marketing",
+  "product manager",
+  "sales development",
+  "business development rep",
+  "sdr",
+  "bdr",
+  "legal",
+  "counsel",
+  "controller",
+  "payroll",
+  "security",
+  "devops",
+  "architect",
+  "technical account",
+  "support engineer",
+  "solutions engineer",
+  "implementation engineer",
+  "cfo",
+  "chief",
+  "payments",
+  "tax ",
+  "audit",
+  "dealership",
+  "dealer "
+ ],
+ "soft_title": [
+  "senior",
+  "sr.",
+  "sr ",
+  "strategic",
+  "enterprise",
+  "lead ",
+  "manager, customer success operations",
+  "solutions"
+ ],
+ "include_location": [
+  "remote",
+  "united states",
+  "usa",
+  "u.s.",
+  "us-",
+  "nashville",
+  "tennessee",
+  ", tn",
+  "anywhere",
+  "north america",
+  "americas",
+  "franklin",
+  "brentwood",
+  "hendersonville",
+  "goodlettsville",
+  "mt. juliet",
+  "mount juliet",
+  "gallatin",
+  "madison, tn"
+ ],
+ "foreign": [
+  "united kingdom",
+  "uk",
+  "canada",
+  "india",
+  "germany",
+  "france",
+  "australia",
+  "ireland",
+  "mexico",
+  "brazil",
+  "philippines",
+  "poland",
+  "spain",
+  "netherlands",
+  "singapore",
+  "japan",
+  "argentina",
+  "colombia",
+  "romania",
+  "bulgaria",
+  "emea",
+  "apac",
+  "latam",
+  "israel",
+  "portugal",
+  "italy",
+  "sweden",
+  "denmark",
+  "norway",
+  "finland",
+  "switzerland"
+ ],
+ "workday_queries": [
+  "customer success",
+  "account manager",
+  "renewal",
+  "account coordinator",
+  "client success",
+  "client service"
+ ],
+ "discover_queries": [
+  "customer success manager",
+  "account manager existing customers",
+  "renewals specialist",
+  "client success manager",
+  "account coordinator",
+  "associate customer success"
+ ],
+ "local_location": [
+  "nashville",
+  "tennessee",
+  ", tn",
+  "franklin, tn",
+  "brentwood",
+  "hendersonville",
+  "goodlettsville",
+  "mt. juliet",
+  "mount juliet",
+  "gallatin",
+  "madison, tn",
+  "smyrna",
+  "murfreesboro",
+  "lebanon, tn",
+  "antioch",
+  "hermitage",
+  "donelson"
+ ],
+ "detail_companies": [
+  "AbsenceSoft",
+  "Alt",
+  "BILL",
+  "BlueCat",
+  "Built Tech",
+  "Cardinal",
+  "Circle",
+  "Collectors",
+  "Compass",
+  "Coterie",
+  "Dandy",
+  "Ecotrak",
+  "FIXD",
+  "Firstup",
+  "Inspira",
+  "Jackson",
+  "Mangomint",
+  "Matador",
+  "Medicom",
+  "PetDesk",
+  "Philips",
+  "Polimorphic",
+  "Protective",
+  "Snappy",
+  "Submittable",
+  "Trustwell",
+  "Wellthy",
+  "Whitestone",
+  "Xplor",
+  "Zayo",
+  "ZipLiens",
+  "beehiiv"
+ ],
+ "detail_extra_titles": [
+  "partner development",
+  "sales desk",
+  "lab products",
+  "sales qa",
+  "inside sales",
+  "territory",
+  "client engagement",
+  "growth",
+  "data partnerships"
+ ],
+ "detail_all_companies": [
+  "Collectors",
+  "Cardinal",
+  "Circle",
+  "Jackson",
+  "FIXD",
+  "Whitestone",
+  "Philips"
+ ],
+ "detail_workday_queries": [
+  "account manager",
+  "customer success",
+  "partner",
+  "sales",
+  "client",
+  "inside sales",
+  "coordinator",
+  "associate"
+ ],
+ "probe": [
+  {
+   "company": "Handshake",
+   "match": [
+    "data partner",
+    "partnership"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "joinhandshake"
+    ],
+    [
+     "greenhouse",
+     "handshake"
+    ]
+   ]
+  },
+  {
+   "company": "Synquery",
+   "match": [
+    "general manager",
+    "growth"
+   ],
+   "tries": [
+    [
+     "ashby",
+     "synquery"
+    ],
+    [
+     "lever",
+     "synquery"
+    ],
+    [
+     "greenhouse",
+     "synquery"
+    ],
+    [
+     "rippling",
+     "synquery"
+    ]
+   ]
+  },
+  {
+   "company": "GroundTruth",
+   "match": [
+    "customer success"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "groundtruth"
+    ],
+    [
+     "greenhouse",
+     "groundtruthinc"
+    ],
+    [
+     "lever",
+     "groundtruth"
+    ],
+    [
+     "ashby",
+     "groundtruth"
+    ]
+   ]
+  },
+  {
+   "company": "CentralSquare",
+   "match": [
+    "account manager"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "centralsquare"
+    ],
+    [
+     "lever",
+     "centralsquare"
+    ],
+    [
+     "workable",
+     "centralsquare"
+    ],
+    [
+     "workday",
+     "centralsquare",
+     "wd1",
+     "CentralSquare"
+    ],
+    [
+     "workday",
+     "centralsquaretech",
+     "wd1",
+     "CentralSquare"
+    ]
+   ]
+  },
+  {
+   "company": "United Rentals",
+   "match": [
+    "inside sales"
+   ],
+   "tries": [
+    [
+     "workday",
+     "ur",
+     "wd5",
+     "UR"
+    ],
+    [
+     "workday",
+     "unitedrentals",
+     "wd5",
+     "UR"
+    ],
+    [
+     "greenhouse",
+     "unitedrentals"
+    ]
+   ]
+  },
+  {
+   "company": "Grainger",
+   "match": [
+    "account manager"
+   ],
+   "tries": [
+    [
+     "workday",
+     "grainger",
+     "wd5",
+     "Grainger"
+    ],
+    [
+     "workday",
+     "grainger",
+     "wd5",
+     "Grainger_Careers"
+    ],
+    [
+     "workday",
+     "grainger",
+     "wd1",
+     "Grainger"
+    ]
+   ]
+  },
+  {
+   "company": "PHIL",
+   "match": [
+    "client engagement"
+   ],
+   "tries": [
+    [
+     "ashby",
+     "phil"
+    ],
+    [
+     "lever",
+     "phil"
+    ],
+    [
+     "greenhouse",
+     "phil"
+    ],
+    [
+     "rippling",
+     "phil"
+    ],
+    [
+     "workable",
+     "phil"
+    ]
+   ]
+  },
+  {
+   "company": "Constellation Dealer Group",
+   "match": [
+    "customer success"
+   ],
+   "tries": [
+    [
+     "lever",
+     "targetcrm"
+    ],
+    [
+     "greenhouse",
+     "targetcrm"
+    ],
+    [
+     "ashby",
+     "targetcrm"
+    ],
+    [
+     "lever",
+     "constellationdealergroup"
+    ],
+    [
+     "greenhouse",
+     "constellationdealergroup"
+    ]
+   ]
+  },
+  {
+   "company": "RevolutionParts",
+   "match": [
+    "customer success"
+   ],
+   "tries": [
+    [
+     "lever",
+     "revolutionparts"
+    ],
+    [
+     "greenhouse",
+     "revolutionparts"
+    ],
+    [
+     "ashby",
+     "revolutionparts"
+    ],
+    [
+     "workable",
+     "revolutionparts"
+    ]
+   ]
+  },
+  {
+   "company": "Proof",
+   "match": [
+    "account manager"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "proof"
+    ],
+    [
+     "ashby",
+     "proof"
+    ],
+    [
+     "lever",
+     "proof"
+    ]
+   ]
+  },
+  {
+   "company": "Amazon Freight",
+   "match": [
+    "customer success"
+   ],
+   "tries": [
+    [
+     "amazon",
+     "Enterprise Customer Success Manager freight",
+     "Nashville"
+    ]
+   ]
+  },
+  {
+   "company": "Skylight",
+   "match": [
+    "retail sales"
+   ],
+   "tries": [
+    [
+     "workable",
+     "skylight"
+    ]
+   ]
+  },
+  {
+   "company": "Ramsey Solutions",
+   "match": [
+    "partner success"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "ramsey"
+    ],
+    [
+     "lever",
+     "ramsey"
+    ],
+    [
+     "workable",
+     "ramsey"
+    ]
+   ]
+  },
+  {
+   "company": "Remote.com",
+   "match": [
+    "associate account",
+    "enablement"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "remotecom"
+    ],
+    [
+     "ashby",
+     "remote"
+    ]
+   ]
+  }
+ ],
+ "qualify_show": [
+  "Digible",
+  "Wellthy",
+  "TeamSnap",
+  "Fluent",
+  "Polimorphic",
+  "GoGuardian",
+  "Everway",
+  "Zayo",
+  "C.A. Fortune",
+  "Acumen",
+  "Silvur",
+  "Inspira"
+ ]
 }

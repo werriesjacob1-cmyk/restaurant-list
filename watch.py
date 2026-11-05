@@ -848,6 +848,8 @@ def qualify():
         for j, txt, fl in sorted(buckets[v], key=lambda x: x[0]["company"].lower()):
             posted = age_label(j["posted"]) if j.get("posted") else "posted date n/a"
             print(f"QUAL|{v}|{j['company']}|{j['title']}|{j['location'][:40]}|{posted}|{'; '.join(fl) or 'no flags'}|{j.get('url','')}")
+            if any(x.lower() in j["company"].lower() for x in CFG.get("qualify_show", [])):
+                print(f"QUALFULL|{j['company']}|{j['title']}|" + re.sub(r"\s+", " ", txt)[:9000])
             if v == "PASS":
                 print(f"QUALTXT|{j['company']}|{j['title']}|" + re.sub(r"\s+", " ", txt)[:1800])
     print("QUAL-REJECTED " + json.dumps(rej, sort_keys=True))
