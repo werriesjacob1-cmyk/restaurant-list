@@ -122,7 +122,7 @@ def loc_ok(loc):
         return True
     if any(x in ll for x in CFG.get("local_location", [])) or re.search(r"(?<![a-z])tn(?![a-z])", ll):
         return True
-    if any(re.search(r"\b" + re.escape(c) + r"\b", ll) for c in CFG.get("foreign", [])) and not re.search(r"united states|\busa\b|\bu\.s\.", ll):
+    if any(re.search(r"\b" + re.escape(c) + r"\b", ll) for c in CFG.get("foreign", [])) and not re.search(r"united states|\busa\b|\bu\.s\.|\bus\b", ll):
         return False
     if STATE_NAME_RE.search(ll) or STATE_ABBR_RE.search(raw):
         return False
