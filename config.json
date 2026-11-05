@@ -1256,5 +1256,53 @@
  "qualify_show": [
   "Bloomerang",
   "GoGuardian"
+ ],
+ "sales_title": [
+  "inside sales",
+  "sales representative",
+  "sales rep ",
+  "sales executive",
+  "business development manager",
+  "business development executive",
+  "associate account executive",
+  "account executive",
+  "sales associate",
+  "client executive",
+  "sales consultant",
+  "sales manager",
+  "territory"
+ ],
+ "sales_exclude": [
+  "outside sales",
+  "field sales",
+  "dealer",
+  "retail",
+  "store ",
+  "insurance",
+  "mortgage",
+  "loan",
+  "financial advisor",
+  "solar",
+  "security",
+  "real estate agent",
+  "recruit",
+  "staffing",
+  "merchandis",
+  "door",
+  "canvass",
+  "sales engineer",
+  "solutions engineer"
+ ],
+ "widen_queries": [
+  "customer success manager",
+  "account manager",
+  "client success manager",
+  "account executive",
+  "inside sales representative",
+  "business development manager",
+  "sales representative",
+  "account management",
+  "renewal manager",
+  "partner success manager"
  ]
 }

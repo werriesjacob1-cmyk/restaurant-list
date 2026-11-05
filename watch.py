@@ -778,6 +778,16 @@ def qualify_job(j, txt, skip):
             soft.append("includes commission/OTE")
     nopay = rng is None
     t = txt or ""
+    sales_mode = "--sales" in sys.argv
+    if sales_mode:
+        if re.search(r"commission[- ]only|100% commission|straight commission|1099|independent contractor|door[- ]to[- ]door|multi[- ]level|pay is commission", t, re.I):
+            return "REJ:commission-only/1099", []
+        if re.search(r"insurance (agent|producer|sales)|licensed (insurance|agent)|life and health|property (and|&) casualty|financial advisor|loan officer|mortgage (loan|originator)|series (6|7|63|65|66)", t, re.I) or len(re.findall(r"insurance", t, re.I)) >= 4 or re.search(r"insur|mortgage|loan officer|financial advisor", tl):
+            return "REJ:insurance/financial sales", []
+        if not re.search(r"base (salary|pay|compensation|of)|annual (base )?salary|salary (range|of|is)|\bbase\b[^.]{0,30}\$", t, re.I) and not (j.get("pay") and find_pay(str(j.get("pay")))):
+            soft.append("BASE SALARY NOT STATED")
+        if re.search(r"cut[- ]?throat|stack[- ]rank|up[- ]or[- ]out|sink or swim|ruthless|killer instinct|relentless|\b\d{2,3}\+? (?:cold )?(?:calls|dials) (?:a|per) day", t, re.I):
+            soft.append("cut-throat language")
     if re.search(r"cold[- ]call|prospecting|hunter|new logo|outbound", t, re.I):
         soft.append("outbound/prospecting language")
     if re.search(r"(?<!no )(?<!not )(?<!without )\b(saturdays?|sundays?|weekends?)\b", t, re.I):
@@ -805,7 +815,7 @@ def qualify_job(j, txt, skip):
         soft.append("posting over 120 days old")
     if nopay:
         return "NOPAY", flags + soft
-    hard_soft = [x for x in soft if x.startswith(("specialty", "WEEKEND", "outbound"))]
+    hard_soft = [x for x in soft if x.startswith(("specialty", "WEEKEND", "BASE SALARY", "cut-throat") + (() if sales_mode else ("outbound",)))]
     return ("NEAR" if hard_soft else "PASS"), flags + soft
 
 
@@ -915,6 +925,10 @@ def qualify():
         for j in jobs:
             total += 1
             ok, soft, why = title_decision(j["title"])
+            if not ok and "--sales" in sys.argv:
+                tl2 = " " + j["title"].lower() + " "
+                hard = any(x in tl2 for x in CFG.get("exclude_title_hard", [])) or any(x in tl2 for x in CFG.get("sales_exclude", []))
+                ok = (not hard) and any(x in tl2 for x in CFG.get("sales_title", []))
             if not ok or not loc_ok(j["location"]):
                 continue
             key = (j["company"].lower(), j["title"].strip().lower(), j["location"].strip().lower())
