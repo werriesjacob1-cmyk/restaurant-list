@@ -828,26 +828,50 @@ def widen_boards(auto):
     with ThreadPoolExecutor(max_workers=6) as ex:
         for r in ex.map(adz, [(q, w, p) for q in queries for w in ("", "Nashville, TN") for p in (1, 2, 3)]):
             jobs += r
-    seen = {}
+    comps = {}
     for u, comp, sm in jobs:
-        if u and u not in seen and not (sm and sm < CFG.get("pay_floor", 60000)):
-            seen[u] = comp
-    print(f"WIDEN: {len(jobs)} listings, {len(seen)} unique links")
-    def res(item):
-        u, comp = item
-        return comp, ats_from_url(resolve_final_url(u))
-    found, unresolved = [], 0
-    with ThreadPoolExecutor(max_workers=12) as ex:
-        for comp, hit in ex.map(res, list(seen.items())[:400]):
-            if not hit:
-                unresolved += 1; continue
-            kind, slug = hit
-            if (kind, str(slug).lower()) in known or kind not in ADAPTERS:
-                continue
-            known.add((kind, str(slug).lower()))
-            if add_auto_roster(auto, kind, slug, comp):
-                found.append((kind, [comp, slug]))
-    print(f"WIDEN: new boards={len(found)} unresolved_links={unresolved}")
+        if comp and comp != "?" and not (sm and sm < CFG.get("pay_floor", 60000)):
+            comps[comp] = 1
+    skip = set(CFG.get("skip_hashes", []))
+    names = [c for c in comps if chash(c) not in skip]
+    print(f"WIDEN: {len(jobs)} listings, {len(names)} companies to try")
+    def slugs(name):
+        base = re.sub(r"\b(inc|llc|ltd|corp|corporation|company|co|the|group|holdings|technologies|technology)\b\.?", " ", name.lower())
+        words = re.findall(r"[a-z0-9]+", base)
+        out = []
+        if words:
+            out += ["".join(words), "-".join(words), words[0]]
+        w2 = re.findall(r"[a-z0-9]+", name.lower())
+        if w2:
+            out += ["".join(w2), "-".join(w2)]
+        return list(dict.fromkeys(x for x in out if len(x) > 2))
+    probes = {
+        "greenhouse": lambda sl: len(get(f"https://boards-api.greenhouse.io/v1/boards/{sl}/jobs").get("jobs", [])),
+        "lever": lambda sl: len(get(f"https://api.lever.co/v0/postings/{sl}?mode=json")),
+        "ashby": lambda sl: len(get(f"https://api.ashbyhq.com/posting-api/job-board/{sl}").get("jobs", [])),
+    }
+    def try_company(name):
+        hits = []
+        for sl in slugs(name):
+            for kind, fn in probes.items():
+                if (kind, sl) in known:
+                    continue
+                try:
+                    if fn(sl) > 0:
+                        hits.append((kind, sl))
+                except Exception:
+                    pass
+            if hits:
+                break
+        return name, hits
+    found = []
+    with ThreadPoolExecutor(max_workers=16) as ex:
+        for name, hits in ex.map(try_company, names[:700]):
+            for kind, sl in hits[:1]:
+                known.add((kind, sl.lower()))
+                if add_auto_roster(auto, kind, sl, name):
+                    found.append((kind, [name, sl]))
+    print(f"WIDEN: new boards={len(found)}")
     for kind, e in found:
         print(f"WIDEN-NEW|{kind}|{e[0]}|{e[1]}")
     return found
