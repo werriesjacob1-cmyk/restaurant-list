@@ -1,0 +1,48 @@
+name: board-watch
+on:
+  schedule:
+    - cron: "*/5 11-23,0-1 * * 1-5"   # weekdays, every 5 min, ~5 AM-8 PM Central
+    - cron: "7 12-23,0-1 * * 0,6"     # weekends, hourly
+  workflow_dispatch:
+    inputs:
+      selftest:
+        description: "Send a test notification only"
+        type: boolean
+        default: false
+concurrency:
+  group: board-watch
+  cancel-in-progress: false
+permissions:
+  contents: write
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 9
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Self-test
+        if: ${{ github.event.inputs.selftest == 'true' }}
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python watch.py --selftest
+      - name: Poll boards and alert
+        if: ${{ github.event.inputs.selftest != 'true' }}
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          ADZUNA_APP_ID: ${{ secrets.ADZUNA_APP_ID }}
+          ADZUNA_APP_KEY: ${{ secrets.ADZUNA_APP_KEY }}
+        run: python watch.py
+      - name: Save state
+        if: ${{ github.event.inputs.selftest != 'true' }}
+        run: |
+          git config user.name "board-watch"
+          git config user.email "board-watch@users.noreply.github.com"
+          git add state.json auto_roster.json filtered_log.jsonl 2>/dev/null || true
+          git diff --cached --quiet || (git commit -qm "state" && git pull --rebase -q && git push -q)
