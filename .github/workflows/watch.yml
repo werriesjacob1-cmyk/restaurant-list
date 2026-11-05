@@ -30,7 +30,7 @@ on:
         type: boolean
         default: false
 concurrency:
-  group: board-watch-${{ github.event_name == 'schedule' && 'poll' || 'manual' }}
+  group: board-watch-${{ github.event_name == 'schedule' && 'poll' || github.event.inputs.chain == 'true' && 'chain' || 'manual' }}
   cancel-in-progress: false
 permissions:
   contents: write
@@ -82,3 +82,11 @@ jobs:
           git config user.email "board-watch@users.noreply.github.com"
           for f in state.json auto_roster.json filtered_log.jsonl; do if [ -f "$f" ]; then git add "$f"; fi; done
           git diff --cached --quiet || (git commit -qm "state" && git pull --rebase -q && git push -q)
+      - name: Chain next run
+        if: ${{ always() && github.event.inputs.chain == 'true' }}
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          H=$(date -u +%H); D=$(date -u +%u)
+          if [ "$D" -le 5 ] && { [ "$H" -ge 11 ] || [ "$H" -le 1 ]; }; then sleep 240; else sleep 1380; fi
+          gh api repos/${{ github.repository }}/actions/workflows/watch.yml/dispatches -f ref=main -F 'inputs[chain]=true'
