@@ -63,12 +63,15 @@ jobs:
         run: python watch.py --probe
       - name: Deep qualify
         if: ${{ github.event.inputs.qualify == 'true' }}
-        run: python watch.py --qualify
+        env:
+          ADZUNA_APP_ID: ${{ secrets.ADZUNA_APP_ID }}
+          ADZUNA_APP_KEY: ${{ secrets.ADZUNA_APP_KEY }}
+        run: python watch.py --qualify --widen
       - name: Audit
         if: ${{ github.event.inputs.audit == 'true' }}
         run: python watch.py --audit
       - name: Save state
-        if: ${{ github.event.inputs.selftest != 'true' && github.event.inputs.audit != 'true' && github.event.inputs.detail != 'true' && github.event.inputs.probe != 'true' && github.event.inputs.qualify != 'true' }}
+        if: ${{ github.event.inputs.selftest != 'true' && github.event.inputs.audit != 'true' && github.event.inputs.detail != 'true' && github.event.inputs.probe != 'true' }}
         run: |
           git config user.name "board-watch"
           git config user.email "board-watch@users.noreply.github.com"

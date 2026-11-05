@@ -797,12 +797,73 @@ def qualify_job(j, txt, skip):
     hard_soft = [x for x in soft if x.startswith(("specialty", "WEEKEND", "outbound"))]
     return ("NEAR" if hard_soft else "PASS"), flags + soft
 
+
+def widen_boards(auto):
+    """Find employer job boards behind fresh Adzuna listings (last 45 days, several pages, many titles).
+    Returns list of (kind, [company, slug]) not already watched. Adds them to auto_roster."""
+    aid, akey = os.environ.get("ADZUNA_APP_ID", ""), os.environ.get("ADZUNA_APP_KEY", "")
+    if not (aid and akey):
+        print("WIDEN: no Adzuna keys in this run")
+        return []
+    known = set()
+    for kind, e in board_list(auto):
+        known.add((kind, str(e[1]).lower()))
+    queries = CFG.get("widen_queries", ["customer success manager", "account manager", "client success manager", "customer success associate",
+                                        "renewal manager", "partner success manager", "client services manager", "account management"])
+    urls = {}
+    def adz(args):
+        q, where, page = args
+        params = {"app_id": aid, "app_key": akey, "results_per_page": 50, "sort_by": "date", "what_or": q,
+                  "max_days_old": 45, "content-type": "application/json"}
+        if where:
+            params["where"] = where; params["distance"] = 40
+        else:
+            params["what_or"] = q + " remote"
+        try:
+            d = get(f"https://api.adzuna.com/v1/api/jobs/us/search/{page}?" + urllib.parse.urlencode(params))
+            return [(j.get("redirect_url", ""), (j.get("company") or {}).get("display_name", "?"), j.get("salary_max")) for j in d.get("results", [])]
+        except Exception as e:
+            print("WIDEN adzuna error:", str(e)[:80]); return []
+    jobs = []
+    with ThreadPoolExecutor(max_workers=6) as ex:
+        for r in ex.map(adz, [(q, w, p) for q in queries for w in ("", "Nashville, TN") for p in (1, 2, 3)]):
+            jobs += r
+    seen = {}
+    for u, comp, sm in jobs:
+        if u and u not in seen and not (sm and sm < CFG.get("pay_floor", 60000)):
+            seen[u] = comp
+    print(f"WIDEN: {len(jobs)} listings, {len(seen)} unique links")
+    def res(item):
+        u, comp = item
+        return comp, ats_from_url(resolve_final_url(u))
+    found, unresolved = [], 0
+    with ThreadPoolExecutor(max_workers=12) as ex:
+        for comp, hit in ex.map(res, list(seen.items())[:400]):
+            if not hit:
+                unresolved += 1; continue
+            kind, slug = hit
+            if (kind, str(slug).lower()) in known or kind not in ADAPTERS:
+                continue
+            known.add((kind, str(slug).lower()))
+            if add_auto_roster(auto, kind, slug, comp):
+                found.append((kind, [comp, slug]))
+    print(f"WIDEN: new boards={len(found)} unresolved_links={unresolved}")
+    for kind, e in found:
+        print(f"WIDEN-NEW|{kind}|{e[0]}|{e[1]}")
+    return found
+
 def qualify():
     """Deep search: every board, every title match, full posting read, scored against the Tier 1 rule. No alerts, no state."""
     auto = load_json(AUTO_PATH, {})
     skip = set(CFG.get("skip_hashes", []))
     if CFG.get("detail_workday_queries"):
         CFG["workday_queries"] = CFG["detail_workday_queries"]
+    if "--widen" in sys.argv:
+        try:
+            widen_boards(auto)
+            json.dump(auto, open(AUTO_PATH, "w"), indent=1)
+        except Exception as ex:
+            print("WIDEN failed:", str(ex)[:120])
     boards = board_list(auto)
     def one(t):
         kind, e = t
