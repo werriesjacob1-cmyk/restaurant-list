@@ -75,6 +75,35 @@ class FrozenVerificationTests(unittest.TestCase):
         self.assertEqual(result["status"],"UNVERIFIED")
         self.assertIn("HTTP 429",result["questions"][0])
 
+    def test_province_and_nonremote_out_of_state_rejected(self):
+        import discovery_v2 as d
+        for loc in ("Oshawa, Ontario (Remote)", "Calgary, Alberta (Remote)",
+                    "Boston, Massachusetts, USA", "Vancouver, Washington, United States",
+                    "Chicago, Illinois, United States"):
+            self.assertEqual(d.location_triage(loc)[0], "REJECT", loc)
+
+    def test_memphis_territory_remote_rejected(self):
+        import discovery_v2 as d
+        status,_=d.location_triage("Memphis, TN (Remote)",
+                        "Must reside within or near the assigned geographic territory")
+        self.assertEqual(status,"REJECT")
+
+    def test_insurance_partner_role_excluded(self):
+        job=dict(self.row,title="Client Success Specialist, Insurance Partnerships")
+        desc=("Own accounts in the insurance partnership channel and support onboarding. "
+              "Base salary: $70,000-$80,000. Account renewals and customer satisfaction. ")*4
+        status,_,_,hard,_=v.verify_rules(job,desc,"ATS_LISTED")
+        self.assertEqual(status,"EXCLUDE")
+        self.assertIn("Excluded industry explicitly named in job title",hard)
+
+    def test_weekend_shift_required_excluded(self):
+        desc=("Ability to work weeknights and weekends due to varying shifts, "
+              "which includes 5 days of work with 2 days off is required. "
+              "Customer success support, Base salary: $80,000-$95,000. ")*4
+        status,_,_,hard,_=v.verify_rules(self.row,desc,"ATS_LISTED")
+        self.assertEqual(status,"EXCLUDE")
+        self.assertIn("Explicit weekend-work requirement",hard)
+
     def test_no_false_apply_confirmation(self):
         result=v.verify_one(self.row,(self.job,"ATS_LISTED","exact ATS record"),None)
         self.assertEqual(result["apply_form"],"NOT_TESTED")
