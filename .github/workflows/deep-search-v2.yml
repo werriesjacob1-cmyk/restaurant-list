@@ -53,9 +53,9 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          echo "calls=0" >> "$GITHUB_OUTPUT"
           if [ "$BRAVE_KEY_PRESENT" != "true" ] || [ "$WANT_DISCOVERY" != "true" ]; then
             echo "Skipping Brave; missing key or discovery disabled."
+            echo "calls=0" >> "$GITHUB_OUTPUT"
             exit 0
           fi
           git config user.name "deep-search-v2"
