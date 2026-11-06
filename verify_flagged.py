@@ -380,6 +380,13 @@ def main():
         opts.source_run,len(selection),len(checked),len(unique_sources),
         json.dumps(results["summary"],sort_keys=True)))
     for r in checked:
+        print("VROW|{}|{}|{}|{}|base={}|ote={}|yrs={}|{}|Q={}|HARD={}|{}".format(
+            r["status"],r["company"],r["title"],str(r.get("location",""))[:40],
+            deep.salary(r.get("new_base",[])),deep.salary(r.get("new_ote",[])),
+            r.get("years_requirement_heuristic"),r.get("listing_status"),
+            "; ".join(str(x) for x in r.get("questions",[])[:4])[:260],
+            "; ".join(str(x) for x in r.get("hard_exclusions",[]))[:160],r.get("current_posting_url","")))
+    for r in checked:
         if r["status"]=="PRIORITY_REVIEW":
             print(f"VERIFY-PRIORITY|{r['company']}|{r['title']}|{r['current_posting_url']}")
     return 0
