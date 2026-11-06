@@ -104,6 +104,32 @@ class FrozenVerificationTests(unittest.TestCase):
         self.assertEqual(status,"EXCLUDE")
         self.assertIn("Explicit weekend-work requirement",hard)
 
+    def test_foreign_remote_cities_are_not_us_remote(self):
+        import discovery_v2 as d
+        for loc in ("Toronto (Remote)", "Sydney (Remote)", "Tokyo, Japan (Remote)",
+                    "UK: Milton Keynes (Remote)", "Ottawa (Remote)"):
+            self.assertEqual(d.location_triage(loc)[0], "REJECT", loc)
+        self.assertEqual(d.location_triage("U.S Remote")[0], "PASS")
+
+    def test_future_opportunity_and_people_lead_excluded(self):
+        desc=("Own customer relationships for a recurring-revenue client book. "
+              "Base salary: $80,000-$100,000; OTE: $115,000-$130,000. ")*4
+        for title in ("Future Opportunity: Account Executive",
+                      "Customer Success People Lead"):
+            job=dict(self.row,title=title)
+            status,_,_,hard,_=v.verify_rules(job,desc,"ATS_LISTED")
+            self.assertEqual(status,"EXCLUDE",title)
+            self.assertTrue(hard,title)
+
+    def test_foreign_territory_title_when_location_ambiguous(self):
+        job=dict(self.row,title="Territory Account Executive, Saskatchewan / Manitoba",
+                 location="Distributed")
+        desc=("Build customer relationships with prospects. "
+              "Base salary: $90,000-$120,000. OTE: $160,000-$200,000. ")*4
+        status,_,_,hard,_=v.verify_rules(job,desc,"ATS_LISTED")
+        self.assertEqual(status,"EXCLUDE")
+        self.assertIn("Position title is specific to a foreign region",hard)
+
     def test_no_false_apply_confirmation(self):
         result=v.verify_one(self.row,(self.job,"ATS_LISTED","exact ATS record"),None)
         self.assertEqual(result["apply_form"],"NOT_TESTED")
