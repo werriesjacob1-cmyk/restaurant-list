@@ -33,7 +33,7 @@ def role_priority(title):
         return 22
     if any(k in s for k in ("client engagement", "customer retention", "relationship manager", "merchant success")):
         return 17
-    if any(k in s for k in ("sales development", "business development representative", "account development representative", "\bsdr\b", "\bbdr\b")):
+    if any(k in s for k in ("sales development", "business development representative", "account development representative", "sdr", "bdr")):
         return -30
     if "business development" in s:return -18
     if "inside sales" in s:return 6
