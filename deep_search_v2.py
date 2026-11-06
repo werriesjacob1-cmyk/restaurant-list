@@ -203,7 +203,7 @@ def run(args):
     stats=Counter(r["disposition"] for r in rows)
     print("V2-SUMMARY boards={} candidates={} review={} verify={} rejected={} added={} brave_calls={} errors={}".format(
         len(boards),len(rows),stats["REVIEW"],stats["VERIFY"],stats["REJECT"],added,len(audit),len(errors)))
-    for r in rows[:20]:
+    for r in rows[:400]:
         if r["disposition"]!="REJECT":
             print("V2|{}|{}|{}|{}|{}|{}".format(r["disposition"],r["priority_score"],
                   r["company"],r["title"],salary(r["base_ranges"]),r["official_posting"]))
