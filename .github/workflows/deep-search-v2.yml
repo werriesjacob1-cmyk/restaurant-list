@@ -1,5 +1,9 @@
 name: deep-search-v2
 on:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/deep-search-v2.yml
   schedule:
     - cron: "15 14 * * *" # 8:15 AM CST / 9:15 AM CDT
   workflow_dispatch:
@@ -49,7 +53,7 @@ jobs:
         id: budget
         env:
           BRAVE_KEY_PRESENT: ${{ secrets.BRAVE_SEARCH_API_KEY != '' }}
-          WANT_DISCOVERY: ${{ github.event_name == 'schedule' || inputs.discover == true }}
+          WANT_DISCOVERY: ${{ github.event_name == 'schedule' || github.event_name == 'push' || inputs.discover == true }}
         shell: bash
         run: |
           set -euo pipefail
@@ -76,7 +80,7 @@ jobs:
           BRAVE_SEARCH_API_KEY: ${{ secrets.BRAVE_SEARCH_API_KEY }}
           FOCUS: ${{ inputs.focus || 'all' }}
           DAYS: ${{ inputs.days || 7 }}
-          WANT_DISCOVERY: ${{ github.event_name == 'schedule' || inputs.discover == true }}
+          WANT_DISCOVERY: ${{ github.event_name == 'schedule' || github.event_name == 'push' || inputs.discover == true }}
         shell: bash
         run: |
           set -euo pipefail
