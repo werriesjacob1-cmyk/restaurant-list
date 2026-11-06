@@ -25,10 +25,13 @@ ROLE_GROUPS = {
                  "account representative", "client services", "account coordinator"),
     "sales": ("account executive", "inside sales", "business development",
               "sales development", "account development", "sales representative",
-              "sdr", "bdr", "commercial sales"),
+              "sdr", "bdr", "commercial sales",
+              "sales operations", "sales ops", "crm operations", "crm coordinator",
+              "crm specialist", "lead operations", "lead management", "inbound operations",
+              "sales enablement", "revenue operations specialist", "sales support"),
 }
 EXCLUDE_TITLES = ("director", "vp ", "vice president", "head of", "supervisor",
-                  "team lead", "sales coach", "trainer", "enablement", "implementation",
+                  "team lead", "sales coach", "trainer", "enablement manager", "implementation",
                   "onboarding", "intern", "technical support", "staff engineer")
 REQUIRED_DEGREE = re.compile(
     r"(?:bachelor(?:'s)?|college degree|four.year degree)[^.]{0,55}(?:required|mandatory|must have)"

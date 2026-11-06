@@ -34,8 +34,10 @@ def role_priority(title):
     if any(k in s for k in ("client engagement", "customer retention", "relationship manager", "merchant success")):
         return 17
     if any(k in s for k in ("sales development", "business development representative", "account development representative", "sdr", "bdr")):
-        return -30
-    if "business development" in s:return -18
+        return 14  # Nov 6: Jacob now accepts hunter roles to get software sales on his resume
+    if any(k in s for k in ("sales operations", "sales ops", "crm operations", "lead operations", "lead management", "sales enablement", "inbound operations", "crm coordinator", "crm specialist")):
+        return 10
+    if "business development" in s:return 4
     if "inside sales" in s:return 6
     if "account executive" in s:return 2
     return 0
