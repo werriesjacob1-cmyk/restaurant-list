@@ -13,6 +13,7 @@ ROOT=Path(__file__).resolve().parent
 ROSTER=ROOT/"deep_search_roster.json"
 SEEN=ROOT/"deep_search_seen.json"
 OUT=ROOT/"deep_search_output"
+INTERMEDIARIES={"jobgether","swooped","jobot","talentify"}
 MORE_TITLES=("client engagement","client relationship","customer relationship",
              "merchant success","account management","customer retention",
              "partner account manager","relationship manager","inside account",
