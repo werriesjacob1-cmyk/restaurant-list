@@ -1,4 +1,5 @@
 name: deep-search-v2
+# Workflow-file updates run a free smoke report; Brave is reserved only for daily/manual discovery.
 on:
   push:
     branches: [main]
