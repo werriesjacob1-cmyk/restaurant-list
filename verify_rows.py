@@ -75,12 +75,18 @@ def check(row):
     if target.OUTBOUND_ONLY.search(text): flags.append("OUTBOUND_ONLY")
     if re.search(r"cold.call", text, re.I): flags.append("cold-calling")
     if target.PEOPLE.search(text): flags.append("PEOPLE_MGMT")
+    if "--excerpts" in sys.argv:
+        for m in re.finditer(r"(bachelor|degree|saturday|weekend|\$\s?\d|salary|base pay|commission|on.target|travel|cold.call|salesforce|outreach|hybrid|in.office|office)", text, re.I):
+            s0 = max(0, m.start() - 80)
+            print("VX|%s|%s" % (row["company"], text[s0:m.end() + 110].replace("\n", " ")))
     return "VT2|%s|OPEN|%s|%s|base=%s|ote=%s|ad=%s|yrs=%s|chars=%d|%s|%s" % (
         row["company"], job["title"], job.get("location", "")[:40], rng("base"), rng("ote"), rng("ambiguous"),
         years(text), len(text), "; ".join(flags)[:240], job.get("url", ""))
 
 def main():
+    if len(sys.argv) > 2 and sys.argv[2] != "--excerpts": pass
     rows = json.load(open(sys.argv[1]))
+    rows = [r for r in rows]
     with ThreadPoolExecutor(6) as ex:
         for line in ex.map(check, rows): print(line, flush=True)
 if __name__ == "__main__": main()

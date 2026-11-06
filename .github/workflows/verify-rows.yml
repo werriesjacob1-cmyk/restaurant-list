@@ -6,6 +6,10 @@ on:
         description: "JSON file of roles to check"
         type: string
         default: tier2_rows.json
+      excerpts:
+        description: "Pass --excerpts to print text around pay/degree/weekend/travel"
+        type: string
+        default: ""
 permissions:
   contents: read
 jobs:
@@ -17,4 +21,4 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: python verify_rows.py "${{ github.event.inputs.rows_file }}"
+      - run: python verify_rows.py "${{ github.event.inputs.rows_file }}" ${{ github.event.inputs.excerpts }}
