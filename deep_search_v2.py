@@ -120,9 +120,9 @@ def render(rows,meta):
         lines.append("- {}: {} — {} search results, {} candidate boards".format(
             q["status"],safe(q["query"]),q["results"],q["candidate_boards"]))
     if not meta["brave_audit"]:lines.append("- No Brave API calls.")
-    if meta["error_sample"]:
+    if meta.get("error_sample",[]):
         lines+=["","## Feed errors",""]
-        for x in meta["error_sample"][:10]:lines.append("- "+safe(x))
+        for x in meta.get("error_sample",[])[:10]:lines.append("- "+safe(x))
     return "\n".join(lines)+"\n"
 def run(args):
     now=time.time();dt=datetime.fromtimestamp(now,timezone.utc)
