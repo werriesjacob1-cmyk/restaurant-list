@@ -48,6 +48,8 @@ def read_boards(boards,focus):
     for kind,entry,jobs,error in batches:
         if error:
             errors.append(kind+":"+entry[1]+":"+error);continue
+        if watch.norm_company(entry[0]) in INTERMEDIARIES or entry[1].lower() in INTERMEDIARIES:
+            continue
         if jobs:
             successful.append((kind,entry))
         for job in jobs:
