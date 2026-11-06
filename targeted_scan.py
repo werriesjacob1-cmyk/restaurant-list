@@ -221,8 +221,6 @@ def search(args):
     if args.discover:
         boards += extra_boards_from_brave(known)
     blocked = set(watch.CFG.get("skip_hashes",[]))
-    # Hashed hard exclusions from the current no-insurance/no-lending rules.
-    blocked.update({"06282b257f03", "7f3672d47f91", "ce98eb1cf7ab", "260dad968669"})
     results, failures = [], []
     def get_board(item):
         kind,e = item
