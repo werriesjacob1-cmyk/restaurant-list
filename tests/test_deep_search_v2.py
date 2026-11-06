@@ -48,6 +48,10 @@ class Discovery(unittest.TestCase):
                     "https://jobs.ashbyhq.com/../../etc",
                     "https://get-your-job-now.com/"):
             self.assertIsNone(d.parse_ats_url(url))
+    def test_recruiter_ats_board_not_employer(self):
+        self.assertIsNone(d.parse_ats_url("https://jobs.lever.co/jobgether/123"))
+        self.assertIsNone(d.parse_ats_url("https://jobs.ashbyhq.com/swooped/123"))
+        self.assertFalse(report.title_ok("Technical Account Manager 2", "all"))
     def test_paid_calls_never_exceed_grant(self):
         calls=[]
         def fake_get(url,headers=None,timeout=None):
