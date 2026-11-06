@@ -269,3 +269,6 @@
 {"t": 1794000688, "c": "Stripe", "title": "Account Executive, SMB (Hunter)", "why": "location: Chicago"}
 {"t": 1794000999, "c": "Qualtrics", "title": "Associate General Counsel, GTM & Commercial Legal", "why": "excluded:legal"}
 {"t": 1794001288, "c": "Paystand", "title": "Senior Fullstack Engineer", "why": "excluded:engineer"}
+{"t": 1794001574, "c": "FanDuel", "title": "Payroll Tax Manager", "why": "excluded:payroll"}
+{"t": 1794001574, "c": "Workday", "title": "Regional Sales Director, FSI", "why": "excluded:director"}
+{"t": 1794001574, "c": "Thermo Fisher", "title": "Director, Global Supply Center Strategy & Growth", "why": "excluded:director"}
