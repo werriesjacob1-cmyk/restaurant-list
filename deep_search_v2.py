@@ -26,6 +26,20 @@ def title_ok(title,focus):
 def identifier(row):
     data="|".join((row.get("ats",""),row.get("official_posting","").split("?")[0],row.get("title","")))
     return hashlib.sha256(data.lower().encode()).hexdigest()[:20]
+def role_priority(title):
+    """Prefer post-sale relationship ownership over pure pipeline-generation titles."""
+    s=str(title or "").lower()
+    if any(k in s for k in ("customer success", "client success", "partner success", "renewal", "account manager", "account management")):
+        return 22
+    if any(k in s for k in ("client engagement", "customer retention", "relationship manager", "merchant success")):
+        return 17
+    if any(k in s for k in ("sales development", "business development representative", "account development representative", "\bsdr\b", "\bbdr\b")):
+        return -30
+    if "business development" in s:return -18
+    if "inside sales" in s:return 6
+    if "account executive" in s:return 2
+    return 0
+
 def salary(rng):
     if not rng:return "unknown"
     lo=min(v[0] for v in rng);hi=max(v[1] for v in rng)
@@ -90,6 +104,7 @@ def qualify(item,now,days,prior,baseline):
     if row["disposition"]=="REJECT":score-=100
     if any("required SaaS" in x or "required B2B" in x for x in row["questions"]):score-=15
     if any("outbound" in x for x in row["questions"]):score-=7
+    score+=role_priority(row["title"])
     row["priority_score"]=score
     row["questions"]=sorted(set(row["questions"]))
     row["hard_exclusions"]=sorted(set(row["hard_exclusions"]))
@@ -113,7 +128,14 @@ def render(rows,meta):
            "",
            "| Rank | Company / role | Location | Base / OTE | Screen | Timing and concerns | Posting |",
            "|---|---|---|---|---|---|---|"]
-    for i,r in enumerate(active[:30],1):
+    # Prevent a company with many location variants from monopolizing the shortlist.
+    shown=[];by_company=Counter()
+    for candidate in active:
+        key=watch.norm_company(candidate["company"])
+        if by_company[key]>=2:continue
+        by_company[key]+=1;shown.append(candidate)
+        if len(shown)>=30:break
+    for i,r in enumerate(shown,1):
         notes="; ".join(r["questions"][:2]) or "check Apply form"
         if r["new_to_v2"]:notes="new to V2; "+notes
         age="unknown" if r["age_days"] is None else str(r["age_days"])+"d"
