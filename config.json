@@ -1261,6 +1261,544 @@
  ],
  "probe": [
   {
+   "company": "Cortex | JW-461",
+   "match": [
+    "business development"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "cortex"
+    ],
+    [
+     "ashby",
+     "cortex"
+    ],
+    [
+     "lever",
+     "cortex"
+    ]
+   ]
+  },
+  {
+   "company": "Builder Prime | JW-462",
+   "match": [
+    "development"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "builder-prime"
+    ],
+    [
+     "ashby",
+     "builder-prime"
+    ],
+    [
+     "lever",
+     "builder-prime"
+    ],
+    [
+     "greenhouse",
+     "builderprime"
+    ],
+    [
+     "ashby",
+     "builderprime"
+    ],
+    [
+     "lever",
+     "builderprime"
+    ]
+   ]
+  },
+  {
+   "company": "Nooks | JW-463",
+   "match": [
+    "sdr",
+    "development"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "nooks"
+    ],
+    [
+     "ashby",
+     "nooks"
+    ],
+    [
+     "lever",
+     "nooks"
+    ],
+    [
+     "greenhouse",
+     "nooks-ai"
+    ],
+    [
+     "ashby",
+     "nooks-ai"
+    ],
+    [
+     "lever",
+     "nooks-ai"
+    ]
+   ]
+  },
+  {
+   "company": "Wealthbox | JW-464",
+   "match": [
+    "development"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "wealthbox"
+    ],
+    [
+     "ashby",
+     "wealthbox"
+    ],
+    [
+     "lever",
+     "wealthbox"
+    ]
+   ]
+  },
+  {
+   "company": "Ashby | JW-440",
+   "match": [
+    "customer success"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "ashby"
+    ],
+    [
+     "ashby",
+     "ashby"
+    ],
+    [
+     "lever",
+     "ashby"
+    ]
+   ]
+  },
+  {
+   "company": "Qoria | JW-439",
+   "match": [
+    "customer success"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "qoria"
+    ],
+    [
+     "ashby",
+     "qoria"
+    ],
+    [
+     "lever",
+     "qoria"
+    ],
+    [
+     "greenhouse",
+     "smoothwall"
+    ],
+    [
+     "ashby",
+     "smoothwall"
+    ],
+    [
+     "lever",
+     "smoothwall"
+    ]
+   ]
+  },
+  {
+   "company": "Tekmetric | JW-441",
+   "match": [
+    "customer results",
+    "customer success"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "tekmetric"
+    ],
+    [
+     "ashby",
+     "tekmetric"
+    ],
+    [
+     "lever",
+     "tekmetric"
+    ]
+   ]
+  },
+  {
+   "company": "Conversica | JW-444",
+   "match": [
+    "customer success"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "conversica"
+    ],
+    [
+     "ashby",
+     "conversica"
+    ],
+    [
+     "lever",
+     "conversica"
+    ]
+   ]
+  },
+  {
+   "company": "Shopview | JW-445",
+   "match": [
+    "customer success"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "shopview"
+    ],
+    [
+     "ashby",
+     "shopview"
+    ],
+    [
+     "lever",
+     "shopview"
+    ]
+   ]
+  },
+  {
+   "company": "Close | JW-446",
+   "match": [
+    "customer success"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "close"
+    ],
+    [
+     "ashby",
+     "close"
+    ],
+    [
+     "lever",
+     "close"
+    ],
+    [
+     "greenhouse",
+     "closecrm"
+    ],
+    [
+     "ashby",
+     "closecrm"
+    ],
+    [
+     "lever",
+     "closecrm"
+    ]
+   ]
+  },
+  {
+   "company": "Flai | JW-453",
+   "match": [
+    "account manager"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "flai"
+    ],
+    [
+     "ashby",
+     "flai"
+    ],
+    [
+     "lever",
+     "flai"
+    ]
+   ]
+  },
+  {
+   "company": "LivTech | JW-452",
+   "match": [
+    "account executive"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "livtech"
+    ],
+    [
+     "ashby",
+     "livtech"
+    ],
+    [
+     "lever",
+     "livtech"
+    ]
+   ]
+  },
+  {
+   "company": "Leap | JW-455",
+   "match": [
+    "customer success"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "leap"
+    ],
+    [
+     "ashby",
+     "leap"
+    ],
+    [
+     "lever",
+     "leap"
+    ],
+    [
+     "greenhouse",
+     "leap-ecommerce"
+    ],
+    [
+     "ashby",
+     "leap-ecommerce"
+    ],
+    [
+     "lever",
+     "leap-ecommerce"
+    ],
+    [
+     "greenhouse",
+     "leaphq"
+    ],
+    [
+     "ashby",
+     "leaphq"
+    ],
+    [
+     "lever",
+     "leaphq"
+    ]
+   ]
+  },
+  {
+   "company": "KPA | JW-456",
+   "match": [
+    "implementation"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "kpa"
+    ],
+    [
+     "ashby",
+     "kpa"
+    ],
+    [
+     "lever",
+     "kpa"
+    ],
+    [
+     "greenhouse",
+     "kpaonline"
+    ],
+    [
+     "ashby",
+     "kpaonline"
+    ],
+    [
+     "lever",
+     "kpaonline"
+    ]
+   ]
+  },
+  {
+   "company": "Artist Growth | JW-457",
+   "match": [
+    "customer success"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "artistgrowth"
+    ],
+    [
+     "ashby",
+     "artistgrowth"
+    ],
+    [
+     "lever",
+     "artistgrowth"
+    ],
+    [
+     "greenhouse",
+     "artist-growth"
+    ],
+    [
+     "ashby",
+     "artist-growth"
+    ],
+    [
+     "lever",
+     "artist-growth"
+    ]
+   ]
+  },
+  {
+   "company": "Ingenious.Build | JW-459",
+   "match": [
+    "customer success"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "ingenious"
+    ],
+    [
+     "ashby",
+     "ingenious"
+    ],
+    [
+     "lever",
+     "ingenious"
+    ],
+    [
+     "greenhouse",
+     "ingeniousbuild"
+    ],
+    [
+     "ashby",
+     "ingeniousbuild"
+    ],
+    [
+     "lever",
+     "ingeniousbuild"
+    ]
+   ]
+  },
+  {
+   "company": "Evotix | JW-449",
+   "match": [
+    "account manager"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "evotix"
+    ],
+    [
+     "ashby",
+     "evotix"
+    ],
+    [
+     "lever",
+     "evotix"
+    ]
+   ]
+  },
+  {
+   "company": "Recharge | JW-448",
+   "match": [
+    "customer success"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "recharge"
+    ],
+    [
+     "ashby",
+     "recharge"
+    ],
+    [
+     "lever",
+     "recharge"
+    ],
+    [
+     "greenhouse",
+     "rechargepayments"
+    ],
+    [
+     "ashby",
+     "rechargepayments"
+    ],
+    [
+     "lever",
+     "rechargepayments"
+    ],
+    [
+     "greenhouse",
+     "rechargeapps"
+    ],
+    [
+     "ashby",
+     "rechargeapps"
+    ],
+    [
+     "lever",
+     "rechargeapps"
+    ]
+   ]
+  },
+  {
+   "company": "Inspired Thinking | JW-460",
+   "match": [
+    "customer success"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "inspiredthinkinggroup"
+    ],
+    [
+     "ashby",
+     "inspiredthinkinggroup"
+    ],
+    [
+     "lever",
+     "inspiredthinkinggroup"
+    ],
+    [
+     "greenhouse",
+     "itg"
+    ],
+    [
+     "ashby",
+     "itg"
+    ],
+    [
+     "lever",
+     "itg"
+    ]
+   ]
+  },
+  {
+   "company": "Steno | JW-458",
+   "match": [
+    "account manager"
+   ],
+   "tries": [
+    [
+     "rippling",
+     "steno-careers-page"
+    ]
+   ]
+  },
+  {
    "company": "Mindbody | JW-413",
    "match": [
     "account executive"
