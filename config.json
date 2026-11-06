@@ -1012,7 +1012,11 @@
   "smb sales",
   "smb account executive",
   "commercial sales representative",
-  "new business sales"
+  "new business sales",
+  "inbound operations",
+  "inbound specialist",
+  "lead management specialist",
+  "sales support specialist"
  ],
  "exclude_title_hard": [
   "engineer",
@@ -1166,7 +1170,11 @@
   "crm operations specialist",
   "sales enablement specialist",
   "lead operations specialist",
-  "revenue operations coordinator"
+  "revenue operations coordinator",
+  "inbound operations specialist",
+  "lead management specialist",
+  "crm coordinator",
+  "account representative"
  ],
  "local_location": [
   "nashville",
