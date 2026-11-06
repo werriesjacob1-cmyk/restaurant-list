@@ -1261,6 +1261,1213 @@
  ],
  "probe": [
   {
+   "company": "Luma Health | NASH",
+   "match": [
+    "development rep",
+    "business development",
+    "sales",
+    "account",
+    "customer success",
+    "client success",
+    "onboarding",
+    "implementation",
+    "enablement",
+    "crm",
+    "revenue operations",
+    "partner"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "lumahealth"
+    ],
+    [
+     "ashby",
+     "lumahealth"
+    ],
+    [
+     "lever",
+     "lumahealth"
+    ]
+   ]
+  },
+  {
+   "company": "Tennr | NASH",
+   "match": [
+    "development rep",
+    "business development",
+    "sales",
+    "account",
+    "customer success",
+    "client success",
+    "onboarding",
+    "implementation",
+    "enablement",
+    "crm",
+    "revenue operations",
+    "partner"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "tennr"
+    ],
+    [
+     "ashby",
+     "tennr"
+    ],
+    [
+     "lever",
+     "tennr"
+    ]
+   ]
+  },
+  {
+   "company": "Zocdoc | NASH",
+   "match": [
+    "development rep",
+    "business development",
+    "sales",
+    "account",
+    "customer success",
+    "client success",
+    "onboarding",
+    "implementation",
+    "enablement",
+    "crm",
+    "revenue operations",
+    "partner"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "zocdoc"
+    ],
+    [
+     "ashby",
+     "zocdoc"
+    ],
+    [
+     "lever",
+     "zocdoc"
+    ]
+   ]
+  },
+  {
+   "company": "Cedar | NASH",
+   "match": [
+    "development rep",
+    "business development",
+    "sales",
+    "account",
+    "customer success",
+    "client success",
+    "onboarding",
+    "implementation",
+    "enablement",
+    "crm",
+    "revenue operations",
+    "partner"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "cedar"
+    ],
+    [
+     "ashby",
+     "cedar"
+    ],
+    [
+     "lever",
+     "cedar"
+    ]
+   ]
+  },
+  {
+   "company": "Aledade | NASH",
+   "match": [
+    "development rep",
+    "business development",
+    "sales",
+    "account",
+    "customer success",
+    "client success",
+    "onboarding",
+    "implementation",
+    "enablement",
+    "crm",
+    "revenue operations",
+    "partner"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "aledade"
+    ],
+    [
+     "ashby",
+     "aledade"
+    ],
+    [
+     "lever",
+     "aledade"
+    ]
+   ]
+  },
+  {
+   "company": "Pathway | NASH",
+   "match": [
+    "development rep",
+    "business development",
+    "sales",
+    "account",
+    "customer success",
+    "client success",
+    "onboarding",
+    "implementation",
+    "enablement",
+    "crm",
+    "revenue operations",
+    "partner"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "pathway"
+    ],
+    [
+     "ashby",
+     "pathway"
+    ],
+    [
+     "lever",
+     "pathway"
+    ]
+   ]
+  },
+  {
+   "company": "Sage Growth | NASH",
+   "match": [
+    "development rep",
+    "business development",
+    "sales",
+    "account",
+    "customer success",
+    "client success",
+    "onboarding",
+    "implementation",
+    "enablement",
+    "crm",
+    "revenue operations",
+    "partner"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "sagegrowth"
+    ],
+    [
+     "ashby",
+     "sagegrowth"
+    ],
+    [
+     "lever",
+     "sagegrowth"
+    ]
+   ]
+  },
+  {
+   "company": "Ribbon Health | NASH",
+   "match": [
+    "development rep",
+    "business development",
+    "sales",
+    "account",
+    "customer success",
+    "client success",
+    "onboarding",
+    "implementation",
+    "enablement",
+    "crm",
+    "revenue operations",
+    "partner"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "ribbonhealth"
+    ],
+    [
+     "ashby",
+     "ribbonhealth"
+    ],
+    [
+     "lever",
+     "ribbonhealth"
+    ]
+   ]
+  },
+  {
+   "company": "Spring Health | NASH",
+   "match": [
+    "development rep",
+    "business development",
+    "sales",
+    "account",
+    "customer success",
+    "client success",
+    "onboarding",
+    "implementation",
+    "enablement",
+    "crm",
+    "revenue operations",
+    "partner"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "springhealth"
+    ],
+    [
+     "ashby",
+     "springhealth"
+    ],
+    [
+     "lever",
+     "springhealth"
+    ],
+    [
+     "greenhouse",
+     "springhealth66"
+    ],
+    [
+     "ashby",
+     "springhealth66"
+    ],
+    [
+     "lever",
+     "springhealth66"
+    ]
+   ]
+  },
+  {
+   "company": "Ellipsis Health | NASH",
+   "match": [
+    "development rep",
+    "business development",
+    "sales",
+    "account",
+    "customer success",
+    "client success",
+    "onboarding",
+    "implementation",
+    "enablement",
+    "crm",
+    "revenue operations",
+    "partner"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "ellipsishealth"
+    ],
+    [
+     "ashby",
+     "ellipsishealth"
+    ],
+    [
+     "lever",
+     "ellipsishealth"
+    ]
+   ]
+  },
+  {
+   "company": "CareCloud | NASH",
+   "match": [
+    "development rep",
+    "business development",
+    "sales",
+    "account",
+    "customer success",
+    "client success",
+    "onboarding",
+    "implementation",
+    "enablement",
+    "crm",
+    "revenue operations",
+    "partner"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "carecloud"
+    ],
+    [
+     "ashby",
+     "carecloud"
+    ],
+    [
+     "lever",
+     "carecloud"
+    ]
+   ]
+  },
+  {
+   "company": "Wellsky | NASH",
+   "match": [
+    "development rep",
+    "business development",
+    "sales",
+    "account",
+    "customer success",
+    "client success",
+    "onboarding",
+    "implementation",
+    "enablement",
+    "crm",
+    "revenue operations",
+    "partner"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "wellsky"
+    ],
+    [
+     "ashby",
+     "wellsky"
+    ],
+    [
+     "lever",
+     "wellsky"
+    ]
+   ]
+  },
+  {
+   "company": "Nuvem | NASH",
+   "match": [
+    "development rep",
+    "business development",
+    "sales",
+    "account",
+    "customer success",
+    "client success",
+    "onboarding",
+    "implementation",
+    "enablement",
+    "crm",
+    "revenue operations",
+    "partner"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "nuvem"
+    ],
+    [
+     "ashby",
+     "nuvem"
+    ],
+    [
+     "lever",
+     "nuvem"
+    ]
+   ]
+  },
+  {
+   "company": "Lyniate | NASH",
+   "match": [
+    "development rep",
+    "business development",
+    "sales",
+    "account",
+    "customer success",
+    "client success",
+    "onboarding",
+    "implementation",
+    "enablement",
+    "crm",
+    "revenue operations",
+    "partner"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "lyniate"
+    ],
+    [
+     "ashby",
+     "lyniate"
+    ],
+    [
+     "lever",
+     "lyniate"
+    ]
+   ]
+  },
+  {
+   "company": "Revel Systems | NASH",
+   "match": [
+    "development rep",
+    "business development",
+    "sales",
+    "account",
+    "customer success",
+    "client success",
+    "onboarding",
+    "implementation",
+    "enablement",
+    "crm",
+    "revenue operations",
+    "partner"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "revelsystems"
+    ],
+    [
+     "ashby",
+     "revelsystems"
+    ],
+    [
+     "lever",
+     "revelsystems"
+    ]
+   ]
+  },
+  {
+   "company": "Ontellus | NASH",
+   "match": [
+    "development rep",
+    "business development",
+    "sales",
+    "account",
+    "customer success",
+    "client success",
+    "onboarding",
+    "implementation",
+    "enablement",
+    "crm",
+    "revenue operations",
+    "partner"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "ontellus"
+    ],
+    [
+     "ashby",
+     "ontellus"
+    ],
+    [
+     "lever",
+     "ontellus"
+    ]
+   ]
+  },
+  {
+   "company": "Datavant | NASH",
+   "match": [
+    "development rep",
+    "business development",
+    "sales",
+    "account",
+    "customer success",
+    "client success",
+    "onboarding",
+    "implementation",
+    "enablement",
+    "crm",
+    "revenue operations",
+    "partner"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "datavant"
+    ],
+    [
+     "ashby",
+     "datavant"
+    ],
+    [
+     "lever",
+     "datavant"
+    ]
+   ]
+  },
+  {
+   "company": "Zelis | NASH",
+   "match": [
+    "development rep",
+    "business development",
+    "sales",
+    "account",
+    "customer success",
+    "client success",
+    "onboarding",
+    "implementation",
+    "enablement",
+    "crm",
+    "revenue operations",
+    "partner"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "zelis"
+    ],
+    [
+     "ashby",
+     "zelis"
+    ],
+    [
+     "lever",
+     "zelis"
+    ]
+   ]
+  },
+  {
+   "company": "Phreesia | NASH",
+   "match": [
+    "development rep",
+    "business development",
+    "sales",
+    "account",
+    "customer success",
+    "client success",
+    "onboarding",
+    "implementation",
+    "enablement",
+    "crm",
+    "revenue operations",
+    "partner"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "phreesia"
+    ],
+    [
+     "ashby",
+     "phreesia"
+    ],
+    [
+     "lever",
+     "phreesia"
+    ]
+   ]
+  },
+  {
+   "company": "Experity | NASH",
+   "match": [
+    "development rep",
+    "business development",
+    "sales",
+    "account",
+    "customer success",
+    "client success",
+    "onboarding",
+    "implementation",
+    "enablement",
+    "crm",
+    "revenue operations",
+    "partner"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "experity"
+    ],
+    [
+     "ashby",
+     "experity"
+    ],
+    [
+     "lever",
+     "experity"
+    ]
+   ]
+  },
+  {
+   "company": "symplr | NASH",
+   "match": [
+    "development rep",
+    "business development",
+    "sales",
+    "account",
+    "customer success",
+    "client success",
+    "onboarding",
+    "implementation",
+    "enablement",
+    "crm",
+    "revenue operations",
+    "partner"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "symplr"
+    ],
+    [
+     "ashby",
+     "symplr"
+    ],
+    [
+     "lever",
+     "symplr"
+    ]
+   ]
+  },
+  {
+   "company": "LifeOmic | NASH",
+   "match": [
+    "development rep",
+    "business development",
+    "sales",
+    "account",
+    "customer success",
+    "client success",
+    "onboarding",
+    "implementation",
+    "enablement",
+    "crm",
+    "revenue operations",
+    "partner"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "lifeomic"
+    ],
+    [
+     "ashby",
+     "lifeomic"
+    ],
+    [
+     "lever",
+     "lifeomic"
+    ]
+   ]
+  },
+  {
+   "company": "Uniguest | NASH",
+   "match": [
+    "development rep",
+    "business development",
+    "sales",
+    "account",
+    "customer success",
+    "client success",
+    "onboarding",
+    "implementation",
+    "enablement",
+    "crm",
+    "revenue operations",
+    "partner"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "uniguest"
+    ],
+    [
+     "ashby",
+     "uniguest"
+    ],
+    [
+     "lever",
+     "uniguest"
+    ]
+   ]
+  },
+  {
+   "company": "Grow Therapy | NASH",
+   "match": [
+    "development rep",
+    "business development",
+    "sales",
+    "account",
+    "customer success",
+    "client success",
+    "onboarding",
+    "implementation",
+    "enablement",
+    "crm",
+    "revenue operations",
+    "partner"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "growtherapy"
+    ],
+    [
+     "ashby",
+     "growtherapy"
+    ],
+    [
+     "lever",
+     "growtherapy"
+    ]
+   ]
+  },
+  {
+   "company": "ClassWallet | NASH",
+   "match": [
+    "development rep",
+    "business development",
+    "sales",
+    "account",
+    "customer success",
+    "client success",
+    "onboarding",
+    "implementation",
+    "enablement",
+    "crm",
+    "revenue operations",
+    "partner"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "classwallet"
+    ],
+    [
+     "ashby",
+     "classwallet"
+    ],
+    [
+     "lever",
+     "classwallet"
+    ]
+   ]
+  },
+  {
+   "company": "EnableComp | NASH",
+   "match": [
+    "development rep",
+    "business development",
+    "sales",
+    "account",
+    "customer success",
+    "client success",
+    "onboarding",
+    "implementation",
+    "enablement",
+    "crm",
+    "revenue operations",
+    "partner"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "enablecomp"
+    ],
+    [
+     "ashby",
+     "enablecomp"
+    ],
+    [
+     "lever",
+     "enablecomp"
+    ]
+   ]
+  },
+  {
+   "company": "Emids | NASH",
+   "match": [
+    "development rep",
+    "business development",
+    "sales",
+    "account",
+    "customer success",
+    "client success",
+    "onboarding",
+    "implementation",
+    "enablement",
+    "crm",
+    "revenue operations",
+    "partner"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "emids"
+    ],
+    [
+     "ashby",
+     "emids"
+    ],
+    [
+     "lever",
+     "emids"
+    ]
+   ]
+  },
+  {
+   "company": "SphereCommerce | NASH",
+   "match": [
+    "development rep",
+    "business development",
+    "sales",
+    "account",
+    "customer success",
+    "client success",
+    "onboarding",
+    "implementation",
+    "enablement",
+    "crm",
+    "revenue operations",
+    "partner"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "spherecommerce"
+    ],
+    [
+     "ashby",
+     "spherecommerce"
+    ],
+    [
+     "lever",
+     "spherecommerce"
+    ]
+   ]
+  },
+  {
+   "company": "Findhelp | NASH",
+   "match": [
+    "development rep",
+    "business development",
+    "sales",
+    "account",
+    "customer success",
+    "client success",
+    "onboarding",
+    "implementation",
+    "enablement",
+    "crm",
+    "revenue operations",
+    "partner"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "findhelp"
+    ],
+    [
+     "ashby",
+     "findhelp"
+    ],
+    [
+     "lever",
+     "findhelp"
+    ],
+    [
+     "greenhouse",
+     "auntbertha"
+    ],
+    [
+     "ashby",
+     "auntbertha"
+    ],
+    [
+     "lever",
+     "auntbertha"
+    ]
+   ]
+  },
+  {
+   "company": "Clearwater Compliance | NASH",
+   "match": [
+    "development rep",
+    "business development",
+    "sales",
+    "account",
+    "customer success",
+    "client success",
+    "onboarding",
+    "implementation",
+    "enablement",
+    "crm",
+    "revenue operations",
+    "partner"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "clearwatercompliance"
+    ],
+    [
+     "ashby",
+     "clearwatercompliance"
+    ],
+    [
+     "lever",
+     "clearwatercompliance"
+    ],
+    [
+     "greenhouse",
+     "clearwater"
+    ],
+    [
+     "ashby",
+     "clearwater"
+    ],
+    [
+     "lever",
+     "clearwater"
+    ]
+   ]
+  },
+  {
+   "company": "Qualifacts | NASH",
+   "match": [
+    "development rep",
+    "business development",
+    "sales",
+    "account",
+    "customer success",
+    "client success",
+    "onboarding",
+    "implementation",
+    "enablement",
+    "crm",
+    "revenue operations",
+    "partner"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "qualifacts"
+    ],
+    [
+     "ashby",
+     "qualifacts"
+    ],
+    [
+     "lever",
+     "qualifacts"
+    ]
+   ]
+  },
+  {
+   "company": "ClarisHealth | NASH",
+   "match": [
+    "development rep",
+    "business development",
+    "sales",
+    "account",
+    "customer success",
+    "client success",
+    "onboarding",
+    "implementation",
+    "enablement",
+    "crm",
+    "revenue operations",
+    "partner"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "clarishealth"
+    ],
+    [
+     "ashby",
+     "clarishealth"
+    ],
+    [
+     "lever",
+     "clarishealth"
+    ]
+   ]
+  },
+  {
+   "company": "Inova Payroll | NASH",
+   "match": [
+    "development rep",
+    "business development",
+    "sales",
+    "account",
+    "customer success",
+    "client success",
+    "onboarding",
+    "implementation",
+    "enablement",
+    "crm",
+    "revenue operations",
+    "partner"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "inovapayroll"
+    ],
+    [
+     "ashby",
+     "inovapayroll"
+    ],
+    [
+     "lever",
+     "inovapayroll"
+    ]
+   ]
+  },
+  {
+   "company": "Healthcare Bluebook | NASH",
+   "match": [
+    "development rep",
+    "business development",
+    "sales",
+    "account",
+    "customer success",
+    "client success",
+    "onboarding",
+    "implementation",
+    "enablement",
+    "crm",
+    "revenue operations",
+    "partner"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "healthcarebluebook"
+    ],
+    [
+     "ashby",
+     "healthcarebluebook"
+    ],
+    [
+     "lever",
+     "healthcarebluebook"
+    ],
+    [
+     "greenhouse",
+     "bluebook"
+    ],
+    [
+     "ashby",
+     "bluebook"
+    ],
+    [
+     "lever",
+     "bluebook"
+    ]
+   ]
+  },
+  {
+   "company": "Bridge Connector | NASH",
+   "match": [
+    "development rep",
+    "business development",
+    "sales",
+    "account",
+    "customer success",
+    "client success",
+    "onboarding",
+    "implementation",
+    "enablement",
+    "crm",
+    "revenue operations",
+    "partner"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "bridgeconnector"
+    ],
+    [
+     "ashby",
+     "bridgeconnector"
+    ],
+    [
+     "lever",
+     "bridgeconnector"
+    ],
+    [
+     "greenhouse",
+     "bridge-connector"
+    ],
+    [
+     "ashby",
+     "bridge-connector"
+    ],
+    [
+     "lever",
+     "bridge-connector"
+    ]
+   ]
+  },
+  {
+   "company": "VirtuSense | NASH",
+   "match": [
+    "development rep",
+    "business development",
+    "sales",
+    "account",
+    "customer success",
+    "client success",
+    "onboarding",
+    "implementation",
+    "enablement",
+    "crm",
+    "revenue operations",
+    "partner"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "virtusense"
+    ],
+    [
+     "ashby",
+     "virtusense"
+    ],
+    [
+     "lever",
+     "virtusense"
+    ]
+   ]
+  },
+  {
+   "company": "PatientPoint | NASH",
+   "match": [
+    "development rep",
+    "business development",
+    "sales",
+    "account",
+    "customer success",
+    "client success",
+    "onboarding",
+    "implementation",
+    "enablement",
+    "crm",
+    "revenue operations",
+    "partner"
+   ],
+   "tries": [
+    [
+     "greenhouse",
+     "patientpoint"
+    ],
+    [
+     "ashby",
+     "patientpoint"
+    ],
+    [
+     "lever",
+     "patientpoint"
+    ]
+   ]
+  },
+  {
    "company": "Cortex | JW-461",
    "match": [
     "business development"
