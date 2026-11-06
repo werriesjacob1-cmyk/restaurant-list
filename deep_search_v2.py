@@ -35,7 +35,9 @@ def safe(s):
 def load_roster():
     raw=watch.load_json(str(ROSTER),{})
     if not isinstance(raw,dict):return {}
-    return {k:[e for e in entries if isinstance(e,list) and len(e)==2]
+    return {k:[e for e in entries if isinstance(e,list) and len(e)==2
+               and watch.norm_company(e[0]) not in INTERMEDIARIES
+               and e[1].lower() not in INTERMEDIARIES]
             for k,entries in raw.items() if k in discovery.KINDS and isinstance(entries,list)}
 def read_boards(boards,focus):
     def read(item):
