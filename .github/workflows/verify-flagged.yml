@@ -1,6 +1,6 @@
 name: verify-flagged-jobs
 # Frozen-source validation. NO Brave/Adzuna secrets are passed to this job.
-# Re-run frozen audit after location/industry qualification fixes, without discovery.
+# Re-run frozen audit after complete foreign-region/title checks, without discovery.
 on:
   push:
     branches: [main]
