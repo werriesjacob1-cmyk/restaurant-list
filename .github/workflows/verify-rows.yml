@@ -1,0 +1,20 @@
+name: verify-rows
+on:
+  workflow_dispatch:
+    inputs:
+      rows_file:
+        description: "JSON file of roles to check"
+        type: string
+        default: tier2_rows.json
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python verify_rows.py "${{ github.event.inputs.rows_file }}"
