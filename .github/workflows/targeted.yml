@@ -45,7 +45,7 @@ jobs:
       - name: Validate targeted screening logic
         run: python -m unittest discover -s tests -p 'test_targeted_scan.py' -v
       - name: Run targeted employer-ATS deep search
-        if: github.event_name == 'workflow_dispatch' || github.event_name == 'pull_request'
+        if: github.event_name == 'workflow_dispatch'
         env:
           SEARCH_DAYS: ${{ inputs.days || 7 }}
           SEARCH_FOCUS: ${{ inputs.focus || 'all' }}
@@ -58,7 +58,7 @@ jobs:
           if [ "$SEARCH_DISCOVER" = "true" ]; then args+=(--discover); fi
           python targeted_scan.py "${args[@]}"
       - name: Upload full report
-        if: github.event_name == 'workflow_dispatch' || github.event_name == 'pull_request'
+        if: github.event_name == 'workflow_dispatch'
         uses: actions/upload-artifact@v4
         with:
           name: targeted-search-results
