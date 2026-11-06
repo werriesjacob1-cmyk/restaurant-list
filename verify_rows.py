@@ -46,7 +46,11 @@ def check(row):
     job = None; errs = []
     for kind, slug in boards:
         try:
-            jobs = FETCH[kind](row["company"], slug)
+            if kind == "workday":
+                watch.CFG["workday_queries"] = [re.sub(r"\(.*", "", row["title"]).strip()[:40] or "sales"]
+                jobs = watch.fetch_workday(row["company"], slug, row["wd"], row["site"])
+            else:
+                jobs = FETCH[kind](row["company"], slug)
         except Exception as e:
             errs.append("%s:%s ERR" % (kind, slug)); continue
         jid = str(row.get("jobid") or "").lower()
