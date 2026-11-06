@@ -110,6 +110,12 @@ class Report(unittest.TestCase):
         self.assertIn("300",s)
         self.assertIn("No Brave API calls",s)
         self.assertIn("Initial baseline",s)
+    def test_relationship_roles_rank_above_sdr(self):
+        self.assertGreater(report.role_priority("Customer Success Manager"),
+                           report.role_priority("Sales Development Representative"))
+        self.assertGreater(report.role_priority("Account Manager"),
+                           report.role_priority("Business Development Representative"))
+
     def test_title_excludes_training(self):
         self.assertTrue(report.title_ok("Client Engagement Manager","all"))
         self.assertFalse(report.title_ok("Director, Client Engagement","all"))
