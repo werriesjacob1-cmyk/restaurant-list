@@ -100,8 +100,11 @@ def describe_job(job, description, source, days, now):
         issues.append("full description unreadable")
     if years > 5:
         hard.append("requires 6+ years")
-    if REQUIRED_DEGREE.search(description) and not EQUIVALENT.search(description):
-        hard.append("required degree without equivalent")
+    degree_match = REQUIRED_DEGREE.search(description)
+    if degree_match:
+        degree_context = description[max(0, degree_match.start() - 25):degree_match.end() + 110]
+        if not EQUIVALENT.search(degree_context):
+            hard.append("required degree without equivalent")
     if PEOPLE.search(description):
         hard.append("people-management duties")
     if WEEKEND_REQUIRED.search(description):
@@ -157,7 +160,8 @@ def describe_job(job, description, source, days, now):
     if hard:
         disposition = "REJECT"
     elif any(x in issues for x in ("full description unreadable", "guaranteed base not explicitly verified",
-                                   "OTE/total >=$75k not explicitly verified", "salary/OTE missing or ambiguous")):
+                                   "OTE/total >=$75k not explicitly verified", "salary/OTE missing or ambiguous",
+                                   "base range extends under $55k")):
         disposition = "VERIFY"
     else:
         disposition = "REVIEW"
