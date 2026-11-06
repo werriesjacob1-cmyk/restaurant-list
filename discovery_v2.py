@@ -49,6 +49,9 @@ SEARCH_QUERIES = [
     'site:jobs.lever.co "account management" "renewals" "remote"',
 ]
 KINDS = {"greenhouse", "ashby", "lever", "rippling", "breezy", "personio", "recruitee"}
+# Public recruiting aggregators can run their own ATS boards. Those are NOT
+# employer-origin postings and must never be counted as independently verified.
+INTERMEDIARY_SLUGS = {"jobgether", "swooped", "jobot", "talentify"}
 SLUG_RE = re.compile(r"^[a-z0-9][a-z0-9_.-]{1,70}$", re.I)
 REMOTE = re.compile(r"\b(remote|work.from.home|wfh|telecommut|virtual|distributed)\b", re.I)
 US = re.compile(r"\b(?:united states|united states of america|usa|u\.s\.|us[- ]remote|remote[- ]us|north america|americas)\b", re.I)
