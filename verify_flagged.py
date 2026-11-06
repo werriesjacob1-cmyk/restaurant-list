@@ -156,7 +156,7 @@ def evidence(text):
 
 def verify_rules(row,text,posting_status):
     """Evidence-based, conservative requirements checks. Unknown stays unknown."""
-    hard=[],questions=[]
+    hard,questions=[],[]
     if posting_status=="NOT_LISTED":
         return "NO_LONGER_LISTED",["Original ATS job ID not found"],{},[],[]
     if posting_status=="UNVERIFIED":
