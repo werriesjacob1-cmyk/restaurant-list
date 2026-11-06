@@ -54,7 +54,7 @@ ATS_SITES = (
 
 def title_ok(title, focus):
     s = " " + title.lower().strip() + " "
-    if any(x in s for x in EXCLUDE_TITLES):
+    if any(x in s for x in EXCLUDE_TITLES) or re.search(r"\b(?:EMEA|APAC|LATAM|DACH)\b", title, re.I):
         return False
     patterns = ROLE_GROUPS["customer"] + ROLE_GROUPS["sales"] if focus == "all" else ROLE_GROUPS[focus]
     return any(x in s for x in patterns)
@@ -124,6 +124,8 @@ def describe_job(job, description, source, days, now):
         issues.append("weekend/on-call wording: ask")
     if re.search(r"\b(?:cold.call|outbound|prospecting)\b", description, re.I):
         issues.append("outbound mix: check")
+    if ote and max(v[1] for v in ote) < 75000:
+        hard.append("OTE below $75k")
     if not base:
         issues.append("guaranteed base not explicitly verified")
     else:
@@ -146,6 +148,9 @@ def describe_job(job, description, source, days, now):
         # Treat software experience as a fit question, never as experience he has.
         if re.search(r"(?:required|must have|years? of)[^.;]{0,80}\bsaas\b|\bsaas\b[^.;]{0,80}(?:required|experience)", description, re.I):
             issues.append("required SaaS experience: gap")
+    b2b_required = re.search(r"\b\d(?:\s*[-–]\s*\d)?\+?\s*years?[^.;]{0,130}\bB2B\b", description, re.I)
+    if b2b_required and not re.search(r"prefer|nice.to.have", b2b_required.group(0), re.I):
+        issues.append("required B2B commercial experience: gap")
     if re.search(r"\b(?:insurance sales|loan officer|mortgage sales|solar sales|staffing agency)\b", title + " " + description[:900], re.I):
         hard.append("excluded industry")
     if age is None:
@@ -155,6 +160,7 @@ def describe_job(job, description, source, days, now):
     tier = 1
     if years >= 4: tier = 2
     if any("required SaaS" in x for x in issues): tier = max(tier, 2 if years <= 2 else 3)
+    if any("required B2B" in x for x in issues): tier = max(tier, 3)
     if re.search(r"\b(?:senior|enterprise|strategic|mid.market)\b", title, re.I):
         tier = max(tier, 3)
     if hard:
@@ -215,6 +221,8 @@ def search(args):
     if args.discover:
         boards += extra_boards_from_brave(known)
     blocked = set(watch.CFG.get("skip_hashes",[]))
+    # Hashed hard exclusions from the current no-insurance/no-lending rules.
+    blocked.update({"06282b257f03", "7f3672d47f91", "ce98eb1cf7ab", "260dad968669"})
     results, failures = [], []
     def get_board(item):
         kind,e = item
@@ -256,8 +264,9 @@ def search(args):
         results=list(pool.map(evaluate,candidates))
     counts=collections.Counter(x["disposition"] for x in results)
     order={"REVIEW":0,"VERIFY":1,"REJECT":2}
-    results.sort(key=lambda x:(order[x["disposition"]],x["tier_candidate"],
-        x["age_days"] is None or x["age_days"]>args.days,x["age_days"] if x["age_days"] is not None else 9999,
+    results.sort(key=lambda x:(order[x["disposition"]],
+        x["age_days"] is None or x["age_days"]>args.days,x["tier_candidate"],
+        x["age_days"] if x["age_days"] is not None else 9999,
         x["company"].lower()))
     # Export all, including rejects, so no candidate silently disappears.
     output={"checked_utc":datetime.fromtimestamp(now,timezone.utc).isoformat(),
