@@ -177,8 +177,14 @@ def verify_rules(row,text,posting_status):
     elif loc=="VERIFY":
         questions.append(loc_reason)
     if re.search(r"\b(?:life insurance|health insurance sales|insurance agent|insurance producer|"
-                 r"mortgage loan|loan officer|loan origination|solar sales|staffing recruiter)\b",text,re.I):
+                 r"mortgage loan|loan officer|loan origination|automotive lending|solar sales|staffing recruiter)\b",text,re.I):
         hard.append("Role explicitly falls in an excluded industry")
+    if re.search(r"\b(?:insurance|mortgage|lending|loan officer|solar|staffing)\b",row.get("title",""),re.I):
+        hard.append("Excluded industry explicitly named in job title")
+    if re.search(r"(?:ability|willingness|must(?: be able)?)\s+to\s+work\b[^.\n]{0,160}"
+                 r"\b(?:weekends?|saturdays?|sundays?)\b[^.\n]{0,120}\b(?:required|mandatory|must)\b",
+                 text,re.I):
+        hard.append("Explicit weekend-work requirement")
     if re.search(r"\b(?:insurance|mortgage|lending|solar|staffing)\b",row["company"],re.I):
         questions.append("Employer may be in an excluded industry; check company")
     # Technical and location-specific roles can be completely incompatible

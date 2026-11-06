@@ -60,7 +60,7 @@ CITY_METRO = re.compile(r"\b(nashville|madison|goodlettsville|hendersonville|her
 CITY_TOO_FAR = re.compile(r"\b(memphis|knoxville|chattanooga|clarksville|jackson|cookeville|johnson city|bristol|columbia)\b", re.I)
 STATE_CODES = re.compile(r"(?<![A-Za-z])(AL|AK|AZ|AR|CA|CO|CT|DE|FL|GA|HI|ID|IL|IN|IA|KS|KY|LA|ME|MD|MA|MI|MN|MS|MO|MT|NE|NV|NH|NJ|NM|NY|NC|ND|OH|OK|OR|PA|RI|SC|SD|TX|UT|VT|VA|WA|WV|WI|WY)(?![A-Za-z])")
 STATE_NAMES = watch.STATE_NAME_RE
-FOREIGN = re.compile(r"\b(?:united kingdom|london|germany|france|india|canada|mexico|australia|brazil|philippines|spain|ireland|singapore|netherlands|europe|emea|apac|latam)\b", re.I)
+FOREIGN = re.compile(r"\b(?:united kingdom|london|germany|france|india|canada|mexico|australia|brazil|philippines|spain|ireland|singapore|netherlands|europe|emea|apac|latam|ontario|alberta|british columbia|quebec|manitoba|saskatchewan|nova scotia|new brunswick|newfoundland|prince edward island|yukon|nunavut)\b", re.I)
 EXCLUSION = re.compile(r"(?:excluding|except|not (?:available|hiring|eligible|open) (?:in|to)|cannot hire in|do not hire in|not in)\s*(?:the\s+)?(?:state of\s+)?(?:tennessee|TN\b)", re.I)
 
 def parse_ats_url(url):
@@ -258,9 +258,15 @@ def location_triage(location, description=""):
         return "VERIFY", "location not declared"
     remote = bool(REMOTE.search(raw))
     if remote:
+        if FOREIGN.search(raw) and not US.search(raw) and not TN.search(raw):
+            return "REJECT", "remote location outside United States"
+        if CITY_TOO_FAR.search(raw) and TN.search(raw):
+            if re.search(r"must reside|must live|within (?:or near )?(?:the )?(?:assigned )?(?:territory|region)|based in|local to",desc,re.I):
+                return "REJECT", "requires residence near nonlocal Tennessee territory"
+            return "VERIFY", "remote job tied to distant Tennessee city"
         if TN.search(raw):
             return "PASS", "remote with Tennessee listed"
-        if re.search(r"\b(?:Eastern|Central)\s*(?:Time|US Time|timezone)\b", raw,re.I) and not (STATE_CODES.search(raw) or STATE_NAMES.search(raw)):
+        if re.search(r"\b(?:Eastern|Central)\s*(?:Time|US Time|timezone)\b", raw,re.I) and not (STATE_CODES.search(raw) or STATE_NAMES.search(raw.lower())):
             return "VERIFY", "regional remote eligibility requires confirmation"
         codes = STATE_CODES.findall(raw)
         names = STATE_NAMES.findall(raw.lower())
@@ -279,6 +285,6 @@ def location_triage(location, description=""):
         return "VERIFY", "onsite/hybrid commute needs verification"
     if TN.search(raw):
         return "VERIFY", "Tennessee location, actual commute unknown"
-    if US.search(raw) and not (STATE_CODES.search(raw) or STATE_NAMES.search(raw)):
+    if US.search(raw) and not (STATE_CODES.search(raw) or STATE_NAMES.search(raw.lower())):
         return "VERIFY", "US location without remote designation"
     return "REJECT", "nonlocal, not clearly nationwide remote"
