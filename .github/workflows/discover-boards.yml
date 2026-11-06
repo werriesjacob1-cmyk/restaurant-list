@@ -1,0 +1,24 @@
+name: discover-boards
+on:
+  workflow_dispatch:
+    inputs:
+      names_file:
+        description: "JSON list of company names (or workday entries)"
+        type: string
+        default: saas_names.json
+      workday:
+        description: "Set to --workday for Workday tenant entries"
+        type: string
+        default: ""
+permissions:
+  contents: read
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python discover_boards.py "${{ github.event.inputs.names_file }}" ${{ github.event.inputs.workday }}
