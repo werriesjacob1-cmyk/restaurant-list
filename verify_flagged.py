@@ -181,6 +181,15 @@ def verify_rules(row,text,posting_status):
         hard.append("Role explicitly falls in an excluded industry")
     if re.search(r"\b(?:insurance|mortgage|lending|loan officer|solar|staffing)\b",row.get("title",""),re.I):
         hard.append("Excluded industry explicitly named in job title")
+    if re.search(r"\b(?:future opportunity|future opening|talent pool|talent community|expression of interest)\b",
+                 row.get("title",""),re.I):
+        hard.append("Future talent-pool posting, not an active specific opening")
+    if re.search(r"\b(?:people lead|team lead|head of customer success)\b",row.get("title",""),re.I):
+        hard.append("Title indicates people-management responsibilities")
+    if (discovery.FOREIGN.search(row.get("title","")) and
+        not discovery.US.search(row.get("location","")) and
+        not discovery.TN.search(row.get("location",""))):
+        hard.append("Position title is specific to a foreign region")
     if re.search(r"(?:ability|willingness|must(?: be able)?)\s+to\s+work\b[^.\n]{0,160}"
                  r"\b(?:weekends?|saturdays?|sundays?)\b[^.\n]{0,120}\b(?:required|mandatory|must)\b",
                  text,re.I):
