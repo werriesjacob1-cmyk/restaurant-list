@@ -1,0 +1,74 @@
+name: verify-flagged-jobs
+# Frozen-source validation. NO Brave/Adzuna secrets are passed to this job.
+on:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/verify-flagged.yml
+  workflow_dispatch:
+    inputs:
+      source_run_id:
+        description: "Exact deep-search-v2 run ID containing the report JSON"
+        type: string
+        required: true
+        default: "42253368593"
+      expected_count:
+        description: "Abort if the source has a different number of VERIFY rows (0=any)"
+        type: number
+        required: true
+        default: 357
+  pull_request:
+    paths:
+      - verify_flagged.py
+      - tests/test_verify_flagged.py
+      - .github/workflows/verify-flagged.yml
+permissions:
+  actions: read
+  contents: read
+concurrency:
+  group: verify-flagged-jobs
+  cancel-in-progress: false
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Offline verifier unit tests — no network
+        run: python -m unittest discover -s tests -p 'test_verify_flagged.py' -v
+      - name: Download exact previous report artifact
+        if: github.event_name != 'pull_request'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          SOURCE_RUN: ${{ inputs.source_run_id || '42253368593' }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p verification_input
+          gh run download "$SOURCE_RUN" --repo "$GITHUB_REPOSITORY" \
+            --name deep-search-v2-report --dir verification_input
+          test -s verification_input/report.json
+      - name: Recheck EVERY flagged employer ATS posting, no Brave usage
+        if: github.event_name != 'pull_request'
+        env:
+          SOURCE_RUN: ${{ inputs.source_run_id || '42253368593' }}
+          EXPECTED_COUNT: ${{ inputs.expected_count || 357 }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          python verify_flagged.py --input verification_input/report.json \
+            --source-run "$SOURCE_RUN" --expected "$EXPECTED_COUNT"
+      - name: Display verification summary
+        if: success() && github.event_name != 'pull_request'
+        run: cat verification_output/verification.md >> "$GITHUB_STEP_SUMMARY"
+      - name: Upload full 357-row verification report
+        if: always() && github.event_name != 'pull_request'
+        uses: actions/upload-artifact@v4
+        with:
+          name: flagged-jobs-verified
+          path: verification_output/
+          if-no-files-found: warn
+          retention-days: 30
