@@ -87,7 +87,7 @@ def parse_ats_url(url):
             kind, slug = "recruitee", host.split(".")[0]
         else:
             return None
-        if not SLUG_RE.fullmatch(slug) or slug.lower() in ("jobs", "embed") | INTERMEDIARY_SLUGS:
+        if not SLUG_RE.fullmatch(slug) or slug.lower() in ({"jobs", "embed"} | INTERMEDIARY_SLUGS):
             return None
         return (kind, slug.lower())
     except (TypeError, ValueError):
