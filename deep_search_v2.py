@@ -46,7 +46,8 @@ def read_boards(boards,focus):
     for kind,entry,jobs,error in batches:
         if error:
             errors.append(kind+":"+entry[1]+":"+error);continue
-        successful.append((kind,entry))
+        if jobs:
+            successful.append((kind,entry))
         for job in jobs:
             if not title_ok(job.get("title",""),focus):continue
             loc,_=discovery.location_triage(job.get("location",""))
