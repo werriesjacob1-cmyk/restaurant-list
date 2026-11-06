@@ -1,0 +1,59 @@
+name: targeted-deep-search
+on:
+  workflow_dispatch:
+    inputs:
+      days:
+        description: "Prefer postings from the last N days (older jobs stay in report)"
+        required: true
+        type: number
+        default: 7
+      focus:
+        description: "Job family to search"
+        required: true
+        type: choice
+        options:
+          - all
+          - customer
+          - sales
+        default: all
+      company:
+        description: "Optional company-name filter; leave blank for all monitored employers"
+        required: false
+        type: string
+        default: ""
+      discover:
+        description: "Find additional ATS boards with Brave Search API (optional key)"
+        required: true
+        type: boolean
+        default: false
+permissions:
+  contents: read
+jobs:
+  search:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run targeted employer-ATS deep search
+        env:
+          SEARCH_DAYS: ${{ inputs.days }}
+          SEARCH_FOCUS: ${{ inputs.focus }}
+          SEARCH_COMPANY: ${{ inputs.company }}
+          SEARCH_DISCOVER: ${{ inputs.discover }}
+          BRAVE_SEARCH_API_KEY: ${{ secrets.BRAVE_SEARCH_API_KEY }}
+        run: |
+          args=(--days "$SEARCH_DAYS" --focus "$SEARCH_FOCUS" --output targeted_results.json)
+          if [ -n "$SEARCH_COMPANY" ]; then args+=(--company "$SEARCH_COMPANY"); fi
+          if [ "$SEARCH_DISCOVER" = "true" ]; then args+=(--discover); fi
+          python targeted_scan.py "${args[@]}"
+      - name: Upload full report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: targeted-search-results
+          path: targeted_results.json
+          if-no-files-found: warn
+          retention-days: 14
