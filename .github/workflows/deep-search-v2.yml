@@ -1,0 +1,113 @@
+name: deep-search-v2
+on:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/deep-search-v2.yml
+  schedule:
+    - cron: "15 14 * * *" # 8:15 AM CST / 9:15 AM CDT
+  workflow_dispatch:
+    inputs:
+      discover:
+        description: "Use up to three pre-budgeted Brave searches for new boards"
+        type: boolean
+        default: true
+      focus:
+        description: "Job family"
+        type: choice
+        options: [all, customer, sales]
+        default: all
+      days:
+        description: "Recent-posting priority window"
+        type: number
+        default: 7
+  pull_request:
+    paths:
+      - deep_search_v2.py
+      - discovery_v2.py
+      - brave_budget.py
+      - tests/test_deep_search_v2.py
+      - .github/workflows/deep-search-v2.yml
+concurrency:
+  group: deep-search-v2
+  cancel-in-progress: false
+permissions:
+  contents: write
+jobs:
+  search:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Test V2 without network or API charges
+        run: |
+          python -m unittest discover -s tests -p 'test_deep_search_v2.py' -v
+          python -m unittest discover -s tests -p 'test_targeted_scan.py' -v
+      - name: Reserve and persist maximum three Brave calls BEFORE making requests
+        if: github.event_name != 'pull_request'
+        id: budget
+        env:
+          BRAVE_KEY_PRESENT: ${{ secrets.BRAVE_SEARCH_API_KEY != '' }}
+          WANT_DISCOVERY: ${{ github.event_name == 'schedule' || github.event_name == 'push' || inputs.discover == true }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [ "$BRAVE_KEY_PRESENT" != "true" ] || [ "$WANT_DISCOVERY" != "true" ]; then
+            echo "Skipping Brave; missing key or discovery disabled."
+            echo "calls=0" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          git config user.name "deep-search-v2"
+          git config user.email "deep-search-v2@users.noreply.github.com"
+          git fetch origin main
+          git checkout main
+          git pull --rebase origin main
+          python brave_budget.py --monthly-limit 100 --request-count 3 --output brave_grant.txt
+          git add brave_budget.json
+          if ! git diff --cached --quiet; then git commit -m "reserve Brave free-credit budget"; fi
+          git pull --rebase origin main
+          git push origin HEAD:main
+          echo "calls=$(cat brave_grant.txt)" >> "$GITHUB_OUTPUT"
+      - name: Run daily targeted ATS deep search
+        if: github.event_name != 'pull_request'
+        env:
+          BRAVE_GRANTED_CALLS: ${{ steps.budget.outputs.calls }}
+          BRAVE_SEARCH_API_KEY: ${{ secrets.BRAVE_SEARCH_API_KEY }}
+          FOCUS: ${{ inputs.focus || 'all' }}
+          DAYS: ${{ inputs.days || 7 }}
+          WANT_DISCOVERY: ${{ github.event_name == 'schedule' || github.event_name == 'push' || inputs.discover == true }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          args=(--focus "$FOCUS" --days "$DAYS")
+          if [ "$WANT_DISCOVERY" = "true" ]; then args+=(--discover); fi
+          python deep_search_v2.py "${args[@]}"
+      - name: Publish report as GitHub Actions step summary
+        if: success() && github.event_name != 'pull_request'
+        run: cat deep_search_output/report.md >> "$GITHUB_STEP_SUMMARY"
+      - name: Store daily report artifact
+        if: always() && github.event_name != 'pull_request'
+        uses: actions/upload-artifact@v4
+        with:
+          name: deep-search-v2-report
+          path: deep_search_output/
+          if-no-files-found: warn
+          retention-days: 30
+      - name: Persist public discovery roster and seen identifiers
+        if: success() && github.event_name != 'pull_request'
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "deep-search-v2"
+          git config user.email "deep-search-v2@users.noreply.github.com"
+          git add deep_search_roster.json deep_search_seen.json
+          if ! git diff --cached --quiet; then
+            git commit -m "update V2 discovery roster and seen roles"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
