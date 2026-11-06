@@ -231,6 +231,18 @@
   [
    "SurveyMonkey",
    "surveymonkey"
+  ],
+  [
+   "Phoenix Home Care and Hospice",
+   "phoenix"
+  ],
+  [
+   "Silver Creek Transportation",
+   "silver"
+  ],
+  [
+   "Lazer Logistics",
+   "lazer"
   ]
  ],
  "greenhouse": [
@@ -621,6 +633,22 @@
   [
    "Nextiva",
    "nextiva"
+  ],
+  [
+   "Spire Inc.",
+   "spire"
+  ],
+  [
+   "Activate Care",
+   "activate"
+  ],
+  [
+   "UDig",
+   "udig"
+  ],
+  [
+   "Peak Management",
+   "peak"
   ]
  ],
  "lever": [
@@ -695,6 +723,18 @@
   [
    "Source Code Technologies LLC",
    "source"
+  ],
+  [
+   "DSI Groups",
+   "dsi"
+  ],
+  [
+   "Capital Waste Services LLC",
+   "capital"
+  ],
+  [
+   "TAG",
+   "tag"
   ]
  ]
 }
