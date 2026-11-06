@@ -13,13 +13,15 @@ ROOT=Path(__file__).resolve().parent
 ROSTER=ROOT/"deep_search_roster.json"
 SEEN=ROOT/"deep_search_seen.json"
 OUT=ROOT/"deep_search_output"
+INTERMEDIARIES={"jobgether","swooped","jobot","talentify"}
 MORE_TITLES=("client engagement","client relationship","customer relationship",
              "merchant success","account management","customer retention",
              "partner account manager","relationship manager","inside account",
              "inbound sales","customer operations","member success","growth account")
 def title_ok(title,focus):
-    if target.title_ok(title,focus):return True
     s=" "+title.lower()+" "
+    if any(x in s for x in ("technical account", "new graduates", "summer 2027 graduates")):return False
+    if target.title_ok(title,focus):return True
     return focus!="sales" and not any(t in s for t in target.EXCLUDE_TITLES) and any(t in s for t in MORE_TITLES)
 def identifier(row):
     data="|".join((row.get("ats",""),row.get("official_posting","").split("?")[0],row.get("title","")))
@@ -33,7 +35,9 @@ def safe(s):
 def load_roster():
     raw=watch.load_json(str(ROSTER),{})
     if not isinstance(raw,dict):return {}
-    return {k:[e for e in entries if isinstance(e,list) and len(e)==2]
+    return {k:[e for e in entries if isinstance(e,list) and len(e)==2
+               and watch.norm_company(e[0]) not in INTERMEDIARIES
+               and e[1].lower() not in INTERMEDIARIES]
             for k,entries in raw.items() if k in discovery.KINDS and isinstance(entries,list)}
 def read_boards(boards,focus):
     def read(item):
@@ -46,6 +50,8 @@ def read_boards(boards,focus):
     for kind,entry,jobs,error in batches:
         if error:
             errors.append(kind+":"+entry[1]+":"+error);continue
+        if watch.norm_company(entry[0]) in INTERMEDIARIES or entry[1].lower() in INTERMEDIARIES:
+            continue
         if jobs:
             successful.append((kind,entry))
         for job in jobs:
