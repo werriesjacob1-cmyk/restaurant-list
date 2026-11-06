@@ -49,5 +49,23 @@ class TargetedSearchTests(unittest.TestCase):
         self.assertEqual("REJECT",target.describe_job(j,txt,"ashby",7,time.time())["disposition"])
 
 
+    def test_low_ote_is_rejected_even_without_base(self):
+        j={"company":"Test","title":"Inside Sales Representative","location":"Remote US",
+           "url":"https://example.com","posted":time.time(),"pay":""}
+        txt=("On-target earnings: $60,000-$65,000. "
+             "Some customers and renewals, no guaranteed base stated.")*3
+        r=target.describe_job(j,txt,"lever",7,time.time())
+        self.assertEqual("REJECT",r["disposition"])
+        self.assertIn("OTE below $75k",r["hard_exclusions"])
+
+    def test_required_b2b_account_portfolio_not_tier_one(self):
+        j={"company":"Test","title":"Account Manager (Corporate)","location":"Remote US",
+           "url":"https://example.com","posted":time.time(),"pay":""}
+        txt=("3-5+ years of B2B commercial account management experience required. "
+             "Annual base salary: $80,000-$100,000. Manage renewals for accounts.")*3
+        r=target.describe_job(j,txt,"greenhouse",7,time.time())
+        self.assertEqual(3,r["tier_candidate"])
+        self.assertIn("required B2B commercial experience: gap",r["questions"])
+
 if __name__=="__main__":
     unittest.main()
