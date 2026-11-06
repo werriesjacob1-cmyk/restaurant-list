@@ -23,7 +23,9 @@ def variants(name):
     out += [a + "hq", a + "inc", a + "co"]
     return list(dict.fromkeys(out))
 
-FET = {"greenhouse": watch.fetch_greenhouse, "ashby": watch.fetch_ashby, "lever": watch.fetch_lever}
+FET = {"greenhouse": watch.fetch_greenhouse, "ashby": watch.fetch_ashby, "lever": watch.fetch_lever,
+       "workable": watch.fetch_workable, "rippling": watch.fetch_rippling,
+       "smartrecruiters": watch.fetch_smartrecruiters, "bamboohr": watch.fetch_bamboohr}
 
 def try_company(name):
     res = []
@@ -56,8 +58,38 @@ def workday_try(name, tenant, sites):
                 continue
     return None
 
+import urllib.request, urllib.parse, html as _html
+def icims_try(host):
+    found = {}
+    for q in ("sales", "account", "customer success", "business development", "client"):
+        for pr in (0, 1):
+            url = f"https://{host}/jobs/search?ss=1&searchKeyword={urllib.parse.quote(q)}&in_iframe=1&pr={pr}"
+            try:
+                req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+                body = urllib.request.urlopen(req, timeout=15).read().decode("utf-8", "ignore")
+            except Exception:
+                break
+            for m in re.finditer(r'href="(https?://[^"]*/jobs/(\d+)/([^/"?]+)/job[^"]*)"', body):
+                found[m.group(2)] = (m.group(3).replace("-", " "), _html.unescape(m.group(1)))
+            if "/jobs/" not in body:
+                break
+    return host, found
+
 if __name__ == "__main__":
     f = sys.argv[1]
+    if "--icims" in sys.argv:
+        hosts = []
+        for n in json.load(open(f)):
+            k = re.sub(r"[^a-z0-9]", "", n.lower())
+            hosts += [f"careers-{k}.icims.com", f"jobs-{k}.icims.com", f"{k}.icims.com", f"careers.{k}.com"]
+        with ThreadPoolExecutor(8) as ex:
+            for host, found in ex.map(icims_try, hosts):
+                if found:
+                    hits = {i: v for i, v in found.items() if any(w in v[0].lower() for w in ("sales", "account", "customer", "client", "business development", "success", "inside"))}
+                    print(f"ICIMS|{host}|total={len(found)}|matches={len(hits)}", flush=True)
+                    for i, (t, u) in list(hits.items())[:20]:
+                        print(f"ICIMSJOB|{host}|{t}|{u}", flush=True)
+        sys.exit(0)
     data = json.load(open(f))
     if "--workday" in sys.argv:
         def run(e):
