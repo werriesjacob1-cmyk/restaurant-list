@@ -54,13 +54,13 @@ KINDS = {"greenhouse", "ashby", "lever", "rippling", "breezy", "personio", "recr
 INTERMEDIARY_SLUGS = {"jobgether", "swooped", "jobot", "talentify"}
 SLUG_RE = re.compile(r"^[a-z0-9][a-z0-9_.-]{1,70}$", re.I)
 REMOTE = re.compile(r"\b(remote|work.from.home|wfh|telecommut|virtual|distributed)\b", re.I)
-US = re.compile(r"\b(?:united states|united states of america|usa|u\.s\.|us[- ]remote|remote[- ]us|north america|americas)\b", re.I)
+US = re.compile(r"\b(?:united states|united states of america|usa|u\.s|us[- ]remote|remote[- ]us|north america|americas)\b", re.I)
 TN = re.compile(r"\btennessee\b|(?<![A-Za-z])TN(?![A-Za-z])", re.I)
 CITY_METRO = re.compile(r"\b(nashville|madison|goodlettsville|hendersonville|hermitage|donelson|antioch|brentwood|franklin|gallatin|mount juliet|mt\. juliet|smyrna|murfreesboro|lebanon)\b", re.I)
 CITY_TOO_FAR = re.compile(r"\b(memphis|knoxville|chattanooga|clarksville|jackson|cookeville|johnson city|bristol|columbia)\b", re.I)
 STATE_CODES = re.compile(r"(?<![A-Za-z])(AL|AK|AZ|AR|CA|CO|CT|DE|FL|GA|HI|ID|IL|IN|IA|KS|KY|LA|ME|MD|MA|MI|MN|MS|MO|MT|NE|NV|NH|NJ|NM|NY|NC|ND|OH|OK|OR|PA|RI|SC|SD|TX|UT|VT|VA|WA|WV|WI|WY)(?![A-Za-z])")
 STATE_NAMES = watch.STATE_NAME_RE
-FOREIGN = re.compile(r"\b(?:united kingdom|london|germany|france|india|canada|mexico|australia|brazil|philippines|spain|ireland|singapore|netherlands|europe|emea|apac|latam|ontario|alberta|british columbia|quebec|manitoba|saskatchewan|nova scotia|new brunswick|newfoundland|prince edward island|yukon|nunavut)\b", re.I)
+FOREIGN = re.compile(r"\b(?:united kingdom|london|germany|france|india|canada|mexico|australia|brazil|philippines|spain|ireland|singapore|netherlands|europe|emea|apac|latam|ontario|alberta|british columbia|quebec|manitoba|saskatchewan|nova scotia|new brunswick|newfoundland|prince edward island|yukon|nunavut|uk|milton keynes|toronto|ottawa|montreal|tokyo|japan|sydney|melbourne|brisbane|perth|new zealand|seoul|south korea|hong kong|dublin|berlin|paris|warsaw|prague)\b", re.I)
 EXCLUSION = re.compile(r"(?:excluding|except|not (?:available|hiring|eligible|open) (?:in|to)|cannot hire in|do not hire in|not in)\s*(?:the\s+)?(?:state of\s+)?(?:tennessee|TN\b)", re.I)
 
 def parse_ats_url(url):
