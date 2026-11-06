@@ -21,6 +21,7 @@ MORE_TITLES=("client engagement","client relationship","customer relationship",
 def title_ok(title,focus):
     if target.title_ok(title,focus):return True
     s=" "+title.lower()+" "
+    if any(x in s for x in ("technical account", "new graduates", "summer 2027 graduates")):return False
     return focus!="sales" and not any(t in s for t in target.EXCLUDE_TITLES) and any(t in s for t in MORE_TITLES)
 def identifier(row):
     data="|".join((row.get("ats",""),row.get("official_posting","").split("?")[0],row.get("title","")))
