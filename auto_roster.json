@@ -311,6 +311,10 @@
   [
    "LeanData",
    "leandata"
+  ],
+  [
+   "Neon One",
+   "neon"
   ]
  ],
  "greenhouse": [
@@ -837,6 +841,10 @@
   [
    "6sense",
    "6sense"
+  ],
+  [
+   "Mighty Networks",
+   "mighty"
   ]
  ],
  "lever": [
@@ -947,6 +955,10 @@
   [
    "Coupa",
    "coupa"
+  ],
+  [
+   "Alloy",
+   "alloy"
   ]
  ]
 }
