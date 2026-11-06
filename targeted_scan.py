@@ -70,10 +70,10 @@ def pay_evidence(text, structured=""):
                 continue
             before = source[max(0, match.start() - 105):match.start()].lower()
             after = source[match.end():match.end() + 35].lower()
-            vicinity = before[-50:] + " " + after[:20]
-            if re.search(r"\bote\b|on.target earnings|total (?:target )?(?:compensation|earnings)", vicinity):
+            context = before[-70:]
+            if re.search(r"\bote\b|on.target earnings|total (?:target )?(?:compensation|earnings)", context):
                 category = "ote"
-            elif re.search(r"\bbase\b|annual salary|salary range|annualized salary|salary band", vicinity):
+            elif re.search(r"\bbase\b|annual salary|salary range|annualized salary|salary band", context):
                 category = "base"
             else:
                 category = "ambiguous"
