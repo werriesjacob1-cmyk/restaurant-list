@@ -1,8 +1,100 @@
 {
+  "breezy": [
+    [
+      "zero-hash",
+      "zero-hash"
+    ],
+    [
+      "brilliant",
+      "brilliant"
+    ],
+    [
+      "leverage-digital",
+      "leverage-digital"
+    ],
+    [
+      "nextec-group",
+      "nextec-group"
+    ],
+    [
+      "revamp-engineering-inc",
+      "revamp-engineering-inc"
+    ],
+    [
+      "appleseed",
+      "appleseed"
+    ],
+    [
+      "fohr",
+      "fohr"
+    ],
+    [
+      "nationsbenefits",
+      "nationsbenefits"
+    ],
+    [
+      "integral-uk",
+      "integral-uk"
+    ],
+    [
+      "divadance",
+      "divadance"
+    ],
+    [
+      "urrly",
+      "urrly"
+    ],
+    [
+      "bullseye-strategy",
+      "bullseye-strategy"
+    ],
+    [
+      "adapt",
+      "adapt"
+    ],
+    [
+      "compose-ly",
+      "compose-ly"
+    ]
+  ],
   "lever": [
     [
       "coalfire",
       "coalfire"
+    ]
+  ],
+  "recruitee": [
+    [
+      "zensai",
+      "zensai"
+    ],
+    [
+      "altiussearchgroup",
+      "altiussearchgroup"
+    ],
+    [
+      "elockers",
+      "elockers"
+    ],
+    [
+      "tiugotech",
+      "tiugotech"
+    ],
+    [
+      "valveandmeter",
+      "valveandmeter"
+    ],
+    [
+      "simvia",
+      "simvia"
+    ],
+    [
+      "cainwattersassociates",
+      "cainwattersassociates"
+    ],
+    [
+      "skygeo",
+      "skygeo"
     ]
   ]
 }
