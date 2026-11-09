@@ -55,12 +55,30 @@
     [
       "compose-ly",
       "compose-ly"
+    ],
+    [
+      "easypayfinance",
+      "easypayfinance"
+    ],
+    [
+      "wavetronix",
+      "wavetronix"
+    ],
+    [
+      "smart-city-locating",
+      "smart-city-locating"
     ]
   ],
   "lever": [
     [
       "coalfire",
       "coalfire"
+    ]
+  ],
+  "personio": [
+    [
+      "auvesy-mdt-holding-gmbh",
+      "auvesy-mdt-holding-gmbh"
     ]
   ],
   "recruitee": [
