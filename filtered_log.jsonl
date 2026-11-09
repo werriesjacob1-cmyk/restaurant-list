@@ -1,16 +1,3 @@
-{"t": 1793914598, "c": "Mitratech", "title": "Legal Deployment Strategist", "why": "excluded:legal"}
-{"t": 1793915335, "c": "Fivetran", "title": "Manager, Sales Engineering Specialists", "why": "excluded:engineer"}
-{"t": 1793915335, "c": "Motorola Solutions", "title": "Junior Product Manager", "why": "excluded:product manager"}
-{"t": 1793915616, "c": "Carvana", "title": "Security Associate II ", "why": "excluded:security"}
-{"t": 1793915616, "c": "Verkada", "title": "Software Engineer, Cloud Infrastructure", "why": "excluded:engineer"}
-{"t": 1793915881, "c": "Verkada", "title": "Backend Engineer", "why": "excluded:engineer"}
-{"t": 1793916173, "c": "Verkada", "title": " Senior Software Engineer - Cameras", "why": "excluded:engineer"}
-{"t": 1793916173, "c": "Verkada", "title": "Software Engineer - Computer Vision", "why": "excluded:engineer"}
-{"t": 1793916723, "c": "Included Health", "title": "Associate Medical Director, Behavioral Health", "why": "excluded:director"}
-{"t": 1793916723, "c": "beehiiv", "title": "Sales Development Representative (U.S.)", "why": "excluded:sales development"}
-{"t": 1793919212, "c": "Mercury", "title": "Staff Strategic Operations Program Manager - GTM", "why": "excluded:staff"}
-{"t": 1793919502, "c": "Fivetran", "title": "Resident Solution Architect", "why": "excluded:architect"}
-{"t": 1793919502, "c": "Cardinal Health", "title": "SR Pricing Specialist, Account Management\u00a0", "why": "location: US-Nationwide-FIELD"}
 {"t": 1793919779, "c": "Fanatics Betting & Gaming", "title": "Staff Analyst, Ops Ecosystem Analytics", "why": "excluded:staff"}
 {"t": 1793919779, "c": "Sezzle", "title": "Technical Product Manager ", "why": "excluded:product manager"}
 {"t": 1793920050, "c": "Galaxy i Technologies, Inc.", "title": "Security Service Technician", "why": "excluded:security"}
@@ -411,3 +398,11 @@
 {"t": 1794175075, "c": "GRVTY", "title": "Senior Software Engineer - Directed Energy ", "why": "excluded:engineer"}
 {"t": 1794175075, "c": "GRVTY", "title": "Software Engineer - Directed Energy ", "why": "excluded:engineer"}
 {"t": 1794175075, "c": "TransUnion", "title": "Data Analysis Manager", "why": "excluded:data"}
+{"t": 1794188451, "c": "Datadog", "title": "Senior Sales Engineer", "why": "excluded:engineer"}
+{"t": 1794188451, "c": "Xero", "title": "Marketing and Partnerships Manager, Social Impact", "why": "excluded:marketing"}
+{"t": 1794188451, "c": "Xero", "title": "Marketing and Partnerships Manager, Social Impact", "why": "excluded:marketing"}
+{"t": 1794188451, "c": "Xero", "title": "Marketing and Partnerships Manager, Social Impact", "why": "excluded:marketing"}
+{"t": 1794188451, "c": "Equifax", "title": "Software Engineer", "why": "excluded:engineer"}
+{"t": 1794188451, "c": "Salesforce", "title": "Business Development Representative, New Zealand", "why": "location: New Zealand - Auckland"}
+{"t": 1794188451, "c": "Salesforce", "title": "Named Account Executive 7", "why": "location: Australia - Brisbane"}
+{"t": 1794188451, "c": "Salesforce", "title": "Lead Solutions Engineer - EMEA NGO Marketing & Data", "why": "excluded:engineer"}
