@@ -1,0 +1,605 @@
+[
+{
+"company": "Cardinal Health",
+"title": "Lab Products Sales Rep"
+},
+{
+"company": "Grainger",
+"title": "Account Manager, Manufacturing"
+},
+{
+"company": "Lumber wholesaler",
+"title": "Inside Sales Rep"
+},
+{
+"company": "Jackson Financial",
+"title": "Sales QA Analyst"
+},
+{
+"company": "Brynson",
+"title": "Client Success Coordinator"
+},
+{
+"company": "Compass",
+"title": "Customer Success Manager"
+},
+{
+"company": "Handshake",
+"title": "Manager, Data Partnerships"
+},
+{
+"company": "Amazon Freight",
+"title": "Enterprise Customer Success Manager"
+},
+{
+"company": "Skylight",
+"title": "National Retail Sales Coordinator"
+},
+{
+"company": "Ramsey Solutions",
+"title": "Partner Success Manager"
+},
+{
+"company": "Remote",
+"title": "Associate Account Manager"
+},
+{
+"company": "SailPoint",
+"title": "Digital Customer Success Manager"
+},
+{
+"company": "Learning Care Group",
+"title": "Business Development Operations Coordinator"
+},
+{
+"company": "Boulevard",
+"title": "Sales Development Representative"
+},
+{
+"company": "Owner.com",
+"title": "Customer Success Manager, Retention",
+"ats": "ashby",
+"slug": "owner",
+"jobid": "47473982-d27f-4009-8185-39cceb97bb59"
+},
+{
+"company": "Evotix",
+"title": "Customer Success Manager"
+},
+{
+"company": "Qoria",
+"title": "Portfolio Customer Success Manager"
+},
+{
+"company": "CPI Card Group",
+"title": "Client Success Specialist"
+},
+{
+"company": "Flai",
+"title": "Account Manager"
+},
+{
+"company": "Luma Health",
+"title": "Sales Development Representative",
+"ats": "greenhouse",
+"slug": "lumahealth",
+"jobid": "8827865002"
+},
+{
+"company": "Billtrust",
+"title": "Sales Development Representative",
+"jobid": "7526403003"
+},
+{
+"company": "Tebra",
+"title": "Sales Development Representative",
+"ats": "greenhouse",
+"slug": "tebra",
+"jobid": "4719577005"
+},
+{
+"company": "Metropolis",
+"title": "Associate Account Executive",
+"ats": "greenhouse",
+"slug": "metropolis",
+"jobid": "7780315003"
+},
+{
+"company": "Drata",
+"title": "Sales Development Representative, Emerging",
+"ats": "ashby",
+"slug": "drata",
+"jobid": "a74be52a-72df-404f-bf0f-be3f65b65004"
+},
+{
+"company": "Smartling",
+"title": "Business Development Representative",
+"ats": "greenhouse",
+"slug": "smartling",
+"jobid": "7252577"
+},
+{
+"company": "Amplitude",
+"title": "Sales Development Representative",
+"ats": "ashby",
+"slug": "amplitude",
+"jobid": "fcd83232-aaa4-4d50-b67c-2b7921f99c6a"
+},
+{
+"company": "Greenhouse",
+"title": "Mid-Market Sales Development Representative",
+"ats": "greenhouse",
+"slug": "greenhouse",
+"jobid": "6180015"
+},
+{
+"company": "Fleetio",
+"title": "Account Executive, SMB",
+"ats": "greenhouse",
+"slug": "fleetio",
+"jobid": "5184846007"
+},
+{
+"company": "Aescape",
+"title": "Account Executive, Inbound & SMB",
+"ats": "ashby",
+"slug": "aescape",
+"jobid": "3e4a540a-6bcd-4b3c-995c-dcaedcd71eff"
+},
+{
+"company": "CharterUP",
+"title": "Inside Sales Representative II",
+"ats": "greenhouse",
+"slug": "charterup",
+"jobid": "5465425008"
+},
+{
+"company": "Fivetran",
+"title": "Business Development Representative",
+"jobid": "7792160003"
+},
+{
+"company": "AppFolio",
+"title": "Business Development Representative - SMB",
+"ats": "ashby",
+"slug": "appfolio",
+"jobid": "38800f2a-621a-4073-b2df-1d9c621921e7"
+},
+{
+"company": "Healthcare Systems and Technologies",
+"title": "Account Manager",
+"ats": "lever",
+"slug": "healthcare",
+"jobid": "2c0f04d4-dd16-405b-9179-dbe515cd1f96"
+},
+{
+"company": "Hex",
+"title": "Sales Development Representative",
+"ats": "ashby",
+"slug": "hex",
+"jobid": "93be0230-02b0-422c-95f2-128a430e5673"
+},
+{
+"company": "Notion",
+"title": "Business Development Representative, New York",
+"ats": "ashby",
+"slug": "notion",
+"jobid": "05e14247-17c4-4e98-9a13-53828a4e2f13"
+},
+{
+"company": "Bitwarden",
+"title": "Sales Development Representative",
+"jobid": "7824330003"
+},
+{
+"company": "Muck Rack",
+"title": "Outbound Sales Development Representative",
+"ats": "greenhouse",
+"slug": "muckrack",
+"jobid": "8895495002"
+},
+{
+"company": "ClickUp",
+"title": "Business Development Representative",
+"ats": "ashby",
+"slug": "clickup",
+"jobid": "d6782da5-01cc-4c43-b7e2-e88af54dc6a0"
+},
+{
+"company": "1Password",
+"title": "Business Development Representative",
+"ats": "ashby",
+"slug": "1password",
+"jobid": "55dedff3-7af8-4fd4-aaf0-79680d77f150"
+},
+{
+"company": "Cision",
+"title": "Account Manager I",
+"ats": "greenhouse",
+"slug": "cision",
+"jobid": "4999955101"
+},
+{
+"company": "Lyra Health",
+"title": "Customer Success Manager I",
+"ats": "lever",
+"slug": "lyrahealth",
+"jobid": "22d7731a-cd88-4309-b86b-8e0507293ede"
+},
+{
+"company": "Shopmonkey",
+"title": "Customer Success Manager - SMB",
+"ats": "greenhouse",
+"slug": "shopmonkey",
+"jobid": "8108428003"
+},
+{
+"company": "Newsela",
+"title": "Sales Representative, SMB",
+"ats": "greenhouse",
+"slug": "newsela",
+"jobid": "8256234"
+},
+{
+"company": "Hinge Health",
+"title": "Client Success Manager",
+"ats": "ashby",
+"slug": "hinge-health",
+"jobid": "c549b55d-267d-444a-a41b-2744394c7139"
+},
+{
+"company": "Hinge Health",
+"title": "Client Success Manager - Mid Market",
+"ats": "ashby",
+"slug": "hinge-health",
+"jobid": "cf408381-241a-4e65-aa8a-3c6ca1da2d33"
+},
+{
+"company": "Waystar",
+"title": "Client Success Manager"
+},
+{
+"company": "Oyster",
+"title": "Business Development Representative",
+"ats": "ashby",
+"slug": "oyster",
+"jobid": "256fc3fc-f1ac-4e88-8ca1-a07f49a620fb"
+},
+{
+"company": "Sanity",
+"title": "Sales Development Representative - Outbound",
+"ats": "ashby",
+"slug": "sanity",
+"jobid": "5a3194e7-ca90-4780-93d5-20fb3106ae1a"
+},
+{
+"company": "Notable",
+"title": "Business Development Representative",
+"ats": "ashby",
+"slug": "notable",
+"jobid": "8443b79e-2cf1-4ee9-bc38-b8503772163e"
+},
+{
+"company": "Scribe",
+"title": "Sales Development Representative",
+"ats": "ashby",
+"slug": "scribe",
+"jobid": "2cf74c12-40db-4d07-9456-d19657c54ed8"
+},
+{
+"company": "Trimble",
+"title": "Dedicated Customer Success Manager"
+},
+{
+"company": "Capsule",
+"title": "Customer Success Manager",
+"ats": "ashby",
+"slug": "capsule",
+"jobid": "242b64d3-840d-4a9c-850b-cce7dd77acff"
+},
+{
+"company": "Remote",
+"title": "Sales Enablement Manager"
+},
+{
+"company": "Wisdom",
+"title": "Inbound Account Executive"
+},
+{
+"company": "Silvur",
+"title": "Client Success Specialist, Insurance Partnerships"
+},
+{
+"company": "ServiceTitan",
+"title": "CSM"
+},
+{
+"company": "Odeko",
+"title": "Territory Sales Associate"
+},
+{
+"company": "Semicolon Talent",
+"title": "Client Success Manager"
+},
+{
+"company": "WithMe",
+"title": "Client Success Manager"
+},
+{
+"company": "Polimorphic",
+"title": "Account Manager"
+},
+{
+"company": "Storesight",
+"title": "Customer Success Manager"
+},
+{
+"company": "Switchboard",
+"title": "Client Success Manager \u2013 SMB/MM"
+},
+{
+"company": "Automatiq",
+"title": "Account Manager"
+},
+{
+"company": "Just Appraised",
+"title": "Customer Success Manager"
+},
+{
+"company": "White Cap",
+"title": "Account Manager"
+},
+{
+"company": "Tive",
+"title": "Account Manager"
+},
+{
+"company": "Rocket Clicks",
+"title": "Account Manager"
+},
+{
+"company": "ALTOUR",
+"title": "Manager, Inside Account Management"
+},
+{
+"company": "Slide",
+"title": "Account Manager 'Farmer'"
+},
+{
+"company": "CorVel",
+"title": "Account Manager II"
+},
+{
+"company": "Leadership Connect",
+"title": "Renewal Manager"
+},
+{
+"company": "Pilot.com",
+"title": "Sr. Customer Success Manager"
+},
+{
+"company": "AXS",
+"title": "Account Manager - Music Clubs"
+},
+{
+"company": "WorkWave",
+"title": "Customer Success Manager"
+},
+{
+"company": "Fluent",
+"title": "Account Manager, Advertiser Success",
+"ats": "workable",
+"slug": "fluent",
+"jobid": "849DEE3186"
+},
+{
+"company": "VergeSense",
+"title": "Inside Account Executive"
+},
+{
+"company": "Ashby",
+"title": "SMB Customer Success Manager, Americas"
+},
+{
+"company": "Tekmetric",
+"title": "Customer Results Manager II"
+},
+{
+"company": "Conversica",
+"title": "Customer Success Manager",
+"ats": "lever",
+"slug": "conversica",
+"jobid": "dff3704e-32a7-459e-9875-8430e9c23481"
+},
+{
+"company": "Shopview",
+"title": "Customer Success Manager"
+},
+{
+"company": "Close",
+"title": "Customer Success Associate"
+},
+{
+"company": "Critical Mass",
+"title": "Account Coordinator",
+"ats": "greenhouse",
+"slug": "criticalmass",
+"jobid": "7021275"
+},
+{
+"company": "Recharge",
+"title": "Customer Success Manager"
+},
+{
+"company": "Evotix",
+"title": "Account Manager"
+},
+{
+"company": "LivTech",
+"title": "Account Executive, Residential"
+},
+{
+"company": "EvenUp",
+"title": "Customer Success Manager, Midmarket"
+},
+{
+"company": "Leap",
+"title": "Senior Customer Success Manager"
+},
+{
+"company": "KPA",
+"title": "Client Implementation Manager"
+},
+{
+"company": "Artist Growth",
+"title": "Customer Success Manager"
+},
+{
+"company": "INGENIOUS.BUILD",
+"title": "Customer Success Partner",
+"ats": "greenhouse",
+"slug": "ingenious",
+"jobid": "4750975005"
+},
+{
+"company": "Inspired Thinking Group",
+"title": "Senior Customer Success Manager"
+},
+{
+"company": "Builder Prime",
+"title": "Outbound Sales Development Representative",
+"ats": "ashby",
+"slug": "builder-prime",
+"jobid": "41141be2-7289-486f-9da8-ef0ba9e4a952"
+},
+{
+"company": "Nooks",
+"title": "Senior SDR, Enterprise",
+"ats": "ashby",
+"slug": "nooks",
+"jobid": "3da438cc-0e56-468a-8b09-8844532d6331"
+},
+{
+"company": "Wealthbox",
+"title": "Inbound Sales Development Representative",
+"ats": "ashby",
+"slug": "wealthbox",
+"jobid": "8b1073e8-5718-42e7-87c5-d45a4770eabc"
+},
+{
+"company": "Subsplash",
+"title": "Account Manager - Client Success Team",
+"ats": "greenhouse",
+"slug": "subsplash",
+"jobid": "8860366002"
+},
+{
+"company": "Constant Contact",
+"title": "Digital Customer Success Specialist - Pendo",
+"ats": "greenhouse",
+"slug": "constantcontact",
+"jobid": "8263206"
+},
+{
+"company": "Aledade",
+"title": "Growth Development Representative",
+"ats": "lever",
+"slug": "aledade",
+"jobid": "e0334429-933a-496b-921d-b9660d7fdb36"
+},
+{
+"company": "Givebutter",
+"title": "Sales Development Representative, Outbound",
+"ats": "ashby",
+"slug": "givebutter",
+"jobid": "cccc0e90-b013-41f2-bdfc-8e439216fc8d"
+},
+{
+"company": "NextPatient",
+"title": "Customer Success Manager"
+},
+{
+"company": "Ncontracts",
+"title": "Scale Customer Success Manager"
+},
+{
+"company": "United Rentals",
+"title": "Inside Sales Rep"
+},
+{
+"company": "CPI Card Group",
+"title": "Business Development Manager"
+},
+{
+"company": "Evotix",
+"title": "Pre-Sales Consultant"
+},
+{
+"company": "Evotix",
+"title": "Account Executive - AMER"
+},
+{
+"company": "Boulevard",
+"title": "Revenue Enablement Manager",
+"ats": "greenhouse",
+"slug": "boulevard",
+"jobid": "4722734006"
+},
+{
+"company": "Owner.com",
+"title": "Account Executive",
+"ats": "ashby",
+"slug": "owner",
+"jobid": "2fb33570-f8ec-4b10-9637-e52a64ae4557"
+},
+{
+"company": "Sleeper",
+"title": "F2P Customer Success Associate"
+},
+{
+"company": "Salesloft",
+"title": "Commercial Account Manager"
+},
+{
+"company": "FullStory",
+"title": "Sales Development Representative",
+"ats": "ashby",
+"slug": "fullstory",
+"jobid": "9085db0e-2fb8-48b0-a01f-ad2aabe40b6c"
+},
+{
+"company": "Workhuman",
+"title": "Business Development Representative",
+"ats": "ashby",
+"slug": "workhuman",
+"jobid": "d3af2d69-c291-42cc-90e5-9c98548097a7"
+},
+{
+"company": "Glide",
+"title": "Sales Development Representative",
+"ats": "ashby",
+"slug": "glide",
+"jobid": "0e62c73b-ebc7-4bc4-b96a-8b8f17fe16d1"
+},
+{
+"company": "RainFocus",
+"title": "Junior Client Success Specialist",
+"ats": "lever",
+"slug": "rainfocus",
+"jobid": "4759289a-0918-45cc-8896-42edf8612046"
+},
+{
+"company": "Quantum Health",
+"title": "Client Success Executive",
+"ats": "lever",
+"slug": "quantum-health",
+"jobid": "c44f7cfd-0d69-4917-b5dd-e09e77e3e333"
+},
+{
+"company": "Cloudinary",
+"title": "Technical Customer Success Manager",
+"ats": "lever",
+"slug": "cloudinary",
+"jobid": "e8b76222-c0ac-40c5-b589-81a26f1830e7"
+}
+]
