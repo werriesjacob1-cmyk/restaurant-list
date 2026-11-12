@@ -392,8 +392,13 @@ def qualify_block(job, text):
     """Reason string if Jacob should not be alerted about this posting, else None."""
     tl = " " + (job.get("title") or "").lower() + " "
     for x in CFG.get("unqualified_title", []):
-        if x in tl:
-            return "title too senior: " + x.strip()
+        w = x.strip()
+        if w in ("iii", "iv"):
+            hit = re.search(r"(?<![a-z])" + w + r"(?![a-z])", tl)
+        else:
+            hit = x in tl
+        if hit:
+            return "title too senior: " + w
     t = text or ""
     if not t:
         return None
