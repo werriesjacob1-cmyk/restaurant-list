@@ -692,6 +692,214 @@
   [
    "Carvana",
    "carvana"
+  ],
+  [
+   "6sense",
+   "6sense"
+  ],
+  [
+   "Five9",
+   "five9"
+  ],
+  [
+   "Nextiva",
+   "nextiva"
+  ],
+  [
+   "Stripe",
+   "stripe"
+  ],
+  [
+   "TripActions",
+   "tripactions"
+  ],
+  [
+   "Anaplan",
+   "anaplan"
+  ],
+  [
+   "Remote",
+   "remote"
+  ],
+  [
+   "Greenhouse",
+   "greenhouse"
+  ],
+  [
+   "Sterling",
+   "sterling"
+  ],
+  [
+   "ZipRecruiter",
+   "ziprecruiter"
+  ],
+  [
+   "Cornerstone",
+   "cornerstone"
+  ],
+  [
+   "Skillsoft",
+   "skillsoft"
+  ],
+  [
+   "Mindbody",
+   "mindbody"
+  ],
+  [
+   "Toast",
+   "toast"
+  ],
+  [
+   "Similarweb",
+   "similarweb"
+  ],
+  [
+   "Datadog",
+   "datadog"
+  ],
+  [
+   "Elastic",
+   "elastic"
+  ],
+  [
+   "Honeycomb",
+   "honeycomb"
+  ],
+  [
+   "Veracode",
+   "veracode"
+  ],
+  [
+   "Ping Identity",
+   "pingidentity"
+  ],
+  [
+   "LastPass",
+   "lastpass"
+  ],
+  [
+   "Abnormal Security",
+   "abnormalsecurity"
+  ],
+  [
+   "Cloudflare",
+   "cloudflare"
+  ],
+  [
+   "Fastly",
+   "fastly"
+  ],
+  [
+   "Twilio",
+   "twilio"
+  ],
+  [
+   "Bandwidth",
+   "bandwidth"
+  ],
+  [
+   "Vonage",
+   "vonage"
+  ],
+  [
+   "Billtrust",
+   "billtrust"
+  ],
+  [
+   "Payoneer",
+   "payoneer"
+  ],
+  [
+   "Lithic",
+   "lithic"
+  ],
+  [
+   "Galileo",
+   "galileo"
+  ],
+  [
+   "nCino",
+   "ncinoinc"
+  ],
+  [
+   "Blend",
+   "blend"
+  ],
+  [
+   "CoStar",
+   "costar"
+  ],
+  [
+   "Cloudbeds",
+   "cloudbeds"
+  ],
+  [
+   "Agilysys",
+   "agilysys"
+  ],
+  [
+   "Tebra",
+   "tebra"
+  ],
+  [
+   "Luma Health",
+   "lumahealth"
+  ],
+  [
+   "Clover Health",
+   "cloverhealth"
+  ],
+  [
+   "Talkspace",
+   "talkspace"
+  ],
+  [
+   "Modern Health",
+   "modernhealth"
+  ],
+  [
+   "Oscar",
+   "oscar"
+  ],
+  [
+   "Alloy",
+   "alloy"
+  ],
+  [
+   "Jumio",
+   "jumio"
+  ],
+  [
+   "Forter",
+   "forter"
+  ],
+  [
+   "Riskified",
+   "riskified"
+  ],
+  [
+   "Ethos",
+   "ethos"
+  ],
+  [
+   "Pie Insurance",
+   "pieinsurance"
+  ],
+  [
+   "Coalition",
+   "coalition"
+  ],
+  [
+   "Federato",
+   "federato"
+  ],
+  [
+   "Sureify",
+   "sureify"
+  ],
+  [
+   "Zinnia",
+   "zinnia"
   ]
  ],
  "ashby": [
@@ -1006,6 +1214,90 @@
   [
    "Orchard",
    "orchard"
+  ],
+  [
+   "Webflow",
+   "webflow"
+  ],
+  [
+   "Rewind",
+   "rewind"
+  ],
+  [
+   "Expensify",
+   "expensify"
+  ],
+  [
+   "Paddle",
+   "paddle"
+  ],
+  [
+   "Docebo",
+   "docebo"
+  ],
+  [
+   "Givebutter",
+   "givebutter"
+  ],
+  [
+   "Mindbody",
+   "mindbody"
+  ],
+  [
+   "Thumbtack",
+   "thumbtack"
+  ],
+  [
+   "Angi",
+   "angi"
+  ],
+  [
+   "MeridianLink",
+   "meridianlink"
+  ],
+  [
+   "AppFolio",
+   "appfolio"
+  ],
+  [
+   "Socure",
+   "socure"
+  ],
+  [
+   "Alloy",
+   "alloy"
+  ],
+  [
+   "Persona",
+   "persona"
+  ],
+  [
+   "Trulioo",
+   "trulioo"
+  ],
+  [
+   "Sardine",
+   "sardine"
+  ],
+  [
+   "Sift",
+   "sift"
+  ],
+  [
+   "Lemonade",
+   "lemonade"
+  ],
+  [
+   "Kin",
+   "kin"
+  ],
+  [
+   "Openly",
+   "openly"
+  ],
+  [
+   "Ladder",
+   "ladder"
   ]
  ],
  "lever": [
@@ -1224,6 +1516,50 @@
   [
    "Ribbon",
    "ribbon"
+  ],
+  [
+   "Jobvite",
+   "jobvite"
+  ],
+  [
+   "360Learning",
+   "360learning"
+  ],
+  [
+   "Olo",
+   "olo"
+  ],
+  [
+   "LogRocket",
+   "logrocket"
+  ],
+  [
+   "TrustArc",
+   "trustarc"
+  ],
+  [
+   "Brevo",
+   "brevo"
+  ],
+  [
+   "Lodgify",
+   "lodgify"
+  ],
+  [
+   "Arcadia",
+   "arcadia"
+  ],
+  [
+   "Included Health",
+   "includedhealth"
+  ],
+  [
+   "Ro",
+   "ro"
+  ],
+  [
+   "Alloy",
+   "alloy"
   ]
  ],
  "workday": [
@@ -1406,6 +1742,46 @@
   [
    "Spireon",
    "spireon"
+  ],
+  [
+   "Glassdoor",
+   "glassdoorinc"
+  ],
+  [
+   "SmartRecruiters",
+   "smartrecruiters"
+  ],
+  [
+   "Service Fusion",
+   "servicefusion"
+  ],
+  [
+   "Acumatica",
+   "acumatica"
+  ],
+  [
+   "NextGen",
+   "nextgen"
+  ],
+  [
+   "Lyra",
+   "lyra"
+  ],
+  [
+   "Socure",
+   "socure"
+  ],
+  [
+   "Jumio",
+   "jumio"
+  ],
+  [
+   "Dun & Bradstreet",
+   "dunbradstreetinc"
+  ],
+  [
+   "Vouch",
+   "vouch"
   ]
  ],
  "rippling": [
@@ -1452,6 +1828,14 @@
   [
    "Rippling",
    "rippling"
+  ],
+  [
+   "Trovata",
+   "trovata"
+  ],
+  [
+   "Kin",
+   "kin"
   ]
  ],
  "bamboohr": [
@@ -1466,6 +1850,38 @@
   [
    "Zendesk",
    "zendesk"
+  ],
+  [
+   "Cornerstone",
+   "cornerstone"
+  ],
+  [
+   "Housecall Pro",
+   "housecallpro"
+  ],
+  [
+   "SailPoint",
+   "sailpoint"
+  ],
+  [
+   "Arcadia",
+   "arcadia"
+  ],
+  [
+   "Ethos",
+   "ethos"
+  ],
+  [
+   "Embroker",
+   "embroker"
+  ],
+  [
+   "Kin",
+   "kin"
+  ],
+  [
+   "Fabric",
+   "fabric"
   ]
  ],
  "skip_hashes": [
