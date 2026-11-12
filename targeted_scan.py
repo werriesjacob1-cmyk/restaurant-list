@@ -19,6 +19,12 @@ from pathlib import Path
 
 import watch
 
+SDR_TITLES = ("sales development", "sdr", "bdr", "business development rep", "business development assoc",
+              "inside sales rep", "inbound sales", "associate account executive", "sales representative")
+SDR_EXCLUDE = ("manager", "senior", "sr.", "sr ", "lead", "head", "principal", "staff", "ii ", "iii", "iv ", "intern",
+               "operations", "enablement", "coach", "trainer", "support specialist")
+OFFICE_ELSEWHERE = re.compile(r"(?:hybrid|in.office|on.?site|office)[^.;]{0,80}\b(?:san francisco|sf\b|nyc|new york|austin|boston|chicago|"
+                              r"denver|seattle|atlanta|san diego|los angeles|miami|dallas|salt lake|raleigh|toronto)\b", re.I)
 ROLE_GROUPS = {
     "customer": ("customer success", "client success", "account manager",
                  "renewal", "partner success", "customer engagement",
@@ -59,6 +65,8 @@ def title_ok(title, focus):
     s = " " + title.lower().strip() + " "
     if any(x in s for x in EXCLUDE_TITLES) or re.search(r"\b(?:EMEA|APAC|LATAM|DACH)\b", title, re.I):
         return False
+    if focus == "sdr":
+        return any(x in s for x in SDR_TITLES) and not any(x in s for x in SDR_EXCLUDE)
     patterns = ROLE_GROUPS["customer"] + ROLE_GROUPS["sales"] if focus == "all" else ROLE_GROUPS[focus]
     return any(x in s for x in patterns)
 
@@ -91,7 +99,7 @@ def pay_evidence(text, structured=""):
                     ranges[kind].append([v, v])
     return {k: sorted(set(tuple(v) for v in vals)) for k, vals in ranges.items()}
 
-def describe_job(job, description, source, days, now):
+def describe_job(job, description, source, days, now, focus=""):
     title = job.get("title", "")
     years = watch.years_required(description)
     known_pay = pay_evidence(description, str(job.get("pay") or ""))
@@ -104,7 +112,9 @@ def describe_job(job, description, source, days, now):
     if years > 5:
         hard.append("requires 6+ years")
     degree_match = REQUIRED_DEGREE.search(description)
-    if degree_match:
+    if degree_match and focus == "sdr":
+        issues.append("degree wording: apply anyway")
+    elif degree_match:
         degree_context = description[max(0, degree_match.start() - 25):degree_match.end() + 110]
         if not EQUIVALENT.search(degree_context):
             hard.append("required degree without equivalent")
@@ -112,7 +122,7 @@ def describe_job(job, description, source, days, now):
         hard.append("people-management duties")
     if WEEKEND_REQUIRED.search(description):
         hard.append("required weekend work")
-    if OUTBOUND_ONLY.search(description):
+    if OUTBOUND_ONLY.search(description) and focus != "sdr":
         hard.append("exclusively outbound")
     if COMMISSION_ONLY.search(description):
         hard.append("commission-only/contract")
@@ -127,8 +137,15 @@ def describe_job(job, description, source, days, now):
         issues.append("weekend/on-call wording: ask")
     if re.search(r"\b(?:cold.call|outbound|prospecting)\b", description, re.I):
         issues.append("outbound mix: check")
-    if ote and max(v[1] for v in ote) < 75000:
-        hard.append("OTE below $75k")
+    floor = 70000 if focus == "sdr" else 75000
+    if ote and max(v[1] for v in ote) < floor:
+        hard.append("OTE below $%dk" % (floor // 1000))
+    if focus == "sdr":
+        loc = (job.get("location") or "").lower()
+        if re.search(r"nashville|tennessee|, tn", loc):
+            issues.append("NASHVILLE")
+        elif OFFICE_ELSEWHERE.search(description) and not re.search(r"nashville|tennessee", description, re.I):
+            issues.append("office/hybrid wording tied to another city: confirm remote")
     if not base:
         issues.append("guaranteed base not explicitly verified")
     else:
@@ -162,6 +179,7 @@ def describe_job(job, description, source, days, now):
         issues.append("older than %s days" % days)
     tier = 1
     if years >= 4: tier = 2
+    if focus == "sdr" and years >= 3: tier = max(tier, 2)
     if any("required SaaS" in x for x in issues): tier = max(tier, 2 if years <= 2 else 3)
     if any("required B2B" in x for x in issues): tier = max(tier, 3)
     if re.search(r"\b(?:senior|enterprise|strategic|mid.market)\b", title, re.I):
@@ -260,7 +278,7 @@ def search(args):
             try: desc=j["detail"]() or ""
             except Exception: pass
         # Never infer posting validity from aggregator snippets or a rendered page.
-        return describe_job(j,desc,kind,args.days,now)
+        return describe_job(j,desc,kind,args.days,now,args.focus)
     with ThreadPoolExecutor(max_workers=8) as pool:
         results=list(pool.map(evaluate,candidates))
     counts=collections.Counter(x["disposition"] for x in results)
@@ -291,7 +309,7 @@ def search(args):
 def main():
     p=argparse.ArgumentParser(description="Targeted, on-demand search across official employer ATS feeds")
     p.add_argument("--days",type=int,default=7,help="rank postings in this age window first; do not discard older postings")
-    p.add_argument("--focus",choices=("all","customer","sales"),default="all")
+    p.add_argument("--focus",choices=("all","customer","sales","sdr"),default="all")
     p.add_argument("--company",default="",help="optional targeted employer name/substring")
     p.add_argument("--discover",action="store_true",help="discover additional employer ATS boards using optional Brave Search API")
     p.add_argument("--limit",type=int,default=30)

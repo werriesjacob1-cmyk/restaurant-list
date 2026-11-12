@@ -20,6 +20,7 @@ on:
           - all
           - customer
           - sales
+          - sdr
         default: all
       company:
         description: "Optional company-name filter; leave blank for all monitored employers"

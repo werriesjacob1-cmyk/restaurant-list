@@ -69,3 +69,20 @@ class TargetedSearchTests(unittest.TestCase):
 
 if __name__=="__main__":
     unittest.main()
+
+class SdrFocusTests(unittest.TestCase):
+    def test_sdr_titles(self):
+        self.assertTrue(target.title_ok("Sales Development Representative", "sdr"))
+        self.assertFalse(target.title_ok("SDR Manager", "sdr"))
+        self.assertFalse(target.title_ok("Senior Business Development Representative", "sdr"))
+
+    def test_sdr_degree_and_outbound_not_rejected(self):
+        job = {"company": "X", "title": "SDR", "location": "Nashville, TN", "url": "u", "posted": None}
+        text = ("Bachelor's degree required. 100% outbound cold calling. Base $55,000 and OTE $85,000. " * 4)
+        r = target.describe_job(job, text, "greenhouse", 7, 0, "sdr")
+        self.assertNotIn("required degree without equivalent", r["hard_exclusions"])
+        self.assertNotIn("exclusively outbound", r["hard_exclusions"])
+        self.assertIn("NASHVILLE", r["questions"])
+        r2 = target.describe_job(job, text, "greenhouse", 7, 0, "")
+        self.assertIn("required degree without equivalent", r2["hard_exclusions"])
+
