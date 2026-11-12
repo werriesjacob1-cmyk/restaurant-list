@@ -6324,5 +6324,28 @@
     ]
    ]
   }
+ ],
+ "max_years": 4,
+ "unqualified_title": [
+  "senior",
+  "sr.",
+  "sr ",
+  "staff ",
+  "principal",
+  "lead ",
+  "iii",
+  "iv"
+ ],
+ "unqualified_text": [
+  "manage[sd]? (?:a )?team",
+  "direct reports",
+  "people management",
+  "people manager",
+  "supervis(?:e|ory) experience required",
+  "series (?:6|7|63|65|66)\\\\b.{0,30}(?:required|must)",
+  "(?:license|licence|licensed)[^.]{0,30}required",
+  "security clearance",
+  "must (?:have|hold) (?:an? )?(?:active )?(?:insurance|real estate|nmls)",
+  "proven (?:track record|experience)[^.]{0,40}(?:enterprise|c-level|saas)\\\\b[^.]{0,30}(?:5|6|7)\\\\+"
  ]
 }

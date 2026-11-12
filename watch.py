@@ -367,9 +367,51 @@ class Notifier:
                 self.failures += 1
         return ok
 
+
+# ---------------------------------------------------------------- qualification gate
+_YRS_RE = re.compile(r"(\d{1,2})\s?\+?\s?(?:-\s?\d{1,2}\s?)?\+?\s?(?:or more\s)?(?:years?|yrs?)\b", re.I)
+_SOFT_NEAR = re.compile(r"prefer|ideal|nice to have|a plus|bonus|desired", re.I)
+
+def required_years(text):
+    """Highest years-of-experience figure stated as required (ignores 'preferred/ideally' mentions)."""
+    best = 0
+    for m in _YRS_RE.finditer(text or ""):
+        ctx = text[max(0, m.start() - 70): m.end() + 70]
+        if not re.search(r"experience|exp\.|background|track record|in a |in an |working|selling|sales", ctx, re.I):
+            continue
+        if re.search(r"years? (?:old|ago|of age)|within \d|last \d|in business|founded|established", ctx, re.I):
+            continue
+        if _SOFT_NEAR.search(text[max(0, m.start() - 40): m.end() + 40]):
+            continue
+        n = int(m.group(1))
+        if n <= 15:
+            best = max(best, n)
+    return best
+
+def qualify_block(job, text):
+    """Reason string if Jacob should not be alerted about this posting, else None."""
+    tl = " " + (job.get("title") or "").lower() + " "
+    for x in CFG.get("unqualified_title", []):
+        if x in tl:
+            return "title too senior: " + x.strip()
+    t = text or ""
+    if not t:
+        return None
+    yrs = required_years(t)
+    if yrs > CFG.get("max_years", 4):
+        return f"needs {yrs}+ years"
+    for pat in CFG.get("unqualified_text", []):
+        m = re.search(pat, t, re.I)
+        if m:
+            return "requirement: " + m.group(0)[:40]
+    return None
+
 # ---------------------------------------------------------------- alert building
 def build_alert(job, soft, now):
     text = " ".join(filter(None, [job.get("desc"), job.get("pay")]))
+    block = qualify_block(job, job.get("desc") or "")
+    if block:
+        return None, block
     fl = flags_from_text(text) if text else []
     pay = job.get("pay") or ""
     rng = find_pay(text)

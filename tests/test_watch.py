@@ -56,11 +56,19 @@ class T(unittest.TestCase):
             {"id": 13, "title": "Client Success Manager", "location": {"name": "Nashville, TN"}, "absolute_url": "https://x/13"}]
         r = watch.run(now=self.now + 300)
         titles = sorted(p["message"].splitlines()[0] for p in self.net.sent)
-        self.assertEqual(titles, ["Client Success Manager", "Senior Customer Success Manager II"])
-        soft = [p for p in self.net.sent if "Senior" in p["message"]][0]
-        self.assertEqual(soft["priority"], 2); self.assertIn("Title flag", soft["message"])
+        self.assertEqual(titles, ["Client Success Manager"], "senior titles are no longer alerted")
         m = self.net.sent[0]["message"]
         self.assertIn("WEEKEND", m); self.assertIn("travel 10%", m); self.assertIn("years: 3+", m); self.assertIn("$70,000", m)
+
+    def test_qualify_gate(self):
+        q = watch.qualify_block
+        self.assertIsNone(q({"title": "Customer Success Manager"}, "3+ years of experience in sales. Bachelor's preferred."))
+        self.assertIsNone(q({"title": "Account Manager"}, "4 years of sales experience; 7+ years ideally in SaaS"))
+        self.assertIn("5+", q({"title": "Account Manager"}, "Requires 5+ years of account management experience"))
+        self.assertIn("senior", q({"title": "Senior Account Manager"}, ""))
+        self.assertTrue(q({"title": "Customer Success Manager"}, "You will manage a team of five CSMs"))
+        self.assertTrue(q({"title": "Account Manager"}, "Active Series 7 license required"))
+        self.assertIsNone(q({"title": "Account Manager"}, "Company founded 12 years ago; 10 years in business"))
 
     def test_skip_hash_and_pay_floor(self):
         watch.CFG["skip_hashes"] = [watch.chash("Acme")]
