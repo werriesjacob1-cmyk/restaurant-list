@@ -1,0 +1,549 @@
+[
+ {
+  "company": "Stampli",
+  "title": "Sales Development Representative",
+  "tier": "t1",
+  "id": "JW-531*"
+ },
+ {
+  "company": "Cardinal Health",
+  "title": "Lab Products Sales Rep",
+  "tier": "t2",
+  "id": "JW-133"
+ },
+ {
+  "company": "Grainger",
+  "title": "Account Manager",
+  "tier": "t2",
+  "id": "JW-186"
+ },
+ {
+  "company": "Lumber wholesaler",
+  "title": "Inside Sales Rep",
+  "tier": "t2",
+  "id": "JW-134"
+ },
+ {
+  "company": "Jackson Financial",
+  "title": "Sales QA Analyst",
+  "tier": "t2",
+  "id": "JW-127"
+ },
+ {
+  "company": "Ramsey Solutions",
+  "title": "Partner Success Manager",
+  "tier": "t2",
+  "id": "JW-386*"
+ },
+ {
+  "company": "SailPoint",
+  "title": "Digital Customer Success Manager",
+  "tier": "t2",
+  "id": "JW-421",
+  "jobid": "11814229"
+ },
+ {
+  "company": "Learning Care Group",
+  "title": "Business Development Operations Coordinator",
+  "tier": "t2",
+  "id": "JW-423",
+  "jobid": "10208432"
+ },
+ {
+  "company": "Boulevard",
+  "title": "Sales Development Representative",
+  "tier": "t2",
+  "id": "JW-426",
+  "jobid": "10943057"
+ },
+ {
+  "company": "CPI Card Group",
+  "title": "Client Success Specialist",
+  "tier": "t2",
+  "id": "JW-443"
+ },
+ {
+  "company": "Drata",
+  "title": "Sales Development Representative, Emerging",
+  "tier": "t2",
+  "id": "JW-478*",
+  "jobid": "a74be52a-72df-404f-bf0f-be3f65b65004"
+ },
+ {
+  "company": "Greenhouse",
+  "title": "Mid-Market Sales Development Representative",
+  "tier": "t2",
+  "id": "JW-481*",
+  "jobid": "6180015"
+ },
+ {
+  "company": "Aescape",
+  "title": "Account Executive",
+  "tier": "t2",
+  "id": "JW-483*",
+  "jobid": "3e4a540a-6bcd-4b3c-995c-dcaedcd71eff"
+ },
+ {
+  "company": "CharterUP",
+  "title": "Inside Sales Representative II",
+  "tier": "t2",
+  "id": "JW-484*",
+  "jobid": "5465425008"
+ },
+ {
+  "company": "Fivetran",
+  "title": "Business Development Representative",
+  "tier": "t2",
+  "id": "JW-485*",
+  "jobid": "7792160003"
+ },
+ {
+  "company": "AppFolio",
+  "title": "Business Development Representative - SMB",
+  "tier": "t2",
+  "id": "JW-486*",
+  "jobid": "38800f2a-621a-4073-b2df-1d9c621921e7"
+ },
+ {
+  "company": "Healthcare Systems and Technologies",
+  "title": "Account Manager",
+  "tier": "t2",
+  "id": "JW-487*",
+  "jobid": "2c0f04d4-dd16-405b-9179-dbe515cd1f96"
+ },
+ {
+  "company": "Bitwarden",
+  "title": "Sales Development Representative",
+  "tier": "t2",
+  "id": "JW-492*",
+  "jobid": "7824330003"
+ },
+ {
+  "company": "Muck Rack",
+  "title": "Outbound Sales Development Representative",
+  "tier": "t2",
+  "id": "JW-493*",
+  "jobid": "8895495002"
+ },
+ {
+  "company": "ClickUp",
+  "title": "Business Development Representative",
+  "tier": "t2",
+  "id": "JW-494*",
+  "jobid": "d6782da5-01cc-4c43-b7e2-e88af54dc6a0"
+ },
+ {
+  "company": "1Password",
+  "title": "Business Development Representative",
+  "tier": "t2",
+  "id": "JW-495*",
+  "jobid": "55dedff3-7af8-4fd4-aaf0-79680d77f150"
+ },
+ {
+  "company": "Cision",
+  "title": "Account Manager I",
+  "tier": "t2",
+  "id": "JW-496*",
+  "jobid": "4999955101"
+ },
+ {
+  "company": "Lyra Health",
+  "title": "Customer Success Manager I",
+  "tier": "t2",
+  "id": "JW-497*",
+  "jobid": "22d7731a-cd88-4309-b86b-8e0507293ede"
+ },
+ {
+  "company": "Waystar",
+  "title": "Client Success Manager",
+  "tier": "t2",
+  "id": "JW-504*"
+ },
+ {
+  "company": "Oyster",
+  "title": "Business Development Representative",
+  "tier": "t2",
+  "id": "JW-505*",
+  "jobid": "256fc3fc-f1ac-4e88-8ca1-a07f49a620fb"
+ },
+ {
+  "company": "Sanity",
+  "title": "Sales Development Representative - Outbound",
+  "tier": "t2",
+  "id": "JW-506*",
+  "jobid": "5a3194e7-ca90-4780-93d5-20fb3106ae1a"
+ },
+ {
+  "company": "Notable",
+  "title": "Business Development Representative",
+  "tier": "t2",
+  "id": "JW-507*",
+  "jobid": "8443b79e-2cf1-4ee9-bc38-b8503772163e"
+ },
+ {
+  "company": "Scribe",
+  "title": "Sales Development Representative",
+  "tier": "t2",
+  "id": "JW-508*",
+  "jobid": "2cf74c12-40db-4d07-9456-d19657c54ed8"
+ },
+ {
+  "company": "Trimble",
+  "title": "Dedicated Customer Success Manager",
+  "tier": "t2",
+  "id": "JW-509*"
+ },
+ {
+  "company": "Capsule",
+  "title": "Customer Success Manager",
+  "tier": "t2",
+  "id": "JW-510*",
+  "jobid": "242b64d3-840d-4a9c-850b-cce7dd77acff"
+ },
+ {
+  "company": "Built Technologies",
+  "title": "Account Manager",
+  "tier": "t3",
+  "id": "JW-547*",
+  "jobid": "4597589005"
+ },
+ {
+  "company": "Coretek Services",
+  "title": "Sales Development Representative",
+  "tier": "t3",
+  "id": "JW-533*"
+ },
+ {
+  "company": "Remote",
+  "title": "Sales Enablement Manager",
+  "tier": "t3",
+  "id": "JW-207"
+ },
+ {
+  "company": "Wisdom",
+  "title": "Inbound Account Executive",
+  "tier": "t3",
+  "id": "JW-248"
+ },
+ {
+  "company": "Silvur",
+  "title": "Client Success Specialist",
+  "tier": "t3",
+  "id": "JW-141"
+ },
+ {
+  "company": "ServiceTitan",
+  "title": "CSM",
+  "tier": "t3",
+  "id": "JW-142"
+ },
+ {
+  "company": "Odeko",
+  "title": "Territory Sales Associate",
+  "tier": "t3",
+  "id": "JW-126"
+ },
+ {
+  "company": "Semicolon Talent",
+  "title": "Client Success Manager",
+  "tier": "t3",
+  "id": "JW-166"
+ },
+ {
+  "company": "WithMe",
+  "title": "Client Success Manager",
+  "tier": "t3",
+  "id": "JW-180"
+ },
+ {
+  "company": "Polimorphic",
+  "title": "Account Manager",
+  "tier": "t3",
+  "id": "JW-287"
+ },
+ {
+  "company": "Storesight",
+  "title": "Customer Success Manager",
+  "tier": "t3",
+  "id": "JW-289"
+ },
+ {
+  "company": "Switchboard",
+  "title": "Client Success Manager \u2013 SMB/MM",
+  "tier": "t3",
+  "id": "JW-298"
+ },
+ {
+  "company": "Automatiq",
+  "title": "Account Manager",
+  "tier": "t3",
+  "id": "JW-303"
+ },
+ {
+  "company": "Just Appraised",
+  "title": "Customer Success Manager",
+  "tier": "t3",
+  "id": "JW-305"
+ },
+ {
+  "company": "White Cap",
+  "title": "Account Manager",
+  "tier": "t3",
+  "id": "JW-311"
+ },
+ {
+  "company": "Tive",
+  "title": "Account Manager",
+  "tier": "t3",
+  "id": "JW-324"
+ },
+ {
+  "company": "Rocket Clicks",
+  "title": "Account Manager",
+  "tier": "t3",
+  "id": "JW-325"
+ },
+ {
+  "company": "ALTOUR",
+  "title": "Manager",
+  "tier": "t3",
+  "id": "JW-327"
+ },
+ {
+  "company": "Slide",
+  "title": "Account Manager 'Farmer'",
+  "tier": "t3",
+  "id": "JW-351"
+ },
+ {
+  "company": "CorVel",
+  "title": "Account Manager II",
+  "tier": "t3",
+  "id": "JW-353"
+ },
+ {
+  "company": "Leadership Connect",
+  "title": "Renewal Manager",
+  "tier": "t3",
+  "id": "JW-354"
+ },
+ {
+  "company": "Pilot.com",
+  "title": "Sr. Customer Success Manager",
+  "tier": "t3",
+  "id": "JW-369*"
+ },
+ {
+  "company": "AXS",
+  "title": "Account Manager - Music Clubs",
+  "tier": "t3",
+  "id": "JW-370*"
+ },
+ {
+  "company": "WorkWave",
+  "title": "Customer Success Manager",
+  "tier": "t3",
+  "id": "JW-371*"
+ },
+ {
+  "company": "VergeSense",
+  "title": "Inside Account Executive",
+  "tier": "t3",
+  "id": "JW-398*"
+ },
+ {
+  "company": "Ashby",
+  "title": "SMB Customer Success Manager",
+  "tier": "t3",
+  "id": "JW-440*"
+ },
+ {
+  "company": "Tekmetric",
+  "title": "Customer Results Manager II",
+  "tier": "t3",
+  "id": "JW-441*"
+ },
+ {
+  "company": "Conversica",
+  "title": "Customer Success Manager",
+  "tier": "t3",
+  "id": "JW-444*",
+  "jobid": "dff3704e-32a7-459e-9875-8430e9c23481"
+ },
+ {
+  "company": "Shopview",
+  "title": "Customer Success Manager",
+  "tier": "t3",
+  "id": "JW-445*"
+ },
+ {
+  "company": "Close",
+  "title": "Customer Success Associate",
+  "tier": "t3",
+  "id": "JW-446*"
+ },
+ {
+  "company": "Critical Mass",
+  "title": "Account Coordinator",
+  "tier": "t3",
+  "id": "JW-447",
+  "jobid": "7021275"
+ },
+ {
+  "company": "Recharge",
+  "title": "Customer Success Manager",
+  "tier": "t3",
+  "id": "JW-448"
+ },
+ {
+  "company": "Evotix",
+  "title": "Account Manager",
+  "tier": "t3",
+  "id": "JW-449*"
+ },
+ {
+  "company": "LivTech",
+  "title": "Account Executive",
+  "tier": "t3",
+  "id": "JW-452*"
+ },
+ {
+  "company": "Leap",
+  "title": "Senior Customer Success Manager",
+  "tier": "t3",
+  "id": "JW-455*"
+ },
+ {
+  "company": "Artist Growth",
+  "title": "Customer Success Manager",
+  "tier": "t3",
+  "id": "JW-457*"
+ },
+ {
+  "company": "Inspired Thinking Group",
+  "title": "Senior Customer Success Manager",
+  "tier": "t3",
+  "id": "JW-460*"
+ },
+ {
+  "company": "Subsplash",
+  "title": "Account Manager - Client Success Team",
+  "tier": "t3",
+  "id": "JW-465*",
+  "jobid": "8860366002"
+ },
+ {
+  "company": "Constant Contact",
+  "title": "Digital Customer Success Specialist - Pendo",
+  "tier": "t3",
+  "id": "JW-466*",
+  "jobid": "8263206"
+ },
+ {
+  "company": "Givebutter",
+  "title": "Sales Development Representative, Outbound",
+  "tier": "t3",
+  "id": "JW-471*",
+  "jobid": "cccc0e90-b013-41f2-bdfc-8e439216fc8d"
+ },
+ {
+  "company": "NextPatient",
+  "title": "Customer Success Manager",
+  "tier": "t3",
+  "id": "JW-374*"
+ },
+ {
+  "company": "Ncontracts",
+  "title": "Scale Customer Success Manager",
+  "tier": "t3",
+  "id": "JW-393"
+ },
+ {
+  "company": "United Rentals",
+  "title": "Inside Sales Rep",
+  "tier": "t3",
+  "id": "JW-309"
+ },
+ {
+  "company": "CPI Card Group",
+  "title": "Business Development Manager",
+  "tier": "t3",
+  "id": "JW-472*"
+ },
+ {
+  "company": "Evotix",
+  "title": "Pre-Sales Consultant",
+  "tier": "t3",
+  "id": "JW-473*",
+  "jobid": "9673bc5d-3cdf-4029-bee1-81b164767381"
+ },
+ {
+  "company": "Evotix",
+  "title": "Account Executive - AMER",
+  "tier": "t3",
+  "id": "JW-474*",
+  "jobid": "7d42549a-a0e3-4a6a-a6c9-760a711f0564"
+ },
+ {
+  "company": "Boulevard",
+  "title": "Revenue Enablement Manager",
+  "tier": "t3",
+  "id": "JW-475*",
+  "jobid": "4722734006"
+ },
+ {
+  "company": "Owner.com",
+  "title": "Account Executive",
+  "tier": "t3",
+  "id": "JW-476*",
+  "jobid": "2fb33570-f8ec-4b10-9637-e52a64ae4557"
+ },
+ {
+  "company": "Salesloft",
+  "title": "Commercial Account Manager",
+  "tier": "t3",
+  "id": "JW-489*"
+ },
+ {
+  "company": "FullStory",
+  "title": "Sales Development Representative",
+  "tier": "t3",
+  "id": "JW-498*",
+  "jobid": "9085db0e-2fb8-48b0-a01f-ad2aabe40b6c"
+ },
+ {
+  "company": "Workhuman",
+  "title": "Business Development Representative",
+  "tier": "t3",
+  "id": "JW-499*",
+  "jobid": "d3af2d69-c291-42cc-90e5-9c98548097a7"
+ },
+ {
+  "company": "Glide",
+  "title": "Sales Development Representative",
+  "tier": "t3",
+  "id": "JW-511*",
+  "jobid": "0e62c73b-ebc7-4bc4-b96a-8b8f17fe16d1"
+ },
+ {
+  "company": "RainFocus",
+  "title": "Junior Client Success Specialist",
+  "tier": "t3",
+  "id": "JW-512*",
+  "jobid": "4759289"
+ },
+ {
+  "company": "Quantum Health",
+  "title": "Client Success Executive",
+  "tier": "t3",
+  "id": "JW-513*",
+  "jobid": "c44f7cfd-0d69-4917-b5dd-e09e77e3e333"
+ },
+ {
+  "company": "Cloudinary",
+  "title": "Technical Customer Success Manager",
+  "tier": "t3",
+  "id": "JW-514*",
+  "jobid": "e8b76222-c0ac-40c5-b589-81a26f1830e7"
+ }
+]
