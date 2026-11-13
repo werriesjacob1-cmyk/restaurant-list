@@ -65,4 +65,4 @@ jobs:
           name: targeted-search-results
           path: targeted_results.json
           if-no-files-found: warn
-          retention-days: 14
+          retention-days: 1

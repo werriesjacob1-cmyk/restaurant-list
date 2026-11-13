@@ -98,7 +98,7 @@ jobs:
           name: deep-search-v2-report
           path: deep_search_output/
           if-no-files-found: warn
-          retention-days: 30
+          retention-days: 1
       - name: Persist public discovery roster and seen identifiers
         if: success() && github.event_name != 'pull_request'
         shell: bash

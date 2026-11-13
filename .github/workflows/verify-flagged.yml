@@ -72,4 +72,4 @@ jobs:
           name: flagged-jobs-verified
           path: verification_output/
           if-no-files-found: warn
-          retention-days: 30
+          retention-days: 1
