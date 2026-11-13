@@ -87,10 +87,35 @@ def check(row):
         row["company"], job["title"], job.get("location", "")[:40], rng("base"), rng("ote"), rng("ambiguous"),
         years(text), len(text), "; ".join(flags)[:240], job.get("url", ""))
 
+
+JR = re.compile(r"sales development|business development|\bsdr\b|\bbdr\b|associate|coordinator|specialist|representative|\brep\b|junior|\bjr\b|\bi\b$|entry|account manager|customer success|client success|renewal|inside sales|account executive|support", re.I)
+SR = re.compile(r"senior|\bsr\b|director|\bvp\b|head of|principal|staff|lead\b|enterprise|engineer|developer|manager,? (?:sales|customer success) |strategic|executive director|president|architect|analyst|counsel|recruit|marketing|designer|scientist|finance|accountant", re.I)
+def scan(row):
+    boards = candidate_boards(row)
+    if not boards:
+        return ["VS|%s|NO_BOARD" % row["company"]]
+    out = []; errs = []
+    for kind, slug in boards:
+        try:
+            jobs = FETCH[kind](row["company"], slug)
+        except Exception:
+            errs.append("%s:%s ERR" % (kind, slug)); continue
+        hits = [j for j in jobs if JR.search(j["title"]) and not SR.search(j["title"])]
+        out.append("VS|%s|BOARD|%s:%s|total=%d|hits=%d" % (row["company"], kind, slug, len(jobs), len(hits)))
+        for j in hits[:25]:
+            out.append("VS|%s|JOB|%s|%s|%s" % (row["company"], j["title"], (j.get("location") or "")[:40], j.get("url", "")))
+        if jobs: break
+    if not out: out = ["VS|%s|ERR|%s" % (row["company"], "; ".join(errs)[:150])]
+    return out
+
 def main():
     if len(sys.argv) > 2 and sys.argv[2] != "--excerpts": pass
     rows = json.load(open(sys.argv[1]))
     rows = [r for r in rows]
     with ThreadPoolExecutor(6) as ex:
-        for line in ex.map(check, rows): print(line, flush=True)
+        if rows and rows[0].get("scan"):
+            for lines in ex.map(scan, rows):
+                for line in lines: print(line, flush=True)
+        else:
+            for line in ex.map(check, rows): print(line, flush=True)
 if __name__ == "__main__": main()
