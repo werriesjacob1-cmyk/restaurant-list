@@ -1,14 +1,3 @@
-{"t": 1794544804, "c": "Datadog", "title": "Sales Development Representative", "why": "location: Bangalore, India"}
-{"t": 1794544804, "c": "Abnormal Security", "title": "Software Engineer I, Data Platforms", "why": "excluded:engineer"}
-{"t": 1794544804, "c": "Cloudflare", "title": "Senior Response Engineer - Cloudflare Managed Defense Center (CMDC)", "why": "excluded:engineer"}
-{"t": 1794544804, "c": "Sendbird", "title": "Forward Deployed Product Manager", "why": "excluded:product manager"}
-{"t": 1794544804, "c": "Pushpay", "title": "Senior Product Manager, Faith & Strategy", "why": "excluded:product manager"}
-{"t": 1794544804, "c": "Xero", "title": "Senior Data & AI Governance Specialist", "why": "excluded:data"}
-{"t": 1794544804, "c": "Xero", "title": "Communications Director, ANZ", "why": "excluded:director"}
-{"t": 1794544804, "c": "Xero", "title": "Senior Data & AI Governance Specialist", "why": "excluded:data"}
-{"t": 1794544804, "c": "Xero", "title": "Senior Data & AI Governance Specialist", "why": "excluded:data"}
-{"t": 1794544804, "c": "Xero", "title": "Senior Data & AI Governance Specialist", "why": "excluded:data"}
-{"t": 1794544804, "c": "Xero", "title": "Communications Director, ANZ", "why": "excluded:director"}
 {"t": 1794544804, "c": "Uniti Med", "title": "Revenue Operations Manager", "why": "location: Uniti HQ"}
 {"t": 1794544804, "c": "Thermo Fisher", "title": "Inside Sales Representative II", "why": "location: Remote, India"}
 {"t": 1794544804, "c": "Salesforce", "title": "Enterprise Account Executive, Revenue Cloud", "why": "location: Australia - Sydney"}
@@ -409,3 +398,7 @@
 {"t": 1794627439, "c": "Arena Technical Resources", "title": "Machine Learning Engineer", "why": "excluded:engineer"}
 {"t": 1794627439, "c": "Salesforce", "title": "Platform & Security Sales Specialist", "why": "excluded:security"}
 {"t": 1794627439, "c": "Salesforce", "title": "Senior Product Manager, Tableau Applied AI", "why": "excluded:product manager"}
+{"t": 1794636536, "c": "Showpad", "title": "Principal Software Engineer", "why": "excluded:engineer"}
+{"t": 1794636536, "c": "Clear", "title": "Director, Field and Partner Marketing (CLEAR1 - B2B)", "why": "excluded:director"}
+{"t": 1794636536, "c": "Clear", "title": "Manager, Marketing Operations (CLEAR1 - B2B)", "why": "excluded:marketing"}
+{"t": 1794636536, "c": "Thumbtack", "title": "Senior Global Tax Specialist", "why": "excluded:tax"}
