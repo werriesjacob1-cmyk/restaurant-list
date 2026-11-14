@@ -1,7 +1,3 @@
-{"t": 1794544804, "c": "Uniti Med", "title": "Revenue Operations Manager", "why": "location: Uniti HQ"}
-{"t": 1794544804, "c": "Thermo Fisher", "title": "Inside Sales Representative II", "why": "location: Remote, India"}
-{"t": 1794544804, "c": "Salesforce", "title": "Enterprise Account Executive, Revenue Cloud", "why": "location: Australia - Sydney"}
-{"t": 1794544804, "c": "Salesforce", "title": "Marketing Cloud Account Executive - SMB", "why": "excluded:marketing"}
 {"t": 1794544804, "c": "Salesforce", "title": "LMTS - Lead AI/ML Engineer (LLM Post-Training)", "why": "excluded:engineer"}
 {"t": 1794544804, "c": "Salesforce", "title": "Commercial Account Executive \u2013 Health & Life Sciences (HLS)", "why": "location: Australia - Sydney"}
 {"t": 1794544804, "c": "Salesforce", "title": "Senior Enterprise Strategic Account Manager \u2013 Data & Integration (MuleSoft, Informatica)", "why": "excluded:data"}
@@ -402,3 +398,61 @@
 {"t": 1794636536, "c": "Clear", "title": "Director, Field and Partner Marketing (CLEAR1 - B2B)", "why": "excluded:director"}
 {"t": 1794636536, "c": "Clear", "title": "Manager, Marketing Operations (CLEAR1 - B2B)", "why": "excluded:marketing"}
 {"t": 1794636536, "c": "Thumbtack", "title": "Senior Global Tax Specialist", "why": "excluded:tax"}
+{"t": 1794678981, "c": "Intercom", "title": "Sales Development Representative", "why": "location: Dublin, Ireland"}
+{"t": 1794678981, "c": "Zuora", "title": "Customer Solution Engineer, Zuora + Workday Financial Management (FINS)", "why": "excluded:engineer"}
+{"t": 1794678981, "c": "TripActions", "title": "Recruiter", "why": "excluded:recruit"}
+{"t": 1794678981, "c": "Rev.com", "title": "Senior Manager, B2B Marketing", "why": "excluded:marketing"}
+{"t": 1794678981, "c": "AO Garcia Agency", "title": "100% Remote Client Relations Specialist", "why": "location: Glasgow, Delaware (Remote)"}
+{"t": 1794678981, "c": "AO Garcia Agency", "title": "100% Remote Client Relations Specialist", "why": "location: Alamogordo, New Mexico (Remote)"}
+{"t": 1794678981, "c": "AO Garcia Agency", "title": "Client Experience Associate - Work From Home", "why": "location: Vienna, West Virginia (Remote)"}
+{"t": 1794678981, "c": "AO Garcia Agency", "title": "Client Experience Associate - Work From Home", "why": "location: Ketchikan, Alaska (Remote)"}
+{"t": 1794678981, "c": "AO Garcia Agency", "title": "Client Experience Associate - Work From Home", "why": "location: Blue Springs, Missouri (Remote)"}
+{"t": 1794678981, "c": "AO Garcia Agency", "title": "Client Onboarding Specialist - Remote", "why": "location: Kirkland, Washington (Remote)"}
+{"t": 1794678981, "c": "AO Garcia Agency", "title": "Client Onboarding Specialist - Remote", "why": "location: Madison, Mississippi (Remote)"}
+{"t": 1794678981, "c": "AO Garcia Agency", "title": "Client Onboarding Specialist - Remote", "why": "location: Hoover, Alabama (Remote)"}
+{"t": 1794678981, "c": "AO Garcia Agency", "title": "Client Relations Associate - Remote", "why": "location: Olive Branch, Mississippi (Remote)"}
+{"t": 1794678981, "c": "AO Garcia Agency", "title": "Client Relations Associate - Remote", "why": "location: Mobile, Alabama (Remote)"}
+{"t": 1794678981, "c": "AO Garcia Agency", "title": "Client Relations Associate - Remote", "why": "location: Tacoma, Washington (Remote)"}
+{"t": 1794678981, "c": "AO Garcia Agency", "title": "Fully Remote - Client Experience Associate", "why": "location: Bloomington, Minnesota (Remote)"}
+{"t": 1794678981, "c": "AO Garcia Agency", "title": "Fully Remote - Client Experience Associate", "why": "location: Alexandria, Virginia (Remote)"}
+{"t": 1794678981, "c": "AO Garcia Agency", "title": "Fully Remote - Client Onboarding Specialist", "why": "location: Sterling Heights, Michigan (Remote)"}
+{"t": 1794678981, "c": "AO Garcia Agency", "title": "Fully Remote - Client Onboarding Specialist", "why": "location: Barre, Vermont (Remote)"}
+{"t": 1794678981, "c": "AO Garcia Agency", "title": "Fully Remote - Client Relations Associate", "why": "location: Bennington, Vermont (Remote)"}
+{"t": 1794678981, "c": "AO Garcia Agency", "title": "Fully Remote - Client Relations Associate", "why": "location: Cumberland, Maryland (Remote)"}
+{"t": 1794678981, "c": "AO Garcia Agency", "title": "Remote - Client Experience Associate", "why": "location: Westbrook, Maine (Remote)"}
+{"t": 1794678981, "c": "AO Garcia Agency", "title": "Remote - Client Experience Associate", "why": "location: Lubbock, Texas (Remote)"}
+{"t": 1794678981, "c": "AO Garcia Agency", "title": "Remote - Client Onboarding Specialist", "why": "location: Bossier City, Louisiana (Remote)"}
+{"t": 1794678981, "c": "AO Garcia Agency", "title": "Remote - Client Relations Associate", "why": "location: Lafayette, Louisiana (Remote)"}
+{"t": 1794678981, "c": "AO Garcia Agency", "title": "Remote - Client Relations Manager Trainee", "why": "location: Stamford, Connecticut (Remote)"}
+{"t": 1794678981, "c": "AO Garcia Agency", "title": "Remote - Client Relations Manager Trainee", "why": "location: Clifton, New Jersey (Remote)"}
+{"t": 1794678981, "c": "AO Garcia Agency", "title": "Remote - Client Success Team Lead", "why": "location: Pueblo, Colorado (Remote)"}
+{"t": 1794678981, "c": "AO Garcia Agency", "title": "Remote - Client Success Team Lead", "why": "location: Goffstown, New Hampshire (Remote)"}
+{"t": 1794678981, "c": "AO Garcia Agency", "title": "Remote Client Retention Specialist", "why": "location: Savannah, Georgia (Remote)"}
+{"t": 1794678981, "c": "AO Garcia Agency", "title": "Remote Client Retention Specialist", "why": "location: Williston, North Dakota (Remote)"}
+{"t": 1794678981, "c": "AO Garcia Agency", "title": "Work From Home - Client Experience Associate", "why": "location: Mount Pleasant, South Carolina (Remote)"}
+{"t": 1794678981, "c": "AO Garcia Agency", "title": "Work From Home - Client Experience Associate", "why": "location: Overland Park, Kansas (Remote)"}
+{"t": 1794678981, "c": "AO Garcia Agency", "title": "Work From Home - Client Onboarding Specialist", "why": "location: South Bend, Indiana (Remote)"}
+{"t": 1794678981, "c": "AO Garcia Agency", "title": "Work From Home - Client Onboarding Specialist", "why": "location: Lancaster, Pennsylvania (Remote)"}
+{"t": 1794678981, "c": "AO Garcia Agency", "title": "Work From Home - Client Relations Associate", "why": "location: Pittsburgh, Pennsylvania (Remote)"}
+{"t": 1794678981, "c": "AO Garcia Agency", "title": "Work From Home - Client Relations Associate", "why": "location: Evanston, Illinois (Remote)"}
+{"t": 1794678981, "c": "AO Garcia Agency", "title": "Work From Home - Client Services Team Lead", "why": "location: Thornton, Colorado (Remote)"}
+{"t": 1794678981, "c": "AO Garcia Agency", "title": "Work From Home - Client Services Team Lead", "why": "location: Hudson, New Hampshire (Remote)"}
+{"t": 1794678981, "c": "AO Garcia Agency", "title": "Work From Home - Part-Time Client Experience Associate", "why": "location: Carson City, Nevada (Remote)"}
+{"t": 1794678981, "c": "AO Garcia Agency", "title": "Work From Home - Part-Time Client Experience Associate", "why": "location: San Diego, California (Remote)"}
+{"t": 1794678981, "c": "AO Garcia Agency", "title": "Work From Home - Part-Time Client Experience Associate", "why": "location: Ottawa, Ontario (Remote)"}
+{"t": 1794678981, "c": "AO Garcia Agency", "title": "Work From Home - Part-Time Client Onboarding Specialist", "why": "location: Columbus, Nebraska (Remote)"}
+{"t": 1794678981, "c": "AO Garcia Agency", "title": "Work From Home - Part-Time Client Onboarding Specialist", "why": "location: Springdale, Arkansas (Remote)"}
+{"t": 1794678981, "c": "AO Garcia Agency", "title": "Work From Home - Part-Time Client Onboarding Specialist", "why": "location: Jackson, Wyoming (Remote)"}
+{"t": 1794678981, "c": "AO Garcia Agency", "title": "Work From Home - Part-Time Client Relations Associate", "why": "location: Goodyear, Arizona (Remote)"}
+{"t": 1794678981, "c": "AO Garcia Agency", "title": "Work From Home - Part-Time Client Relations Associate", "why": "location: Lincoln, Nebraska (Remote)"}
+{"t": 1794678981, "c": "AO Garcia Agency", "title": "Work From Home - Part-Time Client Relations Associate", "why": "location: Laramie, Wyoming (Remote)"}
+{"t": 1794678981, "c": "Motorola Solutions", "title": "Junior Account Manager", "why": "location: Oklahoma, US Offsite"}
+{"t": 1794678981, "c": "Motorola Solutions", "title": "Field Engineer", "why": "excluded:engineer"}
+{"t": 1794678981, "c": "Ingram Micro", "title": "Business Development Representative", "why": "location: 3 Locations"}
+{"t": 1794678981, "c": "Thermo Fisher", "title": "Product Manager, Residual DNA products", "why": "excluded:product manager"}
+{"t": 1794678981, "c": "Equifax", "title": "Software Engineer (Java/Big Data)", "why": "excluded:engineer"}
+{"t": 1794678981, "c": "Equifax", "title": "Software Engineer (Java and Big Data)", "why": "excluded:engineer"}
+{"t": 1794678981, "c": "TransUnion", "title": "Principal Technical Product Manager", "why": "excluded:principal"}
+{"t": 1794678981, "c": "TransUnion", "title": "Vice President, Global Human Resources Business Partner \u2013 Strategy, Marketing & Human Resources", "why": "excluded:vice president"}
+{"t": 1794678981, "c": "Cigna", "title": "Senior Manager - Data Science (Pricing & Underwriting) - Remote", "why": "excluded:data"}
+{"t": 1794678981, "c": "Cigna", "title": "Data Science Director - Remote", "why": "excluded:director"}
