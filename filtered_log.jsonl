@@ -1,75 +1,3 @@
-{"t": 1794594144, "c": "Zuora", "title": "Revenue Implementation Consultant", "why": "location: Costa Rica"}
-{"t": 1794594144, "c": "Duolingo", "title": "Language Measurement Scientist", "why": "excluded:scientist"}
-{"t": 1794594144, "c": "Vercel", "title": "Engineering Manager - Next.js", "why": "excluded:engineer"}
-{"t": 1794594144, "c": "Justworks", "title": "Director, Total Rewards", "why": "excluded:director"}
-{"t": 1794594144, "c": "Constant Contact", "title": "Events Marketing Manager", "why": "excluded:marketing"}
-{"t": 1794594144, "c": "Verkada", "title": "Account Executive, Sydney", "why": "location: Sydney, Australia"}
-{"t": 1794594144, "c": "Geotab", "title": "Customer Success Manager (Italy)", "why": "location: Ferrara, Italy - Italy"}
-{"t": 1794594144, "c": "Stripe", "title": "Chief Risk Officer, Stripe Technology Europe Limited", "why": "excluded:chief"}
-{"t": 1794594144, "c": "Stripe", "title": "Implementation Consultant, Professional Services", "why": "location: Chicago, Toronto"}
-{"t": 1794594144, "c": "Stripe", "title": "Legal Operations Team Lead", "why": "excluded:legal"}
-{"t": 1794594144, "c": "Stripe", "title": "Solution Architect, Metronome (AI Native)", "why": "excluded:architect"}
-{"t": 1794594144, "c": "Stripe", "title": "Solutions Architect, Metronome (Startups)", "why": "excluded:architect"}
-{"t": 1794594144, "c": "Stripe", "title": "Technical Solutions Engineer", "why": "excluded:engineer"}
-{"t": 1794594144, "c": "TripActions", "title": "Field Marketing Manager", "why": "excluded:marketing"}
-{"t": 1794594144, "c": "TripActions", "title": "Sr. Software Engineer ", "why": "excluded:engineer"}
-{"t": 1794594144, "c": "Greenhouse", "title": "Senior Software Engineer", "why": "excluded:engineer"}
-{"t": 1794594144, "c": "Greenhouse", "title": "Software Engineer", "why": "excluded:engineer"}
-{"t": 1794594144, "c": "Skillsoft", "title": "Acquisition Account Executive ", "why": "location: United Kingdom - Remote"}
-{"t": 1794594144, "c": "Datadog", "title": "Senior Commercial Account Executive (DACH)", "why": "location: Amsterdam, The Netherlands"}
-{"t": 1794594144, "c": "Datadog", "title": "Staff Research Scientist - Foundation & World Models", "why": "excluded:staff"}
-{"t": 1794594144, "c": "Datadog", "title": "Staff Research Scientist - Post-Training for Observability Native Models", "why": "excluded:staff"}
-{"t": 1794594144, "c": "Elastic", "title": "Customer Architect - Barcelona", "why": "excluded:architect"}
-{"t": 1794594144, "c": "Elastic", "title": "Director, International Delivery Management - Professional Services ", "why": "excluded:director"}
-{"t": 1794594144, "c": "Abnormal Security", "title": "Sales Development Representative, Dutch Speaking", "why": "location: Remote - Netherlands"}
-{"t": 1794594144, "c": "Abnormal Security", "title": "Sales Development Representative, German Speaking", "why": "location: Remote - Germany"}
-{"t": 1794594144, "c": "Cloudflare", "title": "Senior Customer Engineer - Digital Natives ", "why": "excluded:engineer"}
-{"t": 1794594144, "c": "Cloudflare", "title": "Senior Forward Deployed Engineer", "why": "excluded:engineer"}
-{"t": 1794594144, "c": "Cloudflare", "title": "Senior Software Engineer - Quicksilver - Distributed Key Value", "why": "excluded:engineer"}
-{"t": 1794594144, "c": "Vonage", "title": "Customer Success Enablement Specialist", "why": "location: Work from Home - Spain"}
-{"t": 1794594144, "c": "Vonage", "title": "Engineering Manager ", "why": "excluded:engineer"}
-{"t": 1794594144, "c": "Payoneer", "title": "Payroll Analyst", "why": "excluded:payroll"}
-{"t": 1794594144, "c": "Jumio", "title": "Account Executive", "why": "location: Singapore"}
-{"t": 1794594144, "c": "Trace3", "title": "Director, Digital Consulting | AI Transformation", "why": "excluded:director"}
-{"t": 1794594144, "c": "Trace3", "title": "Security Intern", "why": "excluded:intern"}
-{"t": 1794594144, "c": "Sezzle", "title": "Product Data Intern ", "why": "excluded:intern"}
-{"t": 1794594144, "c": "Sezzle", "title": "Product Data Intern ", "why": "excluded:intern"}
-{"t": 1794594144, "c": "Dropbox", "title": "Infrastructure Software Engineer", "why": "excluded:engineer"}
-{"t": 1794594144, "c": "Lotlinx", "title": "Analyst, Strategic Finance - Office of the CFO", "why": "excluded:cfo"}
-{"t": 1794594144, "c": "Lyft", "title": "Data Engineer, Marketplace", "why": "excluded:engineer"}
-{"t": 1794594144, "c": "Via Elegante Assisted Living", "title": "Director of Strategic Pursuits", "why": "excluded:director"}
-{"t": 1794594144, "c": "Adyen", "title": "Backend Engineer (Java) ", "why": "excluded:engineer"}
-{"t": 1794594144, "c": "Adyen", "title": "Head of Regulatory - EMEA", "why": "excluded:head of"}
-{"t": 1794594144, "c": "GameChanger", "title": "Software Engineer, Ads", "why": "excluded:engineer"}
-{"t": 1794594144, "c": "Notion", "title": "Commercial Solutions Consultant", "why": "location: Singapore (Remote)"}
-{"t": 1794594144, "c": "Notion", "title": "Mid-Market Solutions Consultant", "why": "location: Singapore (Remote)"}
-{"t": 1794594144, "c": "Notion", "title": "Solutions Consultant Manager", "why": "location: Singapore (Remote)"}
-{"t": 1794594144, "c": "Notion", "title": "Business Development Representative", "why": "location: Singapore (Remote)"}
-{"t": 1794594144, "c": "Notion", "title": "Outcomes Architect Manager", "why": "excluded:architect"}
-{"t": 1794594144, "c": "Notion", "title": "Solutions Consultant, Mid Market, UKI", "why": "location: London, United Kingdom"}
-{"t": 1794594144, "c": "Notion", "title": "Forward Deployed Architect", "why": "excluded:architect"}
-{"t": 1794594144, "c": "Iterable", "title": "Senior Data Scientist", "why": "excluded:data"}
-{"t": 1794594144, "c": "Jobber", "title": "Web Designer, Experimentation", "why": "excluded:designer"}
-{"t": 1794594144, "c": "SurveyMonkey", "title": "Senior Software Engineer I - Full Stack", "why": "excluded:engineer"}
-{"t": 1794594144, "c": "SurveyMonkey", "title": "Senior Software Engineer I - Frontend", "why": "excluded:engineer"}
-{"t": 1794594144, "c": "SurveyMonkey", "title": "Staff Software Engineer - Backend", "why": "excluded:engineer"}
-{"t": 1794594144, "c": "SurveyMonkey", "title": "Senior Software Engineer I - Mobile Engineering - iOS", "why": "excluded:engineer"}
-{"t": 1794594144, "c": "SurveyMonkey", "title": "Senior Software Engineer II - Backend Development", "why": "excluded:engineer"}
-{"t": 1794594144, "c": "SurveyMonkey", "title": "Senior Software Engineer II - Full Stack", "why": "excluded:engineer"}
-{"t": 1794594144, "c": "SurveyMonkey", "title": "Software Engineer II - Full Stack", "why": "excluded:engineer"}
-{"t": 1794594144, "c": "SurveyMonkey", "title": "Software Engineer II - Mobile Engineering - Android", "why": "excluded:engineer"}
-{"t": 1794594144, "c": "Ramp", "title": "Risk Strategy Intern", "why": "excluded:intern"}
-{"t": 1794594144, "c": "Lemlist", "title": "BDR intern", "why": "excluded:intern"}
-{"t": 1794594144, "c": "Lemlist", "title": "Senior Revenue Operations Manager", "why": "location: Paris (Remote)"}
-{"t": 1794594144, "c": "Constructor", "title": "Data Engineer: Merchant Intelligence Agent", "why": "excluded:engineer"}
-{"t": 1794594144, "c": "Tekion", "title": "Salesforce Developer", "why": "excluded:developer"}
-{"t": 1794594144, "c": "Tekion", "title": "Product Manager II", "why": "excluded:product manager"}
-{"t": 1794594144, "c": "Arena Technical Resources", "title": "Staff Software Engineer - Cloud Infrastructure", "why": "excluded:engineer"}
-{"t": 1794594144, "c": "Arena Technical Resources", "title": "Software Engineer - Staff Cloud Security Engineer", "why": "excluded:engineer"}
-{"t": 1794594144, "c": "Klaviyo", "title": "Partner Account Manager, Mid Enterprise", "why": "location: Singapore"}
-{"t": 1794594144, "c": "Klaviyo", "title": "Senior Security Engineer - Detection & Response", "why": "excluded:engineer"}
-{"t": 1794594144, "c": "Protective Life", "title": "Sr Dynamics 365 App Developer (remote)", "why": "excluded:developer"}
-{"t": 1794594144, "c": "Lightedge", "title": "Sr Systems Engineer \u2013 IBMi", "why": "excluded:engineer"}
 {"t": 1794594144, "c": "Bazaarvoice", "title": "Staff Devops Engineer", "why": "excluded:engineer"}
 {"t": 1794594144, "c": "Loadsmart", "title": "Customer Success Manager Mexico City", "why": "location: Mexico City / Remote"}
 {"t": 1794594144, "c": "Loadsmart", "title": "Customer Success Manager- Brazil", "why": "location: Mexico City / Remote"}
@@ -470,3 +398,16 @@
 {"t": 1794768355, "c": "AO Garcia Agency", "title": "Work From Home - Part-Time Client Relations Associate", "why": "location: Morrisville, Vermont (Remote)"}
 {"t": 1794768355, "c": "Salesforce", "title": "Business Development Representative", "why": "location: India - Bangalore"}
 {"t": 1794768355, "c": "Salesforce", "title": "Systems Engineering Associate", "why": "excluded:engineer"}
+{"t": 1794804281, "c": "Inspira Education", "title": "Revenue Operations Lead", "why": "location: New York City, New York"}
+{"t": 1794804281, "c": "Inspira Education", "title": "Revenue Operations Manager", "why": "location: New York City, New York"}
+{"t": 1794804281, "c": "Braze", "title": "Account Manager, Scale", "why": "location: Remote - Australia"}
+{"t": 1794804281, "c": "Xero", "title": "Staff / Lead Backend Engineer, Payments Platform", "why": "excluded:engineer"}
+{"t": 1794804281, "c": "Wolters Kluwer", "title": "Customer Success Manager", "why": "location: CHN - Beijing"}
+{"t": 1794804281, "c": "Thermo Fisher", "title": "Sr Clinical Data Team Lead", "why": "excluded:data"}
+{"t": 1794804281, "c": "Thermo Fisher", "title": "Ion Chromatography Technical Sales Specialist", "why": "location: 2 Locations"}
+{"t": 1794804281, "c": "Thermo Fisher", "title": "ICSP Field Service Engineer", "why": "excluded:engineer"}
+{"t": 1794804281, "c": "Salesforce", "title": "PMTS, Software Engineering", "why": "excluded:engineer"}
+{"t": 1794804281, "c": "Salesforce", "title": "ECS Account Executive", "why": "location: Australia - Sydney"}
+{"t": 1794804281, "c": "Salesforce", "title": "Forward Deployed Engineer - Finland", "why": "excluded:engineer"}
+{"t": 1794804281, "c": "Salesforce", "title": "Forward Deployed Engineer - Denmark", "why": "excluded:engineer"}
+{"t": 1794804281, "c": "Salesforce", "title": "Account Executive, SMB \u2013 Slack", "why": "location: New Zealand - Auckland"}
