@@ -1,0 +1,31 @@
+name: verify-deep
+on:
+  workflow_dispatch:
+    inputs:
+      scan_file:
+        description: "Rows JSON with scan:true (dumps entry-level sales/CS titles per company board)"
+        type: string
+        default: nov17_scan.json
+      pages_file:
+        description: "Rows JSON with urls/search (headless browser check of employer pages)"
+        type: string
+        default: nov17_pages.json
+permissions:
+  contents: read
+jobs:
+  deep:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Title dump (VS lines)
+        run: python verify_rows.py "${{ github.event.inputs.scan_file }}"
+      - name: Install browser
+        run: |
+          pip install playwright
+          playwright install --with-deps chromium
+      - name: Employer page check (VT3 lines)
+        run: python page_check.py "${{ github.event.inputs.pages_file }}"
