@@ -1,5 +1,8 @@
 name: verify-deep
 on:
+  push:
+    branches: [nov17-verify]
+    paths: [".github/workflows/verify-deep.yml"]
   workflow_dispatch:
     inputs:
       scan_file:
@@ -22,10 +25,10 @@ jobs:
         with:
           python-version: "3.12"
       - name: Title dump (VS lines)
-        run: python verify_rows.py "${{ github.event.inputs.scan_file }}"
+        run: python verify_rows.py "${{ github.event.inputs.scan_file || 'nov17_scan.json' }}"
       - name: Install browser
         run: |
           pip install playwright
           playwright install --with-deps chromium
       - name: Employer page check (VT3 lines)
-        run: python page_check.py "${{ github.event.inputs.pages_file }}"
+        run: python page_check.py "${{ github.event.inputs.pages_file || 'nov17_pages.json' }}"
