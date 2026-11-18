@@ -1,44 +1,3 @@
-{"t": 1794885253, "c": "Workday", "title": "Technical Account Manager", "why": "excluded:technical account"}
-{"t": 1794885253, "c": "Workday", "title": "Sr. Collaboration Engineer", "why": "excluded:engineer"}
-{"t": 1794885253, "c": "Thermo Fisher", "title": "Executive Assistant - Cybersecurity & Infrastructure", "why": "excluded:security"}
-{"t": 1794885253, "c": "Thermo Fisher", "title": "Director, Pharma & Biotech Custom Solutions - $45B Industry Leader!", "why": "excluded:director"}
-{"t": 1794885253, "c": "Thermo Fisher", "title": "Payroll Supervisor - Japan", "why": "excluded:payroll"}
-{"t": 1794885253, "c": "Thermo Fisher", "title": "Account Manager II", "why": "location: Cambridge, Massachusetts, USA"}
-{"t": 1794885253, "c": "Thermo Fisher", "title": "Manager, Refrigeration Engineering", "why": "excluded:engineer"}
-{"t": 1794885253, "c": "Equifax", "title": "Technical Product Manager", "why": "excluded:product manager"}
-{"t": 1794885253, "c": "Cigna", "title": "Head of Data Products - Cigna Healthcare", "why": "excluded:head of"}
-{"t": 1794885253, "c": "Salesforce", "title": "Senior Director, Solutions Builder", "why": "excluded:director"}
-{"t": 1794885253, "c": "Salesforce", "title": "Account Solution Engineer - Enterprise Business (Korea)", "why": "excluded:engineer"}
-{"t": 1794885253, "c": "Salesforce", "title": "Chief Technology Strategy Architect \u2013 Enterprise AI & Data", "why": "excluded:data"}
-{"t": 1794885253, "c": "Salesforce", "title": "Recruiter, Futureforce AMER (Contract)", "why": "excluded:recruit"}
-{"t": 1794885253, "c": "Salesforce", "title": "Senior Software Engineer, Site Reliability (AI)", "why": "excluded:engineer"}
-{"t": 1794885253, "c": "Salesforce", "title": "Principal Software Engineer, Site Reliability (AI)", "why": "excluded:engineer"}
-{"t": 1794885253, "c": "Salesforce", "title": "Prime Territory Account Executive - Marketing Cloud", "why": "excluded:marketing"}
-{"t": 1794885253, "c": "Ottimate", "title": "Fullstack Engineer (Python & Angular)", "why": "excluded:engineer"}
-{"t": 1794885253, "c": "Nearmap", "title": "Payroll Officer - UKG ", "why": "excluded:payroll"}
-{"t": 1794885253, "c": "Nearmap", "title": "Payroll Officer - UKG ", "why": "excluded:payroll"}
-{"t": 1794885253, "c": "Rippling", "title": "Director, Accountant Channel Sales (East)", "why": "excluded:director"}
-{"t": 1794885253, "c": "Elastic", "title": "Inside Account Executive (Hunter)", "why": "requirement: license may be required"}
-{"t": 1794885253, "c": "Webflow", "title": "Enterprise Account Executive", "why": "needs 5+ years"}
-{"t": 1794944232, "c": "Fanatics Collectibles", "title": "Principal Product Manager, Internationalization", "why": "excluded:principal"}
-{"t": 1794944232, "c": "Fanatics Collectibles", "title": "Senior Product Manager, Topps.com", "why": "excluded:product manager"}
-{"t": 1794944232, "c": "Hudl", "title": "Account Executive II - Basketball & Netball ", "why": "location: Sydney, Australia"}
-{"t": 1794944232, "c": "CharterUP", "title": "Program Director - Event Transportation ", "why": "excluded:director"}
-{"t": 1794944232, "c": "Scopely", "title": "Tax Manager", "why": "excluded:tax"}
-{"t": 1794944232, "c": "Asana", "title": "Staff Software Engineer, Agency Experience", "why": "excluded:engineer"}
-{"t": 1794944232, "c": "Smartsheet", "title": "Network Engineer (Hybrid)", "why": "excluded:engineer"}
-{"t": 1794944232, "c": "Braze", "title": "Account Executive, Enterprise", "why": "location: Berlin"}
-{"t": 1794944232, "c": "Braze", "title": "Senior Technical Architect", "why": "excluded:architect"}
-{"t": 1794944232, "c": "New Relic", "title": "Senior Revenue Operations Manager - GTM Business Planning", "why": "location: Atlanta, Georgia, USA; Austin, Texas, US"}
-{"t": 1794944232, "c": "New Relic", "title": "Senior Solutions Consultant", "why": "location: Atlanta, Georgia, USA; Boston, Massachus"}
-{"t": 1794944232, "c": "Sumo Logic", "title": "PreSales Solutions Engineer", "why": "excluded:engineer"}
-{"t": 1794944232, "c": "Okta", "title": "Director, Solutions Engineering, EMEA CEE", "why": "excluded:engineer"}
-{"t": 1794944232, "c": "Okta", "title": "Engineering Manager  ", "why": "excluded:engineer"}
-{"t": 1794944232, "c": "Okta", "title": "Engineering Manager  ", "why": "excluded:engineer"}
-{"t": 1794944232, "c": "Okta", "title": "Sales Development Representative, Central", "why": "location: Chicago, Illinois"}
-{"t": 1794944232, "c": "Okta", "title": "Senior Software Engineer, Data Platform", "why": "excluded:engineer"}
-{"t": 1794944232, "c": "Okta", "title": "Senior Software Engineer - Enterprise Access Team", "why": "excluded:engineer"}
-{"t": 1794944232, "c": "Okta", "title": "Senior Software Engineer, Identity Threat Protection", "why": "excluded:engineer"}
 {"t": 1794944232, "c": "Okta", "title": "Staff Site Reliability Engineer", "why": "excluded:engineer"}
 {"t": 1794944232, "c": "Tenable", "title": "Sales Development Representative", "why": "location: Japan - Office - Tokyo"}
 {"t": 1794944232, "c": "Tenable", "title": "Senior Customer Success Manager - Federal", "why": "location: US - Remote - Massachusetts , US - Headq"}
@@ -439,3 +398,212 @@
 {"t": 1794993725, "c": "Salesforce", "title": "Vice President, Workplace Experience, Design, and Delivery", "why": "excluded:vice president"}
 {"t": 1794993725, "c": "Vanderbilt University Medical Center", "title": "Principal Relationship Manager (Operating Room Support) \u2013 Local Only", "why": "excluded:principal"}
 {"t": 1794993725, "c": "Zenoti", "title": "Senior Customer Success Manager", "why": "title too senior: senior"}
+{"t": 1795029248, "c": "Fanatics Collectibles", "title": "Senior Product Designer ", "why": "excluded:designer"}
+{"t": 1795029248, "c": "Fanatics Collectibles", "title": "Summer 2027 Intern - Design Intern", "why": "excluded:intern"}
+{"t": 1795029248, "c": "Fanatics Collectibles", "title": "Summer 2027 Intern - Growth & Partnerships Intern", "why": "excluded:intern"}
+{"t": 1795029248, "c": "Fanatics Collectibles", "title": "Summer 2027 Intern - HR Intern", "why": "excluded:intern"}
+{"t": 1795029248, "c": "Fanatics Collectibles", "title": "Summer 2027 Intern - Marketing Intern", "why": "excluded:intern"}
+{"t": 1795029248, "c": "Fanatics Collectibles", "title": "Summer 2027 Intern - Product Intern", "why": "excluded:intern"}
+{"t": 1795029248, "c": "Fanatics Betting & Gaming", "title": "Principal Software Engineer -Ecosystem (FES) REMOTE", "why": "excluded:engineer"}
+{"t": 1795029248, "c": "Compass", "title": "Sales Development Representative", "why": "location: Tacoma, Washington, United States"}
+{"t": 1795029248, "c": "Compass", "title": "Sales Development Representative", "why": "location: Bellevue, Washington, United States"}
+{"t": 1795029248, "c": "Hudl", "title": "Director, Sales (Youth, Club, and High School)", "why": "excluded:director"}
+{"t": 1795029248, "c": "Hudl", "title": "Manager, Customer Success (Youth, Club, and High School)", "why": "location: Lincoln, NE, United States"}
+{"t": 1795029248, "c": "Metropolis", "title": "Senior Security Engineer, Product & Application Security", "why": "excluded:engineer"}
+{"t": 1795029248, "c": "Metropolis", "title": "Senior Security Engineer, Product & Application Security", "why": "excluded:engineer"}
+{"t": 1795029248, "c": "PrizePicks", "title": "Senior Front End Engineer", "why": "excluded:engineer"}
+{"t": 1795029248, "c": "PrizePicks", "title": "Senior Site Reliability Engineer (SRE)", "why": "excluded:engineer"}
+{"t": 1795029248, "c": "PrizePicks", "title": "Senior Software Engineer (Ruby on Rails)", "why": "excluded:engineer"}
+{"t": 1795029248, "c": "Inspira Education", "title": "Senior Corporate Recruiter", "why": "excluded:recruit"}
+{"t": 1795029248, "c": "The Farmer's Dog", "title": "Senior Product Manager 2", "why": "excluded:product manager"}
+{"t": 1795029248, "c": "Courtyard", "title": "Head of Creative - Design", "why": "excluded:head of"}
+{"t": 1795029248, "c": "Courtyard", "title": "Influencer & Affiliate Marketing Manager", "why": "excluded:marketing"}
+{"t": 1795029248, "c": "Mitratech", "title": "Field Marketing Manager, Workforce Compliance ", "why": "excluded:marketing"}
+{"t": 1795029248, "c": "Scopely", "title": "Community Marketing Manager -  Pok\u00e9mon GO!", "why": "excluded:marketing"}
+{"t": 1795029248, "c": "Scopely", "title": "Finance Engineer, Product Finance \u2014 MONOPOLY GO!", "why": "excluded:engineer"}
+{"t": 1795029248, "c": "ZoomInfo", "title": "GTM Success Manager II", "why": "location: Chennai, Tamil Nadu, India"}
+{"t": 1795029248, "c": "ZoomInfo", "title": "Senior GTM Success Manager", "why": "location: Chennai, Tamil Nadu, India"}
+{"t": 1795029248, "c": "Intercom", "title": "GTM Data Scientist", "why": "excluded:data"}
+{"t": 1795029248, "c": "Asana", "title": "Product Manager", "why": "excluded:product manager"}
+{"t": 1795029248, "c": "Smartsheet", "title": "Customer Success Manager - French Speaking", "why": "location: London, UK"}
+{"t": 1795029248, "c": "Smartsheet", "title": "Payroll Manager(Bangalore-Hybrid)", "why": "excluded:payroll"}
+{"t": 1795029248, "c": "Figma", "title": "Brand Designer - Figma Weave (Tel Aviv, Israel) ", "why": "excluded:designer"}
+{"t": 1795029248, "c": "Figma", "title": "Senior Inside Sales Representative (Berlin, Germany)", "why": "location: Berlin, Germany"}
+{"t": 1795029248, "c": "Figma", "title": "Senior Inside Sales Representative (Paris, France)", "why": "location: Paris, France"}
+{"t": 1795029248, "c": "Pendo", "title": "Sr. Analytics Engineer II", "why": "excluded:engineer"}
+{"t": 1795029248, "c": "Okta", "title": "Senior Corporate Account Executive ", "why": "location: Toronto, Ontario, Canada"}
+{"t": 1795029248, "c": "Okta", "title": "Staff Software Engineer - Privileged Access Management (PAM)", "why": "excluded:engineer"}
+{"t": 1795029248, "c": "Okta", "title": "Strategic Account Executive", "why": "location: Texas Remote"}
+{"t": 1795029248, "c": "Bitwarden", "title": "Sr. Director Revenue Accounting", "why": "excluded:director"}
+{"t": 1795029248, "c": "Tenable", "title": "Principal Customer Success Manager", "why": "excluded:principal"}
+{"t": 1795029248, "c": "OneTrust", "title": "Business Development Intern (French Speaking)", "why": "excluded:intern"}
+{"t": 1795029248, "c": "OneTrust", "title": "Business Development Representative (Czech Speaking) ", "why": "location: Madrid, Spain"}
+{"t": 1795029248, "c": "OneTrust", "title": "Business Development Representative (Polish Speaking) ", "why": "location: Madrid, Spain"}
+{"t": 1795029248, "c": "Gusto", "title": "Staff Brand Designer", "why": "excluded:designer"}
+{"t": 1795029248, "c": "Gusto", "title": "Staff Motion & Brand Designer", "why": "excluded:designer"}
+{"t": 1795029248, "c": "Culture Amp", "title": "Lead Account Executive, Enterprise", "why": "location: Chicago, IL"}
+{"t": 1795029248, "c": "Qualtrics", "title": "International Tax Accountant Senior Manager", "why": "excluded:accountant"}
+{"t": 1795029248, "c": "Qualtrics", "title": "Senior Software Engineer", "why": "excluded:engineer"}
+{"t": 1795029248, "c": "Qualtrics", "title": "Software Engineer II", "why": "excluded:engineer"}
+{"t": 1795029248, "c": "Qualtrics", "title": "System Engineer II", "why": "excluded:engineer"}
+{"t": 1795029248, "c": "Cision", "title": "Associate Account Executive", "why": "location: Albuquerque, New Mexico, United States; "}
+{"t": 1795029248, "c": "Cision", "title": "Sector Director", "why": "excluded:director"}
+{"t": 1795029248, "c": "Emplifi", "title": "Business Development Representative - North America", "why": "location: Remote - USA / Toronto, Canada"}
+{"t": 1795029248, "c": "Brandwatch", "title": "Sector Director", "why": "excluded:director"}
+{"t": 1795029248, "c": "Cresta", "title": "Applied Data Scientist ", "why": "excluded:data"}
+{"t": 1795029248, "c": "Gong.io", "title": "Mid Market Account Executive, Nordics", "why": "location: Dublin"}
+{"t": 1795029248, "c": "Otter", "title": "Mid-Market Account Executive", "why": "location: Seattle, WA"}
+{"t": 1795029248, "c": "Otter", "title": "Mid-Market Account Executive", "why": "location: Los Angeles, CA"}
+{"t": 1795029248, "c": "Otter", "title": "Mid-Market Account Executive", "why": "location: San Francisco, CA"}
+{"t": 1795029248, "c": "Otter", "title": "Mid-Market Account Executive", "why": "location: Austin, TX"}
+{"t": 1795029248, "c": "Descript", "title": "Field Marketing Manager", "why": "excluded:marketing"}
+{"t": 1795029248, "c": "Flexport", "title": "Account Executive ", "why": "location: Phoenix, Arizona, United States"}
+{"t": 1795029248, "c": "Vercel", "title": "Software Engineer, Vercel Agent", "why": "excluded:engineer"}
+{"t": 1795029248, "c": "Contentful", "title": "Senior Customer Success Manager ", "why": "location: New York, New York, United States"}
+{"t": 1795029248, "c": "Storyblok", "title": "Velocity, Sales Director - USA & Europe ", "why": "excluded:director"}
+{"t": 1795029248, "c": "Chime", "title": "Senior Data Scientist, Lending", "why": "excluded:data"}
+{"t": 1795029248, "c": "Carta", "title": "Tax Associate", "why": "excluded:tax"}
+{"t": 1795029248, "c": "Carta", "title": "Tax Associate ", "why": "excluded:tax"}
+{"t": 1795029248, "c": "Algolia", "title": "Senior Solutions Engineer", "why": "excluded:engineer"}
+{"t": 1795029248, "c": "Bloomreach", "title": "Product Manager - Web Personalization", "why": "excluded:product manager"}
+{"t": 1795029248, "c": "Bloomreach", "title": "Product Security Engineer ", "why": "excluded:engineer"}
+{"t": 1795029248, "c": "Alarm.com", "title": "Marketing Associate", "why": "excluded:marketing"}
+{"t": 1795029248, "c": "CarGurus", "title": "Account Manager, Level 1", "why": "location: Boston, Massachusetts, United States"}
+{"t": 1795029248, "c": "Carvana", "title": "Winter Security Associate", "why": "excluded:security"}
+{"t": 1795029248, "c": "6sense", "title": "Agency Partnerships Director", "why": "excluded:director"}
+{"t": 1795029248, "c": "Five9", "title": "Graphic Designer", "why": "excluded:designer"}
+{"t": 1795029248, "c": "Nextiva", "title": "Staff AI Engineer", "why": "excluded:engineer"}
+{"t": 1795029248, "c": "Stripe", "title": "Account Executive, Funded Startups (CEE) ", "why": "location: Dublin"}
+{"t": 1795029248, "c": "Stripe", "title": "Engineering Manager, Security", "why": "excluded:engineer"}
+{"t": 1795029248, "c": "Stripe", "title": "Manager, Integration Engineering", "why": "excluded:engineer"}
+{"t": 1795029248, "c": "Stripe", "title": "Specialist Solutions Architect, Payments", "why": "excluded:architect"}
+{"t": 1795029248, "c": "Stripe", "title": "Technical Solutions Engineer", "why": "excluded:engineer"}
+{"t": 1795029248, "c": "Stripe", "title": "Technical Solutions Engineer", "why": "excluded:engineer"}
+{"t": 1795029248, "c": "Greenhouse", "title": "Senior Account Manager", "why": "location: Anywhere in the United States"}
+{"t": 1795029248, "c": "Similarweb", "title": "Lead Data Analyst", "why": "excluded:data"}
+{"t": 1795029248, "c": "Datadog", "title": "Director, Technical Support Engineering, Premier - EMEA", "why": "excluded:engineer"}
+{"t": 1795029248, "c": "Datadog", "title": "Major Account Manager", "why": "location: Florida, USA, Remote; North Carolina, US"}
+{"t": 1795029248, "c": "Elastic", "title": "Principal Software Engineer I - Platform Billing Core", "why": "excluded:engineer"}
+{"t": 1795029248, "c": "Elastic", "title": "Renewals Manager (Individual Contributor)", "why": "location: Barcelona, Spain"}
+{"t": 1795029248, "c": "Elastic", "title": "Sales Specialist - Security", "why": "excluded:security"}
+{"t": 1795029248, "c": "LastPass", "title": "Product Marketing Manager", "why": "excluded:marketing"}
+{"t": 1795029248, "c": "LastPass", "title": "Product Marketing Manager", "why": "excluded:marketing"}
+{"t": 1795029248, "c": "Abnormal Security", "title": "Integrated Marketing Manager, Global Programs", "why": "excluded:marketing"}
+{"t": 1795029248, "c": "Cloudflare", "title": "Business Development Representative", "why": "location: Hybrid"}
+{"t": 1795029248, "c": "Cloudflare", "title": "Commercial Account Executive", "why": "location: Hybrid"}
+{"t": 1795029248, "c": "Cloudflare", "title": "Distributed Systems Engineer - Data Platform (Delivery, Database, Retrieval)", "why": "excluded:engineer"}
+{"t": 1795029248, "c": "Cloudflare", "title": "Hardware Systems Engineer, Tooling", "why": "excluded:engineer"}
+{"t": 1795029248, "c": "Cloudflare", "title": "Named Account Executive, Digital Natives", "why": "location: Hybrid"}
+{"t": 1795029248, "c": "Cloudflare", "title": "Response Engineer (Application & Network Security)", "why": "excluded:engineer"}
+{"t": 1795029248, "c": "Cloudflare", "title": "Senior Majors Account Executive", "why": "location: Hybrid"}
+{"t": 1795029248, "c": "Cloudflare", "title": "Senior Named Account Executive, Nordics", "why": "location: Distributed"}
+{"t": 1795029248, "c": "Cloudflare", "title": "Senior System Engineer", "why": "excluded:engineer"}
+{"t": 1795029248, "c": "Cloudflare", "title": "Senior Systems Engineer, Workers Authoring & Testing; Frameworks", "why": "excluded:engineer"}
+{"t": 1795029248, "c": "Cloudflare", "title": "Strategic Account Director, Developer Platform", "why": "excluded:developer"}
+{"t": 1795029248, "c": "Cloudflare", "title": "Systems Engineer, Data Loss Prevention", "why": "excluded:engineer"}
+{"t": 1795029248, "c": "Cloudflare", "title": "Systems Engineer - iOS", "why": "excluded:engineer"}
+{"t": 1795029248, "c": "Twilio", "title": "Machine Learning Engineer (L3)", "why": "excluded:engineer"}
+{"t": 1795029248, "c": "Twilio", "title": "Software Engineer - Platform Engineering", "why": "excluded:engineer"}
+{"t": 1795029248, "c": "Twilio", "title": "Staff Machine Learning Engineer (L4)", "why": "excluded:engineer"}
+{"t": 1795029248, "c": "Oscar", "title": "Senior Partner Success Manager", "why": "location: Florida, United States"}
+{"t": 1795029248, "c": "Trace3", "title": "Business Development Intern", "why": "excluded:intern"}
+{"t": 1795029248, "c": "Dropbox", "title": "Infrastructure Software Engineer, Orchestration", "why": "excluded:engineer"}
+{"t": 1795029248, "c": "Squarespace", "title": "Senior Security Engineer", "why": "excluded:engineer"}
+{"t": 1795029248, "c": "Lyft", "title": "Android Software Developer, Lyft Urban Solutions", "why": "excluded:developer"}
+{"t": 1795029248, "c": "System One", "title": "Customer Success Manager", "why": "location: New York City, Remote"}
+{"t": 1795029248, "c": "System One", "title": "Senior Research Engineer, AI Evaluation", "why": "excluded:engineer"}
+{"t": 1795029248, "c": "GRVTY", "title": "Personnel Security Administrator ", "why": "excluded:security"}
+{"t": 1795029248, "c": "Peak Management", "title": "Clinic Director - Physical Therapist", "why": "excluded:director"}
+{"t": 1795029248, "c": "Peak Management", "title": "Physical Therapist - Clinic Director", "why": "excluded:director"}
+{"t": 1795029248, "c": "GoDaddy", "title": "Director UX Research", "why": "excluded:director"}
+{"t": 1795029248, "c": "GoDaddy", "title": "Network Security Policy Engineer", "why": "excluded:engineer"}
+{"t": 1795029248, "c": "GoDaddy", "title": "Senior Security Engineer - CTI", "why": "excluded:engineer"}
+{"t": 1795029248, "c": "Adyen", "title": "Full-Stack Developer (Junior) - Docs Experience Engineering Team", "why": "excluded:engineer"}
+{"t": 1795029248, "c": "Adyen", "title": "Senior Machine Learning Engineer, Financial Products", "why": "excluded:engineer"}
+{"t": 1795029248, "c": "Adyen", "title": "Senior Procurement Manager - Data Centers", "why": "excluded:data"}
+{"t": 1795029248, "c": "Adyen", "title": "Senior Software Engineer, Agentic Experiences", "why": "excluded:engineer"}
+{"t": 1795029248, "c": "Alt", "title": "Head of Banking & Payments", "why": "excluded:head of"}
+{"t": 1795029248, "c": "Help Scout", "title": "Director of Demand Generation", "why": "excluded:director"}
+{"t": 1795029248, "c": "Secureframe", "title": "Presales Solutions Engineer, GRC", "why": "excluded:engineer"}
+{"t": 1795029248, "c": "Jobber", "title": "Product Marketing Manager", "why": "excluded:marketing"}
+{"t": 1795029248, "c": "Weave", "title": "Product Manager, Phones Platform", "why": "excluded:product manager"}
+{"t": 1795029248, "c": "SurveyMonkey", "title": "Account Executive", "why": "location: Dublin (Remote)"}
+{"t": 1795029248, "c": "Commure", "title": "Sales Engineer ", "why": "excluded:engineer"}
+{"t": 1795029248, "c": "Plaid", "title": "Sales Development Representative", "why": "location: San Francisco HQ (Remote)"}
+{"t": 1795029248, "c": "Sardine", "title": "QA Automation Engineer", "why": "excluded:engineer"}
+{"t": 1795029248, "c": "Kin", "title": "Claims Compliance Audit Specialist", "why": "excluded:audit"}
+{"t": 1795029248, "c": "Silver Creek Transportation", "title": "Carefull - Analytics Engineer", "why": "excluded:engineer"}
+{"t": 1795029248, "c": "Zip", "title": "Senior Solutions Consultant, Intake & Orchestration", "why": "location: New York City (Remote)"}
+{"t": 1795029248, "c": "Zip", "title": "Senior Solutions Consultant, Intake & Orchestration", "why": "location: Toronto (Remote)"}
+{"t": 1795029248, "c": "Zip", "title": "Senior Product Designer, Procure to Pay", "why": "excluded:designer"}
+{"t": 1795029248, "c": "Foodsmart", "title": "Payroll Administrator", "why": "excluded:payroll"}
+{"t": 1795029248, "c": "Lyra Health", "title": "Consultor Legal - Call center", "why": "excluded:legal"}
+{"t": 1795029248, "c": "Coupa", "title": "Lead DevOps Platform Engineer (ML Ops) - 11629", "why": "excluded:engineer"}
+{"t": 1795029248, "c": "Entrata", "title": "Key Account Support Engineer", "why": "excluded:engineer"}
+{"t": 1795029248, "c": "WalkMe", "title": "Product Manager", "why": "excluded:product manager"}
+{"t": 1795029248, "c": "Capital Waste Services LLC", "title": "Java Engineer - Financial Crime", "why": "excluded:engineer"}
+{"t": 1795029248, "c": "Capital Waste Services LLC", "title": "Principal Java Engineer - Financial Crime", "why": "excluded:engineer"}
+{"t": 1795029248, "c": "Capital Waste Services LLC", "title": "Senior Java Engineer - Financial Crime", "why": "excluded:engineer"}
+{"t": 1795029248, "c": "Capital Waste Services LLC", "title": "Senior Site Reliability Engineer (IT Operations)", "why": "excluded:engineer"}
+{"t": 1795029248, "c": "Nextech", "title": "Director of Total Rewards (Remote - US)", "why": "excluded:director"}
+{"t": 1795029248, "c": "Guardant Health", "title": "Associate Account Executive Screening Culver City", "why": "location: 3 Locations"}
+{"t": 1795029248, "c": "Guardant Health", "title": "Account Executive - Screening", "why": "location: Remote-USA-AZ"}
+{"t": 1795029248, "c": "Workday", "title": "Medium Enterprise | Customer Base | Account Executive - Nonprofit", "why": "location: USA, MA, Boston"}
+{"t": 1795029248, "c": "Workday", "title": "Senior AI Engineer - Evisort AI", "why": "excluded:engineer"}
+{"t": 1795029248, "c": "Wolters Kluwer", "title": "Major/Strategic Accounts Manager", "why": "location: FRA - Rue des Messageries"}
+{"t": 1795029248, "c": "Wolters Kluwer", "title": "Manager, IT Security", "why": "excluded:security"}
+{"t": 1795029248, "c": "Thermo Fisher", "title": "Scientist I, Formulation", "why": "excluded:scientist"}
+{"t": 1795029248, "c": "Thermo Fisher", "title": "Scientist: Biologics Development (Upstream/Downstream)", "why": "excluded:scientist"}
+{"t": 1795029248, "c": "Thermo Fisher", "title": "Digital Sales Intern - 12 months", "why": "excluded:intern"}
+{"t": 1795029248, "c": "Thermo Fisher", "title": "Site Quality Director \u2013Seneffe, Belgium", "why": "excluded:director"}
+{"t": 1795029248, "c": "Thermo Fisher", "title": "Senior Account Manager - Clinical Trials", "why": "location: 3 Locations"}
+{"t": 1795029248, "c": "Thermo Fisher", "title": "IT Intern", "why": "excluded:intern"}
+{"t": 1795029248, "c": "Thermo Fisher", "title": "Product Manager, Bioprocess Services", "why": "excluded:product manager"}
+{"t": 1795029248, "c": "Thermo Fisher", "title": "Associate Director Project Management, PMO", "why": "excluded:director"}
+{"t": 1795029248, "c": "Thermo Fisher", "title": "Clinical Team Manager (Senior/Principal) - Internal Medicine", "why": "excluded:principal"}
+{"t": 1795029248, "c": "Thermo Fisher", "title": "Intern Software Scientist - Theoretical Spectroscopy", "why": "excluded:intern"}
+{"t": 1795029248, "c": "Thermo Fisher", "title": "Technical Sales Specialist - Software", "why": "location: 12 Locations"}
+{"t": 1795029248, "c": "Thermo Fisher", "title": "Sr Finance Coordinator, Vendor Master Data", "why": "excluded:data"}
+{"t": 1795029248, "c": "Thermo Fisher", "title": "Director, Clinical Operations FSP", "why": "excluded:director"}
+{"t": 1795029248, "c": "Thermo Fisher", "title": "Engineering Operations Intern", "why": "excluded:engineer"}
+{"t": 1795029248, "c": "Equifax", "title": "Senior Vice President/General Manager, Employer Services", "why": "excluded:vice president"}
+{"t": 1795029248, "c": "TransUnion", "title": "Senior Accountant - Revenue Recognition", "why": "excluded:accountant"}
+{"t": 1795029248, "c": "TransUnion", "title": "Head of Product - Core Credit", "why": "excluded:head of"}
+{"t": 1795029248, "c": "TransUnion", "title": "Sales Specialist", "why": "location: Remote, United Kingdom"}
+{"t": 1795029248, "c": "Cigna", "title": "Account Manager, Dedicated Client Technology Governance & Delivery - Express Scripts - Hybrid", "why": "location: MN, Bloomington, 6625 West 78th St STE 1"}
+{"t": 1795029248, "c": "Cigna", "title": "VP Pharma Strategy & Contracting - Evernorth Health Services (Hybrid)", "why": "excluded:vp"}
+{"t": 1795029248, "c": "Salesforce", "title": "Senior Director, Product Marketing (Service Strategy, Core, and AI)", "why": "excluded:director"}
+{"t": 1795029248, "c": "Salesforce", "title": "Summer 2027 Intern -  Policy, Office of Ethical and Humane Use (OHEU)", "why": "excluded:intern"}
+{"t": 1795029248, "c": "Salesforce", "title": "Cloud Account Executive 9", "why": "location: Mexico - Mexico City"}
+{"t": 1795029248, "c": "Salesforce", "title": "Lead Analytics Solution Engineer", "why": "excluded:engineer"}
+{"t": 1795029248, "c": "Salesforce", "title": "Summer 2027 Intern - Pro Serve Strategy & Change Management", "why": "excluded:intern"}
+{"t": 1795029248, "c": "Salesforce", "title": "Cloud Readiness Architect - Consumer Goods Cloud", "why": "excluded:architect"}
+{"t": 1795029248, "c": "Salesforce", "title": "Sr. Engineering Manager, Core Services - Slack", "why": "excluded:engineer"}
+{"t": 1795029248, "c": "Salesforce", "title": "Informatica Cloud Account Executive, MDM", "why": "location: 2 Locations"}
+{"t": 1795029248, "c": "Salesforce", "title": "Service Cloud Account Executive - UAE", "why": "location: United Arab Emirates - Dubai"}
+{"t": 1795029248, "c": "Salesforce", "title": "Tableau Account Executive - KSA", "why": "location: Saudi Arabia - Riyadh"}
+{"t": 1795029248, "c": "Salesforce", "title": "Customer Success Senior Manager", "why": "location: 3 Locations"}
+{"t": 1795029248, "c": "Salesforce", "title": "Customer Success Manager", "why": "location: 3 Locations"}
+{"t": 1795029248, "c": "Salesforce", "title": "Customer Success Manager, Director", "why": "excluded:director"}
+{"t": 1795029248, "c": "Salesforce", "title": "Customer Success Manager -German speaker", "why": "location: Ireland - Dublin"}
+{"t": 1795029248, "c": "Salesforce", "title": "Enterprise Account Executive \u2013 Data & Integration (MuleSoft & Informatica)", "why": "excluded:data"}
+{"t": 1795029248, "c": "Salesforce", "title": "Technical Product Marketing Manager, Demo Engineering", "why": "excluded:engineer"}
+{"t": 1795029248, "c": "Salesforce", "title": "Senior Account Solution Engineer", "why": "excluded:engineer"}
+{"t": 1795029248, "c": "Salesforce", "title": "Sr. Account Executive - Public Sector Sweden", "why": "location: 2 Locations"}
+{"t": 1795029248, "c": "Salesforce", "title": "Account Executive - Agentforce Operations", "why": "location: Spain - Madrid"}
+{"t": 1795029248, "c": "Salesforce", "title": "AI Lead/ Principal, Technical Deployment Strategist", "why": "excluded:principal"}
+{"t": 1795029248, "c": "Salesforce", "title": "Success Architect - Agentforce/Data Cloud - English / Spanish / German / French Speaker", "why": "excluded:data"}
+{"t": 1795029248, "c": "Salesforce", "title": "Success Architect - Agentforce -  Spanish / German / French Speaker", "why": "excluded:architect"}
+{"t": 1795029248, "c": "Salesforce", "title": "Account Solution Engineer", "why": "excluded:engineer"}
+{"t": 1795029248, "c": "Salesforce", "title": "Manager - Controllership Data Stewardship & Insights Enablement", "why": "excluded:data"}
+{"t": 1795029248, "c": "Salesforce", "title": "Senior Agentic Customer Success Manager - Regrello", "why": "location: United Kingdom - London"}
+{"t": 1795029248, "c": "Salesforce", "title": "Customer Success Manager", "why": "location: Ireland - Dublin"}
+{"t": 1795029248, "c": "Salesforce", "title": "Enterprise Architect, Regrello", "why": "excluded:architect"}
+{"t": 1795029248, "c": "Vanderbilt University Medical Center", "title": "Medical Lab Scientist 2 - Core Lab", "why": "excluded:scientist"}
+{"t": 1795029248, "c": "BDA", "title": "Account Executive - Restoration Services", "why": "location: Ann Arbor"}
+{"t": 1795029248, "c": "Rippling", "title": "Enterprise Account Executive - UK/Ireland", "why": "location: Dublin, Ireland"}
+{"t": 1795029248, "c": "Rippling", "title": "Implementation Specialist, Talent Products", "why": "location: Bangalore, India"}
+{"t": 1795029248, "c": "Rippling", "title": "Senior Software Engineer, Backend - Spend Product", "why": "excluded:engineer"}
+{"t": 1795029248, "c": "Rippling", "title": "Platform Solutions Consultant", "why": "location: Dublin, Ireland"}
+{"t": 1795029248, "c": "Hinge Health", "title": "Senior Client Success Manager ", "why": "title too senior: senior"}
+{"t": 1795029248, "c": "Buildkite", "title": "Senior Customer Success Manager", "why": "title too senior: senior"}
