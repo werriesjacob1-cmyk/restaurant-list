@@ -9,6 +9,7 @@ import watch
 WDS = ["wd1", "wd5", "wd3", "wd12", "wd501", "wd2", "wd103", "wd10", "wd4"]
 # tenant guesses (Workday subdomain). The script finds host and site itself.
 TENANTS = {
+ "Bridgestone Americas": ["bridgestone"], "Nissan North America": ["nissan", "nissanusa"], "Tractor Supply": ["tractorsupply"], "Dollar General": ["dollargeneral"], "Genesco": ["genesco"], "Cracker Barrel": ["crackerbarrel"], "Asurion": ["asurion"], "HCA Healthcare": ["hcahealthcare", "hca"], "Community Health Systems": ["chs"], "AllianceBernstein": ["alliancebernstein", "abglobal"], "Ryman Hospitality": ["ryman"], "Louisiana-Pacific": ["lpcorp"], "Ingram Content": ["ingramcontent"], "Mitsubishi Motors NA": ["mitsubishi"], "Cummins": ["cummins"], "Lifepoint Health": ["lifepoint"], "Change Healthcare / Optum": ["optum"], "Shoals Technologies": ["shoals"], "iHeartMedia": ["iheart"], "Gibson": ["gibson"],
  "Walmart": ["walmart"], "UnitedHealth Group": ["uhg"], "CVS Health": ["cvshealth"], "McKesson": ["mckesson"],
  "Cencora": ["cencora"], "Cigna Group": ["cigna"], "Cardinal Health": ["cardinalhealth"], "Nvidia": ["nvidia"],
  "Elevance Health": ["elevancehealth"], "Centene": ["centene"], "Citigroup": ["citi"], "Wells Fargo": ["wf"],
