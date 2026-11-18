@@ -157,7 +157,7 @@ def main():
         k = norm(r["company"]); r["new"] = r["id"] not in seen_ids
         tk = f"{k}|{norm(r['title'])}"
         if tk in seen_titles and r["id"] not in seen_ids and seen_titles[tk] != r["id"]: r["flags"].append("REPOST")
-        sv = sup.get(k) or next((v for kk, v in sup.items() if kk and (kk in k or k in kk) and len(kk) > 3), None)
+        sv = sup.get(k)
         r["suppress"] = None
         if sv:
             hold = sv.get("hold_until"); ok = False
@@ -165,7 +165,7 @@ def main():
                 try: ok = dt.datetime.strptime(f"{hold} {TODAY.year}", "%b %d %Y").date() <= TODAY
                 except Exception: pass
             r["suppress"] = "REAPPLY OK" if ok else sv["state"].upper() + (f" (hold until {hold})" if hold else "")
-        cs = con.get(k) or next((v for kk, v in con.items() if kk and (kk in k or k in kk) and len(kk) > 3), [])
+        cs = con.get(k, [])
         r["contacts"] = [{"name": c["name"], "title": c["title"], "url": c["url"], "status": c["status"]} for c in cs[:2]]
     res.sort(key=lambda r: (r["suppress"] not in (None, "REAPPLY OK"), -r["score"]))
     live = [r for r in res if r["suppress"] in (None, "REAPPLY OK")]
