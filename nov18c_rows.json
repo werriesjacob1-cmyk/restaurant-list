@@ -1,0 +1,20 @@
+[
+ {
+  "id": "JW-531*",
+  "company": "Stampli",
+  "title": "Sales Development Representative",
+  "tier": "t1"
+ },
+ {
+  "id": "NETSUITE",
+  "company": "Oracle NetSuite",
+  "title": "Sales Development Representative",
+  "tier": "t1"
+ },
+ {
+  "id": "JW-538",
+  "company": "GoDaddy",
+  "title": "Enterprise Sales Development Representative",
+  "tier": "t1"
+ }
+]
