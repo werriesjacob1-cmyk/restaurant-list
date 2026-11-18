@@ -2,7 +2,7 @@ name: f100-scan
 on:
   push:
     branches: [nov17-verify]
-    paths: [".github/workflows/f100-scan.yml", "f100_scan.py", "f100_list.json"]
+    paths: [".github/workflows/f100-scan.yml", "f100_scan.py", "f100_list.json", "startup_scan.py"]
   workflow_dispatch:
 permissions:
   contents: read
@@ -16,3 +16,4 @@ jobs:
         with:
           python-version: "3.12"
       - run: python f100_scan.py f100_list.json
+      - run: python startup_scan.py

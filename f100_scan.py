@@ -39,9 +39,10 @@ TENANTS = {
 }
 QUERIES = ["sales development", "business development representative", "inside sales", "account manager", "account executive",
            "customer success", "client success", "customer service", "sales representative", "relationship", "sales associate corporate",
-           "partner", "renewals", "sales support", "territory", "specialist sales", "associate account", "customer engagement"]
-INC = re.compile(r"sales|account (?:manager|executive|representative|coordinator|specialist|associate|management)|business development|customer success|client success|customer (?:service|support|experience|engagement|care|advocate|relationship)|client (?:service|relationship|engagement|associate|support)|relationship (?:manager|associate|specialist)|renewal|partner (?:success|manager|development)|representative|\bsdr\b|\bbdr\b|specialist|coordinator|associate|advisor|consultant|inside", re.I)
-EXC = re.compile(r"senior|\bsr\b|director|\bvp\b|vice president|head of|principal|staff|lead\b|chief|president|engineer|developer|scientist|analyst|nurse|pharmac|physician|clinical|driver|warehouse|cashier|store (?:associate|team)|technician|mechanic|attorney|counsel|legal|recruit|marketing|designer|architect|accountant|audit|tax|intern|co-?op|apprentice|\bmanager,|manager\b(?!.*account)|supervisor|trainer|nursing|therapist|pilot|flight attendant|crew|fulfillment|plant|operator|janitor|security officer|cook|chef|barista|merchandis|stocker|loss prevention|laborer|delivery station|fulfillment center|warehouse", re.I)
+           "partner", "renewals", "sales support", "territory", "specialist sales", "associate account", "customer engagement",
+           "project coordinator", "project manager", "program coordinator", "program manager", "associate project manager", "associate product manager", "product manager", "product owner", "product operations", "project management office"]
+INC = re.compile(r"sales|account (?:manager|executive|representative|coordinator|specialist|associate|management)|business development|customer success|client success|customer (?:service|support|experience|engagement|care|advocate|relationship)|client (?:service|relationship|engagement|associate|support)|relationship (?:manager|associate|specialist)|renewal|partner (?:success|manager|development)|representative|\bsdr\b|\bbdr\b|specialist|coordinator|associate|advisor|consultant|inside|project (?:coordinator|manager|management|specialist|associate|administrator)|program (?:coordinator|manager|management|specialist|associate|administrator)|product (?:manager|owner|operations|specialist|associate)", re.I)
+EXC = re.compile(r"senior|\bsr\b|director|\bvp\b|vice president|head of|principal|staff|lead\b|chief|president|engineer|developer|scientist|analyst|nurse|pharmac|physician|clinical|driver|warehouse|cashier|store (?:associate|team)|technician|mechanic|attorney|counsel|legal|recruit|marketing|designer|architect|accountant|audit|tax|intern|co-?op|apprentice|\bmanager,|manager\b(?!.*(?:account|project|program|product))|supervisor|trainer|nursing|therapist|pilot|flight attendant|crew|fulfillment|plant|operator|janitor|security officer|cook|chef|barista|merchandis|stocker|loss prevention|laborer|delivery station|fulfillment center|warehouse", re.I)
 LOC_OK = re.compile(r"remote|united states|usa|\bus\b|nashville|tennessee|\btn\b|franklin|brentwood|murfreesboro|locations|hybrid", re.I)
 LOC_BAD = re.compile(r"india|china|mexico|canada|united kingdom|\buk\b|germany|france|brazil|philippines|poland|ireland|singapore|japan|australia|spain|italy|netherlands|romania|costa rica|colombia|hungary|israel|korea|malaysia|vietnam|argentina|chile|peru", re.I)
 HDR = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/124 Safari/537.36"}
@@ -125,7 +126,7 @@ def scan(row):
 
 def amazon():
     out = []; seen = set()
-    for q in ["sales development", "account manager", "account executive", "customer success", "business development", "inside sales", "customer service associate", "relationship manager"]:
+    for q in ["sales development", "account manager", "account executive", "customer success", "business development", "inside sales", "customer service associate", "relationship manager", "project coordinator", "program manager", "project manager", "associate product manager", "product manager"]:
         try:
             u = "https://www.amazon.jobs/en/search.json?" + urllib.parse.urlencode({"base_query": q, "country": "USA", "result_limit": 50, "sort": "recent"})
             d = watch.get(u, timeout=25)
