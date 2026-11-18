@@ -1,0 +1,578 @@
+[
+ {
+  "company": "Stampli",
+  "title": "Sales Development Representative",
+  "tier": "t1",
+  "id": "JW-531* SDR PIVOT"
+ },
+ {
+  "company": "Oracle NetSuite",
+  "title": "Account Manager",
+  "tier": "t1",
+  "id": "NETSUITE-NASHVILLE* (STAMPLI/MOTIVE/GLEAN/NETSUITE TIP)"
+ },
+ {
+  "company": "Access Business Technologies",
+  "title": "Sales Development Representative",
+  "tier": "t1",
+  "id": "JW-530 SDR PIVOT #7"
+ },
+ {
+  "company": "Paycom",
+  "title": "Account Executive",
+  "tier": "t2",
+  "id": "JW-553* PAYCOM NASHVILLE (TYLER SCHWARTZ TIP)"
+ },
+ {
+  "company": "Proof",
+  "title": "Enterprise Account Manager",
+  "tier": "t2",
+  "id": "JW-328 VERIFIED OPEN Nov 5 (Greenhouse 4737013005 on Proof's feed, remote US, about 40 days old; repo probe) (earlier Nov 3-4 checks missed it; it is back on the feed now)"
+ },
+ {
+  "company": "Cardinal Health",
+  "title": "Lab Products Sales Rep",
+  "tier": "t2",
+  "id": "JW-133"
+ },
+ {
+  "company": "Grainger",
+  "title": "Account Manager",
+  "tier": "t2",
+  "id": "JW-186"
+ },
+ {
+  "company": "Lumber wholesaler",
+  "title": "Inside Sales Rep",
+  "tier": "t2",
+  "id": "JW-134"
+ },
+ {
+  "company": "Jackson Financial",
+  "title": "Sales QA Analyst",
+  "tier": "t2",
+  "id": "JW-127"
+ },
+ {
+  "company": "Ecotrak",
+  "title": "Customer Success Manager",
+  "tier": "t2",
+  "id": "JW-320 VERIFIED OPEN Nov 5 (Rippling feed; posting asks 7+ yrs, long shot)"
+ },
+ {
+  "company": "Ramsey Solutions",
+  "title": "Partner Success Manager",
+  "tier": "t2",
+  "id": "JW-386*"
+ },
+ {
+  "company": "beehiiv",
+  "title": "Account Executive",
+  "tier": "t2",
+  "id": "JW-412"
+ },
+ {
+  "company": "SailPoint",
+  "title": "Digital Customer Success Manager",
+  "tier": "t2",
+  "id": "JW-421"
+ },
+ {
+  "company": "Learning Care Group",
+  "title": "Business Development Operations Coordinator",
+  "tier": "t2",
+  "id": "JW-423"
+ },
+ {
+  "company": "Boulevard",
+  "title": "Sales Development Representative",
+  "tier": "t2",
+  "id": "JW-426"
+ },
+ {
+  "company": "Qoria",
+  "title": "Portfolio Customer Success Manager",
+  "tier": "t2",
+  "id": "JW-439* UNVERIFIED"
+ },
+ {
+  "company": "CPI Card Group",
+  "title": "Client Success Specialist",
+  "tier": "t2",
+  "id": "JW-443 ASK: weekends, pay"
+ },
+ {
+  "company": "Drata",
+  "title": "Sales Development Representative",
+  "tier": "t2",
+  "id": "JW-478*"
+ },
+ {
+  "company": "Greenhouse",
+  "title": "Mid-Market Sales Development Representative",
+  "tier": "t2",
+  "id": "JW-481*"
+ },
+ {
+  "company": "Aescape",
+  "title": "Account Executive",
+  "tier": "t2",
+  "id": "JW-483*"
+ },
+ {
+  "company": "CharterUP",
+  "title": "Inside Sales Representative II",
+  "tier": "t2",
+  "id": "JW-484*"
+ },
+ {
+  "company": "AppFolio",
+  "title": "Business Development Representative",
+  "tier": "t2",
+  "id": "JW-486*"
+ },
+ {
+  "company": "Healthcare Systems and Technologies",
+  "title": "Account Manager",
+  "tier": "t2",
+  "id": "JW-487*"
+ },
+ {
+  "company": "Bitwarden",
+  "title": "Sales Development Representative",
+  "tier": "t2",
+  "id": "JW-492*"
+ },
+ {
+  "company": "Muck Rack",
+  "title": "Outbound Sales Development Representative",
+  "tier": "t2",
+  "id": "JW-493*"
+ },
+ {
+  "company": "ClickUp",
+  "title": "Business Development Representative",
+  "tier": "t2",
+  "id": "JW-494*"
+ },
+ {
+  "company": "1Password",
+  "title": "Business Development Representative",
+  "tier": "t2",
+  "id": "JW-495*"
+ },
+ {
+  "company": "Cision",
+  "title": "Account Manager I",
+  "tier": "t2",
+  "id": "JW-496*"
+ },
+ {
+  "company": "Lyra Health",
+  "title": "Customer Success Manager I",
+  "tier": "t2",
+  "id": "JW-497*"
+ },
+ {
+  "company": "Oyster",
+  "title": "Business Development Representative",
+  "tier": "t2",
+  "id": "JW-505*"
+ },
+ {
+  "company": "Notable",
+  "title": "Business Development Representative",
+  "tier": "t2",
+  "id": "JW-507*"
+ },
+ {
+  "company": "Scribe",
+  "title": "Sales Development Representative",
+  "tier": "t2",
+  "id": "JW-508*"
+ },
+ {
+  "company": "Ramp",
+  "title": "Partner Development Representative",
+  "tier": "t2",
+  "id": "TRK-516*"
+ },
+ {
+  "company": "Built Technologies",
+  "title": "Account Manager",
+  "tier": "t3",
+  "id": "JW-547* NASHVILLE AM [tracker JW-534*]"
+ },
+ {
+  "company": "Coretek Services",
+  "title": "Sales Development Representative",
+  "tier": "t3",
+  "id": "JW-533* SDR"
+ },
+ {
+  "company": "Remote",
+  "title": "Sales Enablement Manager",
+  "tier": "t3",
+  "id": "JW-207"
+ },
+ {
+  "company": "Wisdom",
+  "title": "Inbound Account Executive",
+  "tier": "t3",
+  "id": "JW-248"
+ },
+ {
+  "company": "Silvur",
+  "title": "Client Success Specialist",
+  "tier": "t3",
+  "id": "JW-141"
+ },
+ {
+  "company": "ServiceTitan",
+  "title": "CSM",
+  "tier": "t3",
+  "id": "JW-142"
+ },
+ {
+  "company": "Odeko",
+  "title": "Territory Sales Associate",
+  "tier": "t3",
+  "id": "JW-126"
+ },
+ {
+  "company": "Semicolon Talent",
+  "title": "Client Success Manager",
+  "tier": "t3",
+  "id": "JW-166"
+ },
+ {
+  "company": "WithMe",
+  "title": "Client Success Manager",
+  "tier": "t3",
+  "id": "JW-180"
+ },
+ {
+  "company": "Polimorphic",
+  "title": "Account Manager",
+  "tier": "t3",
+  "id": "JW-287"
+ },
+ {
+  "company": "Storesight",
+  "title": "Customer Success Manager",
+  "tier": "t3",
+  "id": "JW-289"
+ },
+ {
+  "company": "Switchboard",
+  "title": "Client Success Manager \u2013 SMB/MM",
+  "tier": "t3",
+  "id": "JW-298"
+ },
+ {
+  "company": "Automatiq",
+  "title": "Account Manager",
+  "tier": "t3",
+  "id": "JW-303"
+ },
+ {
+  "company": "Just Appraised",
+  "title": "Customer Success Manager",
+  "tier": "t3",
+  "id": "JW-305"
+ },
+ {
+  "company": "White Cap",
+  "title": "Account Manager",
+  "tier": "t3",
+  "id": "JW-311"
+ },
+ {
+  "company": "Tive",
+  "title": "Account Manager",
+  "tier": "t3",
+  "id": "JW-324"
+ },
+ {
+  "company": "Rocket Clicks",
+  "title": "Account Manager",
+  "tier": "t3",
+  "id": "JW-325"
+ },
+ {
+  "company": "ALTOUR",
+  "title": "Manager",
+  "tier": "t3",
+  "id": "JW-327"
+ },
+ {
+  "company": "Slide",
+  "title": "Account Manager 'Farmer'",
+  "tier": "t3",
+  "id": "JW-351"
+ },
+ {
+  "company": "CorVel",
+  "title": "Account Manager II",
+  "tier": "t3",
+  "id": "JW-353"
+ },
+ {
+  "company": "Leadership Connect",
+  "title": "Renewal Manager",
+  "tier": "t3",
+  "id": "JW-354"
+ },
+ {
+  "company": "Pilot.com",
+  "title": "Sr. Customer Success Manager",
+  "tier": "t3",
+  "id": "JW-369*"
+ },
+ {
+  "company": "AXS",
+  "title": "Account Manager",
+  "tier": "t3",
+  "id": "JW-370*"
+ },
+ {
+  "company": "WorkWave",
+  "title": "Customer Success Manager",
+  "tier": "t3",
+  "id": "JW-371*"
+ },
+ {
+  "company": "VergeSense",
+  "title": "Inside Account Executive",
+  "tier": "t3",
+  "id": "JW-398*"
+ },
+ {
+  "company": "Ashby",
+  "title": "SMB Customer Success Manager",
+  "tier": "t3",
+  "id": "JW-440* UNVERIFIED"
+ },
+ {
+  "company": "Tekmetric",
+  "title": "Customer Results Manager II",
+  "tier": "t3",
+  "id": "JW-441* UNVERIFIED"
+ },
+ {
+  "company": "Conversica",
+  "title": "Customer Success Manager",
+  "tier": "t3",
+  "id": "JW-444* UNVERIFIED"
+ },
+ {
+  "company": "Shopview",
+  "title": "Customer Success Manager",
+  "tier": "t3",
+  "id": "JW-445* UNVERIFIED"
+ },
+ {
+  "company": "Close",
+  "title": "Customer Success Associate",
+  "tier": "t3",
+  "id": "JW-446* UNVERIFIED"
+ },
+ {
+  "company": "Critical Mass",
+  "title": "Account Coordinator",
+  "tier": "t3",
+  "id": "JW-447"
+ },
+ {
+  "company": "Recharge",
+  "title": "Customer Success Manager",
+  "tier": "t3",
+  "id": "JW-448"
+ },
+ {
+  "company": "Evotix",
+  "title": "Account Manager",
+  "tier": "t3",
+  "id": "JW-449*"
+ },
+ {
+  "company": "LivTech",
+  "title": "Account Executive",
+  "tier": "t3",
+  "id": "JW-452*"
+ },
+ {
+  "company": "Leap",
+  "title": "Senior Customer Success Manager",
+  "tier": "t3",
+  "id": "JW-455*"
+ },
+ {
+  "company": "Artist Growth",
+  "title": "Customer Success Manager",
+  "tier": "t3",
+  "id": "JW-457*"
+ },
+ {
+  "company": "Inspired Thinking Group",
+  "title": "Senior Customer Success Manager",
+  "tier": "t3",
+  "id": "JW-460*"
+ },
+ {
+  "company": "Subsplash",
+  "title": "Account Manager",
+  "tier": "t3",
+  "id": "JW-465*"
+ },
+ {
+  "company": "Constant Contact",
+  "title": "Digital Customer Success Specialist",
+  "tier": "t3",
+  "id": "JW-466*"
+ },
+ {
+  "company": "Givebutter",
+  "title": "Sales Development Representative",
+  "tier": "t3",
+  "id": "JW-471*"
+ },
+ {
+  "company": "NextPatient",
+  "title": "Customer Success Manager",
+  "tier": "t3",
+  "id": "JW-374*"
+ },
+ {
+  "company": "Ncontracts",
+  "title": "Scale Customer Success Manager",
+  "tier": "t3",
+  "id": "JW-393"
+ },
+ {
+  "company": "United Rentals",
+  "title": "Inside Sales Rep",
+  "tier": "t3",
+  "id": "JW-309"
+ },
+ {
+  "company": "CPI Card Group",
+  "title": "Business Development Manager",
+  "tier": "t3",
+  "id": "JW-472*"
+ },
+ {
+  "company": "Evotix",
+  "title": "Pre-Sales Consultant",
+  "tier": "t3",
+  "id": "JW-473*"
+ },
+ {
+  "company": "Evotix",
+  "title": "Account Executive",
+  "tier": "t3",
+  "id": "JW-474*"
+ },
+ {
+  "company": "Boulevard",
+  "title": "Revenue Enablement Manager",
+  "tier": "t3",
+  "id": "JW-475*"
+ },
+ {
+  "company": "Salesloft",
+  "title": "Commercial Account Manager",
+  "tier": "t3",
+  "id": "JW-489*"
+ },
+ {
+  "company": "FullStory",
+  "title": "Sales Development Representative",
+  "tier": "t3",
+  "id": "JW-498*"
+ },
+ {
+  "company": "Workhuman",
+  "title": "Business Development Representative",
+  "tier": "t3",
+  "id": "JW-499*"
+ },
+ {
+  "company": "Glide",
+  "title": "Sales Development Representative",
+  "tier": "t3",
+  "id": "JW-511*"
+ },
+ {
+  "company": "RainFocus",
+  "title": "Junior Client Success Specialist",
+  "tier": "t3",
+  "id": "JW-512*"
+ },
+ {
+  "company": "Quantum Health",
+  "title": "Client Success Executive",
+  "tier": "t3",
+  "id": "JW-513*"
+ },
+ {
+  "company": "Cloudinary",
+  "title": "Technical Customer Success Manager",
+  "tier": "t3",
+  "id": "JW-514*"
+ },
+ {
+  "company": "HealthStream",
+  "title": "Success Manager",
+  "tier": "t3",
+  "id": "TRK-523*"
+ },
+ {
+  "company": "Uniguest",
+  "title": "Customer Success Manager",
+  "tier": "t3",
+  "id": "TRK-541*"
+ },
+ {
+  "company": "Ministry Brands",
+  "title": "Sales Development Representative-2",
+  "tier": "t3",
+  "id": "TRK-552*"
+ },
+ {
+  "company": "Frontline Education",
+  "title": "Associate Client Value Partner",
+  "tier": "t3",
+  "id": "TRK-553*"
+ },
+ {
+  "company": "Buildium",
+  "title": "Mixed Use CSM I / Lifecycle CSM",
+  "tier": "t3",
+  "id": "TRK-554*"
+ },
+ {
+  "company": "Tithe.ly",
+  "title": "Customer Success Manager",
+  "tier": "t3",
+  "id": "TRK-557*"
+ },
+ {
+  "company": "AutoLeap",
+  "title": "Sales Development Representative",
+  "tier": "t3",
+  "id": "TRK-564*"
+ },
+ {
+  "company": "Rise Collective",
+  "title": "Owner Liaison",
+  "tier": "t3",
+  "id": "TRK-565*"
+ },
+ {
+  "company": "Help Scout",
+  "title": "Business Development Representative",
+  "tier": "t3",
+  "id": "JW-570 NEW Nov 16 (Help Scout BDR)"
+ }
+]
