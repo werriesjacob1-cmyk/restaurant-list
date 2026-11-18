@@ -1,0 +1,402 @@
+[
+ {
+  "rank": 1,
+  "company": "Amazon"
+ },
+ {
+  "rank": 2,
+  "company": "Walmart"
+ },
+ {
+  "rank": 3,
+  "company": "UnitedHealth Group"
+ },
+ {
+  "rank": 4,
+  "company": "Apple"
+ },
+ {
+  "rank": 5,
+  "company": "Alphabet"
+ },
+ {
+  "rank": 6,
+  "company": "CVS Health"
+ },
+ {
+  "rank": 7,
+  "company": "Berkshire Hathaway"
+ },
+ {
+  "rank": 8,
+  "company": "McKesson"
+ },
+ {
+  "rank": 9,
+  "company": "Exxon Mobil"
+ },
+ {
+  "rank": 10,
+  "company": "Cencora"
+ },
+ {
+  "rank": 11,
+  "company": "Microsoft"
+ },
+ {
+  "rank": 12,
+  "company": "JPMorgan Chase"
+ },
+ {
+  "rank": 13,
+  "company": "Costco Wholesale"
+ },
+ {
+  "rank": 14,
+  "company": "Cigna Group"
+ },
+ {
+  "rank": 15,
+  "company": "Cardinal Health"
+ },
+ {
+  "rank": 16,
+  "company": "Nvidia"
+ },
+ {
+  "rank": 17,
+  "company": "Meta Platforms"
+ },
+ {
+  "rank": 18,
+  "company": "Elevance Health"
+ },
+ {
+  "rank": 19,
+  "company": "Centene"
+ },
+ {
+  "rank": 20,
+  "company": "Bank of America"
+ },
+ {
+  "rank": 21,
+  "company": "Chevron"
+ },
+ {
+  "rank": 22,
+  "company": "Ford Motor"
+ },
+ {
+  "rank": 23,
+  "company": "General Motors"
+ },
+ {
+  "rank": 24,
+  "company": "Citigroup"
+ },
+ {
+  "rank": 25,
+  "company": "Home Depot"
+ },
+ {
+  "rank": 26,
+  "company": "Fannie Mae"
+ },
+ {
+  "rank": 27,
+  "company": "Kroger"
+ },
+ {
+  "rank": 28,
+  "company": "Verizon Communications"
+ },
+ {
+  "rank": 29,
+  "company": "Phillips 66"
+ },
+ {
+  "rank": 30,
+  "company": "Marathon Petroleum"
+ },
+ {
+  "rank": 31,
+  "company": "StoneX Group"
+ },
+ {
+  "rank": 32,
+  "company": "State Farm Insurance"
+ },
+ {
+  "rank": 33,
+  "company": "Freddie Mac"
+ },
+ {
+  "rank": 34,
+  "company": "Humana"
+ },
+ {
+  "rank": 35,
+  "company": "AT&T"
+ },
+ {
+  "rank": 36,
+  "company": "Goldman Sachs Group"
+ },
+ {
+  "rank": 37,
+  "company": "Comcast"
+ },
+ {
+  "rank": 38,
+  "company": "Wells Fargo"
+ },
+ {
+  "rank": 39,
+  "company": "Morgan Stanley"
+ },
+ {
+  "rank": 40,
+  "company": "Valero Energy"
+ },
+ {
+  "rank": 41,
+  "company": "Dell Technologies"
+ },
+ {
+  "rank": 42,
+  "company": "Target"
+ },
+ {
+  "rank": 43,
+  "company": "Tesla"
+ },
+ {
+  "rank": 44,
+  "company": "Walt Disney"
+ },
+ {
+  "rank": 45,
+  "company": "Johnson & Johnson"
+ },
+ {
+  "rank": 46,
+  "company": "PepsiCo"
+ },
+ {
+  "rank": 47,
+  "company": "Boeing"
+ },
+ {
+  "rank": 48,
+  "company": "UPS"
+ },
+ {
+  "rank": 49,
+  "company": "RTX"
+ },
+ {
+  "rank": 50,
+  "company": "FedEx"
+ },
+ {
+  "rank": 51,
+  "company": "Progressive"
+ },
+ {
+  "rank": 52,
+  "company": "Lowe's"
+ },
+ {
+  "rank": 53,
+  "company": "Energy Transfer"
+ },
+ {
+  "rank": 54,
+  "company": "Procter & Gamble"
+ },
+ {
+  "rank": 55,
+  "company": "Sysco"
+ },
+ {
+  "rank": 56,
+  "company": "American Express"
+ },
+ {
+  "rank": 57,
+  "company": "Albertsons"
+ },
+ {
+  "rank": 58,
+  "company": "Archer Daniels Midland"
+ },
+ {
+  "rank": 59,
+  "company": "MetLife"
+ },
+ {
+  "rank": 60,
+  "company": "HCA Healthcare"
+ },
+ {
+  "rank": 61,
+  "company": "Lockheed Martin"
+ },
+ {
+  "rank": 62,
+  "company": "New York Life Insurance"
+ },
+ {
+  "rank": 63,
+  "company": "Capital One Financial"
+ },
+ {
+  "rank": 64,
+  "company": "Allstate"
+ },
+ {
+  "rank": 65,
+  "company": "Caterpillar"
+ },
+ {
+  "rank": 66,
+  "company": "IBM"
+ },
+ {
+  "rank": 67,
+  "company": "Eli Lilly"
+ },
+ {
+  "rank": 68,
+  "company": "Merck"
+ },
+ {
+  "rank": 69,
+  "company": "Nationwide"
+ },
+ {
+  "rank": 70,
+  "company": "Broadcom"
+ },
+ {
+  "rank": 71,
+  "company": "Delta Air Lines"
+ },
+ {
+  "rank": 72,
+  "company": "Publix Super Markets"
+ },
+ {
+  "rank": 73,
+  "company": "Pfizer"
+ },
+ {
+  "rank": 74,
+  "company": "TD Synnex"
+ },
+ {
+  "rank": 75,
+  "company": "ConocoPhillips"
+ },
+ {
+  "rank": 76,
+  "company": "Galaxy Digital"
+ },
+ {
+  "rank": 77,
+  "company": "AbbVie"
+ },
+ {
+  "rank": 78,
+  "company": "Prudential Financial"
+ },
+ {
+  "rank": 79,
+  "company": "TJX"
+ },
+ {
+  "rank": 80,
+  "company": "Performance Food Group"
+ },
+ {
+  "rank": 81,
+  "company": "United Airlines Holdings"
+ },
+ {
+  "rank": 82,
+  "company": "Oracle"
+ },
+ {
+  "rank": 83,
+  "company": "Cisco Systems"
+ },
+ {
+  "rank": 84,
+  "company": "HP"
+ },
+ {
+  "rank": 85,
+  "company": "Charter Communications"
+ },
+ {
+  "rank": 86,
+  "company": "American Airlines Group"
+ },
+ {
+  "rank": 87,
+  "company": "Tyson Foods"
+ },
+ {
+  "rank": 88,
+  "company": "Intel"
+ },
+ {
+  "rank": 89,
+  "company": "Enterprise Products Partners"
+ },
+ {
+  "rank": 90,
+  "company": "Ingram Micro Holding"
+ },
+ {
+  "rank": 91,
+  "company": "General Dynamics"
+ },
+ {
+  "rank": 92,
+  "company": "Uber Technologies"
+ },
+ {
+  "rank": 93,
+  "company": "USAA"
+ },
+ {
+  "rank": 94,
+  "company": "TIAA"
+ },
+ {
+  "rank": 95,
+  "company": "Liberty Mutual Insurance Group"
+ },
+ {
+  "rank": 96,
+  "company": "Travelers"
+ },
+ {
+  "rank": 97,
+  "company": "Bristol-Myers Squibb"
+ },
+ {
+  "rank": 98,
+  "company": "Coca-Cola"
+ },
+ {
+  "rank": 99,
+  "company": "Nike"
+ },
+ {
+  "rank": 100,
+  "company": "Massachusetts Mutual Life"
+ }
+]
