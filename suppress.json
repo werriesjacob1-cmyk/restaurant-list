@@ -1,0 +1,522 @@
+{
+"cision": {
+"state": "applied",
+"hold_until": null,
+"note": "APPLIED Nov 17 ~3:55 PM CT on Cision's Greenhouse board (job 4999955101). Employee referra"
+},
+"fleetio": {
+"state": "applied",
+"hold_until": null,
+"note": "OPEN (Greenhouse, read on Fleetio board Nov 16). Applied ~4:05 PM CT. $54K base + $36K var"
+},
+"everbridge": {
+"state": "applied",
+"hold_until": null,
+"note": "OPEN (Lever, verified on Everbridge page Nov 5). Applied 6:45 PM CT, confirmed by Gmail. B"
+},
+"constellation dealer group ideal computer systems": {
+"state": "rejected",
+"hold_until": null,
+"note": "REJECTED Nov 8 (LinkedIn rejection notice). Do not message; revisit later. Prior status: O"
+},
+"headway": {
+"state": "rejected",
+"hold_until": "Dec 9",
+"note": "REJECTED Nov 9 (Ashby email). Do not message; revisit later. Prior status: OPEN, verified "
+},
+"tekion": {
+"state": "rejected",
+"hold_until": null,
+"note": "REJECTED Nov 16 (Ashby email 11:38 AM CT, Account Development Representative I). Do not me"
+},
+"groundtruth": {
+"state": "applied",
+"hold_until": null,
+"note": "OPEN, verified Nov 5 (deadline Nov 15). $82-100K base + commission, $102.5-125K OTE. Follo"
+},
+"tilt leave management saas": {
+"state": "applied",
+"hold_until": null,
+"note": "OPEN, verified Nov 5. $80-90K base, $160-180K OTE + ISOs. Entered $85,000 base. Stretch ro"
+},
+"mindbody playlist": {
+"state": "applied",
+"hold_until": null,
+"note": "OPEN, verified Nov 5. Form base $40-50K + $40K year-1 commission target; entered $50,000 b"
+},
+"revolutionparts": {
+"state": "rejected",
+"hold_until": null,
+"note": "REJECTED Nov 6 (Gem email). Do not message; revisit later. Prior status: OPEN, verified No"
+},
+"bluecat": {
+"state": "rejected",
+"hold_until": null,
+"note": "REJECTED Nov 10 (Lever email). Do not message; revisit later. Prior status: OPEN, verified"
+},
+"panopto": {
+"state": "applied",
+"hold_until": null,
+"note": "OPEN (Lever c4d72227)"
+},
+"zocks": {
+"state": "rejected",
+"hold_until": null,
+"note": "REJECTED Nov 9 (Lever email). Do not message; revisit later. Prior status: OPEN (Lever 95e"
+},
+"second nature": {
+"state": "applied",
+"hold_until": null,
+"note": "OPEN (Ashby fa47f83c listed)"
+},
+"prologue": {
+"state": "applied",
+"hold_until": null,
+"note": "UNVERIFIED (LinkedIn only; likely a recruiting agency) | APPLICATION CONFIRMED: LinkedIn A"
+},
+"atlassian dx": {
+"state": "applied",
+"hold_until": null,
+"note": "OPEN, title match (Atlassian all-jobs page, Nov 5; no ID shown)"
+},
+"flex": {
+"state": "applied",
+"hold_until": null,
+"note": "OPEN (Lever 6db02e53)"
+},
+"the guarantors": {
+"state": "applied",
+"hold_until": null,
+"note": "OPEN (Rippling a5c93eac)"
+},
+"circle": {
+"state": "rejected",
+"hold_until": null,
+"note": "REJECTED Nov 9 (Gem email; role not named in email). Do not message; revisit later. Prior "
+},
+"instructure": {
+"state": "applied",
+"hold_until": null,
+"note": "OPEN (Ashby 1d339725 listed)"
+},
+"the access group": {
+"state": "applied",
+"hold_until": null,
+"note": "UNVERIFIED (Workday; stated close Oct 31) | APPLICATION CONFIRMED: Gmail confirmation Oct "
+},
+"caredge": {
+"state": "applied",
+"hold_until": null,
+"note": "OPEN (own careers form live)"
+},
+"philips": {
+"state": "applied",
+"hold_until": null,
+"note": "UNVERIFIED (Workday 592372) | APPLICATION CONFIRMED: Gmail confirmation Oct 30"
+},
+"compliancy group": {
+"state": "applied",
+"hold_until": null,
+"note": "OPEN (Greenhouse 4001388009)"
+},
+"mongoose": {
+"state": "applied",
+"hold_until": null,
+"note": "OPEN, title match (Lever hellomongoose 6fdc0b0c)"
+},
+"matador solutions": {
+"state": "applied",
+"hold_until": null,
+"note": "OPEN, re-verified Nov 5 (Workable 6DE2DB7FCE, about 97 days old)"
+},
+"everway": {
+"state": "applied",
+"hold_until": null,
+"note": "OPEN (board page lists 4717038006)"
+},
+"absencesoft": {
+"state": "rejected",
+"hold_until": null,
+"note": "REJECTED Nov 13 (Rippling email 9:00 AM CT, CSM II). Do not message; revisit later. Prior "
+},
+"elation health": {
+"state": "applied",
+"hold_until": null,
+"note": "OPEN, title match (Greenhouse 8042686)"
+},
+"onit": {
+"state": "applied",
+"hold_until": null,
+"note": "OPEN, title match (Lever 6877cdb8)"
+},
+"docker": {
+"state": "closed",
+"hold_until": null,
+"note": "CLOSED* (a2b07672 not on Ashby list)"
+},
+"nmi": {
+"state": "closed",
+"hold_until": null,
+"note": "CLOSED* (5461721008 not on board)"
+},
+"trustwell": {
+"state": "applied",
+"hold_until": null,
+"note": "OPEN (Rippling 5d1dd07e)"
+},
+"buildout": {
+"state": "applied",
+"hold_until": null,
+"note": "OPEN (Ashby 3a30f754 listed)"
+},
+"mykaarma": {
+"state": "applied",
+"hold_until": null,
+"note": "OPEN, title match (Rippling f914b9e1)"
+},
+"insite health": {
+"state": "applied",
+"hold_until": null,
+"note": "UNVERIFIED (no employer ATS found) | APPLICATION CONFIRMED: Gmail confirmation Oct 14 says"
+},
+"agentdynamics": {
+"state": "applied",
+"hold_until": null,
+"note": "UNVERIFIED (no employer ATS found) | NO APPLICATION RECORD: Gmail searched 90 days (all AT"
+},
+"flai": {
+"state": "applied",
+"hold_until": null,
+"note": "OPEN, title match (Ashby flai 08ae9250)"
+},
+"doordash": {
+"state": "rejected",
+"hold_until": null,
+"note": "REJECTED Nov 6 (DoorDash Greenhouse email 11:00 AM CT; this confirms the application was s"
+},
+"seatgeek": {
+"state": "applied",
+"hold_until": null,
+"note": "OPEN, title match (Greenhouse 8108805)"
+},
+"teamsnap": {
+"state": "rejected",
+"hold_until": null,
+"note": "REJECTED Nov 10 (Lever email, role filled). Do not message; revisit later. Prior status: O"
+},
+"underdog": {
+"state": "applied",
+"hold_until": null,
+"note": "OPEN, title match (Greenhouse 4735101005)"
+},
+"servicetitan": {
+"state": "applied",
+"hold_until": null,
+"note": "UNVERIFIED (Workday) | APPLICATION CONFIRMED: Gmail confirmation Oct 14"
+},
+"glean": {
+"state": "applied",
+"hold_until": null,
+"note": "APPLIED Nov 12 (Greenhouse 4740475005; confirmation email received Nov 12 8:34 AM CT). Res"
+},
+"supporting cast slate": {
+"state": "rejected",
+"hold_until": null,
+"note": "REJECTED Nov 11 (Lever email). Do not message; revisit in a few months. Prior status: OPEN"
+},
+"axios": {
+"state": "applied",
+"hold_until": null,
+"note": "OPEN (Greenhouse 8163030)"
+},
+"storyteller": {
+"state": "applied",
+"hold_until": null,
+"note": "OPEN (JazzHR form); on-page success, no confirmation email"
+},
+"sonatype": {
+"state": "rejected",
+"hold_until": null,
+"note": "REJECTED Nov 10 (Lever email; role not named in email). Do not message; revisit later. Pri"
+},
+"tennessee titans": {
+"state": "applied",
+"hold_until": null,
+"note": "APPLIED on Titans' own Dayforce form; confirmation number NZBB33MB (posted Oct 27). Pay an"
+},
+"energyhub": {
+"state": "applied",
+"hold_until": null,
+"note": "APPLIED via Greenhouse form + PDF cover letter; no confirmation email yet (check Gmail). C"
+},
+"alphasense": {
+"state": "rejected",
+"hold_until": null,
+"note": "REJECTED Nov 12 (Greenhouse email 2:57 PM CT). Do not message; revisit later. Prior status"
+},
+"bitfocus": {
+"state": "applied",
+"hold_until": null,
+"note": "APPLIED; cover letter sent"
+},
+"soci": {
+"state": "applied",
+"hold_until": null,
+"note": "APPLIED (Greenhouse)"
+},
+"filevine": {
+"state": "applied",
+"hold_until": null,
+"note": "APPLIED (Lever)"
+},
+"sift": {
+"state": "applied",
+"hold_until": null,
+"note": "UNVERIFIED Nov 5: Ashby 'sift' board lists 7 jobs (incl. Customer Success Manager 2d2072d2"
+},
+"outersignal": {
+"state": "applied",
+"hold_until": null,
+"note": "APPLIED (Ashby); on-page success, no confirmation email"
+},
+"fieldwire": {
+"state": "rejected",
+"hold_until": "Dec 6",
+"note": "REJECTED Nov 6 (Greenhouse decline email 12:34 PM CT, Mid-Market Account Manager). Do not "
+},
+"360 legal": {
+"state": "applied",
+"hold_until": null,
+"note": "APPLIED"
+},
+"promptio": {
+"state": "applied",
+"hold_until": null,
+"note": "APPLIED"
+},
+"samsara": {
+"state": "rejected",
+"hold_until": null,
+"note": "REJECTED Nov 3 (Samsara email: 'decided to move forward with other candidates'). Out of th"
+},
+"balto": {
+"state": "applied",
+"hold_until": null,
+"note": "Open on Rippling (posted Oct 23, remote US, $65-75K base / $105K OTE, 3+ yrs CS/AM). APPLI"
+},
+"inductive automation": {
+"state": "applied",
+"hold_until": null,
+"note": "Open on Ashby (isListed, remote US, $80-95K, published Sep 11). APPLIED: Ashby confirmatio"
+},
+"treering": {
+"state": "applied",
+"hold_until": null,
+"note": "Open on Lever (remote, $63-68K, 2-3 yrs CS/AM or related, no degree stated). APPLIED: Leve"
+},
+"voltus": {
+"state": "applied",
+"hold_until": null,
+"note": "Verified open on Lever (Nov 4)"
+},
+"avandra imaging": {
+"state": "rejected",
+"hold_until": null,
+"note": "CLOSED Nov 16: Chip Kay replied they are in the final stages of filling the role; keep in "
+},
+"ncontracts": {
+"state": "rejected",
+"hold_until": "Dec 11",
+"note": "REJECTED Nov 11 (Ashby email, role filled). Do not message; revisit later. Prior status: p"
+},
+"technologyadvice": {
+"state": "rejected",
+"hold_until": null,
+"note": "REJECTED Nov 11 (Greenhouse email). Do not message; revisit later. Prior status: Verified "
+},
+"rankingsio": {
+"state": "rejected",
+"hold_until": null,
+"note": "REJECTED Nov 6 (Teamtailor email). Do not message; revisit later. Prior status: Verified o"
+},
+"private health management": {
+"state": "applied",
+"hold_until": null,
+"note": "Verified on Greenhouse board (Nov 4); reports to Jessica Thorberg, VP Account Management ("
+},
+"origami risk": {
+"state": "applied",
+"hold_until": null,
+"note": "JD read from employer iCIMS page (Jacob pasted); stretch (1+ yrs SaaS/services); occasiona"
+},
+"nextpatient": {
+"state": "applied",
+"hold_until": null,
+"note": "Verified on Ashby API (listed, Nov 4); hours/weekends not stated"
+},
+"collective": {
+"state": "rejected",
+"hold_until": "Dec 5",
+"note": "REJECTED Nov 5 (email reply from Collective). Do not message; do not reapply || LOWER-LEVE"
+},
+"podium": {
+"state": "rejected",
+"hold_until": null,
+"note": "REJECTED Nov 13 (Podium email 2:37 PM CT, Regional CSM Automotive). Do not message; revisi"
+},
+"brave software": {
+"state": "applied",
+"hold_until": null,
+"note": "OPEN, re-verified Nov 4 (Greenhouse 7648003)"
+},
+"bizlibrary": {
+"state": "rejected",
+"hold_until": null,
+"note": "REJECTED Nov 6 (Lever email 9:53 AM CT). Do not message; do not reapply"
+},
+"keeper security": {
+"state": "applied",
+"hold_until": null,
+"note": "OPEN, re-verified Nov 4 (Greenhouse 4090241009)"
+},
+"granum lmn": {
+"state": "applied",
+"hold_until": null,
+"note": "OPEN, re-verified Nov 4 (Greenhouse 8911680002)"
+},
+"dandy": {
+"state": "rejected",
+"hold_until": "Dec 6",
+"note": "REJECTED Nov 6 (Ashby email 2:21 PM CT: position has been filled). Do not message; do not "
+},
+"total expert": {
+"state": "rejected",
+"hold_until": "Dec 2",
+"note": "REJECTED Nov 2 (Gmail rejection email). Do not message; revisit in a few months || LOWER-L"
+},
+"amazon freight": {
+"state": "rejected",
+"hold_until": null,
+"note": "REJECTED Nov 2 (Amazon jobs email). Do not message; revisit in a few months"
+},
+"boulevard": {
+"state": "rejected",
+"hold_until": null,
+"note": "REJECTED Oct 29 (Greenhouse email). Do not message; revisit in a few months"
+},
+"scorpion": {
+"state": "rejected",
+"hold_until": null,
+"note": "REJECTED Oct 24 (Greenhouse email: position filled)"
+},
+"scripps sports": {
+"state": "rejected",
+"hold_until": null,
+"note": "REJECTED Oct 18 (Gmail rejection email). Do not message; revisit in a few months"
+},
+"pindrop": {
+"state": "rejected",
+"hold_until": null,
+"note": "REJECTED Oct 16 (Pindrop email). Do not message; revisit in a few months"
+},
+"fullpath": {
+"state": "rejected",
+"hold_until": null,
+"note": "REJECTED Oct 16 (Spark Hire email). Do not message; revisit in a few months"
+},
+"purecars": {
+"state": "rejected",
+"hold_until": null,
+"note": "REJECTED Oct 15 (Trakstar email). Do not message; revisit in a few months"
+},
+"beaman toyota": {
+"state": "rejected",
+"hold_until": null,
+"note": "REJECTED Oct 3 (Paycom email). Dealership, out of scope anyway"
+},
+"portside": {
+"state": "rejected",
+"hold_until": null,
+"note": "REJECTED Oct 16 (Rippling email). Do not message; revisit in a few months"
+},
+"coterie insurance": {
+"state": "rejected",
+"hold_until": null,
+"note": "REJECTED Nov 9 (Rippling email). Do not message; revisit later. Prior status: OPEN, verifi"
+},
+"dmd systems recovery": {
+"state": "rejected",
+"hold_until": null,
+"note": "REJECTED Nov 9 (Rippling email). Do not message; revisit later. Prior status: OPEN, verifi"
+},
+"foodchain id": {
+"state": "applied",
+"hold_until": null,
+"note": "OPEN, applied Nov 5. PAY NOT POSTED: confirm base is $60K+ and ask Saturdays at first call"
+},
+"submittable": {
+"state": "applied",
+"hold_until": null,
+"note": "OPEN, verified Nov 5 (Greenhouse 6236293004). $70-80K base / $87.5-100K OTE. Follow-up Nov"
+},
+"wellthy": {
+"state": "rejected",
+"hold_until": null,
+"note": "REJECTED Nov 9 (Wellthy email). Do not message; revisit later. Prior status: OPEN, verifie"
+},
+"expensify": {
+"state": "rejected",
+"hold_until": null,
+"note": "REJECTED Nov 6 (Ashby decline email 12:15 PM CT). Do not message or reapply."
+},
+"affirm": {
+"state": "applied",
+"hold_until": null,
+"note": "OPEN, form live Nov 5. OTE $110-172.5K. Stretch (degree wording, no formal AM title). Foll"
+},
+"airtable": {
+"state": "rejected",
+"hold_until": null,
+"note": "REJECTED Nov 12 (Gem email 9:20 AM CT). Do not message; revisit later. Prior status: OPEN,"
+},
+"toast": {
+"state": "rejected",
+"hold_until": "Dec 8",
+"note": "REJECTED Nov 8 (Greenhouse email, role filled). Do not message; revisit later. Prior statu"
+},
+"goguardian": {
+"state": "applied",
+"hold_until": null,
+"note": "OPEN, form live Nov 5 (Greenhouse 4723132006). OTE about $120K. Covers Central California "
+},
+"zayo": {
+"state": "rejected",
+"hold_until": null,
+"note": "REJECTED Nov 11 (Workday email). Do not message; revisit later. Prior status: OPEN, posted"
+},
+"bloomerang": {
+"state": "applied",
+"hold_until": null,
+"note": "OPEN, form live Nov 5. $110K OTE, base not posted. Full sales cycle incl. prospecting + ex"
+},
+"sketchy": {
+"state": "rejected",
+"hold_until": null,
+"note": "REJECTED Nov 13 (Rippling email 11:00 AM CT, Customer Success Specialist). Do not message;"
+},
+"sony music the merch collective": {
+"state": "applied",
+"hold_until": null,
+"note": "APPLIED, unverified posting (pay, location, years not read). Check employer page"
+},
+"twilio": {
+"state": "applied",
+"hold_until": null,
+"note": "APPLIED, unconfirmed by email. Junior title, asks 2+ yrs, commission eligible. Follow-up N"
+},
+"billtrust": {
+"state": "applied",
+"hold_until": null,
+"note": "APPLIED Nov 16 (confirmation email 5:03 PM CT). $55K base, OTE not shown (ask). Applied af"
+}
+}
