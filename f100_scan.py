@@ -41,34 +41,58 @@ QUERIES = ["sales development", "business development representative", "inside s
            "customer success", "client success", "customer service", "sales representative", "relationship", "sales associate corporate",
            "partner", "renewals", "sales support", "territory", "specialist sales", "associate account", "customer engagement"]
 INC = re.compile(r"sales|account (?:manager|executive|representative|coordinator|specialist|associate|management)|business development|customer success|client success|customer (?:service|support|experience|engagement|care|advocate|relationship)|client (?:service|relationship|engagement|associate|support)|relationship (?:manager|associate|specialist)|renewal|partner (?:success|manager|development)|representative|\bsdr\b|\bbdr\b|specialist|coordinator|associate|advisor|consultant|inside", re.I)
-EXC = re.compile(r"senior|\bsr\b|director|\bvp\b|vice president|head of|principal|staff|lead\b|chief|president|engineer|developer|scientist|analyst|nurse|pharmac|physician|clinical|driver|warehouse|cashier|store (?:associate|team)|technician|mechanic|attorney|counsel|legal|recruit|marketing|designer|architect|accountant|audit|tax|intern|co-?op|apprentice|\bmanager,|manager\b(?!.*account)|supervisor|trainer|nursing|therapist|pilot|flight attendant|crew|fulfillment|plant|operator|janitor|security officer|cook|chef|barista|merchandis|stocker|loss prevention|laborer", re.I)
+EXC = re.compile(r"senior|\bsr\b|director|\bvp\b|vice president|head of|principal|staff|lead\b|chief|president|engineer|developer|scientist|analyst|nurse|pharmac|physician|clinical|driver|warehouse|cashier|store (?:associate|team)|technician|mechanic|attorney|counsel|legal|recruit|marketing|designer|architect|accountant|audit|tax|intern|co-?op|apprentice|\bmanager,|manager\b(?!.*account)|supervisor|trainer|nursing|therapist|pilot|flight attendant|crew|fulfillment|plant|operator|janitor|security officer|cook|chef|barista|merchandis|stocker|loss prevention|laborer|delivery station|fulfillment center|warehouse", re.I)
 LOC_OK = re.compile(r"remote|united states|usa|\bus\b|nashville|tennessee|\btn\b|franklin|brentwood|murfreesboro|locations|hybrid", re.I)
 LOC_BAD = re.compile(r"india|china|mexico|canada|united kingdom|\buk\b|germany|france|brazil|philippines|poland|ireland|singapore|japan|australia|spain|italy|netherlands|romania|costa rica|colombia|hungary|israel|korea|malaysia|vietnam|argentina|chile|peru", re.I)
 HDR = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/124 Safari/537.36"}
 
-def probe(tenant, wd):
+def host_alive(tenant, wd):
+    import socket
+    try:
+        socket.gethostbyname(f"{tenant}.{wd}.myworkdayjobs.com"); return True
+    except Exception:
+        return False
+
+def site_from_root(tenant, wd):
     url = f"https://{tenant}.{wd}.myworkdayjobs.com/"
     try:
-        req = urllib.request.Request(url, headers=HDR)
-        r = urllib.request.urlopen(req, timeout=6)
+        r = urllib.request.urlopen(urllib.request.Request(url, headers=HDR), timeout=8)
         final = r.geturl()
-        body = r.read(4000).decode("utf-8", "replace")
     except urllib.error.HTTPError as e:
-        final = e.geturl() if hasattr(e, "geturl") else url; body = ""
-        if e.code >= 500 or e.code == 404 and "myworkdayjobs" not in final: return None
+        final = getattr(e, "url", "") or ""
     except Exception:
         return None
-    if "myworkdayjobs.com" not in final: return None
-    m = re.search(r"myworkdayjobs\.com/(?:[a-z]{2}-[A-Z]{2}/)?([^/?#]+)", final)
+    m = re.search(r"myworkdayjobs\.com/(?:[a-z]{2}-[A-Z]{2}/)?([^/?#]+)", final or "")
     site = m.group(1) if m else None
-    if site in (None, "login", "wday", "en-US"): return None
-    return site
+    return None if site in (None, "login", "wday", "en-US", "") else site
+
+def cxs_ok(tenant, wd, site):
+    try:
+        d = watch.get(f"https://{tenant}.{wd}.myworkdayjobs.com/wday/cxs/{tenant}/{site}/jobs",
+                      data={"appliedFacets": {}, "limit": 1, "offset": 0, "searchText": ""}, timeout=10, headers=HDR)
+        return "jobPostings" in d
+    except Exception:
+        return False
+
+def site_candidates(tenant, company):
+    base = re.sub(r"[^A-Za-z0-9]", "", company)
+    c = [tenant, tenant.capitalize(), tenant.upper(), tenant + "careers", tenant + "Careers", tenant + "_careers", tenant + "_Careers",
+         tenant + "_External", tenant + "External", tenant + "ExternalCareerSite", "External", "ExternalSite", "external", "Careers", "careers",
+         "External_Career_Site", "ExternalCareerSite", "Careers_External", "Search", "Jobs", "Global", "US", "en-US", base, base + "Careers",
+         base + "_Careers", base + "External", "External_Careers", "CareerSite", "Career", "careersite", "jobs", "wd"]
+    seen = []; [seen.append(x) for x in c if x not in seen]
+    return seen
 
 def find_board(company):
     for t in TENANTS.get(company, []):
         for wd in WDS:
-            s = probe(t, wd)
-            if s: return t, wd, s
+            if not host_alive(t, wd): continue
+            s = site_from_root(t, wd)
+            if s and cxs_ok(t, wd, s):
+                return t, wd, s
+            for s in site_candidates(t, company):
+                if cxs_ok(t, wd, s): return t, wd, s
+            print(f"D|{company}|host alive {t}.{wd} but no site matched (root site={s})", flush=True)
     return None
 
 def cxs_search(t, wd, site, q, off):
