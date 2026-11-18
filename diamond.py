@@ -91,25 +91,25 @@ def years_asked(desc):
     ys = [y for y in ys if y <= 20]
     return min(ys) if ys else None
 def score(j, pay_txt, desc):
-    s, why = 40, []; t = j["title"]; l = j.get("location") or ""
+    s, why = 30, []; t = j["title"]; t = t.replace("|", "/"); l = j.get("location") or ""
     ns = nums(pay_txt); hi = max(ns) if ns else 0
-    if hi >= 100000: s += 25; why.append(f"pay≥100K")
+    if hi >= 100000: s += 20; why.append("pay≥100K")
     elif hi >= 75000: s += 15; why.append("pay≥75K")
     elif not ns: s -= 5; why.append("pay not posted")
     y = years_asked(desc); j["_years"] = y
     if y is None: s += 8
-    elif y <= 2: s += 15
+    elif y <= 2: s += 12
     elif y == 3: s += 5
     else: s -= 25; why.append(f"asks {y}+ yrs")
     if re.search(r"bachelor.{0,40}(?:required|must)|(?:required|must).{0,40}bachelor|degree required", desc, re.I) and not re.search(r"or equivalent|degree (?:is )?not required|no degree", desc, re.I): s -= 30; why.append("DEGREE REQUIRED")
     elif re.search(r"bachelor|degree", desc, re.I): s -= 3
     if re.search(r"nashville|tennessee|, tn\b", l, re.I): s += 15; why.append("TN")
-    elif re.search(r"remote|anywhere", l, re.I): s += 12
+    elif re.search(r"remote|anywhere", l, re.I): s += 8
     if re.search(r"enterprise|strategic|major accounts|named account", t, re.I): s -= 15; why.append("enterprise-level")
     if re.search(r"smb|commercial|associate|junior|\bi\b|level 1|inbound|renewal|onboarding|implementation|development rep|sdr|bdr", t, re.I): s += 8
     tags = []
     for rx, tag in DIAMOND:
-        if re.search(rx, desc, re.I): tags.append(tag); s += 5
+        if re.search(rx, desc, re.I): tags.append(tag); s += (8 if tag in ("AUTO", "NO-DEGREE-OK") else 2)
     if re.search(r"(?:saas|software)[^.]{0,40}(?:required|must)|(?:required|must)[^.]{0,60}(?:saas|software sales)", desc, re.I): s -= 10; why.append("SaaS required")
     return max(0, min(100, s)), why, tags
 
@@ -138,10 +138,11 @@ def run(item, state_ids):
             except Exception: age = None
         flags = []
         if age is not None:
-            if age > 60: flags.append(f"STALE {age}d"); sc -= 10
+            if age > 180: flags.append(f"GHOST? {age}d"); sc -= 25
+            elif age > 60: flags.append(f"STALE {age}d"); sc -= 12
             elif age > 30: flags.append(f"AGING {age}d")
             elif age <= 7: flags.append("FRESH")
-        out.append(dict(company=name, title=t, loc=l[:60], pay=(f"{min(ns):,.0f}-{max(ns):,.0f}" if ns else ""), years=j.get("_years"),
+        out.append(dict(company=name, title=t.replace("|", "/"), loc=l[:60], pay=(f"{min(ns):,.0f}-{max(ns):,.0f}" if ns else ""), years=j.get("_years"),
                         score=sc, why=why, tags=tags, flags=flags, url=j["url"], id=f"{kind}:{slug}:{j['id']}", kind=kind, age=age))
     return out
 
