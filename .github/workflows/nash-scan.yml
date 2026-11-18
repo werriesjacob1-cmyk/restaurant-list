@@ -1,0 +1,28 @@
+name: nash-scan
+on:
+  push:
+    branches: [nov17-verify]
+    paths: [".github/workflows/nash-scan.yml", "nash_list.json"]
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: wait for pay-scan to finish
+        run: |
+          for i in $(seq 1 120); do
+            st=$(gh run list --workflow pay-scan --branch nov17-verify --limit 1 --json status -q '.[0].status')
+            [ "$st" = "completed" ] && break
+            sleep 20
+          done
+      - run: python f100_scan.py nash_list.json

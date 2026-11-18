@@ -1,0 +1,40 @@
+name: diamond
+on:
+  push:
+    branches: [nov17-verify]
+    paths: [".github/workflows/diamond.yml", "diamond.py", "seeds.txt", "suppress.json", "contacts.json"]
+  schedule:
+    - cron: "17 12 * * *"
+  workflow_dispatch:
+    inputs:
+      args:
+        description: "extra args, e.g. --min-pay 75000 --any-pay"
+        required: false
+        default: ""
+permissions:
+  contents: read
+jobs:
+  diamond:
+    runs-on: ubuntu-latest
+    timeout-minutes: 50
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/cache@v4
+        with:
+          path: state_diamond.json
+          key: diamond-state-${{ github.run_id }}
+          restore-keys: diamond-state-
+      - run: python diamond.py --discover ${{ github.event.inputs.args }}
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: diamond-report
+          path: |
+            diamond_report.md
+            diamond_report.json
+            discovered_boards.json
