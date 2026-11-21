@@ -900,10 +900,6 @@
     [
       "Zinnia",
       "zinnia"
-    ],
-    [
-      "DraftKings",
-      "draftkings"
     ]
   ],
   "ashby": [
@@ -2060,7 +2056,13 @@
     "phone sales",
     "partnerships associate",
     "strategic partnerships associate",
-    "partner development representative"
+    "partner development representative",
+    "vip host",
+    "vip associate",
+    "vip development",
+    "vip new business",
+    "vip services",
+    "vip account manager"
   ],
   "exclude_title_hard": [
     "engineer",
