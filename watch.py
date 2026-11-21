@@ -87,9 +87,21 @@ def age_label(ts, now=None):
     return f"older posting (~{int(m/1440)} d)"
 
 # ---------------------------------------------------------------- filters
-def title_decision(title):
-    """returns (ok, soft_flag_or_None, reason)"""
+def _small_co(company):
+    n = norm_company(company or "")
+    return any(norm_company(x) == n for x in CFG.get("ae_ok_companies", []))
+
+def title_decision(title, company=None):
+    """returns (ok, soft_flag_or_None, reason). Account Executive titles pass only for small companies (ae_ok_companies)."""
     tl = " " + (title or "").lower() + " "
+    if company is not None and _small_co(company) and any(x in tl for x in CFG.get("ae_title", [])):
+        for x in CFG.get("exclude_title_hard", []):
+            if x in tl:
+                return False, None, f"excluded:{x.strip()}"
+        for x in CFG.get("soft_title", []):
+            if x in tl:
+                return True, x.strip(), ""
+        return True, None, ""
     for _p in CFG.get("dealer_ok_title", []):
         tl = tl.replace(_p, " " + _p.replace("dealer", "dlr") + " ")
     for x in CFG.get("exclude_title_hard", []):
@@ -582,7 +594,7 @@ def run(now=None, dry=False):
                 continue
             if chash(j["company"]) in skip:
                 continue
-            ok, soft, why = title_decision(j["title"])
+            ok, soft, why = title_decision(j["title"], j["company"])
             if not ok:
                 if why != "no title match":
                     filtered.append({"t": int(now), "c": j["company"], "title": j["title"], "why": why})
@@ -607,7 +619,7 @@ def run(now=None, dry=False):
             ab["jobs"][j["id"]] = now
             if agg_baseline:
                 continue
-            ok, soft, why = title_decision(j["title"])
+            ok, soft, why = title_decision(j["title"], j["company"])
             if not ok or not loc_ok(j["location"]) or chash(j["company"]) in skip:
                 continue
             if follows < 12 and j["url"] and not j["id"].startswith(("rem:", "wwr:")):
@@ -706,7 +718,7 @@ def audit():
             if chash(j["company"]) in skip:
                 v = "SKIPCO"
             else:
-                ok, soft, why = title_decision(j["title"])
+                ok, soft, why = title_decision(j["title"], j["company"])
                 if not ok: v = "NO:" + why
                 elif not loc_ok(j["location"]): v = "NO:location"
                 else: v = "PASS" + ("(soft)" if soft else ""); passed += 1
@@ -736,7 +748,7 @@ def detail_audit():
             print(f"DETAIL-ERR {e[0]} ({kind}): {err}"); continue
         seen = set()
         for j in jobs:
-            ok, soft, why = title_decision(j["title"])
+            ok, soft, why = title_decision(j["title"], j["company"])
             extra = any(x in j["title"].lower() for x in CFG.get("detail_extra_titles", []))
             everything = any(a in j["company"].lower() for a in allco)
             if not (ok or extra or everything):
@@ -1037,7 +1049,7 @@ def qualify():
             errs += 1; print(f"QUAL-ERR {e[0]} ({kind}): {err}"); continue
         for j in jobs:
             total += 1
-            ok, soft, why = title_decision(j["title"])
+            ok, soft, why = title_decision(j["title"], j["company"])
             if not ok and "--sales" in sys.argv:
                 tl2 = " " + j["title"].lower() + " "
                 for _p in CFG.get("dealer_ok_title", []):
