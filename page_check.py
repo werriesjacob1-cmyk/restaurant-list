@@ -43,7 +43,15 @@ def main():
         page = ctx.new_page()
         for row in rows:
             if row.get("search"):
-                for line in search(page, row): print(line, flush=True)
+                lines = search(page, row)
+                for line in lines: print(line, flush=True)
+                if row.get("follow"):
+                    skip = re.compile(r"linkedin|indeed|glassdoor|ziprecruiter|simplyhired|salary|reddit|facebook|builtin|wellfound|talent\.com|jooble|learn4good|adzuna", re.I)
+                    seen = 0
+                    for line in lines:
+                        u = line.split("|")[-1]
+                        if u.startswith("http") and not skip.search(u) and seen < 3:
+                            seen += 1; print(check_url(page, row, u), flush=True)
             else:
                 for u in row["urls"]: print(check_url(page, row, u), flush=True)
         b.close()
