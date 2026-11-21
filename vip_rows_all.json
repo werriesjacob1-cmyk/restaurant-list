@@ -1,0 +1,233 @@
+[
+{
+"company": "Betr",
+"title": "Casino VIP Host",
+"ats": "lever",
+"slug": "betr"
+},
+{
+"company": "Betr",
+"title": "Regional VIP Lead, Southeast Market",
+"ats": "lever",
+"slug": "betr",
+"jobid": "0fbb9914-cf95-494a-8f88-75d4cc4415a8"
+},
+{
+"company": "Fanatics Betting & Gaming",
+"title": "VIP Associate Account Manager",
+"ats": "greenhouse",
+"slug": "fanaticsfbg",
+"jobid": "4302669009"
+},
+{
+"company": "PENN Entertainment",
+"title": "Executive Host",
+"ats": "greenhouse",
+"slug": "penninteractive",
+"jobid": "5527276004"
+},
+{
+"company": "PENN Entertainment",
+"title": "VIP Host",
+"ats": "greenhouse",
+"slug": "penninteractive",
+"jobid": "6135029004"
+},
+{
+"company": "Underdog",
+"title": "VIP Host",
+"ats": "greenhouse",
+"slug": "underdog",
+"jobid": "4735101005"
+},
+{
+"company": "Underdog",
+"title": "VIP Host",
+"ats": "greenhouse",
+"slug": "underdog",
+"jobid": "4755714005"
+},
+{
+"company": "DraftKings",
+"title": "VIP Host",
+"ats": "workday",
+"slug": "draftkings",
+"wd": "wd1",
+"site": "DraftKings",
+"jobid": "JR15365"
+},
+{
+"company": "DraftKings",
+"title": "VIP Host",
+"ats": "workday",
+"slug": "draftkings",
+"wd": "wd1",
+"site": "DK_External",
+"jobid": "JR15365"
+},
+{
+"company": "DraftKings",
+"title": "VIP Host",
+"ats": "workday",
+"slug": "draftkings",
+"wd": "wd1",
+"site": "External",
+"jobid": "JR15365"
+},
+{
+"company": "DraftKings",
+"title": "VIP Host",
+"ats": "workday",
+"slug": "draftkings",
+"wd": "wd5",
+"site": "DraftKings",
+"jobid": "JR15365"
+},
+{
+"company": "DraftKings",
+"title": "VIP Host",
+"ats": "workday",
+"slug": "draftkings",
+"wd": "wd5",
+"site": "DK_External",
+"jobid": "JR15365"
+},
+{
+"company": "DraftKings",
+"title": "VIP Host",
+"ats": "workday",
+"slug": "draftkings",
+"wd": "wd5",
+"site": "External",
+"jobid": "JR15365"
+},
+{
+"company": "BetMGM",
+"title": "VIP Account Associate",
+"ats": "workday",
+"slug": "betmgm",
+"wd": "wd1",
+"site": "BetMGM",
+"jobid": "JR100339"
+},
+{
+"company": "BetMGM",
+"title": "VIP Account Associate",
+"ats": "workday",
+"slug": "betmgm",
+"wd": "wd1",
+"site": "External",
+"jobid": "JR100339"
+},
+{
+"company": "BetMGM",
+"title": "VIP Account Associate",
+"ats": "workday",
+"slug": "betmgm",
+"wd": "wd1",
+"site": "BetMGM_External",
+"jobid": "JR100339"
+},
+{
+"company": "BetMGM",
+"title": "VIP Account Associate",
+"ats": "workday",
+"slug": "betmgm",
+"wd": "wd5",
+"site": "BetMGM",
+"jobid": "JR100339"
+},
+{
+"company": "BetMGM",
+"title": "VIP Account Associate",
+"ats": "workday",
+"slug": "betmgm",
+"wd": "wd5",
+"site": "External",
+"jobid": "JR100339"
+},
+{
+"company": "BetMGM",
+"title": "VIP Account Associate",
+"ats": "workday",
+"slug": "betmgm",
+"wd": "wd5",
+"site": "BetMGM_External",
+"jobid": "JR100339"
+},
+{
+"company": "BetMGM",
+"title": "VIP Account Associate",
+"ats": "workday",
+"slug": "betmgm",
+"wd": "wd3",
+"site": "BetMGM",
+"jobid": "JR100339"
+},
+{
+"company": "BetMGM",
+"title": "VIP Account Associate",
+"ats": "workday",
+"slug": "betmgm",
+"wd": "wd3",
+"site": "External",
+"jobid": "JR100339"
+},
+{
+"company": "BetMGM",
+"title": "VIP Account Associate",
+"ats": "workday",
+"slug": "betmgm",
+"wd": "wd3",
+"site": "BetMGM_External",
+"jobid": "JR100339"
+},
+{
+"company": "Caesars",
+"title": "VIP Sports Executive Host",
+"ats": "workday",
+"slug": "caesars",
+"wd": "wd1",
+"site": "External"
+},
+{
+"company": "Caesars",
+"title": "VIP Sports Executive Host",
+"ats": "workday",
+"slug": "caesars",
+"wd": "wd1",
+"site": "ExternalCareers"
+},
+{
+"company": "Caesars",
+"title": "VIP Sports Executive Host",
+"ats": "workday",
+"slug": "caesars",
+"wd": "wd1",
+"site": "Caesars"
+},
+{
+"company": "Caesars",
+"title": "VIP Sports Executive Host",
+"ats": "workday",
+"slug": "caesars",
+"wd": "wd5",
+"site": "External"
+},
+{
+"company": "Caesars",
+"title": "VIP Sports Executive Host",
+"ats": "workday",
+"slug": "caesars",
+"wd": "wd5",
+"site": "ExternalCareers"
+},
+{
+"company": "Caesars",
+"title": "VIP Sports Executive Host",
+"ats": "workday",
+"slug": "caesars",
+"wd": "wd5",
+"site": "Caesars"
+}
+]
