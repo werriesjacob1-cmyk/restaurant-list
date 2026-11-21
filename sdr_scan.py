@@ -12,8 +12,8 @@ for kind in ("greenhouse", "ashby", "lever"):
         for n, s in src:
             if (kind, s) in seen: continue
             seen.add((kind, s)); rost.append((kind, n, s))
-INC = re.compile(r"sales development|business development rep|\bsdr\b|\bbdr\b|development representative|account development", re.I)
-EXC = re.compile(r"senior|\bsr\b|director|\bvp\b|vice president|head of|principal|staff|chief|president|engineer|developer|scientist|analyst|recruit|legal|counsel|accountant|designer|architect|intern|manager of|\bmanagers?\b(?!.*(?:account|project|program|product|success))|lead\b|\biii\b|\biv\b|\bii\b(?=.*senior)|solutions (?:architect|engineer|consultant)|sales engineer|field", re.I)
+INC = re.compile(r"sales development|business development (?:rep|associate|specialist|executive)|\bsdr\b|\bbdr\b|development representative|account development|lead development|market development|go[- ]to[- ]market (?:associate|rep|specialist)|\bgtm\b (?:associate|rep|specialist)|growth associate|revenue associate|(?:inbound|outbound|inside|smb|new business) sales|sales associate|sales specialist|partner development|partnerships associate", re.I)
+EXC = re.compile(r"senior|\bsr\b|director|\bvp\b|vice president|head of|principal|staff|chief|president|engineer|developer|scientist|analyst|recruit|legal|counsel|accountant|designer|architect|intern|manager of|\bmanagers?\b(?!.*(?:account|project|program|product|success))|\blead\b(?! (?:development|generation|gen))|\biii\b|\biv\b|\bii\b(?=.*senior)|solutions (?:architect|engineer|consultant)|sales engineer|field", re.I)
 LOC = re.compile(r"remote|united states|usa|\bus\b|u\.s\.|nashville|tennessee|, tn|anywhere|americas|north america", re.I)
 FOR = re.compile(r"india|canada|united kingdom|\buk\b|germany|france|australia|ireland|mexico|brazil|philippines|poland|spain|netherlands|singapore|japan|london|toronto|dublin|berlin", re.I)
 NUM = re.compile(r"\$\s?(\d{2,3}(?:,\d{3})+|\d{2,3}(?:\.\d)?\s?[kK])")
