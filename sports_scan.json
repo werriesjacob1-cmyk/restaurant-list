@@ -1,0 +1,26 @@
+[
+ {
+  "company": "Underdog",
+  "ats": "greenhouse",
+  "slug": "underdog",
+  "scan": true
+ },
+ {
+  "company": "DraftKings",
+  "ats": "greenhouse",
+  "slug": "draftkings",
+  "scan": true
+ },
+ {
+  "company": "Fanatics Betting & Gaming",
+  "ats": "greenhouse",
+  "slug": "fanaticsfbg",
+  "scan": true
+ },
+ {
+  "company": "Fanatics Collectibles",
+  "ats": "greenhouse",
+  "slug": "fanaticscollectibles",
+  "scan": true
+ }
+]
