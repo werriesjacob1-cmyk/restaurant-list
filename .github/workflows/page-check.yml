@@ -1,0 +1,21 @@
+name: page-check
+on:
+  workflow_dispatch:
+    inputs:
+      pages_file:
+        description: "JSON file of rows with urls or search:true"
+        type: string
+        default: top_pages.json
+permissions:
+  contents: read
+jobs:
+  pages:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install playwright && playwright install --with-deps chromium
+      - run: python page_check.py "${{ github.event.inputs.pages_file }}"
