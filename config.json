@@ -6575,13 +6575,11 @@
   "Capsule",
   "Tekmetric",
   "Shopmonkey",
-  "Hover",
   "Knock",
   "Arena Club",
   "Courtyard",
-  "Cleo",
   "Ghost",
-  "Dandy",
   "beehiiv"
- ]
+ ],
+ "ae_max_employees": 200
 }
