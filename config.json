@@ -2062,7 +2062,10 @@
     "vip development",
     "vip new business",
     "vip services",
-    "vip account manager"
+    "vip account manager",
+    "executive host",
+    "executive sports host",
+    "vip account associate"
   ],
   "exclude_title_hard": [
     "engineer",
