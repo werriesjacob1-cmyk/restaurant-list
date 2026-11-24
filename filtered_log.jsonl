@@ -1,5 +1,3 @@
-{"t": 1795472807, "c": "Checkr", "title": "Engineering Manager, Verifications", "why": "excluded:engineer"}
-{"t": 1795472807, "c": "Checkr", "title": "Senior Product Designer, Verifications", "why": "excluded:designer"}
 {"t": 1795472807, "c": "Checkr", "title": "Senior Software Engineer (Ruby/Rails), MVR", "why": "excluded:engineer"}
 {"t": 1795472807, "c": "Checkr", "title": "Staff Workday HRIS Technical Analyst", "why": "excluded:staff"}
 {"t": 1795472807, "c": "Hudl", "title": "Senior Legal Counsel", "why": "excluded:legal"}
@@ -400,3 +398,4 @@
 {"t": 1795547853, "c": "Mercury", "title": "Product Marketing Manager - Banking & Payments", "why": "excluded:marketing"}
 {"t": 1795548154, "c": "Mercury", "title": "Senior Recruiter - Marketing", "why": "excluded:recruit"}
 {"t": 1795548154, "c": "Salesforce", "title": "Lead Motion Designer, 3D", "why": "excluded:designer"}
+{"t": 1795548451, "c": "Galileo", "title": "Staff Accountant (30 hours/week)", "why": "excluded:staff"}
