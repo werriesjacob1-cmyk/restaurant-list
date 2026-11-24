@@ -1,5 +1,3 @@
-{"t": 1795472807, "c": "The Farmer's Dog", "title": "Integrated Marketing Manager", "why": "excluded:marketing"}
-{"t": 1795472807, "c": "FanDuel", "title": "Senior Security Engineer", "why": "excluded:engineer"}
 {"t": 1795472807, "c": "Mercury", "title": "Manager - Sales Development", "why": "location: San Francisco, CA, New York, NY, Portlan"}
 {"t": 1795472807, "c": "ZoomInfo", "title": "Principal GTM Onboarding Manager", "why": "excluded:principal"}
 {"t": 1795472807, "c": "Showpad", "title": "Solution Engineer DACH", "why": "excluded:engineer"}
@@ -400,3 +398,4 @@
 {"t": 1795548735, "c": "Veeva", "title": "Associate Director of Field Marketing - Quality Cloud - Europe", "why": "excluded:director"}
 {"t": 1795549026, "c": "Uber Freight", "title": "Accounting Intern", "why": "excluded:intern"}
 {"t": 1795549026, "c": "Clover Health", "title": "Regional Medical Director - New Jersey ", "why": "excluded:director"}
+{"t": 1795549323, "c": "Twilio", "title": "Technical Account Manager", "why": "excluded:technical account"}
