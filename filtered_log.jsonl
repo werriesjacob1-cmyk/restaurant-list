@@ -1,6 +1,3 @@
-{"t": 1795472807, "c": "Stripe", "title": "Staff Offensive Security Engineer, Proactive threat", "why": "excluded:engineer"}
-{"t": 1795472807, "c": "TripActions", "title": "Manager, Sales Development ", "why": "location: London, UK"}
-{"t": 1795472807, "c": "Anaplan", "title": "Associate Manager, Data Operations   ", "why": "excluded:data"}
 {"t": 1795472807, "c": "Anaplan", "title": "Business Development Associate, Professional Services", "why": "location: Manila, Philippines"}
 {"t": 1795472807, "c": "Datadog", "title": "Group Product Management, Cloud Security and Shared Capabilities", "why": "excluded:security"}
 {"t": 1795472807, "c": "Datadog", "title": "Manager, Corporate Security", "why": "excluded:security"}
@@ -401,3 +398,4 @@
 {"t": 1795562244, "c": "Fanatics Collectibles", "title": "Legal Administrator", "why": "excluded:legal"}
 {"t": 1795562244, "c": "Sumo Logic", "title": "Principal Product Marketing Manager", "why": "excluded:principal"}
 {"t": 1795562244, "c": "Anaplan", "title": "Anaplan Solution Architect", "why": "excluded:architect"}
+{"t": 1795563103, "c": "Sumo Logic", "title": "Backend Software Engineer II Backend - Cloud SIEM, CyberSecurity", "why": "excluded:engineer"}
