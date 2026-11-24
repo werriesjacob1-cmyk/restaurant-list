@@ -438,7 +438,7 @@ def build_alert(job, soft, now):
         if rng[1] < CFG.get("pay_floor", 60000):
             return None, "pay below floor"
         if rng[0] < CFG.get("pay_floor", 60000):
-            fl.append("range starts below $60K")
+            fl.append("range starts below $55K")
     lines = [job["title"], job.get("location") or "location not shown", age_label(job.get("posted"), now)]
     lines.append("Pay: " + (pay or "not shown, check"))
     if soft:

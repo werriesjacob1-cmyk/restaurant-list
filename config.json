@@ -1,5 +1,5 @@
 {
-  "pay_floor": 65000,
+  "pay_floor": 55000,
   "greenhouse": [
     [
       "Built Technologies",
@@ -6518,7 +6518,7 @@
       ]
     }
   ],
-  "max_years": 4,
+  "max_years": 5,
   "unqualified_title": [
     "senior",
     "sr.",
