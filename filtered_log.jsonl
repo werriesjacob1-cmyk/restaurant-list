@@ -1,7 +1,3 @@
-{"t": 1795412705, "c": "Gusto", "title": "Site Reliability Engineer ", "why": "excluded:engineer"}
-{"t": 1795412705, "c": "Gusto", "title": "Staff Software Engineer, Retirement Engineering", "why": "excluded:engineer"}
-{"t": 1795412705, "c": "Culture Amp", "title": "Engineer", "why": "excluded:engineer"}
-{"t": 1795412705, "c": "Datadog", "title": "Recruiter II, Business Recruiting", "why": "excluded:recruit"}
 {"t": 1795412705, "c": "Datadog", "title": "Sourcer II, Business Recruiting", "why": "excluded:recruit"}
 {"t": 1795412705, "c": "Clover Health", "title": "Senior Software Developer, Agentic AI - Canada", "why": "excluded:developer"}
 {"t": 1795412705, "c": "Clover Health", "title": "Senior Software Engineer, Agentic AI", "why": "excluded:engineer"}
@@ -402,3 +398,6 @@
 {"t": 1795545455, "c": "GRVTY", "title": "Hyperspectral Imagery Scientist", "why": "excluded:scientist"}
 {"t": 1795545455, "c": "TransUnion", "title": "Salesforce Senior Developer", "why": "excluded:developer"}
 {"t": 1795545455, "c": "TransUnion", "title": "Strategic Program Management, Senior Principal", "why": "excluded:principal"}
+{"t": 1795545761, "c": "Intercom", "title": "Technical Support Engineer", "why": "excluded:engineer"}
+{"t": 1795545761, "c": "GRVTY", "title": "Imagery Scientist - OPIR Analyst (Mid or Senior)", "why": "excluded:scientist"}
+{"t": 1795545761, "c": "GRVTY", "title": "OPIR Imagery Scientist", "why": "excluded:scientist"}
