@@ -1,210 +1,3 @@
-{"t": 1795201029, "c": "Coast Medical Service", "title": "Engineer, Platform", "why": "excluded:engineer"}
-{"t": 1795201029, "c": "Via Elegante Assisted Living", "title": "Strategy and Operations Principal", "why": "excluded:principal"}
-{"t": 1795201029, "c": "GRVTY", "title": "Cloud Engineer Sr", "why": "excluded:engineer"}
-{"t": 1795201029, "c": "Adyen", "title": "Senior Product Manager - Developer Experience", "why": "excluded:developer"}
-{"t": 1795201029, "c": "Adyen", "title": "Senior Technical Product Manager - Internal Developer Platform", "why": "excluded:developer"}
-{"t": 1795201029, "c": "Xero", "title": "Data & Analytics Enablement Lead, G&A", "why": "excluded:data"}
-{"t": 1795201029, "c": "Xero", "title": "Data & Analytics Enablement Lead, G&A", "why": "excluded:data"}
-{"t": 1795201029, "c": "Xero", "title": "Data & Analytics Enablement Lead, G&A", "why": "excluded:data"}
-{"t": 1795201029, "c": "Notion", "title": "Solutions Consultant, Enterprise, France", "why": "location: Paris, France (Remote)"}
-{"t": 1795201029, "c": "ClickUp", "title": "Senior Backend Engineer, Identity and Access Management ", "why": "excluded:engineer"}
-{"t": 1795201029, "c": "1Password", "title": "Senior Director, Partner Success", "why": "excluded:director"}
-{"t": 1795201029, "c": "Workhuman", "title": "Customer Marketing Programs Manager", "why": "excluded:marketing"}
-{"t": 1795201029, "c": "Handshake", "title": "Sr Manager, GTM Engineering", "why": "excluded:engineer"}
-{"t": 1795201029, "c": "Handshake", "title": "Senior Software Engineer, Consumer Experience", "why": "excluded:engineer"}
-{"t": 1795201029, "c": "SurveyMonkey", "title": "Senior Software Engineer I - SDET", "why": "excluded:engineer"}
-{"t": 1795201029, "c": "Hinge Health", "title": "AI Engineer II", "why": "excluded:engineer"}
-{"t": 1795201029, "c": "Procurify", "title": "Senior Accountant", "why": "excluded:accountant"}
-{"t": 1795201029, "c": "Rho", "title": "Product Marketing Lead", "why": "excluded:marketing"}
-{"t": 1795201029, "c": "Relay", "title": "Staff Applied Scientist, Location Intelligence", "why": "excluded:staff"}
-{"t": 1795201029, "c": "Plaid", "title": "Enterprise Account Management Leader", "why": "location: San Francisco HQ (Remote)"}
-{"t": 1795201029, "c": "Paddle", "title": "Senior Account Executive, APAC", "why": "location: Singapore (Remote)"}
-{"t": 1795201029, "c": "Angi", "title": "Enterprise Account Executive", "why": "location: Remote - United States - Texas"}
-{"t": 1795201029, "c": "Angi", "title": "Enterprise Account Executive", "why": "location: Remote - United States - Massachusetts"}
-{"t": 1795201029, "c": "Angi", "title": "Enterprise Account Executive", "why": "location: Remote - United States - Georgia"}
-{"t": 1795201029, "c": "Angi", "title": "Enterprise Account Executive", "why": "location: Remote - United States - North Carolina"}
-{"t": 1795201029, "c": "MeridianLink", "title": "Director, Marketing Ops", "why": "excluded:director"}
-{"t": 1795201029, "c": "MeridianLink", "title": "Product Manager - Consumer ", "why": "excluded:product manager"}
-{"t": 1795201029, "c": "MeridianLink", "title": "Director, Software Engineering - Consumer Portal ", "why": "excluded:engineer"}
-{"t": 1795201029, "c": "Tekion", "title": "Network Operation Engineering  I", "why": "excluded:engineer"}
-{"t": 1795201029, "c": "Headway", "title": "Senior Manager, Engineering - Group Practices", "why": "excluded:engineer"}
-{"t": 1795201029, "c": "Focus Staff", "title": "Senior Test Software Engineer", "why": "excluded:engineer"}
-{"t": 1795201029, "c": "Virtuous Tech Inc", "title": "Sales Development Representative", "why": "location: Phoenix, AZ"}
-{"t": 1795201029, "c": "7shifts", "title": "Account Executive", "why": "location: Toronto (Remote)"}
-{"t": 1795201029, "c": "Lyra Health", "title": "Salesforce Developer", "why": "excluded:developer"}
-{"t": 1795201029, "c": "Bazaarvoice", "title": "Sales Development Representative (Dutch Speaking)", "why": "location: Amsterdam"}
-{"t": 1795201029, "c": "Veeva", "title": "Data Analyst - OpenData Commercial - Asia Pacific", "why": "excluded:data"}
-{"t": 1795201029, "c": "Veeva", "title": "Data Analyst - OpenData Commercial - Asia Pacific", "why": "excluded:data"}
-{"t": 1795201029, "c": "Coupa", "title": "Director, Customer Value Management - 11954", "why": "excluded:director"}
-{"t": 1795201029, "c": "AO Garcia Agency", "title": "100% Remote Client Relations Specialist", "why": "location: Laramie, Wyoming (Remote)"}
-{"t": 1795201029, "c": "AO Garcia Agency", "title": "100% Remote Client Relations Specialist", "why": "location: Laurel, Montana (Remote)"}
-{"t": 1795201029, "c": "AO Garcia Agency", "title": "100% Remote Client Relations Specialist", "why": "location: Surprise, Arizona (Remote)"}
-{"t": 1795201029, "c": "AO Garcia Agency", "title": "Client Experience Associate - Work From Home", "why": "location: Bath, Maine (Remote)"}
-{"t": 1795201029, "c": "AO Garcia Agency", "title": "Client Experience Associate - Work From Home", "why": "location: Provo, Utah (Remote)"}
-{"t": 1795201029, "c": "AO Garcia Agency", "title": "Client Onboarding Specialist - Remote", "why": "location: New Iberia, Louisiana (Remote)"}
-{"t": 1795201029, "c": "AO Garcia Agency", "title": "Client Onboarding Specialist - Remote", "why": "location: Fort Worth, Texas (Remote)"}
-{"t": 1795201029, "c": "AO Garcia Agency", "title": "Client Relations Associate - Remote", "why": "location: Alexandria, Louisiana (Remote)"}
-{"t": 1795201029, "c": "AO Garcia Agency", "title": "Fully Remote - Client Experience Associate", "why": "location: Elizabethtown, Kentucky (Remote)"}
-{"t": 1795201029, "c": "AO Garcia Agency", "title": "Fully Remote - Client Experience Associate", "why": "location: Vermillion, South Dakota (Remote)"}
-{"t": 1795201029, "c": "AO Garcia Agency", "title": "Fully Remote - Client Onboarding Specialist", "why": "location: Lenexa, Kansas (Remote)"}
-{"t": 1795201029, "c": "AO Garcia Agency", "title": "Fully Remote - Client Onboarding Specialist", "why": "location: Myrtle Beach, South Carolina (Remote)"}
-{"t": 1795201029, "c": "AO Garcia Agency", "title": "Fully Remote - Client Relations Associate", "why": "location: Goose Creek, South Carolina (Remote)"}
-{"t": 1795201029, "c": "AO Garcia Agency", "title": "Fully Remote - Client Relations Associate", "why": "location: Olathe, Kansas (Remote)"}
-{"t": 1795201029, "c": "AO Garcia Agency", "title": "Remote - Client Experience Associate", "why": "location: Cranston, Rhode Island (Remote)"}
-{"t": 1795201029, "c": "AO Garcia Agency", "title": "Remote - Client Experience Associate", "why": "location: Gary, Indiana (Remote)"}
-{"t": 1795201029, "c": "AO Garcia Agency", "title": "Remote - Client Onboarding Specialist", "why": "location: Pittsburgh, Pennsylvania (Remote)"}
-{"t": 1795201029, "c": "AO Garcia Agency", "title": "Remote - Client Onboarding Specialist", "why": "location: Bloomington, Illinois (Remote)"}
-{"t": 1795201029, "c": "AO Garcia Agency", "title": "Remote - Client Relations Associate", "why": "location: Albany, Oregon (Remote)"}
-{"t": 1795201029, "c": "AO Garcia Agency", "title": "Remote - Client Relations Associate", "why": "location: Peoria, Illinois (Remote)"}
-{"t": 1795201029, "c": "AO Garcia Agency", "title": "Remote - Client Relations Manager Trainee", "why": "location: Bridgeport, West Virginia (Remote)"}
-{"t": 1795201029, "c": "AO Garcia Agency", "title": "Remote - Client Relations Manager Trainee", "why": "location: Ketchikan, Alaska (Remote)"}
-{"t": 1795201029, "c": "AO Garcia Agency", "title": "Remote - Client Relations Manager Trainee", "why": "location: Blue Springs, Missouri (Remote)"}
-{"t": 1795201029, "c": "AO Garcia Agency", "title": "Remote - Client Success Team Lead", "why": "location: Fairmont, West Virginia (Remote)"}
-{"t": 1795201029, "c": "AO Garcia Agency", "title": "Remote - Client Success Team Lead", "why": "location: Columbia, Missouri (Remote)"}
-{"t": 1795201029, "c": "AO Garcia Agency", "title": "Remote - Client Success Team Lead", "why": "location: Vestavia Hills, Alabama (Remote)"}
-{"t": 1795201029, "c": "AO Garcia Agency", "title": "Remote Client Retention Specialist", "why": "location: Oakland, California (Remote)"}
-{"t": 1795201029, "c": "AO Garcia Agency", "title": "Remote Client Retention Specialist", "why": "location: Winnemucca, Nevada (Remote)"}
-{"t": 1795201029, "c": "AO Garcia Agency", "title": "Work From Home - Client Experience Associate", "why": "location: Hamilton, Ohio (Remote)"}
-{"t": 1795201029, "c": "AO Garcia Agency", "title": "Work From Home - Client Experience Associate", "why": "location: Kailua,  Hawaii (Remote)"}
-{"t": 1795201029, "c": "AO Garcia Agency", "title": "Work From Home - Client Onboarding Specialist", "why": "location: Fort Lauderdale, Florida (Remote)"}
-{"t": 1795201029, "c": "AO Garcia Agency", "title": "Work From Home - Client Onboarding Specialist", "why": "location: Apex, North Carolina (Remote)"}
-{"t": 1795201029, "c": "AO Garcia Agency", "title": "Work From Home - Client Relations Associate", "why": "location: Orlando, Florida (Remote)"}
-{"t": 1795201029, "c": "AO Garcia Agency", "title": "Work From Home - Client Relations Associate", "why": "location: Greensboro, North Carolina (Remote)"}
-{"t": 1795201029, "c": "AO Garcia Agency", "title": "Work From Home - Client Services Team Lead", "why": "location: Greenville, Mississippi (Remote)"}
-{"t": 1795201029, "c": "AO Garcia Agency", "title": "Work From Home - Client Services Team Lead", "why": "location: Parkersburg, West Virginia (Remote)"}
-{"t": 1795201029, "c": "AO Garcia Agency", "title": "Work From Home - Client Services Team Lead", "why": "location: Decatur, Alabama (Remote)"}
-{"t": 1795201029, "c": "AO Garcia Agency", "title": "Work From Home - Part-Time Client Experience Associate", "why": "location: Blacksburg, Virginia (Remote)"}
-{"t": 1795201029, "c": "AO Garcia Agency", "title": "Work From Home - Part-Time Client Experience Associate", "why": "location: Blaine, Minnesota (Remote)"}
-{"t": 1795201029, "c": "AO Garcia Agency", "title": "Work From Home - Part-Time Client Onboarding Specialist", "why": "location: Chesapeake, Virginia (Remote)"}
-{"t": 1795201029, "c": "AO Garcia Agency", "title": "Work From Home - Part-Time Client Onboarding Specialist", "why": "location: Flint, Michigan (Remote)"}
-{"t": 1795201029, "c": "AO Garcia Agency", "title": "Work From Home - Part-Time Client Relations Associate", "why": "location: Lansing, Michigan (Remote)"}
-{"t": 1795201029, "c": "AO Garcia Agency", "title": "Work From Home - Part-Time Client Relations Associate", "why": "location: Rutland, Vermont (Remote)"}
-{"t": 1795201029, "c": "Cardinal Health", "title": "Business Improvement Internship (Summer 2027)", "why": "excluded:internship"}
-{"t": 1795201029, "c": "Motorola Solutions", "title": "Senior Account Manager - North Carolina", "why": "location: North Carolina Remote Work"}
-{"t": 1795201029, "c": "Guardant Health", "title": "Account Executive - Oncology Early Stage(Columbus)", "why": "location: Columbus, OH"}
-{"t": 1795201029, "c": "Wolters Kluwer", "title": "Major & Strategic Account Executive", "why": "location: USA - Chicago, IL, West Adams St"}
-{"t": 1795201029, "c": "Wolters Kluwer", "title": "Sales Support Specialist - Law Firm Sales", "why": "location: 7 Locations"}
-{"t": 1795201029, "c": "Wolters Kluwer", "title": "Manager, Revenue Operations Strategic Transformation", "why": "location: ESP - Madrid, Castellana"}
-{"t": 1795201029, "c": "Thermo Fisher", "title": "Associate Scientist, Organic Chemistry", "why": "excluded:scientist"}
-{"t": 1795201029, "c": "Thermo Fisher", "title": "Account Executive", "why": "location: Raleigh, North Carolina, USA"}
-{"t": 1795201029, "c": "Thermo Fisher", "title": "Sr. Manager Manufacturing Engineer", "why": "excluded:engineer"}
-{"t": 1795201029, "c": "Thermo Fisher", "title": "Senior Scientist", "why": "excluded:scientist"}
-{"t": 1795201029, "c": "Thermo Fisher", "title": "Senior Data Compliance Coordinator", "why": "excluded:data"}
-{"t": 1795201029, "c": "Thermo Fisher", "title": "Sr. Manager, Data Engineering & Applied Data Science", "why": "excluded:engineer"}
-{"t": 1795201029, "c": "Thermo Fisher", "title": "Field Service Engineer / Eastern Belgium", "why": "excluded:engineer"}
-{"t": 1795201029, "c": "Thermo Fisher", "title": "Technical Sales Specialist ICSP / TEA Nordics", "why": "location: Stockholm, Sweden"}
-{"t": 1795201029, "c": "Thermo Fisher", "title": "Engineer III, Software", "why": "excluded:engineer"}
-{"t": 1795201029, "c": "Thermo Fisher", "title": "Intern - Finance Controlling", "why": "excluded:intern"}
-{"t": 1795201029, "c": "Thermo Fisher", "title": "Senior/Principal Country Approval Specialist", "why": "excluded:principal"}
-{"t": 1795201029, "c": "Equifax", "title": "Fraud Success Manager", "why": "location: CAN - Ontario - Toronto"}
-{"t": 1795201029, "c": "Equifax", "title": "ServiceNow Architect", "why": "excluded:architect"}
-{"t": 1795201029, "c": "TransUnion", "title": "Senior Vice President, Corporate Strategy", "why": "excluded:vice president"}
-{"t": 1795201029, "c": "Cigna", "title": "Director, Enterprise SOX IT Controls Modernization", "why": "excluded:director"}
-{"t": 1795201029, "c": "Cigna", "title": "Change Management Principal - Hybrid", "why": "excluded:principal"}
-{"t": 1795201029, "c": "Salesforce", "title": "Data + AI Practice D360 Product Architect", "why": "excluded:data"}
-{"t": 1795201029, "c": "Salesforce", "title": "Senior Program Manager, M&A Recruiting", "why": "excluded:recruit"}
-{"t": 1795201029, "c": "Salesforce", "title": "Small, Medium and Growth Business - Account Executive - New York City", "why": "location: New York - New York"}
-{"t": 1795201029, "c": "Salesforce", "title": "Manager, Field Marketing Programs", "why": "excluded:marketing"}
-{"t": 1795201029, "c": "Salesforce", "title": "Small, Medium and Growth Business - Account Executive - Denver", "why": "location: Colorado - Denver"}
-{"t": 1795201029, "c": "Salesforce", "title": "Small Business & Growth Business - Account Executive - Chicago", "why": "location: Illinois - Chicago"}
-{"t": 1795201029, "c": "Salesforce", "title": "Senior Instructor - Marketing Cloud", "why": "excluded:marketing"}
-{"t": 1795201029, "c": "Salesforce", "title": "Principal Architect Evangelist", "why": "excluded:principal"}
-{"t": 1795201029, "c": "Salesforce", "title": "Chief Procurement Officer", "why": "excluded:chief"}
-{"t": 1795201029, "c": "Salesforce", "title": "Senior Solution Engineer - Nonprofits", "why": "excluded:engineer"}
-{"t": 1795201029, "c": "Salesforce", "title": "Transformation & Strategic Programs, Senior Manager (Customer Success)", "why": "location: 4 Locations"}
-{"t": 1795201029, "c": "Salesforce", "title": "Named Account Executive - Public Safety & Justice", "why": "location: United Kingdom - London"}
-{"t": 1795201029, "c": "Salesforce", "title": "Customer Success Manager", "why": "location: United Arab Emirates - Dubai"}
-{"t": 1795201029, "c": "Salesforce", "title": "Territory Account Executive - French speaking", "why": "location: Ireland - Dublin"}
-{"t": 1795201029, "c": "Salesforce", "title": "Salesforce Experience Architect", "why": "excluded:architect"}
-{"t": 1795201029, "c": "Salesforce", "title": "Software Engineer,  AI Agent Platform", "why": "excluded:engineer"}
-{"t": 1795201029, "c": "Salesforce", "title": "Principal Success Manager, Regulated Markets", "why": "excluded:principal"}
-{"t": 1795201029, "c": "Evolent Health", "title": "Software Engineer", "why": "excluded:engineer"}
-{"t": 1795201029, "c": "Acumatica", "title": "VP, Data Engineering and Data Science", "why": "excluded:engineer"}
-{"t": 1795201029, "c": "Rippling", "title": "Director, Enterprise Sales", "why": "excluded:director"}
-{"t": 1795201029, "c": "Rippling", "title": "Global Payroll Operations Specialist - Austria", "why": "excluded:payroll"}
-{"t": 1795201029, "c": "Rippling", "title": "Global Payroll Operations Specialist - Bulgaria", "why": "excluded:payroll"}
-{"t": 1795201029, "c": "Rippling", "title": "Global Payroll Operations Specialist - Greece", "why": "excluded:payroll"}
-{"t": 1795201029, "c": "Rippling", "title": "Global Payroll Operations Specialist - Romania", "why": "excluded:payroll"}
-{"t": 1795201029, "c": "Rippling", "title": "Global Payroll Operations Specialist - Spain", "why": "excluded:payroll"}
-{"t": 1795201029, "c": "Rippling", "title": "Manager, Mid-Market Account Management (Core)", "why": "location: San Francisco, CA"}
-{"t": 1795201029, "c": "Rippling", "title": "Global Payroll Operations Specialist (Ireland Payroll Specialist)", "why": "excluded:payroll"}
-{"t": 1795201029, "c": "Rippling", "title": "Global Payroll Operations Specialist (Ireland Payroll Specialist)", "why": "excluded:payroll"}
-{"t": 1795201029, "c": "Customer.io", "title": "Sr Account Manager, AMER (Remote)", "why": "title too senior: sr"}
-{"t": 1795201029, "c": "Muck Rack", "title": "Account Executive, Mid-Market ", "why": "needs 5+ years"}
-{"t": 1795201029, "c": "Uber Freight", "title": "Customer Support Specialist III", "why": "title too senior: iii"}
-{"t": 1795201029, "c": "Acquia", "title": "Global Account Manager", "why": "needs 8+ years"}
-{"t": 1795201029, "c": "Twilio", "title": "Strategic Account Executive", "why": "needs 8+ years"}
-{"t": 1795201029, "c": "Agilysys", "title": "Enterprise Account Executive - Service Optimization", "why": "needs 5+ years"}
-{"t": 1795201029, "c": "Angi", "title": "Enterprise Account Executive", "why": "needs 5+ years"}
-{"t": 1795201029, "c": "6sense", "title": "Sr. Customer Success Manager - Upmarket", "why": "title too senior: sr."}
-{"t": 1795201029, "c": "Databricks", "title": "Strategic Core Account Executive - Telco", "why": "needs 7+ years"}
-{"t": 1795221618, "c": "Fanatics Collectibles", "title": "Senior UI/UX Designer, Topps Digital", "why": "excluded:designer"}
-{"t": 1795221618, "c": "BILL", "title": "Staff Applied AI Engineer", "why": "excluded:engineer"}
-{"t": 1795221618, "c": "BILL", "title": "Staff Software Engineer- Backend - AI Native", "why": "excluded:engineer"}
-{"t": 1795221618, "c": "Compass", "title": "Customer Success Coordinator / Office Manager", "why": "location: Palm Desert; Palm Springs"}
-{"t": 1795221618, "c": "Compass", "title": "Director, Security Engineering", "why": "excluded:engineer"}
-{"t": 1795221618, "c": "Compass", "title": "Senior Staff Technical Program Manager", "why": "excluded:staff"}
-{"t": 1795221618, "c": "Checkr", "title": "Senior IT Identity Automation Engineer", "why": "excluded:engineer"}
-{"t": 1795221618, "c": "PrizePicks", "title": "Legal Operations Manager", "why": "excluded:legal"}
-{"t": 1795221618, "c": "Arena Club", "title": "Senior DevOps Engineer", "why": "excluded:engineer"}
-{"t": 1795221618, "c": "Figma", "title": "Product Manager, Billing", "why": "excluded:product manager"}
-{"t": 1795221618, "c": "Braze", "title": "Staff Software Engineer, Canvas Logic & Execution", "why": "excluded:engineer"}
-{"t": 1795221618, "c": "Braze", "title": "Staff Software Engineer, Canvas Logic & Execution", "why": "excluded:engineer"}
-{"t": 1795221618, "c": "Braze", "title": "Staff Software Engineer, Canvas Logic & Execution", "why": "excluded:engineer"}
-{"t": 1795221618, "c": "Braze", "title": "Staff Software Engineer, Canvas Logic & Execution", "why": "excluded:engineer"}
-{"t": 1795221618, "c": "Braze", "title": "Staff Software Engineer, Canvas Logic & Execution", "why": "excluded:engineer"}
-{"t": 1795221618, "c": "Pendo", "title": "Digital Marketing Manager, Paid Social", "why": "excluded:marketing"}
-{"t": 1795221618, "c": "PagerDuty", "title": " Senior Manager, Performance Marketing", "why": "excluded:marketing"}
-{"t": 1795221618, "c": "PagerDuty", "title": "Senior Manager, Performance Marketing", "why": "excluded:marketing"}
-{"t": 1795221618, "c": "Okta", "title": "Senior Software Engineer", "why": "excluded:engineer"}
-{"t": 1795221618, "c": "Okta", "title": "Senior Software Engineer, Acquisitions and Activation (Auth0)", "why": "excluded:engineer"}
-{"t": 1795221618, "c": "Okta", "title": "Staff Product Marketing Manager - Comp Intel", "why": "excluded:staff"}
-{"t": 1795221618, "c": "Okta", "title": "Staff Software Engineer in Test", "why": "excluded:engineer"}
-{"t": 1795221618, "c": "Okta", "title": "Staff Software Engineer in Test - Okta Secures AI Team", "why": "excluded:engineer"}
-{"t": 1795221618, "c": "KnowBe4", "title": "VP Global Total Rewards and Analytics (Remote)", "why": "excluded:vp"}
-{"t": 1795221618, "c": "Tenable", "title": "Security Engineer (Pre-Sales) DFW Area", "why": "excluded:engineer"}
-{"t": 1795221618, "c": "Tenable", "title": "Territory Account Manager", "why": "location: US - Remote - Dallas -Texas"}
-{"t": 1795221618, "c": "Tenable", "title": "Territory Account Manager", "why": "location: US - Remote - Minnesota, US - Remote - D"}
-{"t": 1795221618, "c": "Zocdoc", "title": "Director, Patient LTV", "why": "excluded:director"}
-{"t": 1795221618, "c": "Qualtrics", "title": "Manager, Field Marketing (Americas Industries)", "why": "excluded:marketing"}
-{"t": 1795221618, "c": "Qualtrics", "title": "Senior Analyst, Marketing Operations", "why": "excluded:marketing"}
-{"t": 1795221618, "c": "Qualtrics", "title": "Senior Principal Solution Consultant", "why": "excluded:principal"}
-{"t": 1795221618, "c": "Cohere Health", "title": "Managing Medical Director, Orthopedic Surgery", "why": "excluded:director"}
-{"t": 1795221618, "c": "Cohere Health", "title": "Staff Software Architect", "why": "excluded:staff"}
-{"t": 1795221618, "c": "Doximity", "title": "Senior Software Engineer, Data Platform", "why": "excluded:engineer"}
-{"t": 1795221618, "c": "Brex", "title": "Corporate Paralegal", "why": "excluded:legal"}
-{"t": 1795221618, "c": "Brex", "title": "Corporate Paralegal", "why": "excluded:legal"}
-{"t": 1795221618, "c": "Brex", "title": "Risk Counsel", "why": "excluded:counsel"}
-{"t": 1795221618, "c": "Brex", "title": "Risk Counsel", "why": "excluded:counsel"}
-{"t": 1795221618, "c": "Uber Freight", "title": "Sr. Accountant II", "why": "excluded:accountant"}
-{"t": 1795221618, "c": "Chime", "title": "Senior Data Scientist, Membership", "why": "excluded:data"}
-{"t": 1795221618, "c": "Justworks", "title": "Director, Organic Growth", "why": "excluded:director"}
-{"t": 1795221618, "c": "Justworks", "title": "Director, Paid Growth", "why": "excluded:director"}
-{"t": 1795221618, "c": "Salesloft", "title": "Senior Corporate Accountant", "why": "excluded:accountant"}
-{"t": 1795221618, "c": "Constant Contact", "title": "Associate Creative Director , Copy", "why": "excluded:director"}
-{"t": 1795221618, "c": "Verkada", "title": "Litigation Paralegal", "why": "excluded:legal"}
-{"t": 1795221618, "c": "Verkada", "title": "Senior Embedded Engineer - Intercom", "why": "excluded:engineer"}
-{"t": 1795221618, "c": "Verkada", "title": "Staff Embedded Engineer - Intercom", "why": "excluded:engineer"}
-{"t": 1795221618, "c": "CarGurus", "title": "Tax Analyst", "why": "excluded:tax"}
-{"t": 1795221618, "c": "6sense", "title": "Vice President, Storytelling & Communications", "why": "excluded:vice president"}
-{"t": 1795221618, "c": "Stripe", "title": "Product Manager, Payment Methods, EMEA", "why": "excluded:product manager"}
-{"t": 1795221618, "c": "Stripe", "title": "Product Manager, Payment Methods, EMEA", "why": "excluded:product manager"}
-{"t": 1795221618, "c": "Stripe", "title": "Staff Data Scientist, Fraud", "why": "excluded:staff"}
-{"t": 1795221618, "c": "ZipRecruiter", "title": "Director, Enterprise Product", "why": "excluded:director"}
-{"t": 1795221618, "c": "Elastic", "title": "Principal Software Developer - Search Infra - Elasticsearch", "why": "excluded:developer"}
-{"t": 1795221618, "c": "Elastic", "title": "Principal Software Developer - Vector Search - Elasticsearch", "why": "excluded:developer"}
-{"t": 1795221618, "c": "Elastic", "title": "Principal Software Engineer - Search Infra - Elasticsearch", "why": "excluded:engineer"}
-{"t": 1795221618, "c": "Elastic", "title": "Principal Software Engineer - Search Infra - Elasticsearch", "why": "excluded:engineer"}
-{"t": 1795221618, "c": "Elastic", "title": "Principal Software Engineer - Search Infra - Elasticsearch", "why": "excluded:engineer"}
-{"t": 1795221618, "c": "Elastic", "title": "Principal Software Engineer - Search Infra - Elasticsearch", "why": "excluded:engineer"}
-{"t": 1795221618, "c": "Elastic", "title": "Principal Software Engineer - Search Infra - Elasticsearch", "why": "excluded:engineer"}
-{"t": 1795221618, "c": "Elastic", "title": "Principal Software Engineer - Search Infra - Elasticsearch", "why": "excluded:engineer"}
-{"t": 1795221618, "c": "Elastic", "title": "Principal Software Engineer - Search Infra - Elasticsearch", "why": "excluded:engineer"}
-{"t": 1795221618, "c": "Elastic", "title": "Principal Software Engineer - Search Infra - Elasticsearch", "why": "excluded:engineer"}
-{"t": 1795221618, "c": "Elastic", "title": "Principal Software Engineer - Search Infra - Elasticsearch", "why": "excluded:engineer"}
-{"t": 1795221618, "c": "Elastic", "title": "Principal Software Engineer - Search Infra - Elasticsearch", "why": "excluded:engineer"}
-{"t": 1795221618, "c": "Elastic", "title": "Principal Software Engineer - Search Infra - Elasticsearch", "why": "excluded:engineer"}
-{"t": 1795221618, "c": "Elastic", "title": "Principal Software Engineer - Vector Search - Elasticsearch", "why": "excluded:engineer"}
 {"t": 1795221618, "c": "Elastic", "title": "Principal Software Engineer - Vector Search - Elasticsearch", "why": "excluded:engineer"}
 {"t": 1795221618, "c": "Elastic", "title": "Principal Software Engineer - Vector Search - Elasticsearch", "why": "excluded:engineer"}
 {"t": 1795221618, "c": "Elastic", "title": "Principal Software Engineer - Vector Search - Elasticsearch", "why": "excluded:engineer"}
@@ -605,3 +398,37 @@
 {"t": 1795472807, "c": "Vanderbilt University Medical Center", "title": "Director of Pediatric Rehab", "why": "excluded:director"}
 {"t": 1795472807, "c": "Acumatica", "title": "Senior Director, Business Development", "why": "excluded:director"}
 {"t": 1795472807, "c": "Rippling", "title": "Software Engineer II, Backend Full Stack - Spend Product", "why": "excluded:engineer"}
+{"t": 1795501003, "c": "Smartsheet", "title": "Principal Pricing Program & Operations Manager (Remote Eligible)", "why": "excluded:principal"}
+{"t": 1795501003, "c": "Attentive", "title": "Senior Recruiting Coordinator", "why": "excluded:recruit"}
+{"t": 1795501003, "c": "Sumo Logic", "title": "Director, Product Management", "why": "excluded:director"}
+{"t": 1795501003, "c": "Okta", "title": "Senior Site Reliability Engineer - Kubernetes & AWS", "why": "excluded:engineer"}
+{"t": 1795501003, "c": "Okta", "title": "Senior Software Engineer (Java & System design)", "why": "excluded:engineer"}
+{"t": 1795501003, "c": "Gusto", "title": "Staff Software Engineer, Agent and Partner Experiences", "why": "excluded:engineer"}
+{"t": 1795501003, "c": "Cresta", "title": "Japan Marketing Manager ", "why": "excluded:marketing"}
+{"t": 1795501003, "c": "Brex", "title": "Senior Lifecycle Marketing Manager, Customer", "why": "excluded:marketing"}
+{"t": 1795501003, "c": "Brex", "title": "Senior Product Manager, Expenses", "why": "excluded:product manager"}
+{"t": 1795501003, "c": "Brex", "title": "Senior Product Manager, Expenses", "why": "excluded:product manager"}
+{"t": 1795501003, "c": "Brex", "title": "Senior Product Manager, Expenses", "why": "excluded:product manager"}
+{"t": 1795501003, "c": "JobNimbus", "title": "SVP of Customer Experience ", "why": "excluded:vp"}
+{"t": 1795501003, "c": "Vercel", "title": "Manager, Technical Account Management", "why": "excluded:technical account"}
+{"t": 1795501003, "c": "Nextiva", "title": "Staff AI Engineer (Agentic AI)", "why": "excluded:engineer"}
+{"t": 1795501003, "c": "Stripe", "title": "Head of Global Partnerships and Startup and Ecosystem Product, Finance & Strategy", "why": "excluded:head of"}
+{"t": 1795501003, "c": "Ping Identity", "title": "Principal Software Engineer", "why": "excluded:engineer"}
+{"t": 1795501003, "c": "Cloudflare", "title": "Senior Network Hardware Engineer", "why": "excluded:engineer"}
+{"t": 1795501003, "c": "Fivetran", "title": "Resident Solution Architect", "why": "excluded:architect"}
+{"t": 1795501003, "c": "Concentric Healthcare Staffing", "title": "Regional Security Coordinator (London/Birmingham)", "why": "excluded:security"}
+{"t": 1795501003, "c": "GRVTY", "title": "Data Scientist - Senior", "why": "excluded:data"}
+{"t": 1795501003, "c": "Xero", "title": "Senior Software Engineer - Reporting, Insights & Data-In", "why": "excluded:engineer"}
+{"t": 1795501003, "c": "Xero", "title": "Business Development Representative", "why": "location: US: Denver (1615 Platte St Suite 200) (R"}
+{"t": 1795501003, "c": "Xero", "title": "Financial Accountant", "why": "excluded:accountant"}
+{"t": 1795501003, "c": "Thermo Fisher", "title": "Validation Engineer II", "why": "excluded:engineer"}
+{"t": 1795501003, "c": "Thermo Fisher", "title": "Director, R&D", "why": "excluded:director"}
+{"t": 1795501003, "c": "Thermo Fisher", "title": "Senior Patient Recruitment and Engagement Lead", "why": "excluded:recruit"}
+{"t": 1795501003, "c": "Cigna", "title": "Sr. Principal, Global Clinical Capabilities Lead", "why": "excluded:principal"}
+{"t": 1795501003, "c": "Salesforce", "title": "Senior Analyst - Data Analytics - SQL - Snowflake - Tableau", "why": "excluded:data"}
+{"t": 1795501003, "c": "Salesforce", "title": "Business Development Representative, Singapore Market", "why": "location: Singapore - Singapore"}
+{"t": 1795501003, "c": "Salesforce", "title": "Solution Architect Marketing Cloud", "why": "excluded:marketing"}
+{"t": 1795501003, "c": "Salesforce", "title": "Senior Technical Consultant Marketing Cloud", "why": "excluded:marketing"}
+{"t": 1795501003, "c": "Salesforce", "title": "Senior Account Executive, Salesforce National Security", "why": "excluded:security"}
+{"t": 1795501003, "c": "Evolent Health", "title": "Sr. Product Manager", "why": "excluded:product manager"}
+{"t": 1795501003, "c": "Vanderbilt University Medical Center", "title": "Program Director of Pharmacy Technician Training Program", "why": "excluded:director"}
