@@ -1,5 +1,3 @@
-{"t": 1795375754, "c": "GitLab", "title": "Business Development Representative - West", "why": "requirement: managed team"}
-{"t": 1795394874, "c": "Stripe", "title": "Engineering Manager - Developer Tooling", "why": "excluded:engineer"}
 {"t": 1795394874, "c": "Xero", "title": "Senior Backend Engineer, Payments Platform", "why": "excluded:engineer"}
 {"t": 1795412705, "c": "Okta", "title": "Manager, Engineering", "why": "excluded:engineer"}
 {"t": 1795412705, "c": "Okta", "title": "Regional Marketing Manager", "why": "excluded:marketing"}
@@ -400,3 +398,4 @@
 {"t": 1795543960, "c": "Okta", "title": "Staff Software Engineer", "why": "excluded:engineer"}
 {"t": 1795544234, "c": "ClickUp", "title": "Senior Regional Director, Enterprise Sales EMEA", "why": "excluded:director"}
 {"t": 1795544234, "c": "Mindbody", "title": "Software Engineer III", "why": "excluded:engineer"}
+{"t": 1795544519, "c": "Salesforce", "title": "Event Marketing Enablement Manager", "why": "excluded:marketing"}
