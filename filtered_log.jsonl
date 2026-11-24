@@ -1,5 +1,3 @@
-{"t": 1795412705, "c": "Okta", "title": "Manager, Engineering", "why": "excluded:engineer"}
-{"t": 1795412705, "c": "Okta", "title": "Regional Marketing Manager", "why": "excluded:marketing"}
 {"t": 1795412705, "c": "Gusto", "title": "Site Reliability Engineer ", "why": "excluded:engineer"}
 {"t": 1795412705, "c": "Gusto", "title": "Staff Software Engineer, Retirement Engineering", "why": "excluded:engineer"}
 {"t": 1795412705, "c": "Culture Amp", "title": "Engineer", "why": "excluded:engineer"}
@@ -400,3 +398,7 @@
 {"t": 1795544519, "c": "Salesforce", "title": "Event Marketing Enablement Manager", "why": "excluded:marketing"}
 {"t": 1795545148, "c": "Okta", "title": "Senior Software Engineer", "why": "excluded:engineer"}
 {"t": 1795545148, "c": "Trace3", "title": "Staff Accountant II (Remote)", "why": "excluded:staff"}
+{"t": 1795545455, "c": "GRVTY", "title": "Full Stack Developer", "why": "excluded:developer"}
+{"t": 1795545455, "c": "GRVTY", "title": "Hyperspectral Imagery Scientist", "why": "excluded:scientist"}
+{"t": 1795545455, "c": "TransUnion", "title": "Salesforce Senior Developer", "why": "excluded:developer"}
+{"t": 1795545455, "c": "TransUnion", "title": "Strategic Program Management, Senior Principal", "why": "excluded:principal"}
