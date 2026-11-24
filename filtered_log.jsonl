@@ -1,4 +1,3 @@
-{"t": 1795472807, "c": "CarGurus", "title": "International Brand Marketing Manager", "why": "excluded:marketing"}
 {"t": 1795472807, "c": "Carvana", "title": "Associate General Manager, Dealership", "why": "excluded:dealership"}
 {"t": 1795472807, "c": "Carvana", "title": "Security Associate - 1st Shift", "why": "excluded:security"}
 {"t": 1795472807, "c": "6sense", "title": "Sr. Software Engineer", "why": "excluded:engineer"}
@@ -399,3 +398,5 @@
 {"t": 1795559327, "c": "Smartsheet", "title": "Director, Global Customer Support (Remote Eligible - Costa Rica)", "why": "excluded:director"}
 {"t": 1795559327, "c": "Fivetran", "title": "Director, Enterprise Sales Field Operations, Americas", "why": "excluded:director"}
 {"t": 1795559594, "c": "Salesforce", "title": "Salesforce Ventures Principal", "why": "excluded:principal"}
+{"t": 1795559909, "c": "Okta", "title": "Senior Software Engineer in Test", "why": "excluded:engineer"}
+{"t": 1795559909, "c": "Stripe", "title": "Analytics Engineer", "why": "excluded:engineer"}
