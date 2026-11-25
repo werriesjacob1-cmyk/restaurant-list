@@ -1,7 +1,3 @@
-{"t": 1795472807, "c": "Fivetran", "title": "Business Development Rep, Enterprise, DACH", "why": "location: London, England, United Kingdom"}
-{"t": 1795472807, "c": "Fivetran", "title": "Sales Development Representative, Enterprise ", "why": "location: Dublin, Dublin, Ireland"}
-{"t": 1795472807, "c": "Fivetran", "title": "Senior Product Manager, Orchestration", "why": "excluded:product manager"}
-{"t": 1795472807, "c": "Squarespace", "title": "Accountant", "why": "excluded:accountant"}
 {"t": 1795472807, "c": "Edmentum", "title": "Regional Vice President \u2013 SMB Sales (Northeast)", "why": "excluded:vice president"}
 {"t": 1795472807, "c": "Concentric Healthcare Staffing", "title": "Executive Assistant to the Principal | Private Family Office", "why": "excluded:principal"}
 {"t": 1795472807, "c": "Insight Global", "title": "Partner Marketing Specialist  (12 months contract)", "why": "excluded:marketing"}
@@ -402,3 +398,5 @@
 {"t": 1795589428, "c": "Motorola Solutions", "title": "Customer Support Engineer", "why": "excluded:engineer"}
 {"t": 1795589428, "c": "Salesforce", "title": "Senior Technical Architect - Agentforce Data 360", "why": "excluded:data"}
 {"t": 1795589428, "c": "Salesforce", "title": "Software Engineering MTS \u2013 Production Support & AI Automation", "why": "excluded:engineer"}
+{"t": 1795590889, "c": "Sumo Logic", "title": "Manager, Engineering", "why": "excluded:engineer"}
+{"t": 1795590889, "c": "Salesforce", "title": "Software Engineering LMTS (Database Engineering)", "why": "excluded:engineer"}
