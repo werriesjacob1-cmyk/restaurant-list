@@ -1,4 +1,3 @@
-{"t": 1795472807, "c": "Workday", "title": "Manager, Sales Development", "why": "location: USA, UT, Salt Lake City"}
 {"t": 1795472807, "c": "Workday", "title": "Senior Software Engineer, DBaas - US Federal", "why": "excluded:engineer"}
 {"t": 1795472807, "c": "Zoom", "title": "AMER Field Marketing Manager - Workvivo", "why": "excluded:marketing"}
 {"t": 1795472807, "c": "Wolters Kluwer", "title": "Inside Sales Manager (m/w/d) - SaaS", "why": "location: DEU - Huerth"}
@@ -399,3 +398,5 @@
 {"t": 1795614151, "c": "Cloudflare", "title": "Business Development Representative - Spanish Speaking", "why": "location: Hybrid"}
 {"t": 1795614151, "c": "Adyen", "title": "Salesforce Developer", "why": "excluded:developer"}
 {"t": 1795615320, "c": "Acquisition Network", "title": "Head of Content", "why": "excluded:head of"}
+{"t": 1795615639, "c": "Yext", "title": "IT Audit Analyst", "why": "excluded:audit"}
+{"t": 1795615639, "c": "Yext", "title": "Manager, Operational Audit", "why": "excluded:audit"}
