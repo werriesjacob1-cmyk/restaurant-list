@@ -1,4 +1,3 @@
-{"t": 1795472807, "c": "TransUnion", "title": "Head of Consumer", "why": "excluded:head of"}
 {"t": 1795472807, "c": "Salesforce", "title": "Agentforce Sales Specialist - CBU Brazil", "why": "location: Brazil - Sao Paulo"}
 {"t": 1795472807, "c": "Salesforce", "title": "Sr. Director, Architect - Availability & Resiliency", "why": "excluded:director"}
 {"t": 1795472807, "c": "Salesforce", "title": "Salesforce Technical Architect - B2B Commerce", "why": "excluded:architect"}
@@ -399,3 +398,7 @@
 {"t": 1795618606, "c": "Workday", "title": "Sr Software Development Engineer (Full Stack) - Evisort AI", "why": "excluded:engineer"}
 {"t": 1795619209, "c": "Intercom", "title": "Staff Product Manager (Customer Agent Team)", "why": "excluded:staff"}
 {"t": 1795619498, "c": "Thermo Fisher", "title": "Associate Director Project Manager, PMO", "why": "excluded:director"}
+{"t": 1795619814, "c": "FanDuel", "title": "Staff Experimentation Platform Manager", "why": "excluded:staff"}
+{"t": 1795619814, "c": "Dropbox", "title": "Marketing Operations Manager", "why": "excluded:marketing"}
+{"t": 1795619814, "c": "Dropbox", "title": "Marketing Operations Manager", "why": "excluded:marketing"}
+{"t": 1795619814, "c": "Sanity", "title": "Staff Forward Deployed Engineer", "why": "excluded:engineer"}
