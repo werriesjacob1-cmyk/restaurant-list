@@ -1,4 +1,3 @@
-{"t": 1795472807, "c": "Equifax", "title": "Lead AI Developer", "why": "excluded:developer"}
 {"t": 1795472807, "c": "TransUnion", "title": "Senior Director, Head of Commercial Success \u2013 US Consumer Solutions", "why": "excluded:director"}
 {"t": 1795472807, "c": "TransUnion", "title": "Account Executive , Account Development - Inside Sales", "why": "location: 2 Locations"}
 {"t": 1795472807, "c": "TransUnion", "title": "Senior Director, Market Planner", "why": "excluded:director"}
@@ -399,3 +398,5 @@
 {"t": 1795616822, "c": "Vanderbilt University Medical Center", "title": "Medical Lab Scientist 2- Molecular Diagnostics Laboratory", "why": "excluded:scientist"}
 {"t": 1795617152, "c": "Intercom", "title": "Senior Product Manager (Service Agent Team) Berlin", "why": "excluded:product manager"}
 {"t": 1795618300, "c": "Cognism", "title": "Sales Development Representative ", "why": "location: London"}
+{"t": 1795618606, "c": "ZoomInfo", "title": "Senior Global Data Solutions Manager", "why": "excluded:data"}
+{"t": 1795618606, "c": "Workday", "title": "Sr Software Development Engineer (Full Stack) - Evisort AI", "why": "excluded:engineer"}
