@@ -1,10 +1,3 @@
-{"t": 1795544234, "c": "ClickUp", "title": "Senior Regional Director, Enterprise Sales EMEA", "why": "excluded:director"}
-{"t": 1795544234, "c": "Mindbody", "title": "Software Engineer III", "why": "excluded:engineer"}
-{"t": 1795544519, "c": "Salesforce", "title": "Event Marketing Enablement Manager", "why": "excluded:marketing"}
-{"t": 1795545148, "c": "Okta", "title": "Senior Software Engineer", "why": "excluded:engineer"}
-{"t": 1795545148, "c": "Trace3", "title": "Staff Accountant II (Remote)", "why": "excluded:staff"}
-{"t": 1795545455, "c": "GRVTY", "title": "Full Stack Developer", "why": "excluded:developer"}
-{"t": 1795545455, "c": "GRVTY", "title": "Hyperspectral Imagery Scientist", "why": "excluded:scientist"}
 {"t": 1795545455, "c": "TransUnion", "title": "Salesforce Senior Developer", "why": "excluded:developer"}
 {"t": 1795545455, "c": "TransUnion", "title": "Strategic Program Management, Senior Principal", "why": "excluded:principal"}
 {"t": 1795545761, "c": "Intercom", "title": "Technical Support Engineer", "why": "excluded:engineer"}
@@ -405,3 +398,64 @@
 {"t": 1795747513, "c": "Xero", "title": "Senior Loyalty Marketing Lead", "why": "excluded:marketing"}
 {"t": 1795747513, "c": "Jobber", "title": "Senior AI Marketing Enablement Manager", "why": "excluded:marketing"}
 {"t": 1795747513, "c": "Rippling", "title": "Recruiter, GTM (Contract) ", "why": "excluded:recruit"}
+{"t": 1795808865, "c": "Hudl", "title": "Engineer II - Athlete Performance", "why": "excluded:engineer"}
+{"t": 1795808865, "c": "Scopely", "title": "Senior Director, Product Management", "why": "excluded:director"}
+{"t": 1795808865, "c": "Intercom", "title": "Senior AV Engineer", "why": "excluded:engineer"}
+{"t": 1795808865, "c": "Klaviyo", "title": "Lead Security Engineer, Cloud Infrastructure", "why": "excluded:engineer"}
+{"t": 1795808865, "c": "Okta", "title": "Senior Fullstack Engineer (Java Heavy + Front End)", "why": "excluded:engineer"}
+{"t": 1795808865, "c": "Okta", "title": "Staff Analyst - Workday Techno-Functional Consultant", "why": "excluded:staff"}
+{"t": 1795808865, "c": "Okta", "title": "Staff Software Engineer", "why": "excluded:engineer"}
+{"t": 1795808865, "c": "OneTrust", "title": "Regional Vice President", "why": "excluded:vice president"}
+{"t": 1795808865, "c": "OneTrust", "title": "Senior Solutions Engineer ", "why": "excluded:engineer"}
+{"t": 1795808865, "c": "OneTrust", "title": "Senior Staff Software Engineer", "why": "excluded:engineer"}
+{"t": 1795808865, "c": "OneTrust", "title": "Staff Quality Engineer- SDET", "why": "excluded:engineer"}
+{"t": 1795808865, "c": "Qualtrics", "title": "Senior Machine Learning Engineer", "why": "excluded:engineer"}
+{"t": 1795808865, "c": "Qualtrics", "title": "Software Engineer I", "why": "excluded:engineer"}
+{"t": 1795808865, "c": "Cision", "title": "Strategic Sales Development Representative ", "why": "location: London, England, United Kingdom"}
+{"t": 1795808865, "c": "Brandwatch", "title": "Strategic Sales Development Representative ", "why": "location: London, England, United Kingdom"}
+{"t": 1795808865, "c": "Cohere Health", "title": "Associate SDET Engineer", "why": "excluded:engineer"}
+{"t": 1795808865, "c": "Zuora", "title": "Customer Solution Engineer", "why": "excluded:engineer"}
+{"t": 1795808865, "c": "Zuora", "title": "Sales Development Representative ", "why": "location: London, Greater London, England, United "}
+{"t": 1795808865, "c": "ShipBob", "title": "Business Development Representative", "why": "location: Remote - United Kingdom"}
+{"t": 1795808865, "c": "ShipMonk", "title": "Lead Product Manager, Merchant Platform & AI", "why": "excluded:product manager"}
+{"t": 1795808865, "c": "Carta", "title": "Director, Talent Network - Private Equity and Private Credit ", "why": "excluded:director"}
+{"t": 1795808865, "c": "Bloomreach", "title": "Staff Product Manager", "why": "excluded:staff"}
+{"t": 1795808865, "c": "Bloomreach", "title": "Staff Product Manager", "why": "excluded:staff"}
+{"t": 1795808865, "c": "Alarm.com", "title": "Software Engineer II", "why": "excluded:engineer"}
+{"t": 1795808865, "c": "Autotrader", "title": "Account Director ", "why": "excluded:director"}
+{"t": 1795808865, "c": "Stripe", "title": "Software Engineer, Backend", "why": "excluded:engineer"}
+{"t": 1795808865, "c": "Stripe", "title": "Software Engineer, Full Stack Atlas", "why": "excluded:engineer"}
+{"t": 1795808865, "c": "Stripe", "title": "Software Engineer, Reporting Platform", "why": "excluded:engineer"}
+{"t": 1795808865, "c": "Datadog", "title": "Senior Sales Engineer", "why": "excluded:engineer"}
+{"t": 1795808865, "c": "Abnormal Security", "title": "Software Engineer II - Product Data Gateway", "why": "excluded:engineer"}
+{"t": 1795808865, "c": "Cloudflare", "title": "Business Development Representative - Russian Speaking", "why": "location: Hybrid"}
+{"t": 1795808865, "c": "Twilio", "title": "Personalized Support Engineer 2", "why": "excluded:engineer"}
+{"t": 1795808865, "c": "Vonage", "title": "Senior Software Engineer ", "why": "excluded:engineer"}
+{"t": 1795808865, "c": "Vonage", "title": "Software Engineer", "why": "excluded:engineer"}
+{"t": 1795808865, "c": "Payoneer", "title": "Green Channel Operations Intern", "why": "excluded:intern"}
+{"t": 1795808865, "c": "Zinnia", "title": "Product Manager (Technical) - Identity & Access Management", "why": "excluded:product manager"}
+{"t": 1795808865, "c": "1Password", "title": "Director, Channel Operations", "why": "excluded:director"}
+{"t": 1795808865, "c": "Weave", "title": "Senior Frontend Engineer", "why": "excluded:engineer"}
+{"t": 1795808865, "c": "Rho", "title": "Staff Software Engineer", "why": "excluded:engineer"}
+{"t": 1795808865, "c": "Paddle", "title": "Staff Security Engineer", "why": "excluded:engineer"}
+{"t": 1795808865, "c": "Coupa", "title": "Sr Director, AI & Data Platform (15+ Years) - 11980", "why": "excluded:director"}
+{"t": 1795808865, "c": "Coupa", "title": "Sr. Product Manager - Supply Chain Data Platform", "why": "excluded:data"}
+{"t": 1795808865, "c": "Portage Point Partners", "title": "Managing Director, Valuations", "why": "excluded:director"}
+{"t": 1795808865, "c": "Workday", "title": "Product Manager, Financial Integrations", "why": "excluded:product manager"}
+{"t": 1795808865, "c": "Thermo Fisher", "title": "Senior Sales Director (Pharma Biotech Industry)", "why": "excluded:director"}
+{"t": 1795808865, "c": "Thermo Fisher", "title": "Data Engineer", "why": "excluded:engineer"}
+{"t": 1795808865, "c": "Thermo Fisher", "title": "Clinical Data Team Lead", "why": "excluded:data"}
+{"t": 1795808865, "c": "Thermo Fisher", "title": "mRNA Operations & MSAT Intern", "why": "excluded:intern"}
+{"t": 1795808865, "c": "Thermo Fisher", "title": "Inside Sales, Account Manager", "why": "location: Loughborough, United Kingdom"}
+{"t": 1795808865, "c": "Thermo Fisher", "title": "Regional Director, Engineering - Clinical Trials", "why": "excluded:engineer"}
+{"t": 1795808865, "c": "Salesforce", "title": "Data Analytics Lead", "why": "excluded:data"}
+{"t": 1795808865, "c": "Salesforce", "title": "Principal Forward Deployed Engineer", "why": "excluded:engineer"}
+{"t": 1795808865, "c": "Salesforce", "title": "Corporate Counsel", "why": "excluded:counsel"}
+{"t": 1795808865, "c": "Salesforce", "title": "Technical AND Solution Architect- All levels- Telco", "why": "excluded:architect"}
+{"t": 1795808865, "c": "Salesforce", "title": "Salesforce Technical Architect", "why": "excluded:architect"}
+{"t": 1795808865, "c": "Salesforce", "title": "Forward Deployed Engineer", "why": "excluded:engineer"}
+{"t": 1795808865, "c": "Salesforce", "title": "Lead Forward Deployed Engineer", "why": "excluded:engineer"}
+{"t": 1795808865, "c": "Salesforce", "title": "Senior Accountant - Revenue Accounting", "why": "excluded:accountant"}
+{"t": 1795808865, "c": "Salesforce", "title": "Field Marketing Analyst, India", "why": "excluded:marketing"}
+{"t": 1795808865, "c": "Salesforce", "title": "Software Engineering PMTS (NodeJs, Javascript, Distributed Systems)", "why": "excluded:engineer"}
+{"t": 1795808865, "c": "Salesforce", "title": "Account Executive - Data & Analytics", "why": "excluded:data"}
