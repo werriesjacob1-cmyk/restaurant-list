@@ -1,64 +1,3 @@
-{"t": 1795545455, "c": "TransUnion", "title": "Salesforce Senior Developer", "why": "excluded:developer"}
-{"t": 1795545455, "c": "TransUnion", "title": "Strategic Program Management, Senior Principal", "why": "excluded:principal"}
-{"t": 1795545761, "c": "Intercom", "title": "Technical Support Engineer", "why": "excluded:engineer"}
-{"t": 1795545761, "c": "GRVTY", "title": "Imagery Scientist - OPIR Analyst (Mid or Senior)", "why": "excluded:scientist"}
-{"t": 1795545761, "c": "GRVTY", "title": "OPIR Imagery Scientist", "why": "excluded:scientist"}
-{"t": 1795546040, "c": "Duolingo", "title": "Senior Data Scientist", "why": "excluded:data"}
-{"t": 1795546319, "c": "Brex", "title": "Field Marketing Coordinator, Upmarket", "why": "excluded:marketing"}
-{"t": 1795546319, "c": "Quantum Health", "title": "VP Health Systems Operations", "why": "excluded:vp"}
-{"t": 1795546319, "c": "Quantum Health", "title": "VP Health Systems Strategy", "why": "excluded:vp"}
-{"t": 1795546319, "c": "Fessler & Bowman Inc", "title": "Safety Director", "why": "excluded:director"}
-{"t": 1795547220, "c": "Adyen", "title": "Software Engineer", "why": "excluded:engineer"}
-{"t": 1795547220, "c": "Thermo Fisher", "title": "Director, Employment Counsel - Join a $45B Industry Leade!", "why": "excluded:director"}
-{"t": 1795547220, "c": "Salesforce", "title": "SRE Systems Engineer (TS/SCI with Polygraph Clearance)", "why": "excluded:engineer"}
-{"t": 1795547853, "c": "Mercury", "title": "Product Marketing Manager - Banking & Payments", "why": "excluded:marketing"}
-{"t": 1795548154, "c": "Mercury", "title": "Senior Recruiter - Marketing", "why": "excluded:recruit"}
-{"t": 1795548154, "c": "Salesforce", "title": "Lead Motion Designer, 3D", "why": "excluded:designer"}
-{"t": 1795548451, "c": "Galileo", "title": "Staff Accountant (30 hours/week)", "why": "excluded:staff"}
-{"t": 1795548735, "c": "Nextiva", "title": "Channel Sales Development Representative", "why": "location: Scottsdale, Onsite"}
-{"t": 1795548735, "c": "Hinge Health", "title": "Growth Marketing Manager", "why": "excluded:marketing"}
-{"t": 1795548735, "c": "Veeva", "title": "Associate Director of Field Marketing - Quality Cloud - Europe", "why": "excluded:director"}
-{"t": 1795549026, "c": "Uber Freight", "title": "Accounting Intern", "why": "excluded:intern"}
-{"t": 1795549026, "c": "Clover Health", "title": "Regional Medical Director - New Jersey ", "why": "excluded:director"}
-{"t": 1795549323, "c": "Twilio", "title": "Technical Account Manager", "why": "excluded:technical account"}
-{"t": 1795549620, "c": "Geotab", "title": "Government Security Operations Architect", "why": "excluded:security"}
-{"t": 1795549901, "c": "Vercel", "title": "Developer Experiences Manager", "why": "excluded:developer"}
-{"t": 1795549901, "c": "Ingram Micro", "title": "Sr Microsoft Cloud Engineer", "why": "excluded:engineer"}
-{"t": 1795549901, "c": "Thermo Fisher", "title": "Data Analyst, Project Manager", "why": "excluded:data"}
-{"t": 1795550262, "c": "Tebra", "title": "Manager, GTM Engineering (TAM & Outbound)", "why": "excluded:engineer"}
-{"t": 1795550548, "c": "Sumo Logic", "title": "Principal Product Manager", "why": "excluded:principal"}
-{"t": 1795550834, "c": "The Intersect Group", "title": "Land Acquisition Director", "why": "excluded:director"}
-{"t": 1795551736, "c": "Thermo Fisher", "title": "Principal Safety Reporting Spec", "why": "excluded:principal"}
-{"t": 1795551736, "c": "Salesforce", "title": "Director, Product Marketing, Headless & Builder Services", "why": "excluded:director"}
-{"t": 1795551736, "c": "Salesforce", "title": "Presales Data and Integration Solution Engineer", "why": "excluded:engineer"}
-{"t": 1795551736, "c": "Salesforce", "title": "Software Engineer II - Slack Developer Workspaces", "why": "excluded:engineer"}
-{"t": 1795552313, "c": "Alarm.com", "title": "Vice President, Corporate Taxation", "why": "excluded:vice president"}
-{"t": 1795552313, "c": "Housecall Pro", "title": "Director, Revenue Accounting", "why": "excluded:director"}
-{"t": 1795552617, "c": "Persona", "title": "Associate Privacy & Compliance Counsel ", "why": "excluded:counsel"}
-{"t": 1795552617, "c": "Thermo Fisher", "title": "Scientist, Formulation and Process development", "why": "excluded:scientist"}
-{"t": 1795552617, "c": "Salesforce", "title": "Sr. Software Engineer, Backend - Slack", "why": "excluded:engineer"}
-{"t": 1795552617, "c": "Salesforce", "title": "Lead Solution Engineer", "why": "excluded:engineer"}
-{"t": 1795552617, "c": "Salesforce", "title": "Applied AI Architect, Customer Enablement & Strategic Operations", "why": "excluded:architect"}
-{"t": 1795552932, "c": "SurveyMonkey", "title": "Senior Product Designer - Growth", "why": "excluded:designer"}
-{"t": 1795552932, "c": "SurveyMonkey", "title": "Senior Product Designer - Growth", "why": "excluded:designer"}
-{"t": 1795552932, "c": "SurveyMonkey", "title": "Senior Product Designer - Growth", "why": "excluded:designer"}
-{"t": 1795552932, "c": "SurveyMonkey", "title": "Senior Product Designer - Growth", "why": "excluded:designer"}
-{"t": 1795552932, "c": "SurveyMonkey", "title": "Senior Product Designer - Growth", "why": "excluded:designer"}
-{"t": 1795553478, "c": "Wolters Kluwer", "title": "Senior CX/UX Researcher (AI-First Innovation for Tax & Accounting) \u2013 Hybrid  R0056376", "why": "excluded:tax"}
-{"t": 1795553796, "c": "SurveyMonkey", "title": "Lead Product Designer - Incubator", "why": "excluded:designer"}
-{"t": 1795553796, "c": "SurveyMonkey", "title": "Lead Product Designer - Incubator", "why": "excluded:designer"}
-{"t": 1795553796, "c": "SurveyMonkey", "title": "Lead Product Designer - Incubator", "why": "excluded:designer"}
-{"t": 1795553796, "c": "SurveyMonkey", "title": "Lead Product Designer - Incubator", "why": "excluded:designer"}
-{"t": 1795553796, "c": "SurveyMonkey", "title": "Lead Product Designer - Incubator", "why": "excluded:designer"}
-{"t": 1795554375, "c": "Edmentum", "title": "VP of Engineering (Portfolio)", "why": "excluded:engineer"}
-{"t": 1795554375, "c": "Edmentum", "title": "VP of Product (Platform)", "why": "excluded:vp"}
-{"t": 1795554375, "c": "BAYADA Home Health Care", "title": "RN Director, Home Health Care", "why": "excluded:director"}
-{"t": 1795554375, "c": "Thermo Fisher", "title": "Process Engineering Co-op", "why": "excluded:engineer"}
-{"t": 1795554955, "c": "Cloudflare", "title": "Customer Engineering Manager", "why": "excluded:engineer"}
-{"t": 1795554955, "c": "Cloudflare", "title": "Customer Engineering Manager", "why": "excluded:engineer"}
-{"t": 1795556716, "c": "Elastic", "title": "VP Tax", "why": "excluded:vp"}
-{"t": 1795556716, "c": "Tebra", "title": "Senior Events Marketing Manager", "why": "excluded:marketing"}
-{"t": 1795556998, "c": "7shifts", "title": "Events Marketing Manager", "why": "excluded:marketing"}
 {"t": 1795556998, "c": "7shifts", "title": "Events Marketing Manager", "why": "excluded:marketing"}
 {"t": 1795557312, "c": "Zocdoc", "title": "Staff Software Engineer, Care Access Network", "why": "excluded:engineer"}
 {"t": 1795557312, "c": "MeridianLink", "title": "Key Account Director, Mortgage ", "why": "excluded:director"}
@@ -459,3 +398,12 @@
 {"t": 1795808865, "c": "Salesforce", "title": "Field Marketing Analyst, India", "why": "excluded:marketing"}
 {"t": 1795808865, "c": "Salesforce", "title": "Software Engineering PMTS (NodeJs, Javascript, Distributed Systems)", "why": "excluded:engineer"}
 {"t": 1795808865, "c": "Salesforce", "title": "Account Executive - Data & Analytics", "why": "excluded:data"}
+{"t": 1795832051, "c": "Stripe", "title": "Software Engineer", "why": "excluded:engineer"}
+{"t": 1795832051, "c": "Stripe", "title": "Software Engineer", "why": "excluded:engineer"}
+{"t": 1795832051, "c": "Stripe", "title": "Software Engineer, Backend ", "why": "excluded:engineer"}
+{"t": 1795832051, "c": "BAYADA Home Health Care", "title": "Home Care Director of Operations", "why": "excluded:director"}
+{"t": 1795832051, "c": "Clear", "title": "Senior Payroll Specialist", "why": "excluded:payroll"}
+{"t": 1795832051, "c": "Clear", "title": "Senior Security Operations Analyst III", "why": "excluded:security"}
+{"t": 1795832051, "c": "Clear", "title": "Solutions Engineer II, Healthcare (C1 - B2B)", "why": "excluded:engineer"}
+{"t": 1795832051, "c": "TransUnion", "title": "Sr. Advisor, Marketing", "why": "excluded:marketing"}
+{"t": 1795832051, "c": "Salesforce", "title": "Software Engineering PMTS", "why": "excluded:engineer"}
